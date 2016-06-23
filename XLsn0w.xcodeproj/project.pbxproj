@@ -219,10 +219,10 @@
 		35158A871D1BD9130068AFD6 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				35158A881D1BD9130068AFD6 /* XLCollectionViewController.h */,
-				35158A891D1BD9130068AFD6 /* XLCollectionViewController.m */,
 				35158A8A1D1BD9130068AFD6 /* XLNavigationController.h */,
 				35158A8B1D1BD9130068AFD6 /* XLNavigationController.m */,
+				35158A881D1BD9130068AFD6 /* XLCollectionViewController.h */,
+				35158A891D1BD9130068AFD6 /* XLCollectionViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";

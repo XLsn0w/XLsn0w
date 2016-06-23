@@ -3,8 +3,10 @@
 
 @implementation XLNetworkingManager
 
-+ (void)GET:(NSString *)url params:(NSDictionary *)params
-   success:(XLResponseSuccess)success failure:(XLResponseFailure)failure {
++ (void)GET:(NSString *)url
+     params:(NSDictionary *)params
+    success:(XLResponseSuccess)success
+    failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -17,8 +19,11 @@
     }];
 }
 
-+(void)GET:(NSString *)url baseURL:(NSString *)baseUrl params:(NSDictionary *)params
-   success:(XLResponseSuccess)success failure:(XLResponseFailure)failure {
++ (void)GET:(NSString *)url
+    baseURL:(NSString *)baseUrl
+     params:(NSDictionary *)params
+    success:(XLResponseSuccess)success
+    failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     [manager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
@@ -35,8 +40,10 @@
     
 }
 
-+(void)POST:(NSString *)url params:(NSDictionary *)params
-    success:(XLResponseSuccess)success failure:(XLResponseFailure)failure {
++ (void)POST:(NSString *)url
+      params:(NSDictionary *)params
+     success:(XLResponseSuccess)success
+     failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
     
@@ -50,8 +57,11 @@
     }];
 }
 
-+ (void)POST:(NSString *)url baseURL:(NSString *)baseUrl params:(NSDictionary *)params
-    success:(XLResponseSuccess)success failure:(XLResponseFailure)failure {
++ (void)POST:(NSString *)url
+     baseURL:(NSString *)baseUrl
+      params:(NSDictionary *)params
+     success:(XLResponseSuccess)success
+     failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     [manager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
@@ -66,7 +76,15 @@
     }];
 }
 
-+ (void)uploadWithURL:(NSString *)url params:(NSDictionary *)params fileData:(NSData *)filedata name:(NSString *)name fileName:(NSString *)filename mimeType:(NSString *) mimeType progress:(XLProgress)progress success:(XLResponseSuccess)success failure:(XLResponseFailure)failure {
++ (void)uploadWithURL:(NSString *)url
+               params:(NSDictionary *)params
+             fileData:(NSData *)filedata
+                 name:(NSString *)name
+             fileName:(NSString *)filename
+             mimeType:(NSString *) mimeType
+             progress:(XLProgress)progress
+              success:(XLResponseSuccess)success
+              failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
     
@@ -88,16 +106,16 @@
     }];
 }
 
-+(void)uploadWithURL:(NSString *)url
-             baseURL:(NSString *)baseurl
-              params:(NSDictionary *)params
-            fileData:(NSData *)filedata
-                name:(NSString *)name
-            fileName:(NSString *)filename
-            mimeType:(NSString *) mimeType
-            progress:(XLProgress)progress
-             success:(XLResponseSuccess)success
-             failure:(XLResponseFailure)failure {
++ (void)uploadWithURL:(NSString *)url
+              baseURL:(NSString *)baseurl
+               params:(NSDictionary *)params
+             fileData:(NSData *)filedata
+                 name:(NSString *)name
+             fileName:(NSString *)filename
+             mimeType:(NSString *) mimeType
+             progress:(XLProgress)progress
+              success:(XLResponseSuccess)success
+              failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseurl sessionConfiguration:YES];
     
@@ -118,11 +136,11 @@
     }];
 }
 
-+(NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
-                                 savePathURL:(NSURL *)fileURL
-                                    progress:(XLProgress )progress
-                                     success:(void (^)(NSURLResponse *, NSURL *))success
-                                     failure:(void (^)(NSError *))failure {
++ (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
+                                  savePathURL:(NSURL *)fileURL
+                                     progress:(XLProgress )progress
+                                      success:(void (^)(NSURLResponse *, NSURL *))success
+                                      failure:(void (^)(NSError *))failure {
     AFHTTPSessionManager *manager = [self managerWithBaseURL:nil sessionConfiguration:YES];
     
     NSURL *urlpath = [NSURL URLWithString:url];
@@ -150,7 +168,8 @@
 
 #pragma mark - Private
 
-+(AFHTTPSessionManager *)managerWithBaseURL:(NSString *)baseURL  sessionConfiguration:(BOOL)isconfiguration{
++ (AFHTTPSessionManager *)managerWithBaseURL:(NSString *)baseURL
+                        sessionConfiguration:(BOOL)isconfiguration {
     
     NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
     AFHTTPSessionManager *manager =nil;
@@ -170,7 +189,7 @@
     return manager;
 }
 
-+(id)responseConfiguration:(id)responseObject{
++ (id)responseConfiguration:(id)responseObject {
     
     NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
