@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XLsn0w"
-  s.version      = "1.0.7"
+  s.version      = "1.0.8"
   s.summary      = "XLsn0w Create CocoaPods Kit"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.0.7" }
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.0.8" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
