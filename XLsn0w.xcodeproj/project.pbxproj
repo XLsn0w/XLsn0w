@@ -7,42 +7,46 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		357C4FC81D1BC52700286B53 /* UIView+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C4FC51D1BC52700286B53 /* UIView+XLsn0w.m */; };
-		357C4FC91D1BC52700286B53 /* XLMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 357C4FC71D1BC52700286B53 /* XLMethods.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* AppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
 		3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */; };
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
-		35CC3C871D1BB97900127D3C /* NSArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */; };
-		35CC3C881D1BB97900127D3C /* NSDate+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5D1D1BB97900127D3C /* NSDate+XL.m */; };
-		35CC3C891D1BB97900127D3C /* NSMutableArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5F1D1BB97900127D3C /* NSMutableArray+XL.m */; };
-		35CC3C8A1D1BB97900127D3C /* NSString+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C611D1BB97900127D3C /* NSString+XL.m */; };
-		35CC3C8B1D1BB97900127D3C /* UIButton+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C631D1BB97900127D3C /* UIButton+XLsn0w.m */; };
-		35CC3C8C1D1BB97900127D3C /* UIColor+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C651D1BB97900127D3C /* UIColor+XLsn0w.m */; };
-		35CC3C8D1D1BB97900127D3C /* UIImage+XLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C671D1BB97900127D3C /* UIImage+XLImage.m */; };
-		35CC3C8E1D1BB97900127D3C /* UIImage+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C691D1BB97900127D3C /* UIImage+XLsn0w.m */; };
-		35CC3C8F1D1BB97900127D3C /* UILabel+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C6B1D1BB97900127D3C /* UILabel+XLsn0w.m */; };
-		35CC3C901D1BB97900127D3C /* UINavigationBar+BarStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C6D1D1BB97900127D3C /* UINavigationBar+BarStatus.m */; };
-		35CC3C911D1BB97900127D3C /* UINavigationController+HandleNavBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C6F1D1BB97900127D3C /* UINavigationController+HandleNavBack.m */; };
-		35CC3C921D1BB97900127D3C /* UITabBarController+NavTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C711D1BB97900127D3C /* UITabBarController+NavTabBarItem.m */; };
-		35CC3C931D1BB97900127D3C /* UIViewController+SafeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C731D1BB97900127D3C /* UIViewController+SafeTransition.m */; };
-		35CC3C941D1BB97900127D3C /* XLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C751D1BB97900127D3C /* XLCalendar.m */; };
-		35CC3C951D1BB97900127D3C /* XLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C771D1BB97900127D3C /* XLCollectionViewCell.m */; };
-		35CC3C961D1BB97900127D3C /* XLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */; };
-		35CC3C971D1BB97900127D3C /* XLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C7B1D1BB97900127D3C /* XLDateTime.m */; };
-		35CC3C991D1BB97900127D3C /* XLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */; };
-		35CC3C9A1D1BB97900127D3C /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C811D1BB97900127D3C /* XLPickerView.m */; };
-		35CC3C9B1D1BB97900127D3C /* XLSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C831D1BB97900127D3C /* XLSelectSheet.m */; };
-		35CC3C9C1D1BB97900127D3C /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C851D1BB97900127D3C /* XLTextField.m */; };
+		35A00E1A1D1BCB0E00E88F93 /* MBProgressHUD+ShowText.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DDC1D1BCB0D00E88F93 /* MBProgressHUD+ShowText.m */; };
+		35A00E1B1D1BCB0E00E88F93 /* NSArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DDE1D1BCB0D00E88F93 /* NSArray+XL.m */; };
+		35A00E1C1D1BCB0E00E88F93 /* NSDate+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DE01D1BCB0D00E88F93 /* NSDate+XL.m */; };
+		35A00E1D1D1BCB0E00E88F93 /* NSMutableArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DE21D1BCB0D00E88F93 /* NSMutableArray+XL.m */; };
+		35A00E1E1D1BCB0E00E88F93 /* NSString+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DE41D1BCB0D00E88F93 /* NSString+XL.m */; };
+		35A00E1F1D1BCB0E00E88F93 /* UIButton+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DE61D1BCB0D00E88F93 /* UIButton+XLsn0w.m */; };
+		35A00E201D1BCB0E00E88F93 /* UIColor+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DE81D1BCB0D00E88F93 /* UIColor+XLsn0w.m */; };
+		35A00E211D1BCB0E00E88F93 /* UIImage+XLImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DEA1D1BCB0D00E88F93 /* UIImage+XLImage.m */; };
+		35A00E221D1BCB0E00E88F93 /* UIImage+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DEC1D1BCB0D00E88F93 /* UIImage+XLsn0w.m */; };
+		35A00E231D1BCB0E00E88F93 /* UIImageView+XLPlaceholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DEE1D1BCB0D00E88F93 /* UIImageView+XLPlaceholder.m */; };
+		35A00E241D1BCB0E00E88F93 /* UILabel+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DF01D1BCB0D00E88F93 /* UILabel+XLsn0w.m */; };
+		35A00E251D1BCB0E00E88F93 /* UINavigationBar+BarStatus.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DF21D1BCB0D00E88F93 /* UINavigationBar+BarStatus.m */; };
+		35A00E261D1BCB0E00E88F93 /* UINavigationController+HandleNavBack.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DF41D1BCB0D00E88F93 /* UINavigationController+HandleNavBack.m */; };
+		35A00E271D1BCB0E00E88F93 /* UITabBarController+NavTabBarItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DF61D1BCB0D00E88F93 /* UITabBarController+NavTabBarItem.m */; };
+		35A00E281D1BCB0E00E88F93 /* UIView+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DF81D1BCB0D00E88F93 /* UIView+XLsn0w.m */; };
+		35A00E291D1BCB0E00E88F93 /* UIViewController+SafeTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DFA1D1BCB0D00E88F93 /* UIViewController+SafeTransition.m */; };
+		35A00E2A1D1BCB0E00E88F93 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DFC1D1BCB0D00E88F93 /* User.m */; };
+		35A00E2B1D1BCB0E00E88F93 /* XLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00DFE1D1BCB0D00E88F93 /* XLCalendar.m */; };
+		35A00E2C1D1BCB0E00E88F93 /* XLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E001D1BCB0D00E88F93 /* XLCalendarView.m */; };
+		35A00E2D1D1BCB0E00E88F93 /* XLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E021D1BCB0D00E88F93 /* XLCollectionViewCell.m */; };
+		35A00E2E1D1BCB0E00E88F93 /* XLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E041D1BCB0D00E88F93 /* XLCollectionViewController.m */; };
+		35A00E2F1D1BCB0E00E88F93 /* XLDataBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E061D1BCB0D00E88F93 /* XLDataBase.m */; };
+		35A00E301D1BCB0E00E88F93 /* XLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E081D1BCB0E00E88F93 /* XLDateTime.m */; };
+		35A00E311D1BCB0E00E88F93 /* XLDBModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E0A1D1BCB0E00E88F93 /* XLDBModel.m */; };
+		35A00E321D1BCB0E00E88F93 /* XLDBModelManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E0C1D1BCB0E00E88F93 /* XLDBModelManager.m */; };
+		35A00E331D1BCB0E00E88F93 /* XLMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E0E1D1BCB0E00E88F93 /* XLMethods.m */; };
+		35A00E341D1BCB0E00E88F93 /* XLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E101D1BCB0E00E88F93 /* XLNavigationController.m */; };
+		35A00E351D1BCB0E00E88F93 /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E121D1BCB0E00E88F93 /* XLNetworkingManager.m */; };
+		35A00E361D1BCB0E00E88F93 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E141D1BCB0E00E88F93 /* XLPickerView.m */; };
+		35A00E371D1BCB0E00E88F93 /* XLSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E161D1BCB0E00E88F93 /* XLSelectSheet.m */; };
+		35A00E381D1BCB0E00E88F93 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A00E191D1BCB0E00E88F93 /* XLTextField.m */; };
 		F059AEEA7C221137E0C88D87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D6A043485232A2D1E7029 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		357C4FC41D1BC52700286B53 /* UIView+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLsn0w.h"; sourceTree = "<group>"; };
-		357C4FC51D1BC52700286B53 /* UIView+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLsn0w.m"; sourceTree = "<group>"; };
-		357C4FC61D1BC52700286B53 /* XLMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMethods.h; sourceTree = "<group>"; };
-		357C4FC71D1BC52700286B53 /* XLMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMethods.m; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -52,48 +56,70 @@
 		3598760D1D1BA44200C2EC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359876131D1BA44F00C2EC10 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
-		35CC3C5A1D1BB97900127D3C /* NSArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XL.h"; sourceTree = "<group>"; };
-		35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XL.m"; sourceTree = "<group>"; };
-		35CC3C5C1D1BB97900127D3C /* NSDate+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XL.h"; sourceTree = "<group>"; };
-		35CC3C5D1D1BB97900127D3C /* NSDate+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XL.m"; sourceTree = "<group>"; };
-		35CC3C5E1D1BB97900127D3C /* NSMutableArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+XL.h"; sourceTree = "<group>"; };
-		35CC3C5F1D1BB97900127D3C /* NSMutableArray+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+XL.m"; sourceTree = "<group>"; };
-		35CC3C601D1BB97900127D3C /* NSString+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XL.h"; sourceTree = "<group>"; };
-		35CC3C611D1BB97900127D3C /* NSString+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XL.m"; sourceTree = "<group>"; };
-		35CC3C621D1BB97900127D3C /* UIButton+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XLsn0w.h"; sourceTree = "<group>"; };
-		35CC3C631D1BB97900127D3C /* UIButton+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XLsn0w.m"; sourceTree = "<group>"; };
-		35CC3C641D1BB97900127D3C /* UIColor+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XLsn0w.h"; sourceTree = "<group>"; };
-		35CC3C651D1BB97900127D3C /* UIColor+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XLsn0w.m"; sourceTree = "<group>"; };
-		35CC3C661D1BB97900127D3C /* UIImage+XLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLImage.h"; sourceTree = "<group>"; };
-		35CC3C671D1BB97900127D3C /* UIImage+XLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLImage.m"; sourceTree = "<group>"; };
-		35CC3C681D1BB97900127D3C /* UIImage+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLsn0w.h"; sourceTree = "<group>"; };
-		35CC3C691D1BB97900127D3C /* UIImage+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLsn0w.m"; sourceTree = "<group>"; };
-		35CC3C6A1D1BB97900127D3C /* UILabel+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XLsn0w.h"; sourceTree = "<group>"; };
-		35CC3C6B1D1BB97900127D3C /* UILabel+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XLsn0w.m"; sourceTree = "<group>"; };
-		35CC3C6C1D1BB97900127D3C /* UINavigationBar+BarStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BarStatus.h"; sourceTree = "<group>"; };
-		35CC3C6D1D1BB97900127D3C /* UINavigationBar+BarStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BarStatus.m"; sourceTree = "<group>"; };
-		35CC3C6E1D1BB97900127D3C /* UINavigationController+HandleNavBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HandleNavBack.h"; sourceTree = "<group>"; };
-		35CC3C6F1D1BB97900127D3C /* UINavigationController+HandleNavBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HandleNavBack.m"; sourceTree = "<group>"; };
-		35CC3C701D1BB97900127D3C /* UITabBarController+NavTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+NavTabBarItem.h"; sourceTree = "<group>"; };
-		35CC3C711D1BB97900127D3C /* UITabBarController+NavTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+NavTabBarItem.m"; sourceTree = "<group>"; };
-		35CC3C721D1BB97900127D3C /* UIViewController+SafeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SafeTransition.h"; sourceTree = "<group>"; };
-		35CC3C731D1BB97900127D3C /* UIViewController+SafeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SafeTransition.m"; sourceTree = "<group>"; };
-		35CC3C741D1BB97900127D3C /* XLCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendar.h; sourceTree = "<group>"; };
-		35CC3C751D1BB97900127D3C /* XLCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendar.m; sourceTree = "<group>"; };
-		35CC3C761D1BB97900127D3C /* XLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCollectionViewCell.h; sourceTree = "<group>"; };
-		35CC3C771D1BB97900127D3C /* XLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionViewCell.m; sourceTree = "<group>"; };
-		35CC3C781D1BB97900127D3C /* XLCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCollectionViewController.h; sourceTree = "<group>"; };
-		35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionViewController.m; sourceTree = "<group>"; };
-		35CC3C7A1D1BB97900127D3C /* XLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDateTime.h; sourceTree = "<group>"; };
-		35CC3C7B1D1BB97900127D3C /* XLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDateTime.m; sourceTree = "<group>"; };
-		35CC3C7E1D1BB97900127D3C /* XLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavigationController.h; sourceTree = "<group>"; };
-		35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavigationController.m; sourceTree = "<group>"; };
-		35CC3C801D1BB97900127D3C /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
-		35CC3C811D1BB97900127D3C /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
-		35CC3C821D1BB97900127D3C /* XLSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSelectSheet.h; sourceTree = "<group>"; };
-		35CC3C831D1BB97900127D3C /* XLSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSelectSheet.m; sourceTree = "<group>"; };
-		35CC3C841D1BB97900127D3C /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
-		35CC3C851D1BB97900127D3C /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
+		35A00DDB1D1BCB0D00E88F93 /* MBProgressHUD+ShowText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowText.h"; sourceTree = "<group>"; };
+		35A00DDC1D1BCB0D00E88F93 /* MBProgressHUD+ShowText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowText.m"; sourceTree = "<group>"; };
+		35A00DDD1D1BCB0D00E88F93 /* NSArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XL.h"; sourceTree = "<group>"; };
+		35A00DDE1D1BCB0D00E88F93 /* NSArray+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XL.m"; sourceTree = "<group>"; };
+		35A00DDF1D1BCB0D00E88F93 /* NSDate+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XL.h"; sourceTree = "<group>"; };
+		35A00DE01D1BCB0D00E88F93 /* NSDate+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+XL.m"; sourceTree = "<group>"; };
+		35A00DE11D1BCB0D00E88F93 /* NSMutableArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSMutableArray+XL.h"; sourceTree = "<group>"; };
+		35A00DE21D1BCB0D00E88F93 /* NSMutableArray+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSMutableArray+XL.m"; sourceTree = "<group>"; };
+		35A00DE31D1BCB0D00E88F93 /* NSString+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+XL.h"; sourceTree = "<group>"; };
+		35A00DE41D1BCB0D00E88F93 /* NSString+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+XL.m"; sourceTree = "<group>"; };
+		35A00DE51D1BCB0D00E88F93 /* UIButton+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+XLsn0w.h"; sourceTree = "<group>"; };
+		35A00DE61D1BCB0D00E88F93 /* UIButton+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+XLsn0w.m"; sourceTree = "<group>"; };
+		35A00DE71D1BCB0D00E88F93 /* UIColor+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+XLsn0w.h"; sourceTree = "<group>"; };
+		35A00DE81D1BCB0D00E88F93 /* UIColor+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+XLsn0w.m"; sourceTree = "<group>"; };
+		35A00DE91D1BCB0D00E88F93 /* UIImage+XLImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLImage.h"; sourceTree = "<group>"; };
+		35A00DEA1D1BCB0D00E88F93 /* UIImage+XLImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLImage.m"; sourceTree = "<group>"; };
+		35A00DEB1D1BCB0D00E88F93 /* UIImage+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+XLsn0w.h"; sourceTree = "<group>"; };
+		35A00DEC1D1BCB0D00E88F93 /* UIImage+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLsn0w.m"; sourceTree = "<group>"; };
+		35A00DED1D1BCB0D00E88F93 /* UIImageView+XLPlaceholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+XLPlaceholder.h"; sourceTree = "<group>"; };
+		35A00DEE1D1BCB0D00E88F93 /* UIImageView+XLPlaceholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+XLPlaceholder.m"; sourceTree = "<group>"; };
+		35A00DEF1D1BCB0D00E88F93 /* UILabel+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+XLsn0w.h"; sourceTree = "<group>"; };
+		35A00DF01D1BCB0D00E88F93 /* UILabel+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+XLsn0w.m"; sourceTree = "<group>"; };
+		35A00DF11D1BCB0D00E88F93 /* UINavigationBar+BarStatus.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+BarStatus.h"; sourceTree = "<group>"; };
+		35A00DF21D1BCB0D00E88F93 /* UINavigationBar+BarStatus.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+BarStatus.m"; sourceTree = "<group>"; };
+		35A00DF31D1BCB0D00E88F93 /* UINavigationController+HandleNavBack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+HandleNavBack.h"; sourceTree = "<group>"; };
+		35A00DF41D1BCB0D00E88F93 /* UINavigationController+HandleNavBack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+HandleNavBack.m"; sourceTree = "<group>"; };
+		35A00DF51D1BCB0D00E88F93 /* UITabBarController+NavTabBarItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarController+NavTabBarItem.h"; sourceTree = "<group>"; };
+		35A00DF61D1BCB0D00E88F93 /* UITabBarController+NavTabBarItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarController+NavTabBarItem.m"; sourceTree = "<group>"; };
+		35A00DF71D1BCB0D00E88F93 /* UIView+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+XLsn0w.h"; sourceTree = "<group>"; };
+		35A00DF81D1BCB0D00E88F93 /* UIView+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+XLsn0w.m"; sourceTree = "<group>"; };
+		35A00DF91D1BCB0D00E88F93 /* UIViewController+SafeTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIViewController+SafeTransition.h"; sourceTree = "<group>"; };
+		35A00DFA1D1BCB0D00E88F93 /* UIViewController+SafeTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIViewController+SafeTransition.m"; sourceTree = "<group>"; };
+		35A00DFB1D1BCB0D00E88F93 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		35A00DFC1D1BCB0D00E88F93 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
+		35A00DFD1D1BCB0D00E88F93 /* XLCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendar.h; sourceTree = "<group>"; };
+		35A00DFE1D1BCB0D00E88F93 /* XLCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendar.m; sourceTree = "<group>"; };
+		35A00DFF1D1BCB0D00E88F93 /* XLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarView.h; sourceTree = "<group>"; };
+		35A00E001D1BCB0D00E88F93 /* XLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarView.m; sourceTree = "<group>"; };
+		35A00E011D1BCB0D00E88F93 /* XLCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCollectionViewCell.h; sourceTree = "<group>"; };
+		35A00E021D1BCB0D00E88F93 /* XLCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionViewCell.m; sourceTree = "<group>"; };
+		35A00E031D1BCB0D00E88F93 /* XLCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCollectionViewController.h; sourceTree = "<group>"; };
+		35A00E041D1BCB0D00E88F93 /* XLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionViewController.m; sourceTree = "<group>"; };
+		35A00E051D1BCB0D00E88F93 /* XLDataBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDataBase.h; sourceTree = "<group>"; };
+		35A00E061D1BCB0D00E88F93 /* XLDataBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDataBase.m; sourceTree = "<group>"; };
+		35A00E071D1BCB0E00E88F93 /* XLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDateTime.h; sourceTree = "<group>"; };
+		35A00E081D1BCB0E00E88F93 /* XLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDateTime.m; sourceTree = "<group>"; };
+		35A00E091D1BCB0E00E88F93 /* XLDBModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDBModel.h; sourceTree = "<group>"; };
+		35A00E0A1D1BCB0E00E88F93 /* XLDBModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDBModel.m; sourceTree = "<group>"; };
+		35A00E0B1D1BCB0E00E88F93 /* XLDBModelManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDBModelManager.h; sourceTree = "<group>"; };
+		35A00E0C1D1BCB0E00E88F93 /* XLDBModelManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDBModelManager.m; sourceTree = "<group>"; };
+		35A00E0D1D1BCB0E00E88F93 /* XLMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMethods.h; sourceTree = "<group>"; };
+		35A00E0E1D1BCB0E00E88F93 /* XLMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMethods.m; sourceTree = "<group>"; };
+		35A00E0F1D1BCB0E00E88F93 /* XLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavigationController.h; sourceTree = "<group>"; };
+		35A00E101D1BCB0E00E88F93 /* XLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavigationController.m; sourceTree = "<group>"; };
+		35A00E111D1BCB0E00E88F93 /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
+		35A00E121D1BCB0E00E88F93 /* XLNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkingManager.m; sourceTree = "<group>"; };
+		35A00E131D1BCB0E00E88F93 /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
+		35A00E141D1BCB0E00E88F93 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
+		35A00E151D1BCB0E00E88F93 /* XLSelectSheet.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSelectSheet.h; sourceTree = "<group>"; };
+		35A00E161D1BCB0E00E88F93 /* XLSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSelectSheet.m; sourceTree = "<group>"; };
+		35A00E171D1BCB0E00E88F93 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
+		35A00E181D1BCB0E00E88F93 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
+		35A00E191D1BCB0E00E88F93 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
+		35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChineseCalendar.sqlite; sourceTree = "<group>"; };
 		403D6A043485232A2D1E7029 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		691FDEB21C53CB6354F2EDDB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73CEE42F82173398B22BD2D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +165,7 @@
 				359876081D1BA44200C2EC10 /* Assets.xcassets */,
 				3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */,
 				3598760D1D1BA44200C2EC10 /* Info.plist */,
+				35A00E3A1D1BCBA400E88F93 /* XL */,
 				35CC3C571D1BB97900127D3C /* XLsn0w */,
 				359876021D1BA44200C2EC10 /* Supporting Files */,
 			);
@@ -153,55 +180,80 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		35A00E3A1D1BCBA400E88F93 /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */,
+			);
+			path = XL;
+			sourceTree = "<group>";
+		};
 		35CC3C571D1BB97900127D3C /* XLsn0w */ = {
 			isa = PBXGroup;
 			children = (
-				357C4FC41D1BC52700286B53 /* UIView+XLsn0w.h */,
-				357C4FC51D1BC52700286B53 /* UIView+XLsn0w.m */,
-				357C4FC61D1BC52700286B53 /* XLMethods.h */,
-				357C4FC71D1BC52700286B53 /* XLMethods.m */,
-				35CC3C5A1D1BB97900127D3C /* NSArray+XL.h */,
-				35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */,
-				35CC3C5C1D1BB97900127D3C /* NSDate+XL.h */,
-				35CC3C5D1D1BB97900127D3C /* NSDate+XL.m */,
-				35CC3C5E1D1BB97900127D3C /* NSMutableArray+XL.h */,
-				35CC3C5F1D1BB97900127D3C /* NSMutableArray+XL.m */,
-				35CC3C601D1BB97900127D3C /* NSString+XL.h */,
-				35CC3C611D1BB97900127D3C /* NSString+XL.m */,
-				35CC3C621D1BB97900127D3C /* UIButton+XLsn0w.h */,
-				35CC3C631D1BB97900127D3C /* UIButton+XLsn0w.m */,
-				35CC3C641D1BB97900127D3C /* UIColor+XLsn0w.h */,
-				35CC3C651D1BB97900127D3C /* UIColor+XLsn0w.m */,
-				35CC3C661D1BB97900127D3C /* UIImage+XLImage.h */,
-				35CC3C671D1BB97900127D3C /* UIImage+XLImage.m */,
-				35CC3C681D1BB97900127D3C /* UIImage+XLsn0w.h */,
-				35CC3C691D1BB97900127D3C /* UIImage+XLsn0w.m */,
-				35CC3C6A1D1BB97900127D3C /* UILabel+XLsn0w.h */,
-				35CC3C6B1D1BB97900127D3C /* UILabel+XLsn0w.m */,
-				35CC3C6C1D1BB97900127D3C /* UINavigationBar+BarStatus.h */,
-				35CC3C6D1D1BB97900127D3C /* UINavigationBar+BarStatus.m */,
-				35CC3C6E1D1BB97900127D3C /* UINavigationController+HandleNavBack.h */,
-				35CC3C6F1D1BB97900127D3C /* UINavigationController+HandleNavBack.m */,
-				35CC3C701D1BB97900127D3C /* UITabBarController+NavTabBarItem.h */,
-				35CC3C711D1BB97900127D3C /* UITabBarController+NavTabBarItem.m */,
-				35CC3C721D1BB97900127D3C /* UIViewController+SafeTransition.h */,
-				35CC3C731D1BB97900127D3C /* UIViewController+SafeTransition.m */,
-				35CC3C741D1BB97900127D3C /* XLCalendar.h */,
-				35CC3C751D1BB97900127D3C /* XLCalendar.m */,
-				35CC3C761D1BB97900127D3C /* XLCollectionViewCell.h */,
-				35CC3C771D1BB97900127D3C /* XLCollectionViewCell.m */,
-				35CC3C781D1BB97900127D3C /* XLCollectionViewController.h */,
-				35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */,
-				35CC3C7A1D1BB97900127D3C /* XLDateTime.h */,
-				35CC3C7B1D1BB97900127D3C /* XLDateTime.m */,
-				35CC3C7E1D1BB97900127D3C /* XLNavigationController.h */,
-				35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */,
-				35CC3C801D1BB97900127D3C /* XLPickerView.h */,
-				35CC3C811D1BB97900127D3C /* XLPickerView.m */,
-				35CC3C821D1BB97900127D3C /* XLSelectSheet.h */,
-				35CC3C831D1BB97900127D3C /* XLSelectSheet.m */,
-				35CC3C841D1BB97900127D3C /* XLTextField.h */,
-				35CC3C851D1BB97900127D3C /* XLTextField.m */,
+				35A00DDB1D1BCB0D00E88F93 /* MBProgressHUD+ShowText.h */,
+				35A00DDC1D1BCB0D00E88F93 /* MBProgressHUD+ShowText.m */,
+				35A00DDD1D1BCB0D00E88F93 /* NSArray+XL.h */,
+				35A00DDE1D1BCB0D00E88F93 /* NSArray+XL.m */,
+				35A00DDF1D1BCB0D00E88F93 /* NSDate+XL.h */,
+				35A00DE01D1BCB0D00E88F93 /* NSDate+XL.m */,
+				35A00DE11D1BCB0D00E88F93 /* NSMutableArray+XL.h */,
+				35A00DE21D1BCB0D00E88F93 /* NSMutableArray+XL.m */,
+				35A00DE31D1BCB0D00E88F93 /* NSString+XL.h */,
+				35A00DE41D1BCB0D00E88F93 /* NSString+XL.m */,
+				35A00DE51D1BCB0D00E88F93 /* UIButton+XLsn0w.h */,
+				35A00DE61D1BCB0D00E88F93 /* UIButton+XLsn0w.m */,
+				35A00DE71D1BCB0D00E88F93 /* UIColor+XLsn0w.h */,
+				35A00DE81D1BCB0D00E88F93 /* UIColor+XLsn0w.m */,
+				35A00DE91D1BCB0D00E88F93 /* UIImage+XLImage.h */,
+				35A00DEA1D1BCB0D00E88F93 /* UIImage+XLImage.m */,
+				35A00DEB1D1BCB0D00E88F93 /* UIImage+XLsn0w.h */,
+				35A00DEC1D1BCB0D00E88F93 /* UIImage+XLsn0w.m */,
+				35A00DED1D1BCB0D00E88F93 /* UIImageView+XLPlaceholder.h */,
+				35A00DEE1D1BCB0D00E88F93 /* UIImageView+XLPlaceholder.m */,
+				35A00DEF1D1BCB0D00E88F93 /* UILabel+XLsn0w.h */,
+				35A00DF01D1BCB0D00E88F93 /* UILabel+XLsn0w.m */,
+				35A00DF11D1BCB0D00E88F93 /* UINavigationBar+BarStatus.h */,
+				35A00DF21D1BCB0D00E88F93 /* UINavigationBar+BarStatus.m */,
+				35A00DF31D1BCB0D00E88F93 /* UINavigationController+HandleNavBack.h */,
+				35A00DF41D1BCB0D00E88F93 /* UINavigationController+HandleNavBack.m */,
+				35A00DF51D1BCB0D00E88F93 /* UITabBarController+NavTabBarItem.h */,
+				35A00DF61D1BCB0D00E88F93 /* UITabBarController+NavTabBarItem.m */,
+				35A00DF71D1BCB0D00E88F93 /* UIView+XLsn0w.h */,
+				35A00DF81D1BCB0D00E88F93 /* UIView+XLsn0w.m */,
+				35A00DF91D1BCB0D00E88F93 /* UIViewController+SafeTransition.h */,
+				35A00DFA1D1BCB0D00E88F93 /* UIViewController+SafeTransition.m */,
+				35A00DFB1D1BCB0D00E88F93 /* User.h */,
+				35A00DFC1D1BCB0D00E88F93 /* User.m */,
+				35A00DFD1D1BCB0D00E88F93 /* XLCalendar.h */,
+				35A00DFE1D1BCB0D00E88F93 /* XLCalendar.m */,
+				35A00DFF1D1BCB0D00E88F93 /* XLCalendarView.h */,
+				35A00E001D1BCB0D00E88F93 /* XLCalendarView.m */,
+				35A00E011D1BCB0D00E88F93 /* XLCollectionViewCell.h */,
+				35A00E021D1BCB0D00E88F93 /* XLCollectionViewCell.m */,
+				35A00E031D1BCB0D00E88F93 /* XLCollectionViewController.h */,
+				35A00E041D1BCB0D00E88F93 /* XLCollectionViewController.m */,
+				35A00E051D1BCB0D00E88F93 /* XLDataBase.h */,
+				35A00E061D1BCB0D00E88F93 /* XLDataBase.m */,
+				35A00E071D1BCB0E00E88F93 /* XLDateTime.h */,
+				35A00E081D1BCB0E00E88F93 /* XLDateTime.m */,
+				35A00E091D1BCB0E00E88F93 /* XLDBModel.h */,
+				35A00E0A1D1BCB0E00E88F93 /* XLDBModel.m */,
+				35A00E0B1D1BCB0E00E88F93 /* XLDBModelManager.h */,
+				35A00E0C1D1BCB0E00E88F93 /* XLDBModelManager.m */,
+				35A00E0D1D1BCB0E00E88F93 /* XLMethods.h */,
+				35A00E0E1D1BCB0E00E88F93 /* XLMethods.m */,
+				35A00E0F1D1BCB0E00E88F93 /* XLNavigationController.h */,
+				35A00E101D1BCB0E00E88F93 /* XLNavigationController.m */,
+				35A00E111D1BCB0E00E88F93 /* XLNetworkingManager.h */,
+				35A00E121D1BCB0E00E88F93 /* XLNetworkingManager.m */,
+				35A00E131D1BCB0E00E88F93 /* XLPickerView.h */,
+				35A00E141D1BCB0E00E88F93 /* XLPickerView.m */,
+				35A00E151D1BCB0E00E88F93 /* XLSelectSheet.h */,
+				35A00E161D1BCB0E00E88F93 /* XLSelectSheet.m */,
+				35A00E171D1BCB0E00E88F93 /* XLsn0w.h */,
+				35A00E181D1BCB0E00E88F93 /* XLTextField.h */,
+				35A00E191D1BCB0E00E88F93 /* XLTextField.m */,
 			);
 			path = XLsn0w;
 			sourceTree = "<group>";
@@ -343,32 +395,40 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35CC3C931D1BB97900127D3C /* UIViewController+SafeTransition.m in Sources */,
-				357C4FC81D1BC52700286B53 /* UIView+XLsn0w.m in Sources */,
-				357C4FC91D1BC52700286B53 /* XLMethods.m in Sources */,
-				35CC3C8B1D1BB97900127D3C /* UIButton+XLsn0w.m in Sources */,
+				35A00E2A1D1BCB0E00E88F93 /* User.m in Sources */,
+				35A00E261D1BCB0E00E88F93 /* UINavigationController+HandleNavBack.m in Sources */,
+				35A00E1F1D1BCB0E00E88F93 /* UIButton+XLsn0w.m in Sources */,
 				359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */,
-				35CC3C8E1D1BB97900127D3C /* UIImage+XLsn0w.m in Sources */,
-				35CC3C8C1D1BB97900127D3C /* UIColor+XLsn0w.m in Sources */,
-				35CC3C871D1BB97900127D3C /* NSArray+XL.m in Sources */,
-				35CC3C9B1D1BB97900127D3C /* XLSelectSheet.m in Sources */,
-				35CC3C991D1BB97900127D3C /* XLNavigationController.m in Sources */,
-				35CC3C8F1D1BB97900127D3C /* UILabel+XLsn0w.m in Sources */,
-				35CC3C9C1D1BB97900127D3C /* XLTextField.m in Sources */,
+				35A00E1A1D1BCB0E00E88F93 /* MBProgressHUD+ShowText.m in Sources */,
+				35A00E221D1BCB0E00E88F93 /* UIImage+XLsn0w.m in Sources */,
+				35A00E361D1BCB0E00E88F93 /* XLPickerView.m in Sources */,
+				35A00E381D1BCB0E00E88F93 /* XLTextField.m in Sources */,
+				35A00E371D1BCB0E00E88F93 /* XLSelectSheet.m in Sources */,
+				35A00E201D1BCB0E00E88F93 /* UIColor+XLsn0w.m in Sources */,
+				35A00E281D1BCB0E00E88F93 /* UIView+XLsn0w.m in Sources */,
+				35A00E271D1BCB0E00E88F93 /* UITabBarController+NavTabBarItem.m in Sources */,
+				35A00E1B1D1BCB0E00E88F93 /* NSArray+XL.m in Sources */,
+				35A00E231D1BCB0E00E88F93 /* UIImageView+XLPlaceholder.m in Sources */,
+				35A00E251D1BCB0E00E88F93 /* UINavigationBar+BarStatus.m in Sources */,
 				359876071D1BA44200C2EC10 /* AppDelegate.m in Sources */,
-				35CC3C881D1BB97900127D3C /* NSDate+XL.m in Sources */,
-				35CC3C961D1BB97900127D3C /* XLCollectionViewController.m in Sources */,
+				35A00E331D1BCB0E00E88F93 /* XLMethods.m in Sources */,
+				35A00E1C1D1BCB0E00E88F93 /* NSDate+XL.m in Sources */,
+				35A00E311D1BCB0E00E88F93 /* XLDBModel.m in Sources */,
+				35A00E301D1BCB0E00E88F93 /* XLDateTime.m in Sources */,
+				35A00E341D1BCB0E00E88F93 /* XLNavigationController.m in Sources */,
+				35A00E351D1BCB0E00E88F93 /* XLNetworkingManager.m in Sources */,
+				35A00E2E1D1BCB0E00E88F93 /* XLCollectionViewController.m in Sources */,
+				35A00E2C1D1BCB0E00E88F93 /* XLCalendarView.m in Sources */,
 				359876041D1BA44200C2EC10 /* main.m in Sources */,
-				35CC3C971D1BB97900127D3C /* XLDateTime.m in Sources */,
-				35CC3C8D1D1BB97900127D3C /* UIImage+XLImage.m in Sources */,
-				35CC3C911D1BB97900127D3C /* UINavigationController+HandleNavBack.m in Sources */,
-				35CC3C901D1BB97900127D3C /* UINavigationBar+BarStatus.m in Sources */,
-				35CC3C951D1BB97900127D3C /* XLCollectionViewCell.m in Sources */,
-				35CC3C891D1BB97900127D3C /* NSMutableArray+XL.m in Sources */,
-				35CC3C941D1BB97900127D3C /* XLCalendar.m in Sources */,
-				35CC3C921D1BB97900127D3C /* UITabBarController+NavTabBarItem.m in Sources */,
-				35CC3C9A1D1BB97900127D3C /* XLPickerView.m in Sources */,
-				35CC3C8A1D1BB97900127D3C /* NSString+XL.m in Sources */,
+				35A00E321D1BCB0E00E88F93 /* XLDBModelManager.m in Sources */,
+				35A00E2B1D1BCB0E00E88F93 /* XLCalendar.m in Sources */,
+				35A00E2D1D1BCB0E00E88F93 /* XLCollectionViewCell.m in Sources */,
+				35A00E241D1BCB0E00E88F93 /* UILabel+XLsn0w.m in Sources */,
+				35A00E211D1BCB0E00E88F93 /* UIImage+XLImage.m in Sources */,
+				35A00E1D1D1BCB0E00E88F93 /* NSMutableArray+XL.m in Sources */,
+				35A00E2F1D1BCB0E00E88F93 /* XLDataBase.m in Sources */,
+				35A00E291D1BCB0E00E88F93 /* UIViewController+SafeTransition.m in Sources */,
+				35A00E1E1D1BCB0E00E88F93 /* NSString+XL.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -474,6 +534,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XLsn0w/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skuo.XLsn0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -486,6 +547,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = XLsn0w/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.skuo.XLsn0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";

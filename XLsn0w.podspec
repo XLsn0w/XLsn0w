@@ -16,8 +16,8 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XLsn0w"
-  s.version      = "1.0.8"
-  s.summary      = "XLsn0w Create CocoaPods Kit"
+  s.version      = "1.1.1"
+  s.summary      = "XLsn0w Create CocoaPods Framework"
 
   # This description is used to generate tags and improve search results.
   #   * Think: What does it do? Why did you write it? What is the focus?
@@ -25,7 +25,7 @@ Pod::Spec.new do |s|
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
   s.description  = <<-DESC
-                   XLsn0w Create CocoaPods Kit via xlsn0w@qq.com
+                   XLsn0w Create CocoaPods Framework via xlsn0w@qq.com
                    DESC
 
   s.homepage     = "https://github.com/XLsn0w/XLsn0w"
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.0.8" }
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.1.1" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-  #  s.framework  = "libsqlite3"
+  # s.framework  = "libsqlite3"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -133,9 +133,9 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-   # s.dependency "AFNetworking", "~> 3.1.0"
-  #  s.dependency "FMDB", "~> 2.6.2"
-  #  s.dependency "MBProgressHUD", "~> 0.9.2"
-   # s.dependency "SDWebImage", "~> 3.8.1"
+    s.dependency "AFNetworking", "~> 3.1.0"
+    s.dependency "FMDB", "~> 2.6.2"
+    s.dependency "MBProgressHUD", "~> 0.9.2"
+    s.dependency "SDWebImage", "~> 3.8.1"
 
 end
