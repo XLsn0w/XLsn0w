@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "XLsn0w"
-  s.version      = "1.0.5"
+  s.version      = "1.0.6"
   s.summary      = "XLsn0w Create CocoaPods Kit"
 
   # This description is used to generate tags and improve search results.
@@ -80,7 +80,7 @@ Pod::Spec.new do |s|
   #  Supports git, hg, bzr, svn and HTTP.
   #
 
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.0.5" }
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.0.6" }
 
 
   # ――― Source Code ―――――――――――――――――――――――――――――――――――――――――――――――――――――――――――――― #
@@ -117,7 +117,7 @@ Pod::Spec.new do |s|
   #  the lib prefix of their name.
   #
 
-    s.framework  = "libsqlite3"
+  #  s.framework  = "libsqlite3"
   # s.frameworks = "SomeFramework", "AnotherFramework"
 
   # s.library   = "iconv"
@@ -133,9 +133,9 @@ Pod::Spec.new do |s|
     s.requires_arc = true
 
   # s.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
-    s.dependency "AFNetworking", "~> 3.1.0"
-    s.dependency "FMDB", "~> 2.6.2"
-    s.dependency "MBProgressHUD", "~> 0.9.2"
-    s.dependency "SDWebImage", "~> 3.8.1"
+   # s.dependency "AFNetworking", "~> 3.1.0"
+  #  s.dependency "FMDB", "~> 2.6.2"
+  #  s.dependency "MBProgressHUD", "~> 0.9.2"
+   # s.dependency "SDWebImage", "~> 3.8.1"
 
 end

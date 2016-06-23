@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "35364F2F1D1BAE1A00A79579"
+               BlueprintIdentifier = "359875FE1D1BA44200C2EC10"
                BuildableName = "XLsn0w.app"
                BlueprintName = "XLsn0w"
                ReferencedContainer = "container:XLsn0w.xcodeproj">
@@ -32,7 +32,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35364F2F1D1BAE1A00A79579"
+            BlueprintIdentifier = "359875FE1D1BA44200C2EC10"
             BuildableName = "XLsn0w.app"
             BlueprintName = "XLsn0w"
             ReferencedContainer = "container:XLsn0w.xcodeproj">
@@ -55,7 +55,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35364F2F1D1BAE1A00A79579"
+            BlueprintIdentifier = "359875FE1D1BA44200C2EC10"
             BuildableName = "XLsn0w.app"
             BlueprintName = "XLsn0w"
             ReferencedContainer = "container:XLsn0w.xcodeproj">
@@ -74,7 +74,7 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "35364F2F1D1BAE1A00A79579"
+            BlueprintIdentifier = "359875FE1D1BA44200C2EC10"
             BuildableName = "XLsn0w.app"
             BlueprintName = "XLsn0w"
             ReferencedContainer = "container:XLsn0w.xcodeproj">
