@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "XLsn0wViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,11 +16,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
-    self.window.backgroundColor = [UIColor whiteColor];
-    [self.window makeKeyAndVisible];
-    self.window.rootViewController = [XLsn0wViewController new];
     return YES;
 }
 
