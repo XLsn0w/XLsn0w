@@ -12,6 +12,7 @@
 		35364F3A1D1BAE1A00A79579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35364F391D1BAE1A00A79579 /* Assets.xcassets */; };
 		35364F3D1D1BAE1A00A79579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35364F3B1D1BAE1A00A79579 /* LaunchScreen.storyboard */; };
 		35364F461D1BAE2600A79579 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35364F451D1BAE2600A79579 /* XLsn0wViewController.m */; };
+		35364F4A1D1BAFC400A79579 /* XXXViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35364F491D1BAFC400A79579 /* XXXViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		35364F3E1D1BAE1A00A79579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35364F441D1BAE2600A79579 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		35364F451D1BAE2600A79579 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
+		35364F481D1BAFC400A79579 /* XXXViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XXXViewController.h; sourceTree = "<group>"; };
+		35364F491D1BAFC400A79579 /* XXXViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XXXViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +66,7 @@
 				35364F391D1BAE1A00A79579 /* Assets.xcassets */,
 				35364F3B1D1BAE1A00A79579 /* LaunchScreen.storyboard */,
 				35364F3E1D1BAE1A00A79579 /* Info.plist */,
+				35364F471D1BAF8D00A79579 /* XLsn0w */,
 				35364F331D1BAE1A00A79579 /* Supporting Files */,
 			);
 			path = XLsn0w;
@@ -74,6 +78,15 @@
 				35364F341D1BAE1A00A79579 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		35364F471D1BAF8D00A79579 /* XLsn0w */ = {
+			isa = PBXGroup;
+			children = (
+				35364F481D1BAFC400A79579 /* XXXViewController.h */,
+				35364F491D1BAFC400A79579 /* XXXViewController.m */,
+			);
+			path = XLsn0w;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -146,6 +159,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				35364F461D1BAE2600A79579 /* XLsn0wViewController.m in Sources */,
+				35364F4A1D1BAFC400A79579 /* XXXViewController.m in Sources */,
 				35364F381D1BAE1A00A79579 /* AppDelegate.m in Sources */,
 				35364F351D1BAE1A00A79579 /* main.m in Sources */,
 			);
@@ -290,6 +304,7 @@
 				35364F431D1BAE1A00A79579 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
