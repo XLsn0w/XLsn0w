@@ -12,7 +12,6 @@
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
 		3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */; };
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
-		35CC3C861D1BB97900127D3C /* MBProgressHUD+ShowText.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C591D1BB97900127D3C /* MBProgressHUD+ShowText.m */; };
 		35CC3C871D1BB97900127D3C /* NSArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */; };
 		35CC3C881D1BB97900127D3C /* NSDate+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5D1D1BB97900127D3C /* NSDate+XL.m */; };
 		35CC3C891D1BB97900127D3C /* NSMutableArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C5F1D1BB97900127D3C /* NSMutableArray+XL.m */; };
@@ -47,8 +46,6 @@
 		3598760D1D1BA44200C2EC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359876131D1BA44F00C2EC10 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
-		35CC3C581D1BB97900127D3C /* MBProgressHUD+ShowText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowText.h"; sourceTree = "<group>"; };
-		35CC3C591D1BB97900127D3C /* MBProgressHUD+ShowText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowText.m"; sourceTree = "<group>"; };
 		35CC3C5A1D1BB97900127D3C /* NSArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XL.h"; sourceTree = "<group>"; };
 		35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+XL.m"; sourceTree = "<group>"; };
 		35CC3C5C1D1BB97900127D3C /* NSDate+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+XL.h"; sourceTree = "<group>"; };
@@ -149,8 +146,6 @@
 		35CC3C571D1BB97900127D3C /* XLsn0w */ = {
 			isa = PBXGroup;
 			children = (
-				35CC3C581D1BB97900127D3C /* MBProgressHUD+ShowText.h */,
-				35CC3C591D1BB97900127D3C /* MBProgressHUD+ShowText.m */,
 				35CC3C5A1D1BB97900127D3C /* NSArray+XL.h */,
 				35CC3C5B1D1BB97900127D3C /* NSArray+XL.m */,
 				35CC3C5C1D1BB97900127D3C /* NSDate+XL.h */,
@@ -271,7 +266,6 @@
 				35CC3C931D1BB97900127D3C /* UIViewController+SafeTransition.m in Sources */,
 				35CC3C8B1D1BB97900127D3C /* UIButton+XLsn0w.m in Sources */,
 				359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */,
-				35CC3C861D1BB97900127D3C /* MBProgressHUD+ShowText.m in Sources */,
 				35CC3C8E1D1BB97900127D3C /* UIImage+XLsn0w.m in Sources */,
 				35CC3C8C1D1BB97900127D3C /* UIColor+XLsn0w.m in Sources */,
 				35CC3C981D1BB97900127D3C /* XLMethods.m in Sources */,
