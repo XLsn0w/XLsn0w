@@ -29,7 +29,6 @@
 		35CC3C951D1BB97900127D3C /* XLCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C771D1BB97900127D3C /* XLCollectionViewCell.m */; };
 		35CC3C961D1BB97900127D3C /* XLCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */; };
 		35CC3C971D1BB97900127D3C /* XLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C7B1D1BB97900127D3C /* XLDateTime.m */; };
-		35CC3C981D1BB97900127D3C /* XLMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C7D1D1BB97900127D3C /* XLMethods.m */; };
 		35CC3C991D1BB97900127D3C /* XLNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */; };
 		35CC3C9A1D1BB97900127D3C /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C811D1BB97900127D3C /* XLPickerView.m */; };
 		35CC3C9B1D1BB97900127D3C /* XLSelectSheet.m in Sources */ = {isa = PBXBuildFile; fileRef = 35CC3C831D1BB97900127D3C /* XLSelectSheet.m */; };
@@ -80,8 +79,6 @@
 		35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCollectionViewController.m; sourceTree = "<group>"; };
 		35CC3C7A1D1BB97900127D3C /* XLDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDateTime.h; sourceTree = "<group>"; };
 		35CC3C7B1D1BB97900127D3C /* XLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDateTime.m; sourceTree = "<group>"; };
-		35CC3C7C1D1BB97900127D3C /* XLMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMethods.h; sourceTree = "<group>"; };
-		35CC3C7D1D1BB97900127D3C /* XLMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMethods.m; sourceTree = "<group>"; };
 		35CC3C7E1D1BB97900127D3C /* XLNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavigationController.h; sourceTree = "<group>"; };
 		35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavigationController.m; sourceTree = "<group>"; };
 		35CC3C801D1BB97900127D3C /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
@@ -180,8 +177,6 @@
 				35CC3C791D1BB97900127D3C /* XLCollectionViewController.m */,
 				35CC3C7A1D1BB97900127D3C /* XLDateTime.h */,
 				35CC3C7B1D1BB97900127D3C /* XLDateTime.m */,
-				35CC3C7C1D1BB97900127D3C /* XLMethods.h */,
-				35CC3C7D1D1BB97900127D3C /* XLMethods.m */,
 				35CC3C7E1D1BB97900127D3C /* XLNavigationController.h */,
 				35CC3C7F1D1BB97900127D3C /* XLNavigationController.m */,
 				35CC3C801D1BB97900127D3C /* XLPickerView.h */,
@@ -268,7 +263,6 @@
 				359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */,
 				35CC3C8E1D1BB97900127D3C /* UIImage+XLsn0w.m in Sources */,
 				35CC3C8C1D1BB97900127D3C /* UIColor+XLsn0w.m in Sources */,
-				35CC3C981D1BB97900127D3C /* XLMethods.m in Sources */,
 				35CC3C871D1BB97900127D3C /* NSArray+XL.m in Sources */,
 				35CC3C9B1D1BB97900127D3C /* XLSelectSheet.m in Sources */,
 				35CC3C991D1BB97900127D3C /* XLNavigationController.m in Sources */,
