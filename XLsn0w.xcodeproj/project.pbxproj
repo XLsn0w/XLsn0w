@@ -12,7 +12,6 @@
 		35364F3A1D1BAE1A00A79579 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35364F391D1BAE1A00A79579 /* Assets.xcassets */; };
 		35364F3D1D1BAE1A00A79579 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35364F3B1D1BAE1A00A79579 /* LaunchScreen.storyboard */; };
 		35364F461D1BAE2600A79579 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35364F451D1BAE2600A79579 /* XLsn0wViewController.m */; };
-		35B792431D1BB27B003335CC /* ChineseCalendar.sqlite in Resources */ = {isa = PBXBuildFile; fileRef = 35B792031D1BB27B003335CC /* ChineseCalendar.sqlite */; };
 		35B792441D1BB27B003335CC /* MBProgressHUD+ShowText.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B792051D1BB27B003335CC /* MBProgressHUD+ShowText.m */; };
 		35B792451D1BB27B003335CC /* NSArray+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B792071D1BB27B003335CC /* NSArray+XL.m */; };
 		35B792461D1BB27B003335CC /* NSDate+XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35B792091D1BB27B003335CC /* NSDate+XL.m */; };
@@ -57,7 +56,6 @@
 		35364F3E1D1BAE1A00A79579 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		35364F441D1BAE2600A79579 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		35364F451D1BAE2600A79579 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
-		35B792031D1BB27B003335CC /* ChineseCalendar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChineseCalendar.sqlite; sourceTree = "<group>"; };
 		35B792041D1BB27B003335CC /* MBProgressHUD+ShowText.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "MBProgressHUD+ShowText.h"; sourceTree = "<group>"; };
 		35B792051D1BB27B003335CC /* MBProgressHUD+ShowText.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "MBProgressHUD+ShowText.m"; sourceTree = "<group>"; };
 		35B792061D1BB27B003335CC /* NSArray+XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+XL.h"; sourceTree = "<group>"; };
@@ -120,7 +118,6 @@
 		35B7923F1D1BB27B003335CC /* XLSelectSheet.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSelectSheet.m; sourceTree = "<group>"; };
 		35B792411D1BB27B003335CC /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		35B792421D1BB27B003335CC /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
-		35B792631D1BB35A003335CC /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
 		BFBD7F07A9ED8CB65BB13C92 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		C1CA3ACC7589A97DD3667BCF /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		FBDADB940F697A07AA1DF8CF /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -183,8 +180,6 @@
 		35364F471D1BAF8D00A79579 /* XLsn0w */ = {
 			isa = PBXGroup;
 			children = (
-				35B792631D1BB35A003335CC /* XLsn0w.h */,
-				35B792031D1BB27B003335CC /* ChineseCalendar.sqlite */,
 				35B792041D1BB27B003335CC /* MBProgressHUD+ShowText.h */,
 				35B792051D1BB27B003335CC /* MBProgressHUD+ShowText.m */,
 				35B792061D1BB27B003335CC /* NSArray+XL.h */,
@@ -330,7 +325,6 @@
 			files = (
 				35364F3A1D1BAE1A00A79579 /* Assets.xcassets in Resources */,
 				35364F3D1D1BAE1A00A79579 /* LaunchScreen.storyboard in Resources */,
-				35B792431D1BB27B003335CC /* ChineseCalendar.sqlite in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
