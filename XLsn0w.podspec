@@ -13,6 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "1.1.1" }
   s.source_files  = "XLsn0wFramework/**/*.{h,m}"
+  s.public_header_files = "XLsn0wFramework/**/*.{h}"
   s.requires_arc = true
   s.dependency "AFNetworking", "~> 3.1.0"
   s.dependency "FMDB", "~> 2.6.2"
