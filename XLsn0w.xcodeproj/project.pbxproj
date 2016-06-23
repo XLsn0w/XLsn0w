@@ -536,7 +536,7 @@
 				INFOPLIST_FILE = XLsn0w/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.skuo.XLsn0w;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -549,7 +549,7 @@
 				INFOPLIST_FILE = XLsn0w/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.skuo.XLsn0w;
+				PRODUCT_BUNDLE_IDENTIFIER = com.xlsn0w.XLsn0w;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
