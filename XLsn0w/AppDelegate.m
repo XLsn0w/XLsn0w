@@ -1,10 +1,3 @@
-//
-//  AppDelegate.m
-//  XLsn0w
-//
-//  Created by XLsn0w on 16/6/23.
-//  Copyright © 2016年 XLsn0w. All rights reserved.
-//
 
 #import "AppDelegate.h"
 #import "XLsn0wViewController.h"
@@ -14,7 +7,6 @@
 @end
 
 @implementation AppDelegate
-
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];

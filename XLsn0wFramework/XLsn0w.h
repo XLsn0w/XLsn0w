@@ -33,6 +33,7 @@
 #import "XLPickerView.h"
 #import "XLCalendarView.h"
 #import "XLCalendar.h"
+#import "NSDictionary+XLsn0w.h"
 
 /* [create podspec with custom Kit push to CocoaPods]
  

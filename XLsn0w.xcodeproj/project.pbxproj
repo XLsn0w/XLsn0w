@@ -42,6 +42,7 @@
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
 		3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */; };
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
+		35F36BA71D1CDA70002F16D1 /* NSDictionary+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F36BA61D1CDA70002F16D1 /* NSDictionary+XLsn0w.m */; };
 		F059AEEA7C221137E0C88D87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D6A043485232A2D1E7029 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -117,6 +118,8 @@
 		359876131D1BA44F00C2EC10 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
 		35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChineseCalendar.sqlite; sourceTree = "<group>"; };
+		35F36BA51D1CDA70002F16D1 /* NSDictionary+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDictionary+XLsn0w.h"; sourceTree = "<group>"; };
+		35F36BA61D1CDA70002F16D1 /* NSDictionary+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDictionary+XLsn0w.m"; sourceTree = "<group>"; };
 		403D6A043485232A2D1E7029 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		691FDEB21C53CB6354F2EDDB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73CEE42F82173398B22BD2D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -167,6 +170,8 @@
 				35158A201D1BD7BC0068AFD6 /* UIView+XLsn0w.m */,
 				35158A211D1BD7BC0068AFD6 /* UIViewController+SafeTransition.h */,
 				35158A221D1BD7BC0068AFD6 /* UIViewController+SafeTransition.m */,
+				35F36BA51D1CDA70002F16D1 /* NSDictionary+XLsn0w.h */,
+				35F36BA61D1CDA70002F16D1 /* NSDictionary+XLsn0w.m */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -448,6 +453,7 @@
 				35158A6B1D1BD8350068AFD6 /* XLDBModel.m in Sources */,
 				35158A8D1D1BD9130068AFD6 /* XLNavigationController.m in Sources */,
 				35158A851D1BD8C50068AFD6 /* XLSelectSheet.m in Sources */,
+				35F36BA71D1CDA70002F16D1 /* NSDictionary+XLsn0w.m in Sources */,
 				35158A2C1D1BD7BC0068AFD6 /* UILabel+XLsn0w.m in Sources */,
 				35158A2F1D1BD7BC0068AFD6 /* UITabBarController+NavTabBarItem.m in Sources */,
 				35158A311D1BD7BC0068AFD6 /* UIViewController+SafeTransition.m in Sources */,
