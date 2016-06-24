@@ -1,7 +1,11 @@
 
 #import <UIKit/UIKit.h>
 
-@interface UIImageView (XLPlaceholder)
+@interface UIImageView (XLsn0w)
+
+@end
+
+@interface UIImageView (Placeholder)
 
 /**
  *  Set a web-cache imageView can use an scale placeholder image;

@@ -256,7 +256,6 @@
 
 @end
 
-
 @implementation UIView (XLScreenshot)
 
 - (UIImage *)xlsn0w_screenshot {

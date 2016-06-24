@@ -1,12 +1,16 @@
 
-#import "UIImageView+XLPlaceholder.h"
+#import "UIImageView+XLsn0w.h"
 #import "UIImageView+WebCache.h"
 
-@implementation UIImageView (XLPlaceholder)
+@implementation UIImageView (XLsn0w)
+
+@end
+
+@implementation UIImageView (Placeholder)
 
 - (void)sd_setImageWithURL:(NSURL *)url placeholderImageScale:(UIImage *)placeholder {
     placeholder = [self scaleImage:placeholder];
-    [self sd_setImageWithURL:url placeholderImage:placeholder]; 
+    [self sd_setImageWithURL:url placeholderImage:placeholder];
 }
 
 - (UIImage *)scaleImage:(UIImage *)originImage {
