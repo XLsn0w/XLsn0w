@@ -7,7 +7,7 @@
 
 @interface NSDictionary (StringToDictionary)
 
-+ (nonnull NSDictionary *)transformStringToDictionaryWithStr:(nonnull NSString *)string;
++ (nonnull NSDictionary *)xl_stringToDictionaryWithStr:(nonnull NSString *)string;
 
 @end
 
@@ -18,7 +18,7 @@
  *
  *  @return 字典
  */
-+ (nonnull NSDictionary *)dictionaryFromModel;
++ (nonnull NSDictionary *)xl_dictionaryFromModel;
 
 /**
  *  带model的数组或字典转字典
@@ -27,6 +27,6 @@
  *
  *  @return 字典
  */
-+ (nonnull id)idFromObject:(nonnull id)object;
++ (nonnull id)xl_idFromObject:(nonnull id)object;
 
 @end

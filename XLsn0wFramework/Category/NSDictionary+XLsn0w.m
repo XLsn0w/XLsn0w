@@ -9,7 +9,7 @@
 @implementation NSDictionary (StringToDictionary)
 
 //字符串转字典
-+ (NSDictionary *)transformStringToDictionaryWithStr:(NSString *)string {
++ (NSDictionary *)xl_stringToDictionaryWithStr:(NSString *)string {
     NSData *string2Data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *string2Dictionary = [NSJSONSerialization JSONObjectWithData:string2Data
                                                                       options:NSJSONReadingMutableContainers
@@ -21,7 +21,7 @@
 
 @implementation NSObject (ModelToDictionary)
 
-+ (nonnull NSDictionary *)dictionaryFromModel {
++ (nonnull NSDictionary *)xl_dictionaryFromModel {
     unsigned int count = 0;
     
     objc_property_t *properties = class_copyPropertyList([self class], &count);
@@ -41,11 +41,11 @@
             else if ([value isKindOfClass:[NSArray class]]
                      || [value isKindOfClass:[NSDictionary class]]) {
                 // 数组类型或字典类型
-                [dict setObject:[self idFromObject:value] forKey:key];
+                [dict setObject:[self xl_idFromObject:value] forKey:key];
             }
             else {
                 // 如果model里有其他自定义模型，则递归将其转换为字典
-                [dict setObject:[value dictionaryFromModel] forKey:key];
+                [dict setObject:[value xl_dictionaryFromModel] forKey:key];
             }
         } else if (key && value == nil) {
             // 如果当前对象该值为空，设为nil。在字典中直接加nil会抛异常，需要加NSNull对象
@@ -57,7 +57,7 @@
     return dict;
 }
 
-+ (nonnull id)idFromObject:(nonnull id)object {
++ (nonnull id)xl_idFromObject:(nonnull id)object {
     if ([object isKindOfClass:[NSArray class]]) {
         if (object != nil && [object count] > 0) {
             NSMutableArray *array = [NSMutableArray array];
@@ -70,11 +70,11 @@
                 // 字典或数组需递归处理
                 else if ([obj isKindOfClass:[NSDictionary class]]
                          || [obj isKindOfClass:[NSArray class]]) {
-                    [array addObject:[self idFromObject:obj]];
+                    [array addObject:[self xl_idFromObject:obj]];
                 }
                 // model转化为字典
                 else {
-                    [array addObject:[obj dictionaryFromModel]];
+                    [array addObject:[obj xl_dictionaryFromModel]];
                 }
             }
             return array;
@@ -95,11 +95,11 @@
                 // 字典或数组需递归处理
                 else if ([object[key] isKindOfClass:[NSArray class]]
                          || [object[key] isKindOfClass:[NSDictionary class]]) {
-                    [dic setObject:[self idFromObject:object[key]] forKey:key];
+                    [dic setObject:[self xl_idFromObject:object[key]] forKey:key];
                 }
                 // model转化为字典
                 else {
-                    [dic setObject:[object[key] dictionaryFromModel] forKey:key];
+                    [dic setObject:[object[key] xl_dictionaryFromModel] forKey:key];
                 }
             }
             return dic;
