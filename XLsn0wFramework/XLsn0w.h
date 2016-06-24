@@ -23,7 +23,6 @@
 #import "UIViewController+SafeTransition.h"
 #import "XLNavigationController.h"
 #import "XLMethods.h"
-#import "MBProgressHUD+ShowText.h"
 #import "XLPickerView.h"
 #import "XLDBModel.h"
 #import "XLDBModelManager.h"
