@@ -20,15 +20,20 @@
 - (void)createDataBaseTableName:(NSString *)tableName;
 
 //(增)插入
-- (void)insertModel:(User *)model;
+- (void)insertUser:(User *)user;
 //(删)删除
-- (void)deletaWithNumber:(NSString *)number;
+- (void)deletaWithPrimaryKeyId:(NSString *)primaryKeyId;
+
 //(改)更新
-- (void)updateImageData:(User *)model;
-- (void)updateName:(User *)model;
-- (void)updateAge:(User *)model;
-- (void)updatePhoneNumber:(User *)model;
-- (void)updateAddress:(User *)model;
+- (void)updateImageDataOfUser:(User *)user;
+- (void)updateUserNameOfUser:(User *)user;
+- (void)updatePasswordOfUser:(User *)user;
+- (void)updateAgeOfUser:(User *)user;
+- (void)updateBirthdayOfUser:(User *)user;
+- (void)updateHeightOfUser:(User *)user;
+- (void)updateWeightOfUser:(User *)user;
+- (void)updatePhoneNumberOfUser:(User *)user;
+- (void)updateAddressOfUser:(User *)user;
 
 //(查)获取全部数据
 - (NSMutableArray *)queryDataBase;

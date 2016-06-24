@@ -179,14 +179,8 @@
 		35158A601D1BD8350068AFD6 /* Database */ = {
 			isa = PBXGroup;
 			children = (
-				35158A611D1BD8350068AFD6 /* User.h */,
-				35158A621D1BD8350068AFD6 /* User.m */,
-				35158A631D1BD8350068AFD6 /* XLDataBase.h */,
-				35158A641D1BD8350068AFD6 /* XLDataBase.m */,
-				35158A651D1BD8350068AFD6 /* XLDBModel.h */,
-				35158A661D1BD8350068AFD6 /* XLDBModel.m */,
-				35158A671D1BD8350068AFD6 /* XLDBModelManager.h */,
-				35158A681D1BD8350068AFD6 /* XLDBModelManager.m */,
+				358E4C3B1D1D2A0200D3C8A4 /* XLDataBase */,
+				358E4C3C1D1D2A2B00D3C8A4 /* XLDBModel */,
 			);
 			path = Database;
 			sourceTree = "<group>";
@@ -253,6 +247,28 @@
 				35158A041D1BD7BC0068AFD6 /* Category */,
 			);
 			path = XLsn0wFramework;
+			sourceTree = "<group>";
+		};
+		358E4C3B1D1D2A0200D3C8A4 /* XLDataBase */ = {
+			isa = PBXGroup;
+			children = (
+				35158A611D1BD8350068AFD6 /* User.h */,
+				35158A621D1BD8350068AFD6 /* User.m */,
+				35158A631D1BD8350068AFD6 /* XLDataBase.h */,
+				35158A641D1BD8350068AFD6 /* XLDataBase.m */,
+			);
+			name = XLDataBase;
+			sourceTree = "<group>";
+		};
+		358E4C3C1D1D2A2B00D3C8A4 /* XLDBModel */ = {
+			isa = PBXGroup;
+			children = (
+				35158A651D1BD8350068AFD6 /* XLDBModel.h */,
+				35158A661D1BD8350068AFD6 /* XLDBModel.m */,
+				35158A671D1BD8350068AFD6 /* XLDBModelManager.h */,
+				35158A681D1BD8350068AFD6 /* XLDBModelManager.m */,
+			);
+			name = XLDBModel;
 			sourceTree = "<group>";
 		};
 		359875F61D1BA44200C2EC10 = {
