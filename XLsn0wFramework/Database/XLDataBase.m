@@ -182,10 +182,10 @@
 }
 
 //删除一条数据
-- (void)deletaWithNumber:(NSString *)number {
+- (void)deletaWithPrimaryKeyId:(NSString *)primaryKeyId {
     if ([_fmdb open]) {
         NSString *deleteDatabase = [NSString stringWithFormat:@"delete from XLDataBase where primaryKeyId = ?"];
-        BOOL result = [_fmdb executeUpdate:deleteDatabase, number];
+        BOOL result = [_fmdb executeUpdate:deleteDatabase, primaryKeyId];
         if (result) {
             NSLog(@"删除DataBase成功");
         } else {
