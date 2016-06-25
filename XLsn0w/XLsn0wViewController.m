@@ -10,7 +10,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //to do
+    self.navigationItem.title = @"XLsn0w Framework";
+    self.navigationController.navigationBar.barTintColor = [UIColor blueColor];
+    [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
 @end

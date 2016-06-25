@@ -13,7 +13,9 @@
     // Override point for customization after application launch.
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
-    self.window.rootViewController = [XLsn0wViewController new];
+    XLsn0wViewController *xlsn0wViewController = [[XLsn0wViewController alloc] init];
+    UINavigationController *xlsn0wNavigationController = [[UINavigationController alloc] initWithRootViewController:xlsn0wViewController];
+    self.window.rootViewController = xlsn0wNavigationController;
     return YES;
 }
 

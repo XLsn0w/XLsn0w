@@ -1,7 +1,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface NSMutableArray (XL)
+@interface NSMutableArray (XLsn0w)
 
 - (void)moveObjectFromIndex:(NSUInteger)from toIndex:(NSUInteger)to;
 
