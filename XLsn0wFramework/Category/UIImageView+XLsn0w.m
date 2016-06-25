@@ -1,10 +1,11 @@
 
 #import "UIImageView+XLsn0w.h"
-#import "UIImageView+WebCache.h"
 
 @implementation UIImageView (XLsn0w)
 
 @end
+
+#import "UIImageView+WebCache.h"
 
 @implementation UIImageView (Placeholder)
 

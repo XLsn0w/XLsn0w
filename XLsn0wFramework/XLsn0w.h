@@ -4,6 +4,9 @@
 #import <FMDB.h>
 #import <MBProgressHUD.h>
 #import <UIImageView+WebCache.h>
+#import "XLNetworkingManager.h"
+#import "XLDataBase.h"
+#import "User.h"
 #import "NSString+XL.h"
 #import "NSArray+XL.h"
 #import "NSDate+XL.h"
@@ -11,29 +14,21 @@
 #import "UILabel+XLsn0w.h"
 #import "UIButton+XLsn0w.h"
 #import "UIImage+XLsn0w.h"
-#import "UIImageView+XLPlaceholder.h"
+#import "UIImageView+XLsn0w.h"
 #import "UIColor+XLsn0w.h"
-#import "UITabBarController+NavTabBarItem.h"
-#import "UINavigationController+HandleNavBack.h"
 #import "XLTextField.h"
 #import "XLSelectSheet.h"
-#import "XLNetworkingManager.h"
-#import "XLCollectionViewController.h"
-#import "XLCollectionViewCell.h"
-#import "UIViewController+SafeTransition.h"
-#import "XLNavigationController.h"
 #import "XLMethods.h"
 #import "XLPickerView.h"
-#import "XLDBModel.h"
-#import "XLDBModelManager.h"
-#import "XLDataBase.h"
-#import "User.h"
 #import "XLDateTime.h"
 #import "NSMutableArray+XL.h"
 #import "XLPickerView.h"
 #import "XLCalendarView.h"
 #import "XLCalendar.h"
 #import "NSDictionary+XLsn0w.h"
+#import "UITabBarController+XLsn0w.h"
+#import "UIViewController+XLsn0w.h"
+#import "UINavigationBar+XLsn0w.h"
 
 /* [create podspec with custom Kit push to CocoaPods]
  

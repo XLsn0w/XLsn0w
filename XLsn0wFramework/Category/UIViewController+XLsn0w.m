@@ -1,5 +1,10 @@
 
-#import "UINavigationController+HandleNavBack.h"
+#import "UIViewController+XLsn0w.h"
+
+@implementation UIViewController (XLsn0w)
+
+@end
+
 #import <objc/runtime.h>
 #define kOriginDelegate @"kOriginDelegate"
 
@@ -11,7 +16,7 @@
 
 @end
 
-@implementation UINavigationController (HandleNavBack) 
+@implementation UINavigationController (HandleNavBack)
 
 + (void)load {
     static dispatch_once_t onceToken;

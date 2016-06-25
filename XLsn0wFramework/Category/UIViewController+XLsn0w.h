@@ -1,5 +1,10 @@
 
 #import <UIKit/UIKit.h>
+
+@interface UIViewController (XLsn0w)
+
+@end
+
 /**
  *  @author XLsn0w, 06-01
  *

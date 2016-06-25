@@ -1,6 +1,10 @@
 
 #import <UIKit/UIKit.h>
 
+@interface UITabBarController (XLsn0w)
+
+@end
+
 @interface UITabBarController (NavTabBarItem)
 /**
  *  @author XLsn0w
@@ -15,10 +19,10 @@
  *  @param tabBarController  self 即当前控制器tabBarController
  *
  */
-+ (void)navigationControllerInitWithRootViewController:(UIViewController *)viewController
-                                       tabBarItemTitle:(NSString *)title
-                                   tabBarItemImageName:(NSString *)imageName
-                           tabBarItemSelectedImageName:(NSString *)selectedImageName
-                                   addTabBarController:(UITabBarController *)tabBarController;
++ (void)addChildNavigationControllerWithRootViewController:(UIViewController *)rootViewController
+                                           tabBarItemTitle:(NSString *)title
+                                       tabBarItemImageName:(NSString *)imageName
+                               tabBarItemSelectedImageName:(NSString *)selectedImageName
+                                          tabBarController:(UITabBarController *)tabBarController;
 
 @end

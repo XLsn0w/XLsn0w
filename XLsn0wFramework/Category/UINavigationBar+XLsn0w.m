@@ -1,5 +1,10 @@
 
-#import "UINavigationBar+BarStatus.h"
+#import "UINavigationBar+XLsn0w.h"
+
+@implementation UINavigationBar (XLsn0w)
+
+@end
+
 #import <objc/runtime.h>
 
 @implementation UINavigationBar (BarStatus)
@@ -36,7 +41,7 @@ static char overlayKey;
     
     UIView *titleView = [self valueForKey:@"_titleView"];
     titleView.alpha = alpha;
-//    when viewController first load, the titleView maybe nil
+    //    when viewController first load, the titleView maybe nil
     [[self subviews] enumerateObjectsUsingBlock:^(UIView *view, NSUInteger idx, BOOL *stop) {
         if ([view isKindOfClass:NSClassFromString(@"UINavigationItemView")]) {
             view.alpha = alpha;

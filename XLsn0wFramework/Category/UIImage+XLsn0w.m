@@ -52,15 +52,13 @@
 
 #import <objc/runtime.h>
 
-@implementation UIImage (XLImage)
+@implementation UIImage (imageNamed)
 /**
  定义完毕新方法后,需要弄清楚什么时候实现与系统的方法交互?
  答 : 既然是给系统的方法添加额外的功能,换句话说,我们以后在开发中都是使用自己定义的方法,取代系统的方法,所以,当程序一启动,就要求能使用自己定义的功能方法.说这里:我们必须要弄明白一下两个方法 :
  +(void)initialize(当类第一次被调用的时候就会调用该方法,整个程序运行中只会调用一次)
  + (void)load(当程序启动的时候就会调用该方法,换句话说,只要程序一启动就会调用load方法,整个程序运行中只会调用一次)
  */
-
-
 
 + (void)load {
     /*
@@ -107,7 +105,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
 
 #pragma mark - Border
 - (CGFloat)xl_borderWidth {
-    NSNumber *borderWidth = objc_getAssociatedObject(self, s_hyb_image_borderWidthKey);
+    NSNumber *borderWidth = objc_getAssociatedObject(self, image_borderWidthKey);
     
     if ([borderWidth respondsToSelector:@selector(doubleValue)]) {
         return borderWidth.doubleValue;
@@ -117,10 +115,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
 }
 
 - (void)setBorderWidth:(CGFloat)borderWidth {
-    objc_setAssociatedObject(self,
-                             image_borderWidthKey,
-                             @(xl_borderWidth),
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, image_borderWidthKey, @(borderWidth), OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (CGFloat)xl_pathWidth {
@@ -134,54 +129,41 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
 }
 
 - (void)setPathWidth:(CGFloat)pathWidth {
-    objc_setAssociatedObject(self,
-                             image_pathWidthKey,
-                             @(xl_pathWidth),
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self,image_pathWidthKey,@(pathWidth),OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 - (UIColor *)pathColor {
     UIColor *color = objc_getAssociatedObject(self, image_pathColorKey);
-    
     if (color) {
         return color;
     }
-    
     return [UIColor whiteColor];
 }
 
 - (void)setPathColor:(UIColor *)pathColor {
-    objc_setAssociatedObject(self,
-                             image_pathColorKey,
-                             xl_pathColor,
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, image_pathColorKey, pathColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
     
 }
 
 - (UIColor *)borderColor {
     UIColor *color = objc_getAssociatedObject(self, image_borderColorKey);
-    
     if (color) {
         return color;
     }
-    
     return [UIColor lightGrayColor];
 }
 
 - (void)setBorderColor:(UIColor *)borderColor {
-    objc_setAssociatedObject(self,
-                             image_borderColorKey,
-                             xl_borderColor,
-                             OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+    objc_setAssociatedObject(self, image_borderColorKey, borderColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
 #pragma mark - Clip
 - (UIImage *)xl_clipToSize:(CGSize)targetSize {
-    return [self hyb_clipToSize:targetSize isEqualScale:YES];
+    return [self xl_clipToSize:targetSize isEqualScale:YES];
 }
 
 - (UIImage *)xl_clipToSize:(CGSize)targetSize isEqualScale:(BOOL)isEqualScale {
-    return [self hyb_private_clipImageToSize:targetSize
+    return [self xl_private_clipImageToSize:targetSize
                                 cornerRadius:0
                                      corners:UIRectCornerAllCorners
                              backgroundColor:[UIColor whiteColor]
@@ -193,7 +175,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
                cornerRadius:(CGFloat)cornerRadius
             backgroundColor:(UIColor *)backgroundColor
                isEqualScale:(BOOL)isEqualScale {
-    return [self hyb_private_clipImageToSize:targetSize
+    return [self xl_private_clipImageToSize:targetSize
                                 cornerRadius:cornerRadius
                                      corners:UIRectCornerAllCorners
                              backgroundColor:backgroundColor
@@ -203,7 +185,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
 
 - (UIImage *)xl_clipToSize:(CGSize)targetSize
                cornerRadius:(CGFloat)cornerRadius {
-    return [self hyb_clipToSize:targetSize
+    return [self xl_clipToSize:targetSize
                    cornerRadius:cornerRadius
                 backgroundColor:[UIColor whiteColor]
                    isEqualScale:YES];
@@ -214,7 +196,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
                     corners:(UIRectCorner)corners
             backgroundColor:(UIColor *)backgroundColor
                isEqualScale:(BOOL)isEqualScale {
-    return [self hyb_private_clipImageToSize:targetSize
+    return [self xl_private_clipImageToSize:targetSize
                                 cornerRadius:cornerRadius
                                      corners:corners
                              backgroundColor:backgroundColor
@@ -261,18 +243,18 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
                                     isCircle:isCircle];
 }
 
-+ (UIImage *)hyb_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize cornerRadius:(CGFloat)cornerRadius {
-    return [self hyb_imageWithColor:color
++ (UIImage *)xl_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize cornerRadius:(CGFloat)cornerRadius {
+    return [self xl_imageWithColor:color
                              toSize:targetSize
                        cornerRadius:cornerRadius
                     backgroundColor:[UIColor whiteColor]];
 }
 
-+ (UIImage *)hyb_imageWithColor:(UIColor *)color
++ (UIImage *)xl_imageWithColor:(UIColor *)color
                          toSize:(CGSize)targetSize
                    cornerRadius:(CGFloat)cornerRadius
                 backgroundColor:(UIColor *)backgroundColor {
-    return [self hyb_imageWithColor:color
+    return [self xl_imageWithColor:color
                              toSize:targetSize
                        cornerRadius:cornerRadius
                     backgroundColor:backgroundColor
@@ -280,7 +262,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
                         borderWidth:0];
 }
 
-+ (UIImage *)hyb_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize cornerRadius:(CGFloat)cornerRadius backgroundColor:(UIColor *)backgroundColor borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth {
++ (UIImage *)xl_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize cornerRadius:(CGFloat)cornerRadius backgroundColor:(UIColor *)backgroundColor borderColor:(UIColor *)borderColor borderWidth:(CGFloat)borderWidth {
     UIGraphicsBeginImageContextWithOptions(targetSize, cornerRadius == 0, [UIScreen mainScreen].scale);
     
     CGRect targetRect = (CGRect){0, 0, targetSize.width, targetSize.height};
@@ -321,12 +303,12 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
     return finalImage;
 }
 
-+ (UIImage *)hyb_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize {
-    return [self hyb_imageWithColor:color toSize:targetSize cornerRadius:0];
++ (UIImage *)xl_imageWithColor:(UIColor *)color toSize:(CGSize)targetSize {
+    return [self xl_imageWithColor:color toSize:targetSize cornerRadius:0];
 }
 
 #pragma mark - Private
-- (UIImage *)hyb_private_clipImageToSize:(CGSize)targetSize
+- (UIImage *)xl_private_clipImageToSize:(CGSize)targetSize
                             cornerRadius:(CGFloat)cornerRadius
                                  corners:(UIRectCorner)corners
                          backgroundColor:(UIColor *)backgroundColor
@@ -352,8 +334,8 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
         targetRect = (CGRect){0, 0, width, width};
     }
     
-    CGFloat pathWidth = self.hyb_pathWidth;
-    CGFloat borderWidth = self.hyb_borderWidth;
+    CGFloat pathWidth = self.xl_pathWidth;
+    CGFloat borderWidth = self.xl_borderWidth;
     
     if (pathWidth > 0 && borderWidth > 0 && (isCircle || cornerRadius == 0)) {
         UIGraphicsBeginImageContextWithOptions(targetRect.size,
@@ -364,8 +346,8 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
             CGContextFillRect(UIGraphicsGetCurrentContext(), targetRect);
         }
         
-        UIColor *borderColor = self.hyb_borderColor;
-        UIColor *pathColor = self.hyb_pathColor;
+        UIColor *borderColor = self.xl_borderColor;
+        UIColor *pathColor = self.xl_pathColor;
         
         CGRect rect = targetRect;
         CGRect rectImage = rect;
@@ -432,8 +414,8 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
             CGContextFillRect(UIGraphicsGetCurrentContext(), targetRect);
         }
         
-        UIColor *borderColor = self.hyb_borderColor;
-        UIColor *pathColor = self.hyb_pathColor;
+        UIColor *borderColor = self.xl_borderColor;
+        UIColor *pathColor = self.xl_pathColor;
         
         CGRect rect = targetRect;
         CGRect rectImage = rect;
@@ -486,7 +468,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
             CGContextStrokePath(ctx);
         }
     } else if (pathWidth <= 0 && borderWidth > 0 && (cornerRadius > 0 || isCircle)) {
-        UIColor *borderColor = self.hyb_borderColor;
+        UIColor *borderColor = self.xl_borderColor;
         
         CGRect rect = targetRect;
         CGRect rectImage = rect;
@@ -495,7 +477,7 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
         rectImage.size.width -= borderWidth;
         rectImage.size.height -= borderWidth;
         
-        UIImage *image = [self _hyb_scaleToSize:rectImage.size backgroundColor:backgroundColor];
+        UIImage *image = [self xl_scaleToSize:rectImage.size backgroundColor:backgroundColor];
         UIGraphicsBeginImageContextWithOptions(targetRect.size,
                                                NO,
                                                [UIScreen mainScreen].scale);
@@ -546,16 +528,11 @@ static const char *image_pathWidthKey = "image_pathWidthKey";
     
     UIImage *finalImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    
-    //  NSLog(@"time:%f  originalImageSize: %@, targetSize: %@",
-    //        CFAbsoluteTimeGetCurrent() - timerval,
-    //        NSStringFromCGSize(imgSize),
-    //        NSStringFromCGSize(targetSize));
-    
+
     return finalImage;
 }
 
-- (UIImage *)_hyb_scaleToSize:(CGSize)size backgroundColor:(UIColor *)backgroundColor {
+- (UIImage *)xl_scaleToSize:(CGSize)size backgroundColor:(UIColor *)backgroundColor {
     CGRect rect = CGRectMake(0, 0, size.width, size.height);
     UIGraphicsBeginImageContextWithOptions(size, NO, UIScreen.mainScreen.scale);
     
