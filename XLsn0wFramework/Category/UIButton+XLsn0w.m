@@ -5,7 +5,7 @@
 
 @end
 
-@implementation UIButton (XLBadgeView)
+@implementation UIButton (BadgeView)
 
 - (UIView *)xlsn0w_showBadgeValue:(NSString *)strBadgeValue {
     UITabBar *tabBar = [[UITabBar alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 50)];

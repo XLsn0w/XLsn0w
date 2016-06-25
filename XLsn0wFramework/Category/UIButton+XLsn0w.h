@@ -5,7 +5,7 @@
 
 @end
 
-@interface UIButton (XLBadgeView)
+@interface UIButton (BadgeView)
 
 /**
  *  Remove the badge value on the button.
