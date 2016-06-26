@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import "FMDatabase.h"
+#import <FMDB.h>
 #import "User.h"
 
 @interface XLDataBase : NSObject
@@ -9,12 +9,6 @@
 
 //单例工具类
 + (XLDataBase *)sharedXLDataBase;
-
-//打开数据库
-- (void)openDataBaseWithPath:(NSString *)path;
-
-//关闭数据库
-- (void)closeDataBase;
 
 //创建数据库表
 - (void)createDataBaseTableName:(NSString *)tableName;
