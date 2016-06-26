@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import <FMDB.h>
+#import "FMDatabase.h"
 #import "User.h"
 
 @interface XLDataBase : NSObject
