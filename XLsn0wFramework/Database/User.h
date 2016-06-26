@@ -13,5 +13,6 @@
 @property (nonatomic, copy) NSString *weight;//体重
 @property (nonatomic, copy) NSString *phoneNumber;//手机号码
 @property (nonatomic, copy) NSString *address;//收货地址
+@property (nonatomic, copy) NSString *userNumber;//用户编号
 
 @end

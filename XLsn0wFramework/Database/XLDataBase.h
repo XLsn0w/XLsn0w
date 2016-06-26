@@ -21,8 +21,9 @@
 
 //(增)插入
 - (void)insertUser:(User *)user;
+
 //(删)删除
-- (void)deletaWithPrimaryKeyId:(NSString *)primaryKeyId;
+- (void)deleteUserWithPrimaryKeyId:(NSString *)primaryKeyId;
 
 //(改)更新
 - (void)updateImageDataOfUser:(User *)user;
@@ -34,6 +35,7 @@
 - (void)updateWeightOfUser:(User *)user;
 - (void)updatePhoneNumberOfUser:(User *)user;
 - (void)updateAddressOfUser:(User *)user;
+- (void)updateUserNumberOfUser:(User *)user;
 
 //(查)获取全部数据
 - (NSMutableArray *)queryDataBase;
