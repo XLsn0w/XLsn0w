@@ -1,48 +1,23 @@
 
 /*! #import <XLsn0w.h> */
 
-/*! lib */
-#import <AFNetworking.h>
-#import <FMDB.h>
-#import <MBProgressHUD.h>
-#import <UIImageView+WebCache.h>
+/*! XLDependency */
+#import "XLDependency.h"
 
-/*! Network */
-#import "XLNetworkingManager.h"
+/*! XLNSObject */
+#import "XLNSObject.h"
 
-/*! XLDataBase */
-#import "XLDataBase.h"
-#import "User.h"
+/*! XLUIView */
+#import "XLUIView.h"
 
-/*! Category */
-#import "NSDate+XL.h"
-#import "NSString+XL.h"
-#import "NSArray+XL.h"
-#import "NSDictionary+XLsn0w.h"
-#import "NSMutableArray+XLsn0w.h"
-#import "UIView+XLsn0w.h"
-#import "UILabel+XLsn0w.h"
-#import "UIButton+XLsn0w.h"
-#import "UIImage+XLsn0w.h"
-#import "UIImageView+XLsn0w.h"
-#import "UIColor+XLsn0w.h"
-#import "UITabBarController+XLsn0w.h"
-#import "UIViewController+XLsn0w.h"
-#import "UINavigationBar+XLsn0w.h"
-#import "XLUIKit.h"
-#import "XLMapKit.h"
-#import "XLFoundation.h"
-#import "XLQuartzCore.h"
-#import "XLCoreLocation.h"
+/*! XLCategory */
+#import "XLCategory.h"
 
-/*! UIView */
-#import "XLTextField.h"
-#import "XLPickerView.h"
+/*! XLNetwork */
+#import "XLNetwork.h"
 
-/*! NSObject */
-#import "XLMethods.h"
-#import "XLCalendar.h"
-#import "XLDateTime.h"
+/*! XLDB */
+#import "XLDB.h"
 
 /* [create podspec with custom Kit push to CocoaPods]
  
