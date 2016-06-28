@@ -221,6 +221,7 @@
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
 		3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */; };
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
+		35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6DDF31D22636000874C91 /* XLNavViewController.m */; };
 		F059AEEA7C221137E0C88D87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D6A043485232A2D1E7029 /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -659,6 +660,9 @@
 		359876131D1BA44F00C2EC10 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
 		35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChineseCalendar.sqlite; sourceTree = "<group>"; };
+		35F6DDF21D22636000874C91 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
+		35F6DDF31D22636000874C91 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
+		35F6DDF51D2263A100874C91 /* XLUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUIViewController.h; sourceTree = "<group>"; };
 		403D6A043485232A2D1E7029 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		691FDEB21C53CB6354F2EDDB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73CEE42F82173398B22BD2D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -683,6 +687,7 @@
 				354EBBA11D225175003D82CB /* XLDependency */,
 				354EBB8E1D225139003D82CB /* XLNSObject */,
 				354EBB991D22514D003D82CB /* XLUIView */,
+				35F6DDF11D22636000874C91 /* XLUIViewController */,
 				354EB9101D225114003D82CB /* XLCategory */,
 				354EB90C1D2250FB003D82CB /* XLNetwork */,
 				356E5F411D22178D0020D499 /* XLDataBase */,
@@ -1206,6 +1211,16 @@
 			path = XL;
 			sourceTree = "<group>";
 		};
+		35F6DDF11D22636000874C91 /* XLUIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				35F6DDF51D2263A100874C91 /* XLUIViewController.h */,
+				35F6DDF21D22636000874C91 /* XLNavViewController.h */,
+				35F6DDF31D22636000874C91 /* XLNavViewController.m */,
+			);
+			path = XLUIViewController;
+			sourceTree = "<group>";
+		};
 		3AE11E0F0C0B331024B5F16B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -1536,6 +1551,7 @@
 				354EBB2D1D225115003D82CB /* UIColor+JKRandom.m in Sources */,
 				354EBB631D225115003D82CB /* UISearchBar+JKBlocks.m in Sources */,
 				354EBB0B1D225115003D82CB /* NSString+JKUUID.m in Sources */,
+				35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */,
 				354EBB291D225115003D82CB /* UIButton+XLsn0w.m in Sources */,
 				354EBB771D225115003D82CB /* UIView+JKNib.m in Sources */,
 				354EBB041D225115003D82CB /* NSString+JKPinyin.m in Sources */,

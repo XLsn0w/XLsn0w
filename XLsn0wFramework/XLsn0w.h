@@ -10,6 +10,9 @@
 /*! XLUIView */
 #import "XLUIView.h"
 
+/*! XLUIViewController */
+#import "XLUIViewController.h"
+
 /*! XLCategory */
 #import "XLCategory.h"
 
