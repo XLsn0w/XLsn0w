@@ -43,7 +43,9 @@
     if(!navBackButton){
         navBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
         navBackButton.frame = CGRectMake(0.0, 0.0, 44.0, 44.0);
-        //[btnBack setImage:[UIImage imageNamed:@"nav_back"] forState:UIControlStateNormal];
+        /*! 自定义返回按钮设置成图片 */
+        //[navBackButton setImage:[UIImage imageNamed:@"返回"<"图标"] forState:(UIControlStateNormal)];
+        /*! 自定义返回按钮设置成文字 */
         [navBackButton setTitle:@"返回" forState:(UIControlStateNormal)];
         navBackButton.imageEdgeInsets = UIEdgeInsetsMake(0.0, -16.0, 0.0, 16.0);
     }
