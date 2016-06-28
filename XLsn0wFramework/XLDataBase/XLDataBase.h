@@ -11,7 +11,7 @@
 + (XLDataBase *)sharedXLDataBase;
 
 //创建数据库表
-- (void)createDataBaseTableName:(NSString *)tableName;
+- (void)createXLDataBaseWithTableName:(NSString *)tableName;
 
 //(增)插入
 - (void)insertUser:(User *)user;
@@ -30,8 +30,11 @@
 - (void)updatePhoneNumberOfUser:(User *)user;
 - (void)updateAddressOfUser:(User *)user;
 - (void)updateUserNumberOfUser:(User *)user;
+- (void)updateUserIdOfUser:(User *)user;
+- (void)updateImageUrlOfUser:(User *)user;
+- (void)updateUserTokenOfUser:(User *)user;
 
 //(查)获取全部数据
-- (NSMutableArray *)queryDataBase;
+- (NSMutableArray *)queryXLDataBase;
 
 @end

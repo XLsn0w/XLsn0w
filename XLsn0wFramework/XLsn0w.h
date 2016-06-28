@@ -1,20 +1,20 @@
 
-/* #import <XLsn0w.h> */
+/*! #import <XLsn0w.h> */
 
-//lib
+/*! lib */
 #import <AFNetworking.h>
 #import <FMDB.h>
 #import <MBProgressHUD.h>
 #import <UIImageView+WebCache.h>
 
-//Network
+/*! Network */
 #import "XLNetworkingManager.h"
 
-//DataBase
+/*! XLDataBase */
 #import "XLDataBase.h"
 #import "User.h"
 
-//Category
+/*! Category */
 #import "NSDate+XL.h"
 #import "NSString+XL.h"
 #import "NSArray+XL.h"
@@ -30,13 +30,11 @@
 #import "UIViewController+XLsn0w.h"
 #import "UINavigationBar+XLsn0w.h"
 
-//UIView
+/*! UIView */
 #import "XLTextField.h"
 #import "XLPickerView.h"
-#import "XLSelectSheet.h"
-#import "XLCalendarView.h"
 
-//NSObject
+/*! NSObject */
 #import "XLMethods.h"
 #import "XLCalendar.h"
 #import "XLDateTime.h"
@@ -58,3 +56,4 @@
    pod trunk push             podspecPath
  
 */
+
