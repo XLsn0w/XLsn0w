@@ -34,7 +34,7 @@
 - (void)updateImageUrlOfUser:(User *)user;
 - (void)updateUserTokenOfUser:(User *)user;
 
-//(查)获取全部数据
-- (NSMutableArray *)queryXLDataBase;
+//(查)取值
+- (NSMutableArray *)selectUserArrayFromXLDatabase;
 
 @end

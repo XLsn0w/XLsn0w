@@ -241,8 +241,8 @@
     }
 }
 
-/*! Query XLDatabase return userArray */
-- (NSMutableArray *)queryXLDataBase {
+/*! select userArray from XLDatabase */
+- (NSMutableArray *)selectUserArrayFromXLDatabase {
     // create userArray
     NSMutableArray *userArray = [[NSMutableArray alloc] init];
     if ([_fmdb  open]) {
