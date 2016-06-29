@@ -9,38 +9,37 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    [self setupNavigationBar];
+    [self drawNavigationBarUI];
 }
 
-- (void)setupNavigationBar {
+#pragma mark - draw NavigationBar UI
+
+/*! 绘制XLNavViewController NavigationBarUI */
+- (void)drawNavigationBarUI {
     if(self.navigationController.viewControllers.count > 1){
-        [self addNavigationBarBackButton];
+        [self drawNavigationBarBackButton];
     }
-    
-    if([[self navigationBarRightButtonTitle] length] > 1){
-        [self addNavigationBarRightButton];
+    if([self setNavigationBarRightButtonTitle].length > 1){
+        [self drawNavigationBarRightButton];
     }
-    
     [self setNavigationBarNeedsDisplay];
-    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
+    self.navigationController.interactivePopGestureRecognizer.enabled = YES;
 }
 
-#pragma mark - UINavigationController Methods
-//重新绘制NavigationBar
+#pragma mark - set NavigationBar NeedsDisplay
+
+/*! 重新绘制 navigationBar */
 - (void)setNavigationBarNeedsDisplay {
-    self.navigationController.navigationBar.barTintColor = [self navBarTintColor];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.navigationBar.barTintColor = [self setNavigationBarBackgroundColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
 
-//返回事件实现
-- (void)goBack {
-    [self.navigationController popViewControllerAnimated:YES];
-}
+#pragma mark - NavigationBar 返回(左侧)按钮
 
-//添加返回按钮
-- (void)addNavigationBarBackButton {
-    UIButton *navBackButton = [self backButton];
+/*! 绘制NavigationBar 返回按钮 */
+- (void)drawNavigationBarBackButton {
+    UIButton *navBackButton = [self setBackButton];
     if(!navBackButton){
         navBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
         navBackButton.frame = CGRectMake(0.0, 0.0, 44.0, 44.0);
@@ -53,57 +52,60 @@
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
 }
 
-//返回按钮子类实现
-- (UIButton *)backButton{
+/*! navigationBar 返回事件方法 */
+- (void)goBack {
+    [self.navigationController popViewControllerAnimated:YES];
+}
+
+/*! 返回按钮(子类实现) */
+- (UIButton *)setBackButton {
     return nil;
 }
 
-//导航右侧按钮标题
-- (NSString *)navigationBarRightButtonTitle{
-    return nil;
-}
+#pragma mark - NavigationBar 右侧按钮
 
-//添加NavigationBar右侧按钮
-- (void)addNavigationBarRightButton{
+/*! 绘制NavigationBar 右侧按钮 */
+- (void)drawNavigationBarRightButton{
     UIButton *btnRight = [UIButton buttonWithType:UIButtonTypeCustom];
-    [btnRight setTitle:[self navigationBarRightButtonTitle] forState:UIControlStateNormal];
+    [btnRight setTitle:[self setNavigationBarRightButtonTitle] forState:UIControlStateNormal];
     NSMutableParagraphStyle *paragraphStyle = [[NSMutableParagraphStyle alloc] init];
     paragraphStyle.lineBreakMode = NSLineBreakByWordWrapping;
     NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:16.0f], NSParagraphStyleAttributeName:paragraphStyle.copy};
-    CGSize size = [[self navigationBarRightButtonTitle] boundingRectWithSize:CGSizeMake(300.0, 44.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
+    CGSize size = [[self setNavigationBarRightButtonTitle] boundingRectWithSize:CGSizeMake(300.0, 44.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
     btnRight.frame =  CGRectMake(0.0, 0.0, ceilf(size.width) > 44.0 ?ceilf(size.width):44.0, 44.0);
-    [btnRight setTitleColor:[self navBarButtonColor] forState:UIControlStateNormal];
+    [btnRight setTitleColor:[self setNavigationBarButtonColor] forState:UIControlStateNormal];
     btnRight.titleLabel.font = [UIFont systemFontOfSize:16.0f];
     btnRight.titleEdgeInsets = UIEdgeInsetsMake(0.0, 10.0, 0.0, -10.0);
-    [btnRight addTarget:self action:@selector(navigationBarRightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
+    [btnRight addTarget:self action:@selector(handleNavigationBarRightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:btnRight];
     self.navigationItem.rightBarButtonItem = rightBarButtonItem;
 }
 
-//导航右侧按钮事件(子类实现)
-- (void)navigationBarRightButtonAction:(id)rightButton {
-    
-}
-
-#pragma mark - Custom View Methods
-//弹出键盘的响应View,子类重载即可
-- (UIView *)keyboardHandlerView {
+/*! 设置NavigationBar 右侧按钮文字 */
+- (NSString *)setNavigationBarRightButtonTitle {
     return nil;
 }
 
-//处理NavgatinBar着色
-- (UIColor *)navBarTintColor {
+/*! 处理NavigationBar 右侧按钮事件(子类实现) */
+- (void)handleNavigationBarRightButtonAction:(id)sender {
+    
+}
+
+#pragma mark - NavgatinBar 颜色
+
+/*! 处理NavgatinBar 背景色 */
+- (UIColor *)setNavigationBarBackgroundColor {
     return [UIColor blueColor];
 }
 
-//处理NavigationBar标题颜色
-- (UIColor *)navBarTextColor {
+/*! 处理NavigationBar 文本颜色 */
+- (UIColor *)setNavigationBarTextColor {
     return [UIColor whiteColor];
 }
 
-//处理NavigationBar按钮颜色
-- (UIColor *)navBarButtonColor {
+/*! 处理NavigationBar 按钮颜色 */
+- (UIColor *)setNavigationBarButtonColor {
     return [UIColor whiteColor];
 }
 

@@ -3,37 +3,42 @@
 
 @interface XLNavViewController : UIViewController
 
+#pragma mark - set NavigationBar NeedsDisplay
+
 /*! 重新绘制 navigationBar */
 - (void)setNavigationBarNeedsDisplay;
+
+#pragma mark - NavigationBar 返回(左侧)按钮
+
+/*! 绘制NavigationBar 返回按钮 */
+- (void)drawNavigationBarBackButton;
 
 /*! navigationBar 返回事件方法 */
 - (void)goBack;
 
-/*! 绘制 */
-- (void)addNavigationBarBackButton;
+/*! 返回按钮(子类实现) */
+- (UIButton *)setBackButton;
 
-//返回按钮
-- (UIButton *)backButton;
+#pragma mark - NavigationBar 右侧按钮
 
-//添加NavigationBar右侧按钮
-- (void)addNavigationBarRightButton;
+/*! 绘制NavigationBar 右侧按钮 */
+- (void)drawNavigationBarRightButton;
 
-//导航右侧按钮标题
-- (NSString *)navigationBarRightButtonTitle;
+/*! 设置NavigationBar 右侧按钮文字 */
+- (NSString *)setNavigationBarRightButtonTitle;
 
-//导航右侧按钮事件(子类实现)
-- (void)navigationBarRightButtonAction:(id)rightButton;
+/*! 处理NavigationBar 右侧按钮事件(子类实现) */
+- (void)handleNavigationBarRightButtonAction:(id)sender;
 
-//弹出键盘的响应View,子类重载即可
-- (UIView *)keyboardHandlerView;
+#pragma mark - NavgatinBar 颜色
 
-//处理NavgatinBar着色
-- (UIColor *)navBarTintColor;
+//处理NavgatinBar 背景色
+- (UIColor *)setNavigationBarBackgroundColor;
 
-//处理NavigationBar标题颜色
-- (UIColor *)navBarTextColor;
+/*! 处理NavigationBar 文本颜色 */
+- (UIColor *)setNavigationBarTextColor;
 
-//处理NavigationBar按钮颜色
-- (UIColor *)navBarButtonColor;
+/*! 处理NavigationBar 按钮颜色 */
+- (UIColor *)setNavigationBarButtonColor;
 
 @end
