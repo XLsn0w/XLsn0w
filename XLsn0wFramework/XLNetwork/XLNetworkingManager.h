@@ -1,6 +1,6 @@
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking/AFNetworking.h"
+#import "AFNetworking.h"
 
 /**
  *  宏定义请求成功的block

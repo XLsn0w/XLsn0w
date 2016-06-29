@@ -3,9 +3,9 @@
 
 @implementation XLDatabase
 
-//Singleton
+//Create Singleton
+static XLDatabase *instance = nil;
 + (XLDatabase *)sharedInstance {
-    static XLDatabase *instance;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         instance = [[XLDatabase alloc] init];

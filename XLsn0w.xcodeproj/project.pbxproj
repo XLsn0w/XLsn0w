@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		351910F11D22426700444211 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351910F01D22426700444211 /* icon.png */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
 		354EBABA1D225115003D82CB /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9121D225114003D82CB /* CAAnimation+Blocks.m */; };
@@ -226,6 +227,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
+		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
 		351910F01D22426700444211 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
@@ -699,6 +702,8 @@
 			isa = PBXGroup;
 			children = (
 				354EBBA31D225256003D82CB /* XLNetwork.h */,
+				3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */,
+				3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */,
 				354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */,
 				354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */,
 			);
@@ -1459,6 +1464,7 @@
 				354EBAEC1D225115003D82CB /* NSNumber+JKRomanNumerals.m in Sources */,
 				354EBAC81D225115003D82CB /* NSData+JKAPNSToken.m in Sources */,
 				354EBB4C1D225115003D82CB /* UIImageView+JKGeometryConversion.m in Sources */,
+				3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */,
 				354EBADA1D225115003D82CB /* NSDictionary+JKBlock.m in Sources */,
 				354EBB5D1D225115003D82CB /* UIPopoverController+iPhone.m in Sources */,
 				354EBB1B1D225115003D82CB /* UIBarButtonItem+JKAction.m in Sources */,
