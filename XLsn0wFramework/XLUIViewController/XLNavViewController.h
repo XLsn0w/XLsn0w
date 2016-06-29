@@ -3,23 +3,13 @@
 
 @interface XLNavViewController : UIViewController
 
-//处理NavgationBar着色
-- (UIColor *)navBarTintColor;
+/*! 重新绘制 navigationBar */
+- (void)setNavigationBarNeedsDisplay;
 
-//处理NavgationBar标题颜色
-- (UIColor *)navBarTextColor;
-
-//处理NavgationBar按钮颜色
-- (UIColor *)navBarButtonColor;
-
-#pragma mark - UINavigationController About Methods
-//重绘UINavigationBar
-- (void)redrawNavigationBar;
-
-//返回事件
+/*! navigationBar 返回事件方法 */
 - (void)goBack;
 
-//添加返回按钮
+/*! 绘制 */
 - (void)addNavigationBarBackButton;
 
 //返回按钮
@@ -33,5 +23,17 @@
 
 //导航右侧按钮事件(子类实现)
 - (void)navigationBarRightButtonAction:(id)rightButton;
+
+//弹出键盘的响应View,子类重载即可
+- (UIView *)keyboardHandlerView;
+
+//处理NavgatinBar着色
+- (UIColor *)navBarTintColor;
+
+//处理NavigationBar标题颜色
+- (UIColor *)navBarTextColor;
+
+//处理NavigationBar按钮颜色
+- (UIColor *)navBarButtonColor;
 
 @end

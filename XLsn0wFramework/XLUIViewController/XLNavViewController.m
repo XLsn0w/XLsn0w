@@ -21,13 +21,14 @@
         [self addNavigationBarRightButton];
     }
     
-    [self redrawNavigationBar];
+    [self setNavigationBarNeedsDisplay];
     self.navigationController.interactivePopGestureRecognizer.enabled = YES;
     self.navigationController.interactivePopGestureRecognizer.delegate = self;
 }
 
-#pragma mark - UINavigationController About Methods
-- (void)redrawNavigationBar {
+#pragma mark - UINavigationController Methods
+//重新绘制NavigationBar
+- (void)setNavigationBarNeedsDisplay {
     self.navigationController.navigationBar.barTintColor = [self navBarTintColor];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:20],NSForegroundColorAttributeName:[UIColor whiteColor]}];
 }
@@ -87,22 +88,22 @@
 
 #pragma mark - Custom View Methods
 //弹出键盘的响应View,子类重载即可
-- (UIView *)keyboardHandlerView{
+- (UIView *)keyboardHandlerView {
     return nil;
 }
 
 //处理NavgatinBar着色
-- (UIColor *)navBarTintColor{
+- (UIColor *)navBarTintColor {
     return [UIColor blueColor];
 }
 
 //处理NavigationBar标题颜色
-- (UIColor *)navBarTextColor{
+- (UIColor *)navBarTextColor {
     return [UIColor whiteColor];
 }
 
 //处理NavigationBar按钮颜色
-- (UIColor *)navBarButtonColor{
+- (UIColor *)navBarButtonColor {
     return [UIColor whiteColor];
 }
 

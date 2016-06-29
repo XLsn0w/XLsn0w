@@ -3,15 +3,15 @@
 #import "FMDatabase.h"
 #import "User.h"
 
-@interface XLDataBase : NSObject
+@interface XLDatabase : NSObject
 
-@property (nonatomic,retain)FMDatabase *fmdb;
+@property (nonatomic, strong) FMDatabase *fmdb;
 
 //单例工具类
-+ (XLDataBase *)sharedXLDataBase;
++ (XLDatabase *)sharedInstance;
 
 //创建数据库表
-- (void)createXLDataBaseWithTableName:(NSString *)tableName;
+- (void)createXLDatabaseWithTableName:(NSString *)tableName;
 
 //(增)插入
 - (void)insertUser:(User *)user;
