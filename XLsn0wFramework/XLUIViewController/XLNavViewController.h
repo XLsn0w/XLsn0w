@@ -32,13 +32,13 @@
 
 #pragma mark - NavgatinBar 颜色
 
-//处理NavgatinBar 背景色
-- (UIColor *)setNavigationBarBackgroundColor;
+/*! 处理NavgatinBar 背景色 */
+- (UIColor *)setNavBarBackgroundColor;
 
-/*! 处理NavigationBar 文本颜色 */
-- (UIColor *)setNavigationBarTextColor;
+/*! 处理NavigationBar 标题颜色 */
+- (UIColor *)setNavBarTitleColor;
 
-/*! 处理NavigationBar 按钮颜色 */
-- (UIColor *)setNavigationBarButtonColor;
+/*! 处理NavigationBar 按钮文字颜色 */
+- (UIColor *)setNavBarButtonTitleColor;
 
 @end

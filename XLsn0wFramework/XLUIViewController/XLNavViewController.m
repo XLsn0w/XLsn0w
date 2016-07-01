@@ -31,8 +31,8 @@
 
 /*! 重新绘制 navigationBar */
 - (void)setNavigationBarNeedsDisplay {
-    self.navigationController.navigationBar.barTintColor = [self setNavigationBarBackgroundColor];
-    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName:[UIColor whiteColor]}];
+    self.navigationController.navigationBar.barTintColor = [self setNavBarBackgroundColor];
+    [[UINavigationBar appearance] setTitleTextAttributes:@{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],NSForegroundColorAttributeName:[self setNavBarTitleColor]}];
 }
 
 #pragma mark - NavigationBar 返回(左侧)按钮
@@ -73,7 +73,7 @@
     NSDictionary *attributes = @{NSFontAttributeName:[UIFont systemFontOfSize:16.0f], NSParagraphStyleAttributeName:paragraphStyle.copy};
     CGSize size = [[self setNavigationBarRightButtonTitle] boundingRectWithSize:CGSizeMake(300.0, 44.0) options:NSStringDrawingUsesLineFragmentOrigin attributes:attributes context:nil].size;
     btnRight.frame =  CGRectMake(0.0, 0.0, ceilf(size.width) > 44.0 ?ceilf(size.width):44.0, 44.0);
-    [btnRight setTitleColor:[self setNavigationBarButtonColor] forState:UIControlStateNormal];
+    [btnRight setTitleColor:[self setNavBarButtonTitleColor] forState:UIControlStateNormal];
     btnRight.titleLabel.font = [UIFont systemFontOfSize:16.0f];
     btnRight.titleEdgeInsets = UIEdgeInsetsMake(0.0, 10.0, 0.0, -10.0);
     [btnRight addTarget:self action:@selector(handleNavigationBarRightButtonAction:) forControlEvents:UIControlEventTouchUpInside];
@@ -95,17 +95,17 @@
 #pragma mark - NavgatinBar 颜色
 
 /*! 处理NavgatinBar 背景色 */
-- (UIColor *)setNavigationBarBackgroundColor {
+- (UIColor *)setNavBarBackgroundColor {
     return [UIColor blueColor];
 }
 
-/*! 处理NavigationBar 文本颜色 */
-- (UIColor *)setNavigationBarTextColor {
+/*! 处理NavigationBar 标题颜色 */
+- (UIColor *)setNavBarTitleColor {
     return [UIColor whiteColor];
 }
 
-/*! 处理NavigationBar 按钮颜色 */
-- (UIColor *)setNavigationBarButtonColor {
+/*! 处理NavigationBar 按钮文字颜色 */
+- (UIColor *)setNavBarButtonTitleColor {
     return [UIColor whiteColor];
 }
 

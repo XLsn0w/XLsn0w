@@ -5,13 +5,13 @@
 #import "XLDependency.h"
 
 /*! XLNSObject */
-#import "XLNSObject.h"
+#import "XLObject.h"
 
 /*! XLUIView */
-#import "XLUIView.h"
+#import "XLView.h"
 
 /*! XLUIViewController */
-#import "XLUIViewController.h"
+#import "XLVC.h"
 
 /*! XLCategory */
 #import "XLCategory.h"

@@ -640,12 +640,12 @@
 		354EBB921D225139003D82CB /* XLDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDateTime.m; sourceTree = "<group>"; };
 		354EBB931D225139003D82CB /* XLMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMethods.h; sourceTree = "<group>"; };
 		354EBB941D225139003D82CB /* XLMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMethods.m; sourceTree = "<group>"; };
-		354EBB951D225139003D82CB /* XLNSObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNSObject.h; sourceTree = "<group>"; };
+		354EBB951D225139003D82CB /* XLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLObject.h; sourceTree = "<group>"; };
 		354EBB9A1D22514D003D82CB /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
 		354EBB9B1D22514D003D82CB /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
 		354EBB9C1D22514D003D82CB /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		354EBB9D1D22514D003D82CB /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
-		354EBB9E1D22514D003D82CB /* XLUIView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUIView.h; sourceTree = "<group>"; };
+		354EBB9E1D22514D003D82CB /* XLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView.h; sourceTree = "<group>"; };
 		354EBBA21D225175003D82CB /* XLDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDependency.h; sourceTree = "<group>"; };
 		354EBBA31D225256003D82CB /* XLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetwork.h; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -665,7 +665,7 @@
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
 		35F6DDF21D22636000874C91 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
 		35F6DDF31D22636000874C91 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
-		35F6DDF51D2263A100874C91 /* XLUIViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLUIViewController.h; sourceTree = "<group>"; };
+		35F6DDF51D2263A100874C91 /* XLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVC.h; sourceTree = "<group>"; };
 		403D6A043485232A2D1E7029 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		691FDEB21C53CB6354F2EDDB /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73CEE42F82173398B22BD2D8 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
@@ -1127,7 +1127,7 @@
 				354EBB921D225139003D82CB /* XLDateTime.m */,
 				354EBB931D225139003D82CB /* XLMethods.h */,
 				354EBB941D225139003D82CB /* XLMethods.m */,
-				354EBB951D225139003D82CB /* XLNSObject.h */,
+				354EBB951D225139003D82CB /* XLObject.h */,
 			);
 			path = XLNSObject;
 			sourceTree = "<group>";
@@ -1139,7 +1139,7 @@
 				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
 				354EBB9C1D22514D003D82CB /* XLTextField.h */,
 				354EBB9D1D22514D003D82CB /* XLTextField.m */,
-				354EBB9E1D22514D003D82CB /* XLUIView.h */,
+				354EBB9E1D22514D003D82CB /* XLView.h */,
 			);
 			path = XLUIView;
 			sourceTree = "<group>";
@@ -1219,7 +1219,7 @@
 		35F6DDF11D22636000874C91 /* XLUIViewController */ = {
 			isa = PBXGroup;
 			children = (
-				35F6DDF51D2263A100874C91 /* XLUIViewController.h */,
+				35F6DDF51D2263A100874C91 /* XLVC.h */,
 				35F6DDF21D22636000874C91 /* XLNavViewController.h */,
 				35F6DDF31D22636000874C91 /* XLNavViewController.m */,
 			);
