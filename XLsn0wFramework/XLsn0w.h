@@ -22,15 +22,15 @@
 /*! XLDB */
 #import "XLDB.h"
 
-/* [create podspec with custom Kit push to CocoaPods]
+/* [Create podspec With Custom Framework push to CocoaPods]
  
    Command line               param
  
-   git tag                    tagValue
+   git tag                    tagValue -> 1.1.1
  
-   git push origin --tags     <input the whole Command line>
+   git push origin --tags     git push origin --tags
  
-   pod spec create            podspecName
+   pod spec create            frameworkName.podspec
  
    pod spec lint              podspecPath
  
