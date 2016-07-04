@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		351910F11D22426700444211 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351910F01D22426700444211 /* icon.png */; };
+		3542CE3E1D2A4EE20049AB9E /* XLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542CE3D1D2A4EE20049AB9E /* XLCalendarView.m */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
 		354EBABA1D225115003D82CB /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9121D225114003D82CB /* CAAnimation+Blocks.m */; };
 		354EBABB1D225115003D82CB /* CAAnimation+JKEasingEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9141D225114003D82CB /* CAAnimation+JKEasingEquations.m */; };
@@ -231,6 +232,8 @@
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
 		351910F01D22426700444211 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		3542CE3C1D2A4EE20049AB9E /* XLCalendarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarView.h; sourceTree = "<group>"; };
+		3542CE3D1D2A4EE20049AB9E /* XLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarView.m; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
 		354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkingManager.m; sourceTree = "<group>"; };
 		354EB9111D225114003D82CB /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
@@ -1121,13 +1124,13 @@
 		354EBB8E1D225139003D82CB /* XLNSObject */ = {
 			isa = PBXGroup;
 			children = (
+				354EBB951D225139003D82CB /* XLObject.h */,
+				354EBB931D225139003D82CB /* XLMethods.h */,
+				354EBB941D225139003D82CB /* XLMethods.m */,
 				354EBB8F1D225139003D82CB /* XLCalendar.h */,
 				354EBB901D225139003D82CB /* XLCalendar.m */,
 				354EBB911D225139003D82CB /* XLDateTime.h */,
 				354EBB921D225139003D82CB /* XLDateTime.m */,
-				354EBB931D225139003D82CB /* XLMethods.h */,
-				354EBB941D225139003D82CB /* XLMethods.m */,
-				354EBB951D225139003D82CB /* XLObject.h */,
 			);
 			path = XLNSObject;
 			sourceTree = "<group>";
@@ -1135,11 +1138,13 @@
 		354EBB991D22514D003D82CB /* XLUIView */ = {
 			isa = PBXGroup;
 			children = (
-				354EBB9A1D22514D003D82CB /* XLPickerView.h */,
-				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
+				354EBB9E1D22514D003D82CB /* XLView.h */,
 				354EBB9C1D22514D003D82CB /* XLTextField.h */,
 				354EBB9D1D22514D003D82CB /* XLTextField.m */,
-				354EBB9E1D22514D003D82CB /* XLView.h */,
+				354EBB9A1D22514D003D82CB /* XLPickerView.h */,
+				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
+				3542CE3C1D2A4EE20049AB9E /* XLCalendarView.h */,
+				3542CE3D1D2A4EE20049AB9E /* XLCalendarView.m */,
 			);
 			path = XLUIView;
 			sourceTree = "<group>";
@@ -1518,6 +1523,7 @@
 				354EBAC31D225115003D82CB /* MKMapView+JKZoomLevel.m in Sources */,
 				354EBB0F1D225115003D82CB /* NSTimer+JKBlocks.m in Sources */,
 				354EBAF31D225115003D82CB /* NSObject+JKBlockTimer.m in Sources */,
+				3542CE3E1D2A4EE20049AB9E /* XLCalendarView.m in Sources */,
 				354EBAD61D225115003D82CB /* NSDate+XL.m in Sources */,
 				354EBB051D225115003D82CB /* NSString+JKRemoveEmoji.m in Sources */,
 				354EBAC41D225115003D82CB /* NSArray+JKBlock.m in Sources */,
