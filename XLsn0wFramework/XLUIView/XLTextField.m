@@ -22,14 +22,14 @@
     return inset;
 }
 
-//leftView
+//leftView 输入文字前的提示图片
 - (CGRect)leftViewRectForBounds:(CGRect)bounds {
-    CGRect textRect = [super rightViewRectForBounds:bounds];
-    textRect.origin.x += 10;
+    CGRect textRect = [super leftViewRectForBounds:bounds];
+    textRect.origin.x += 5;
     return textRect;
 }
 
-//rightView
+//rightView 多用于密码隐藏显示那个眼睛图片
 - (CGRect)rightViewRectForBounds:(CGRect)bounds; {
     CGRect textRect = [super rightViewRectForBounds:bounds];
     textRect.origin.x -= 10;
