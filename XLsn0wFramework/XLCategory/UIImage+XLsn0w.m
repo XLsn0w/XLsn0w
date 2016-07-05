@@ -1,5 +1,6 @@
 
 #import "UIImage+XLsn0w.h"
+#import <UIKit/UIKit.h>
 
 @implementation UIImage (XLsn0w)
 

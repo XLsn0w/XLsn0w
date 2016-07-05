@@ -31,3 +31,4 @@
 + (UIImage *)wg_imageWithName:(NSString *)imageName;
 
 @end
+

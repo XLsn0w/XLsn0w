@@ -30,3 +30,26 @@
 +(NSDate *)dateEndOfWeek;
 
 @end
+
+@interface XLDateItem : NSObject
+
+@property (nonatomic, assign) NSInteger day;
+@property (nonatomic, assign) NSInteger hour;
+@property (nonatomic, assign) NSInteger minute;
+@property (nonatomic, assign) NSInteger second;
+
+@end
+
+@interface NSDate (Extension)
+
+- (XLDateItem *)xl_timeIntervalSinceDate:(NSDate *)anotherDate;
+
+- (BOOL)xl_isToday;
+- (BOOL)xl_isYesterday;
+- (BOOL)xl_isTomorrow;
+- (BOOL)xl_isThisYear;
+
+//获取今天周几
+- (NSInteger)xl_getNowWeekday;
+
+@end

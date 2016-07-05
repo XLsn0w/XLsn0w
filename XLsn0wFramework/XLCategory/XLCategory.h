@@ -193,12 +193,9 @@
 #import "UIWebVIew+JKSwipeGesture.h"
 #import "UIWebView+JKTS_JavaScriptContext.h"
 #import "UIWindow+JKHierarchy.h"
-#import "CAAnimation+Blocks.h"
-#import "CAAnimation+JKEasingEquations.h"
-#import "CALayer+JKBorderColor.h"
 #import "CAMediaTimingFunction+JKAdditionalEquations.h"
 #import "CAShapeLayer+JKUIBezierPath.h"
 #import "CATransaction+JKAnimateWithDuration.h"
-
+#import "NSObject+XLsn0w.h"
 
 

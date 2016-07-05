@@ -215,6 +215,9 @@
 		354EBBA01D22514D003D82CB /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB9D1D22514D003D82CB /* XLTextField.m */; };
 		355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */; };
 		355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */; };
+		3574A81A1D2BFCCF0083906F /* XLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A8191D2BFCCF0083906F /* XLTools.m */; };
+		3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */; };
+		3574A8201D2C04A10083906F /* UITextField+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81F1D2C04A10083906F /* UITextField+XLsn0w.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* AppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
@@ -648,6 +651,12 @@
 		355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+XLsn0w.m"; sourceTree = "<group>"; };
 		355126E11D2B851F00AF1D1C /* CALayer+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XLsn0w.h"; sourceTree = "<group>"; };
 		355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XLsn0w.m"; sourceTree = "<group>"; };
+		3574A8181D2BFCCF0083906F /* XLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTools.h; sourceTree = "<group>"; };
+		3574A8191D2BFCCF0083906F /* XLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTools.m; sourceTree = "<group>"; };
+		3574A81B1D2C01210083906F /* NSObject+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XLsn0w.h"; sourceTree = "<group>"; };
+		3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XLsn0w.m"; sourceTree = "<group>"; };
+		3574A81E1D2C04A10083906F /* UITextField+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+XLsn0w.h"; sourceTree = "<group>"; };
+		3574A81F1D2C04A10083906F /* UITextField+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+XLsn0w.m"; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -1111,6 +1120,10 @@
 				354EBAB61D225115003D82CB /* UIWebView+JKTS_JavaScriptContext.m */,
 				354EBAB71D225115003D82CB /* UIWindow+JKHierarchy.h */,
 				354EBAB81D225115003D82CB /* UIWindow+JKHierarchy.m */,
+				3574A81B1D2C01210083906F /* NSObject+XLsn0w.h */,
+				3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */,
+				3574A81E1D2C04A10083906F /* UITextField+XLsn0w.h */,
+				3574A81F1D2C04A10083906F /* UITextField+XLsn0w.m */,
 				354EBAB91D225115003D82CB /* XLCategory.h */,
 			);
 			path = XLCategory;
@@ -1126,6 +1139,8 @@
 				354EBB901D225139003D82CB /* XLCalendar.m */,
 				354EBB911D225139003D82CB /* XLDateTime.h */,
 				354EBB921D225139003D82CB /* XLDateTime.m */,
+				3574A8181D2BFCCF0083906F /* XLTools.h */,
+				3574A8191D2BFCCF0083906F /* XLTools.m */,
 			);
 			path = XLNSObject;
 			sourceTree = "<group>";
@@ -1512,6 +1527,7 @@
 				354EBB6F1D225115003D82CB /* UITextView+JKSelect.m in Sources */,
 				354EBAE11D225115003D82CB /* NSException+JKTrace.m in Sources */,
 				354EBB2C1D225115003D82CB /* UIColor+JKModify.m in Sources */,
+				3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */,
 				354EBB721D225115003D82CB /* UIView+JKConstraints.m in Sources */,
 				354EBB811D225115003D82CB /* UIViewController+JKRecursiveDescription.m in Sources */,
 				354EBAF41D225115003D82CB /* NSObject+JKEasyCopy.m in Sources */,
@@ -1559,6 +1575,7 @@
 				354EBB631D225115003D82CB /* UISearchBar+JKBlocks.m in Sources */,
 				354EBB0B1D225115003D82CB /* NSString+JKUUID.m in Sources */,
 				35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */,
+				3574A81A1D2BFCCF0083906F /* XLTools.m in Sources */,
 				354EBB291D225115003D82CB /* UIButton+XLsn0w.m in Sources */,
 				354EBB771D225115003D82CB /* UIView+JKNib.m in Sources */,
 				354EBB041D225115003D82CB /* NSString+JKPinyin.m in Sources */,
@@ -1575,6 +1592,7 @@
 				354EBB451D225115003D82CB /* UIImage+JKRoundedCorner.m in Sources */,
 				354EBAD51D225115003D82CB /* NSDate+JKUtilities.m in Sources */,
 				354EBAF61D225115003D82CB /* NSObject+JKKVOBlocks.m in Sources */,
+				3574A8201D2C04A10083906F /* UITextField+XLsn0w.m in Sources */,
 				354EBB7E1D225115003D82CB /* UIViewController+JKBackButtonItemTitle.m in Sources */,
 				354EBB421D225115003D82CB /* UIImage+JKOrientation.m in Sources */,
 			);
