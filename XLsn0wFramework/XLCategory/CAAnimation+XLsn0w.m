@@ -1,12 +1,87 @@
 //
-//  CAAnimation+EasingEquations.m
-//  OKEasingFunctions
+//  CAAnimation+XLsn0w.m
+//  XLsn0w
 //
-//  Created by Bryan Oltman on 12/18/12.
-//  Copyright (c) 2012 Bryan Oltman. All rights reserved.
+//  Created by XLsn0w on 16/7/5.
+//  Copyright © 2016年 XLsn0w. All rights reserved.
 //
 
-#import "CAAnimation+JKEasingEquations.h"
+#import "CAAnimation+XLsn0w.h"
+
+@implementation CAAnimation (XLsn0w)
+
+@end
+
+/**************************************************************************************************/
+
+@interface CAAnimationDelegate : NSObject
+
+@property (nonatomic, copy) void (^completion)(BOOL);
+@property (nonatomic, copy) void (^start)(void);
+
+- (void)animationDidStart:(CAAnimation *)anim;
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag;
+
+@end
+
+@implementation CAAnimationDelegate
+
+- (void)animationDidStart:(CAAnimation *)anim
+{
+    if (self.start != nil) {
+        self.start();
+    }
+}
+
+- (void)animationDidStop:(CAAnimation *)anim finished:(BOOL)flag
+{
+    if (self.completion != nil) {
+        self.completion(flag);
+    }
+}
+
+@end
+
+
+@implementation CAAnimation (BlocksAddition)
+
+- (void)setCompletion:(void (^)(BOOL))completion
+{
+    if ([self.delegate isKindOfClass:[CAAnimationDelegate class]]) {
+        ((CAAnimationDelegate *)self.delegate).completion = completion;
+    }
+    else {
+        CAAnimationDelegate *delegate = [[CAAnimationDelegate alloc] init];
+        delegate.completion = completion;
+        self.delegate = delegate;
+    }
+}
+
+- (void (^)(BOOL))completion
+{
+    return [self.delegate isKindOfClass:[CAAnimationDelegate class]]? ((CAAnimationDelegate *)self.delegate).completion: nil;
+}
+
+- (void)setStart:(void (^)(void))start
+{
+    if ([self.delegate isKindOfClass:[CAAnimationDelegate class]]) {
+        ((CAAnimationDelegate *)self.delegate).start = start;
+    }
+    else {
+        CAAnimationDelegate *delegate = [[CAAnimationDelegate alloc] init];
+        delegate.start = start;
+        self.delegate = delegate;
+    }
+}
+
+- (void (^)(void))start
+{
+    return [self.delegate isKindOfClass:[CAAnimationDelegate class]]? ((CAAnimationDelegate *)self.delegate).start: nil;
+}
+
+@end
+
+/**************************************************************************************************/
 
 #define kAnimationStops 250
 
@@ -377,9 +452,9 @@ static EasingFunction easeInOutBounce = ^CGFloat(CGFloat t, CGFloat b, CGFloat c
 }
 
 + (CAKeyframeAnimation*)jk_transformAnimationWithDuration:(CGFloat)duration
-                                                  from:(CATransform3D)startValue
-                                                    to:(CATransform3D)endValue
-                                        easingFunction:(CAAnimationEasingFunction)easingFunction
+                                                     from:(CATransform3D)startValue
+                                                       to:(CATransform3D)endValue
+                                           easingFunction:(CAAnimationEasingFunction)easingFunction
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:@"transform"];
     animation.duration = duration;
@@ -456,23 +531,23 @@ static EasingFunction easeInOutBounce = ^CGFloat(CGFloat t, CGFloat b, CGFloat c
 }
 
 + (void)jk_addAnimationToLayer:(CALayer *)layer
-                   duration:(CGFloat)duration
-                  transform:(CATransform3D)transform
-             easingFunction:(CAAnimationEasingFunction)easingFunction
+                      duration:(CGFloat)duration
+                     transform:(CATransform3D)transform
+                easingFunction:(CAAnimationEasingFunction)easingFunction
 {
     CAAnimation *animation = [self jk_transformAnimationWithDuration:duration
-                                                             from:layer.transform
-                                                               to:transform
-                                                   easingFunction:easingFunction];
+                                                                from:layer.transform
+                                                                  to:transform
+                                                      easingFunction:easingFunction];
     layer.transform = transform;
     [layer addAnimation:animation forKey:nil];
 }
 
 + (CAKeyframeAnimation*)jk_animationWithKeyPath:(NSString*)keyPath
-                                    duration:(CGFloat)duration
-                                        from:(CGFloat)startValue
-                                          to:(CGFloat)endValue
-                              easingFunction:(CAAnimationEasingFunction)easingFunction
+                                       duration:(CGFloat)duration
+                                           from:(CGFloat)startValue
+                                             to:(CGFloat)endValue
+                                 easingFunction:(CAAnimationEasingFunction)easingFunction
 {
     CAKeyframeAnimation *animation = [CAKeyframeAnimation animationWithKeyPath:keyPath];
     animation.duration = duration;
@@ -494,31 +569,31 @@ static EasingFunction easeInOutBounce = ^CGFloat(CGFloat t, CGFloat b, CGFloat c
 }
 
 + (void)jk_addAnimationToLayer:(CALayer *)layer
-                withKeyPath:(NSString *)keyPath
-                   duration:(CGFloat)duration
-                         to:(CGFloat)endValue
-             easingFunction:(CAAnimationEasingFunction)easingFunction
+                   withKeyPath:(NSString *)keyPath
+                      duration:(CGFloat)duration
+                            to:(CGFloat)endValue
+                easingFunction:(CAAnimationEasingFunction)easingFunction
 {
     [self jk_addAnimationToLayer:layer
-                  withKeyPath:keyPath
-                     duration:duration
-                         from:[[layer valueForKeyPath:keyPath] floatValue]
-                           to:endValue
-               easingFunction:easingFunction];
+                     withKeyPath:keyPath
+                        duration:duration
+                            from:[[layer valueForKeyPath:keyPath] floatValue]
+                              to:endValue
+                  easingFunction:easingFunction];
 }
 
 + (void)jk_addAnimationToLayer:(CALayer *)layer
-                withKeyPath:(NSString *)keyPath
-                   duration:(CGFloat)duration
-                       from:(CGFloat)startValue
-                         to:(CGFloat)endValue
-             easingFunction:(CAAnimationEasingFunction)easingFunction
+                   withKeyPath:(NSString *)keyPath
+                      duration:(CGFloat)duration
+                          from:(CGFloat)startValue
+                            to:(CGFloat)endValue
+                easingFunction:(CAAnimationEasingFunction)easingFunction
 {
     CAAnimation *animation = [self jk_animationWithKeyPath:keyPath
-                                               duration:duration
-                                                   from:startValue
-                                                     to:endValue
-                                         easingFunction:easingFunction];
+                                                  duration:duration
+                                                      from:startValue
+                                                        to:endValue
+                                            easingFunction:easingFunction];
     [layer addAnimation:animation forKey:nil];
     [layer setValue:@(endValue) forKey:keyPath];
 }

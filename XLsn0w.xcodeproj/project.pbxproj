@@ -11,9 +11,6 @@
 		351910F11D22426700444211 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351910F01D22426700444211 /* icon.png */; };
 		3542CE3E1D2A4EE20049AB9E /* XLCalendarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542CE3D1D2A4EE20049AB9E /* XLCalendarView.m */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
-		354EBABA1D225115003D82CB /* CAAnimation+Blocks.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9121D225114003D82CB /* CAAnimation+Blocks.m */; };
-		354EBABB1D225115003D82CB /* CAAnimation+JKEasingEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9141D225114003D82CB /* CAAnimation+JKEasingEquations.m */; };
-		354EBABC1D225115003D82CB /* CALayer+JKBorderColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9161D225114003D82CB /* CALayer+JKBorderColor.m */; };
 		354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
 		354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91A1D225114003D82CB /* CAShapeLayer+JKUIBezierPath.m */; };
 		354EBABF1D225115003D82CB /* CATransaction+JKAnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91C1D225114003D82CB /* CATransaction+JKAnimateWithDuration.m */; };
@@ -216,6 +213,8 @@
 		354EBB981D225139003D82CB /* XLMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB941D225139003D82CB /* XLMethods.m */; };
 		354EBB9F1D22514D003D82CB /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB9B1D22514D003D82CB /* XLPickerView.m */; };
 		354EBBA01D22514D003D82CB /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB9D1D22514D003D82CB /* XLTextField.m */; };
+		355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */; };
+		355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* AppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
@@ -236,12 +235,6 @@
 		3542CE3D1D2A4EE20049AB9E /* XLCalendarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarView.m; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
 		354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkingManager.m; sourceTree = "<group>"; };
-		354EB9111D225114003D82CB /* CAAnimation+Blocks.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+Blocks.h"; sourceTree = "<group>"; };
-		354EB9121D225114003D82CB /* CAAnimation+Blocks.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+Blocks.m"; sourceTree = "<group>"; };
-		354EB9131D225114003D82CB /* CAAnimation+JKEasingEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+JKEasingEquations.h"; sourceTree = "<group>"; };
-		354EB9141D225114003D82CB /* CAAnimation+JKEasingEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+JKEasingEquations.m"; sourceTree = "<group>"; };
-		354EB9151D225114003D82CB /* CALayer+JKBorderColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+JKBorderColor.h"; sourceTree = "<group>"; };
-		354EB9161D225114003D82CB /* CALayer+JKBorderColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+JKBorderColor.m"; sourceTree = "<group>"; };
 		354EB9171D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+JKAdditionalEquations.h"; sourceTree = "<group>"; };
 		354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAMediaTimingFunction+JKAdditionalEquations.m"; sourceTree = "<group>"; };
 		354EB9191D225114003D82CB /* CAShapeLayer+JKUIBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+JKUIBezierPath.h"; sourceTree = "<group>"; };
@@ -651,6 +644,10 @@
 		354EBB9E1D22514D003D82CB /* XLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView.h; sourceTree = "<group>"; };
 		354EBBA21D225175003D82CB /* XLDependency.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDependency.h; sourceTree = "<group>"; };
 		354EBBA31D225256003D82CB /* XLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetwork.h; sourceTree = "<group>"; };
+		355126DE1D2B834800AF1D1C /* CAAnimation+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+XLsn0w.h"; sourceTree = "<group>"; };
+		355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+XLsn0w.m"; sourceTree = "<group>"; };
+		355126E11D2B851F00AF1D1C /* CALayer+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XLsn0w.h"; sourceTree = "<group>"; };
+		355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XLsn0w.m"; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -716,12 +713,10 @@
 		354EB9101D225114003D82CB /* XLCategory */ = {
 			isa = PBXGroup;
 			children = (
-				354EB9111D225114003D82CB /* CAAnimation+Blocks.h */,
-				354EB9121D225114003D82CB /* CAAnimation+Blocks.m */,
-				354EB9131D225114003D82CB /* CAAnimation+JKEasingEquations.h */,
-				354EB9141D225114003D82CB /* CAAnimation+JKEasingEquations.m */,
-				354EB9151D225114003D82CB /* CALayer+JKBorderColor.h */,
-				354EB9161D225114003D82CB /* CALayer+JKBorderColor.m */,
+				355126DE1D2B834800AF1D1C /* CAAnimation+XLsn0w.h */,
+				355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */,
+				355126E11D2B851F00AF1D1C /* CALayer+XLsn0w.h */,
+				355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */,
 				354EB9171D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.h */,
 				354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */,
 				354EB9191D225114003D82CB /* CAShapeLayer+JKUIBezierPath.h */,
@@ -1394,10 +1389,10 @@
 				354EBB571D225115003D82CB /* UINavigationController+JKKeyboardFix.m in Sources */,
 				354EBB981D225139003D82CB /* XLMethods.m in Sources */,
 				354EBB881D225115003D82CB /* UIWebView+JKLoad.m in Sources */,
+				355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */,
 				354EBB141D225115003D82CB /* NSUserDefaults+JKiCloudSync.m in Sources */,
 				359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */,
 				354EBB751D225115003D82CB /* UIView+JKFind.m in Sources */,
-				354EBABB1D225115003D82CB /* CAAnimation+JKEasingEquations.m in Sources */,
 				354EBAE41D225115003D82CB /* NSHTTPCookieStorage+JKFreezeDry.m in Sources */,
 				354EBB3D1D225115003D82CB /* UIImage+JKColor.m in Sources */,
 				354EBB011D225115003D82CB /* NSString+JKMatcher.m in Sources */,
@@ -1468,6 +1463,7 @@
 				354EBB101D225115003D82CB /* NSURL+JKParam.m in Sources */,
 				354EBAEC1D225115003D82CB /* NSNumber+JKRomanNumerals.m in Sources */,
 				354EBAC81D225115003D82CB /* NSData+JKAPNSToken.m in Sources */,
+				355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */,
 				354EBB4C1D225115003D82CB /* UIImageView+JKGeometryConversion.m in Sources */,
 				3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */,
 				354EBADA1D225115003D82CB /* NSDictionary+JKBlock.m in Sources */,
@@ -1486,7 +1482,6 @@
 				354EBB4E1D225115003D82CB /* UIImageView+JKReflect.m in Sources */,
 				354EBAC11D225115003D82CB /* MKMapView+JKBetterMaps.m in Sources */,
 				354EBAFC1D225115003D82CB /* NSString+JKContains.m in Sources */,
-				354EBABC1D225115003D82CB /* CALayer+JKBorderColor.m in Sources */,
 				354EBAFE1D225115003D82CB /* NSString+JKEmoji.m in Sources */,
 				354EBB021D225115003D82CB /* NSString+JKMIME.m in Sources */,
 				354EBB1D1D225115003D82CB /* UIBezierPath+JKLength.m in Sources */,
@@ -1552,7 +1547,6 @@
 				354EBB1A1D225115003D82CB /* UIApplication+JKPermissions.m in Sources */,
 				354EBB7B1D225115003D82CB /* UIView+JKToast.m in Sources */,
 				354EBB381D225115003D82CB /* UIImage+JKAlpha.m in Sources */,
-				354EBABA1D225115003D82CB /* CAAnimation+Blocks.m in Sources */,
 				354EBADC1D225115003D82CB /* NSDictionary+JKMerge.m in Sources */,
 				354EBAC01D225115003D82CB /* CLLocation+JKCH1903.m in Sources */,
 				354EBADE1D225115003D82CB /* NSDictionary+JKURL.m in Sources */,
