@@ -32,7 +32,7 @@ static XLDatabase *instance = nil;
     }
 }
 
-//insert user into XLDatabase
+/*******insert user into XLDatabase****************************************************************/
 - (void)insertUser:(User *)user {
     if ([_fmdb open]) {
         NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
@@ -45,6 +45,22 @@ static XLDatabase *instance = nil;
         [_fmdb close];
     }
 }
+
+/*******delete user from XLDatabase****************************************************************/
+- (void)deleteUserWithPrimaryKeyId:(NSString *)primaryKeyId {
+    if ([_fmdb open]) {
+        NSString *deleteCommand = [NSString stringWithFormat:@"delete from XLDatabase where primaryKeyId = ?"];
+        BOOL result = [_fmdb executeUpdate:deleteCommand, primaryKeyId];
+        if (result) {
+            NSLog(@"删除User成功");
+        } else {
+            NSLog(@"删除User失败");
+        }
+        [_fmdb close];
+    }
+}
+
+/*******update XLDatabase**************************************************************************/
 
 //update XLDatabase imageData Of User
 - (void)updateImageDataOfUser:(User *)user {
@@ -228,21 +244,7 @@ static XLDatabase *instance = nil;
     }
 }
 
-//delete user from XLDatabase
-- (void)deleteUserWithPrimaryKeyId:(NSString *)primaryKeyId {
-    if ([_fmdb open]) {
-        NSString *deleteCommand = [NSString stringWithFormat:@"delete from XLDatabase where primaryKeyId = ?"];
-        BOOL result = [_fmdb executeUpdate:deleteCommand, primaryKeyId];
-        if (result) {
-            NSLog(@"删除User成功");
-        } else {
-            NSLog(@"删除User失败");
-        }
-        [_fmdb close];
-    }
-}
-
-/*! select userArray from XLDatabase */
+/*******************select userArray from XLDatabase***********************************************/
 - (NSMutableArray *)selectUserArrayFromXLDatabase {
     // create userArray
     NSMutableArray *userArray = [[NSMutableArray alloc] init];
