@@ -2,6 +2,8 @@
 #import <UIKit/UIKit.h>
 #import "UIColor+XLsn0w.h"
 
+/*********************************DateItem*********************************************************/
+
 @interface DateItem : NSObject
 
 @property (nonatomic, strong) UIColor *backgroundColor;
@@ -11,13 +13,18 @@
 
 @end
 
+/*********************************XLCalendarViewDelegate*******************************************/
+
 @class XLCalendarView;
 @protocol XLCalendarViewDelegate <NSObject>
 
 @optional
 - (void)calendar:(XLCalendarView *)calendarView configureDateItem:(DateItem *)dateItem forDate:(NSDate *)date;
 - (BOOL)calendar:(XLCalendarView *)calendarView willSelectDate:(NSDate *)date;
+
+/*! 点击具体日期 */
 - (void)calendar:(XLCalendarView *)calendarView didSelectDate:(NSDate *)date;
+
 - (BOOL)calendar:(XLCalendarView *)calendarView willDeselectDate:(NSDate *)date;
 - (void)calendar:(XLCalendarView *)calendarView didDeselectDate:(NSDate *)date;
 - (BOOL)calendar:(XLCalendarView *)calendarView willChangeToMonth:(NSDate *)date;
@@ -27,14 +34,16 @@
 @end
 
 typedef enum {
-    startSunday = 7,
+    startSunday = 7,  
     startMonday = 1,
 } StartDay;
 
+/***********************************XLCalendarView*************************************************/
+
 @interface XLCalendarView : UIView
 
-- (id)initWithStartDay:(StartDay)firstDay;
-- (id)initWithStartDay:(StartDay)firstDay frame:(CGRect)frame;
+/*! 自定义代理属性:xlsn0wDelegate */
+@property (nonatomic, weak) id<XLCalendarViewDelegate> xlsn0wDelegate;
 
 @property (nonatomic) StartDay startDay;
 @property (nonatomic, strong) NSLocale *locale;
@@ -44,14 +53,14 @@ typedef enum {
 @property (nonatomic) BOOL onlyShowCurrentMonth;
 @property (nonatomic) BOOL adaptHeightToNumberOfWeeksInMonth;
 
-@property (nonatomic, weak) id<XLCalendarViewDelegate> delegate;
-
-// Theming
 @property (nonatomic, strong) UIFont *titleFont;
 @property (nonatomic, strong) UIColor *titleColor;
 @property (nonatomic, strong) UIFont *dateOfWeekFont;
 @property (nonatomic, strong) UIColor *dayOfWeekTextColor;
 @property (nonatomic, strong) UIFont *dateFont;
+
+- (instancetype)initWithStartDay:(StartDay)firstDay;
+- (instancetype)initWithStartDay:(StartDay)firstDay frame:(CGRect)frame;
 
 - (void)setMonthButtonColor:(UIColor *)color;
 - (void)setInnerBorderColor:(UIColor *)color;
