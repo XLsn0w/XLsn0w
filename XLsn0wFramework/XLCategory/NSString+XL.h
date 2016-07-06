@@ -4,9 +4,9 @@
 
 @interface NSString (XL)
 
-+ (NSString *)xl_getMD5StringWithInputString:(NSString *)string;
++ (NSString *)xl_getMD5String32bitWithInputString:(NSString *)string;
 
-+ (NSString *)xl_getStrongMD5StringWithInputString:(NSString *)string;
++ (NSString *)xl_getMD5String16bitWithInputString:(NSString *)string;
 
 @end
 

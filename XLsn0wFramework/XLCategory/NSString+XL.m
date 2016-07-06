@@ -4,30 +4,36 @@
 
 @implementation NSString (XL)
 
-/** md5 一般加密 */
-+ (NSString *)xl_getMD5StringWithInputString:(NSString *)string {
-    const char *keyString = [string UTF8String];
-    unsigned char mdc[16];
-    CC_MD5 (keyString, (CC_LONG) strlen (keyString), mdc);
-    NSMutableString *md5String = [ NSMutableString new];
-    [md5String appendFormat : @"%02x" ,mdc[0]];
-    for ( int i = 0 ; i< 16 ; i++) {
-        [md5String appendFormat : @"%02x" ,mdc[i]];
+/** 得到一串32位 MD5加密字符串 */
++ (NSString *)xl_getMD5String32bitWithInputString:(NSString *)string {
+    //要进行UTF8的转码
+    const char *input = [string UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(input, (CC_LONG)strlen(input), result);
+    
+    NSMutableString *md5String32bit = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [md5String32bit appendFormat:@"%02x", result[i]];
     }
-    return md5String;
+    
+    return md5String32bit;
 }
 
-/** md5 加强版 加密 */
-+ (NSString *)xl_getStrongMD5StringWithInputString:(NSString *)string {
-    const char *keyString = [string UTF8String];
-    unsigned char mdc[16];
-    CC_MD5 (keyString, (CC_LONG) strlen (keyString), mdc);
-    NSMutableString *md5String = [ NSMutableString new];
-    [md5String appendFormat : @"%02x" ,mdc[0]];
-    for ( int i = 1 ; i< 16 ; i++) {
-        [md5String appendFormat : @"%02x" ,mdc[i]^mdc[ 0 ]];
++ (NSString *)xl_getMD5String16bitWithInputString:(NSString *)string {
+    const char *input = [string UTF8String];
+    unsigned char result[CC_MD5_DIGEST_LENGTH];
+    CC_MD5(input, (CC_LONG)strlen(input), result);
+    
+    NSMutableString *md5String32bit = [NSMutableString stringWithCapacity:CC_MD5_DIGEST_LENGTH * 2];
+    for (NSInteger i = 0; i < CC_MD5_DIGEST_LENGTH; i++) {
+        [md5String32bit appendFormat:@"%02x", result[i]];
     }
-    return md5String;
+    
+    NSString  *md5String16bit = [NSString string];
+    for (int i=0; i<24; i++) {
+        md5String16bit = [md5String32bit substringWithRange:NSMakeRange(8, 16)];
+    }
+    return md5String16bit;
 }
 
 @end
