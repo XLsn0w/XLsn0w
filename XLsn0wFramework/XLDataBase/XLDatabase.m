@@ -238,6 +238,7 @@ static XLDatabase *instance = nil;
         } else {
             NSLog(@"删除User失败");
         }
+        [_fmdb close];
     }
 }
 
@@ -277,6 +278,7 @@ static XLDatabase *instance = nil;
             // add user into userArray
             [userArray addObject:user];
         }
+        [_fmdb close];
     }
     NSLog(@"[查询XLDatabase成功|得到用户数组取值]");
     return userArray;
