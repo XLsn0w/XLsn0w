@@ -60,6 +60,17 @@
  */
 + (UIColor *)xlsn0w_hexStringToColor:(NSString *)stringToConvert;
 
++ (UIColor *)xl_getUIColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
+
+/**
+ *  16进制转UIColor
+ *
+ *  @param color @"#FFFFFF" ,@"OXFFFFFF" ,@"FFFFFF"
+ *
+ *  @return uicolor
+ */
++ (UIColor *)xl_getUIColorWithInputHexString:(NSString *)hexString;
+
 @end
 
 #if SUPPORTS_UNDOCUMENTED_API
