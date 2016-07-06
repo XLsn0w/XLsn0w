@@ -4,9 +4,9 @@
 
 @interface NSString (XL)
 
-+ (NSString *)xl_MD5LockString:(NSString *)string;
++ (NSString *)xl_getMD5StringWithInputString:(NSString *)string;
 
-+ (NSString *)xl_MD5StrongLockString:(NSString *)string;
++ (NSString *)xl_getStrongMD5StringWithInputString:(NSString *)string;
 
 @end
 
@@ -100,17 +100,6 @@
 
 @end
 
-@interface NSString (XLMD5)
-
-/**
- *  Get a md5 string - encrypt method
- *
- *  @return The md5 encrypt string
- */
-- (NSString *)xl_md5;
-
-@end
-
 @interface NSString (XLSubString)
 
 /**
@@ -181,6 +170,26 @@
  *  @return 文本的实际长度
  */
 - (CGFloat)textWidthWithContentHeight:(CGFloat)height font:(UIFont *)font;
+
+@end
+
+/********************************字符串转base64（包括DES加密）****************************************/
+
+@interface NSString (Base64)
+
+/************************************************************
+ 函数描述 : 将普通字符串转换为base64格式字符串
+ 输入参数 : (NSString *)普通字符串
+ 返回参数 : (NSString *)base64格式字符串
+ **********************************************************/
++ (NSString *)xl_getBase64StringWithInputString:(NSString *)string;
+
+/************************************************************
+ 函数描述 : 将base64格式字符串转换为普通字符串
+ 输入参数 : (NSString *)base64格式字符串
+ 返回参数 : (NSString *)字符串
+ **********************************************************/
++ (NSString *)xl_getStringWithInputBase64String:(NSString *)base64String;
 
 @end
 
