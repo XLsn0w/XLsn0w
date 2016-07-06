@@ -68,7 +68,7 @@
 
 
 #pragma 正则匹配邮箱号
-+ (BOOL)checkMailInput:(NSString *)mail{
++ (BOOL)checkMailAccount:(NSString *)mail {
     
     NSString *emailRegex = @"[A-Z0-9a-z._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{2,4}";
     NSPredicate *emailTest = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", emailRegex];
@@ -76,8 +76,7 @@
 }
 
 #pragma 正则匹配手机号
-+ (BOOL)checkTelNumber:(NSString *) telNumber
-{
++ (BOOL)checkPhoneNumber:(NSString *)phoneNumber {
     /**
      * 手机号码
      * 移动：134[0-8],135,136,137,138,139,150,151,157,158,159,182,187,188
@@ -112,10 +111,10 @@
     NSPredicate *regextestcu = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CU];
     NSPredicate *regextestct = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", CT];
     
-    if (([regextestmobile evaluateWithObject:telNumber] == YES)
-        || ([regextestcm evaluateWithObject:telNumber] == YES)
-        || ([regextestct evaluateWithObject:telNumber] == YES)
-        || ([regextestcu evaluateWithObject:telNumber] == YES))
+    if (([regextestmobile evaluateWithObject:phoneNumber] == YES)
+        || ([regextestcm evaluateWithObject:phoneNumber] == YES)
+        || ([regextestct evaluateWithObject:phoneNumber] == YES)
+        || ([regextestcu evaluateWithObject:phoneNumber] == YES))
     {
         return YES;
     }
@@ -128,8 +127,7 @@
 
 
 #pragma 正则匹配用户密码6-18位数字和字母组合
-+ (BOOL)checkPassword:(NSString *) password
-{
++ (BOOL)checkPassword:(NSString *)password {
     NSString *pattern = @"^(?![0-9]+$)(?![a-zA-Z]+$)[a-zA-Z0-9]{6,18}";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     BOOL isMatch = [pred evaluateWithObject:password];
@@ -138,35 +136,38 @@
 }
 
 #pragma 正则匹配用户姓名,20位的中文或英文
-+ (BOOL)checkUserName : (NSString *) userName
-{
-    
-    //    NSString *pattern = @"^[A-Za-z0-9]{6,20}+$";
-    NSString *pattern = @"^([\u4e00-\u9fa5]+|([a-zA-Z]+\s?)+)$";
++ (BOOL)checkUserName:(NSString *)userName {
+    NSString *pattern = @"^[a-zA-Z\u4E00-\u9FA5]{1,20}";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
     BOOL isMatch = [pred evaluateWithObject:userName];
     return isMatch;
-    
 }
 
 
 #pragma 正则匹配用户身份证号15或18位
-+ (BOOL)checkUserIdCard: (NSString *) idCard
-{
++ (BOOL)checkUserIDCard:(NSString *)IDCard {
     BOOL flag;
-    if (idCard.length <= 0) {
+    if (IDCard.length <= 0) {
         flag = NO;
         return flag;
     }
     NSString *regex2 = @"^(\\d{14}|\\d{17})(\\d|[xX])$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",regex2];
-    BOOL isMatch = [pred evaluateWithObject:idCard];
+    BOOL isMatch = [pred evaluateWithObject:IDCard];
     return isMatch;
 }
 
+#pragma 正则匹配URL
++ (BOOL)checkURL:(NSString *)url {
+    NSString *pattern = @"^[0-9A-Za-z]{1,50}";
+    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
+    BOOL isMatch = [pred evaluateWithObject:url];
+    return isMatch;
+    
+}
+
 #pragma 正则匹员工号,12位的数字
-+ (BOOL)checkEmployeeNumber : (NSString *) number
-{
++ (BOOL)checkEmployeeNumber:(NSString *)number {
     NSString *pattern = @"^[0-9]{12}";
     
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
@@ -175,19 +176,8 @@
     
 }
 
-#pragma 正则匹配URL
-+ (BOOL)checkURL : (NSString *) url
-{
-    NSString *pattern = @"^[0-9A-Za-z]{1,50}";
-    NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", pattern];
-    BOOL isMatch = [pred evaluateWithObject:url];
-    return isMatch;
-    
-}
-
 #pragma 正则匹配昵称
-+ (BOOL) checkNickname:(NSString *) nickname
-{
++ (BOOL)checkNickname:(NSString *)nickname {
     NSString *nicknameRegex = @"^[\u4e00-\u9fa5]{4,8}$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nicknameRegex];
     BOOL isMatch = [pred evaluateWithObject:nickname];
@@ -195,47 +185,48 @@
 }
 
 #pragma 正则匹配以C开头的18位字符
-+ (BOOL) checkCtooNumberTo18:(NSString *) nickNumber
-{
++ (BOOL)checkCtooNumberTo18:(NSString *)nickNumber {
     NSString *nickNum=@"^C{1}[0-9]{18}$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nickNum];
     BOOL isMatch = [pred evaluateWithObject:nickNumber];
     return isMatch;
 }
+
 #pragma 正则匹配以C开头字符
-+ (BOOL) checkCtooNumber:(NSString *) nickNumber
-{
++ (BOOL)checkCtooNumber:(NSString *) nickNumber {
     NSString *nickNum=@"^C{1}[0-9]+$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",nickNum];
     BOOL isMatch = [pred evaluateWithObject:nickNumber];
     return isMatch;
 }
+
 #pragma 正则匹配银行卡号是否正确
-+ (BOOL) checkBankNumber:(NSString *) bankNumber{
++ (BOOL)checkBankNumber:(NSString *)bankNumber {
     NSString *bankNum=@"^([0-9]{16}|[0-9]{19})$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
     BOOL isMatch = [pred evaluateWithObject:bankNumber];
     return isMatch;
 }
 #pragma 正则匹配17位车架号
-+ (BOOL) checkCheJiaNumber:(NSString *) CheJiaNumber{
++ (BOOL)checkCheJiaNumber:(NSString *) CheJiaNumber {
     NSString *bankNum=@"^(\\d{17})$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
     BOOL isMatch = [pred evaluateWithObject:CheJiaNumber];
     return isMatch;
 }
+
 #pragma 正则只能输入数字和字母
-+ (BOOL) checkTeshuZifuNumber:(NSString *) CheJiaNumber{
++ (BOOL)checkTeshuZifuNumber:(NSString *)cheJiaNumber {
     NSString *bankNum=@"^[A-Za-z0-9]+$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
-    BOOL isMatch = [pred evaluateWithObject:CheJiaNumber];
+    BOOL isMatch = [pred evaluateWithObject:cheJiaNumber];
     return isMatch;
 }
 #pragma 车牌号验证
-+ (BOOL) checkCarNumber:(NSString *) CarNumber{
++ (BOOL)checkCarNumber:(NSString *)carNumber {
     NSString *bankNum = @"^[\u4e00-\u9fa5]{1}[a-zA-Z]{1}[a-zA-Z_0-9]{4}[a-zA-Z_0-9_\u4e00-\u9fa5]$";
     NSPredicate *pred = [NSPredicate predicateWithFormat:@"SELF MATCHES %@",bankNum];
-    BOOL isMatch = [pred evaluateWithObject:CarNumber];
+    BOOL isMatch = [pred evaluateWithObject:carNumber];
     return isMatch;
 }
 
