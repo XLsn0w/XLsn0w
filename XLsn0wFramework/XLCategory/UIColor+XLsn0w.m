@@ -405,46 +405,13 @@ static NSMutableDictionary *colorNameCache = nil;
 
 @end
 
-@implementation UIColor (XLHexString)
+@implementation UIColor (HexString)
 
-+ (UIColor *)xlsn0w_hexStringToColor:(NSString *)stringToConvert {
-    NSString *cString = [[stringToConvert stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
-    // String should be 6 or 8 characters
-    
-    if ([cString length] < 6)
-        return [UIColor blackColor];
-    // strip 0X if it appears
-    if ([cString hasPrefix:@"0X"])
-        cString = [cString substringFromIndex:2];
-    if ([cString hasPrefix:@"#"])
-        cString = [cString substringFromIndex:1];
-    if ([cString length] != 6)
-        return [UIColor blackColor];
-    // Separate into r, g, b substrings
-    
-    NSRange range;
-    range.location = 0;
-    range.length = 2;
-    NSString *rString = [cString substringWithRange:range];
-    range.location = 2;
-    NSString *gString = [cString substringWithRange:range];
-    range.location = 4;
-    NSString *bString = [cString substringWithRange:range];
-    // Scan values
-    unsigned int r, g, b;
-    
-    [[NSScanner scannerWithString:rString] scanHexInt:&r];
-    [[NSScanner scannerWithString:gString] scanHexInt:&g];
-    [[NSScanner scannerWithString:bString] scanHexInt:&b];
-    
-    return [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0 alpha:1.0];
-}
-
-+ (UIColor *)xl_getUIColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
++ (UIColor *)xl_getColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
     return [UIColor colorWithRed:red/255.0 green:green/255.0 blue:blue/255.0 alpha:1];
 }
 
-+ (UIColor *)xl_getUIColorWithInputHexString:(NSString *)hexString {
++ (UIColor *)xl_getColorWithInputHexString:(NSString *)hexString {
     
     NSString *cString = [[hexString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]] uppercaseString];
     

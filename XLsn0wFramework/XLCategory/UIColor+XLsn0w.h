@@ -49,27 +49,18 @@
 
 @end
 
-@interface UIColor (XLHexString)
+@interface UIColor (HexString)
+
++ (UIColor *)xl_getColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
 
 /**
- *  Convert hex color string into UIColor
+ *  16进制转UIColor | Convert hex color string into UIColor
  *
- *  @param stringToConvert The hex color string.
+ *  @param hexstring @"#FFFFFF" ,@"OXFFFFFF" ,@"FFFFFF"
  *
  *  @return UIColor
  */
-+ (UIColor *)xlsn0w_hexStringToColor:(NSString *)stringToConvert;
-
-+ (UIColor *)xl_getUIColorWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
-
-/**
- *  16进制转UIColor
- *
- *  @param color @"#FFFFFF" ,@"OXFFFFFF" ,@"FFFFFF"
- *
- *  @return uicolor
- */
-+ (UIColor *)xl_getUIColorWithInputHexString:(NSString *)hexString;
++ (UIColor *)xl_getColorWithInputHexString:(NSString *)hexString;
 
 @end
 
