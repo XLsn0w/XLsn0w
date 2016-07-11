@@ -217,6 +217,7 @@
 		355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */; };
 		3574A81A1D2BFCCF0083906F /* XLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A8191D2BFCCF0083906F /* XLTools.m */; };
 		3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */; };
+		357D183B1D3396E1004C1BE9 /* XLSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */; };
 		358906561D3346EB0053BE45 /* XLsn0w.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 358906551D3346EB0053BE45 /* XLsn0w.bundle */; };
 		358906601D3349750053BE45 /* IndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358906591D3349750053BE45 /* IndefiniteAnimatedView.m */; };
 		358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065B1D3349750053BE45 /* ProgressAnimatedView.m */; };
@@ -659,6 +660,8 @@
 		3574A8191D2BFCCF0083906F /* XLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTools.m; sourceTree = "<group>"; };
 		3574A81B1D2C01210083906F /* NSObject+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XLsn0w.h"; sourceTree = "<group>"; };
 		3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XLsn0w.m"; sourceTree = "<group>"; };
+		357D18391D3396E1004C1BE9 /* XLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedControl.h; sourceTree = "<group>"; };
+		357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedControl.m; sourceTree = "<group>"; };
 		358906551D3346EB0053BE45 /* XLsn0w.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XLsn0w.bundle; sourceTree = "<group>"; };
 		358906581D3349750053BE45 /* IndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		358906591D3349750053BE45 /* IndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndefiniteAnimatedView.m; sourceTree = "<group>"; };
@@ -1165,6 +1168,7 @@
 				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
 				3532958A1D326DA20071A34A /* XLCalendarComponent.h */,
 				3532958B1D326DA20071A34A /* XLCalendarComponent.m */,
+				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
 				358906571D3349750053BE45 /* XLProgressHUD */,
 			);
 			path = XLUIView;
@@ -1176,6 +1180,15 @@
 				354EBBA21D225175003D82CB /* XLDependency.h */,
 			);
 			path = XLDependency;
+			sourceTree = "<group>";
+		};
+		357D18381D3396E1004C1BE9 /* XLSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				357D18391D3396E1004C1BE9 /* XLSegmentedControl.h */,
+				357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */,
+			);
+			path = XLSegmentedControl;
 			sourceTree = "<group>";
 		};
 		358906571D3349750053BE45 /* XLProgressHUD */ = {
@@ -1546,6 +1559,7 @@
 				354EBB8C1D225115003D82CB /* UIWebView+JKTS_JavaScriptContext.m in Sources */,
 				354EBAD21D225115003D82CB /* NSDate+JKFormatter.m in Sources */,
 				354EBB711D225115003D82CB /* UIView+JKBlockGesture.m in Sources */,
+				357D183B1D3396E1004C1BE9 /* XLSegmentedControl.m in Sources */,
 				354EBAED1D225115003D82CB /* NSNumber+JKRound.m in Sources */,
 				354EBACB1D225115003D82CB /* NSData+JKEncrypt.m in Sources */,
 				354EBB3A1D225115003D82CB /* UIImage+JKBetterFace.m in Sources */,

@@ -4,3 +4,4 @@
 #import "XLPickerView.h"
 #import "XLCalendarComponent.h"
 #import "XLProgressHUD.h"
+#import "XLSegmentedControl.h"
