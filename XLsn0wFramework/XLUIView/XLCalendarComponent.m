@@ -114,7 +114,7 @@
     [self.dateFormatter setTimeStyle:NSDateFormatterNoStyle];
     self.dateFormatter.dateFormat = @"yyyy年 MM月";
     
-
+    
     self.onlyShowCurrentMonth = YES;
     self.adaptHeightToNumberOfWeeksInMonth = YES;
     
@@ -146,7 +146,7 @@
     _nextButton.autoresizingMask = UIViewAutoresizingFlexibleBottomMargin | UIViewAutoresizingFlexibleLeftMargin;
     [_nextButton addTarget:self action:@selector(_moveCalendarToNextMonth) forControlEvents:UIControlEventTouchUpInside];
     [self addSubview:_nextButton];
-
+    
     
     [self addSwipeGestureRecognizer];
     
@@ -174,6 +174,7 @@
         dayOfWeekLabel.backgroundColor = [UIColor clearColor];
         dayOfWeekLabel.shadowColor = [UIColor whiteColor];
         dayOfWeekLabel.shadowOffset = CGSizeMake(0, 1);
+        
         [labels addObject:dayOfWeekLabel];
         [self.calendarContainer addSubview:dayOfWeekLabel];
     }
@@ -199,8 +200,21 @@
     [self layoutSubviews];
 }
 
+/** 当用户“签到”时，更新“日历”中的 Item 显示签到 label */
+- (void)setIsSignForToday:(BOOL)isSignForToday {
+    _isSignForToday = isSignForToday;
+    if (_isSignForToday) { // 签到
+        
+        
+    } else { // 取消签到（通常不会出现这种情况）
+        // TODO:
+    }
+}
+
 #pragma mark - 点击日期
 - (void)clickDateButton:(DateButton *)dateButton {
+    
+    _isSignForToday = YES;
     
     _selectedDate = dateButton.buttonDate;
     
@@ -208,6 +222,11 @@
     [self setNeedsLayout];
 }
 
+//根据屏幕高度判断真机设备
+#define iPhone4S    ([[UIScreen mainScreen] bounds].size.height == 480)
+#define iPhone5     ([[UIScreen mainScreen] bounds].size.height == 568)
+#define iPhone6     ([[UIScreen mainScreen] bounds].size.height == 667)
+#define iPhone6Plus ([[UIScreen mainScreen] bounds].size.height == 736)
 
 #pragma mark - Override layoutSubviews
 - (void)layoutSubviews {
@@ -240,6 +259,15 @@
     for (UILabel *dayLabel in self.dayOfWeekLabels) {
         dayLabel.frame = CGRectMake(CGRectGetMaxX(lastDayFrame) + 1, lastDayFrame.origin.y, self.cellWidth, self.daysHeader.frame.size.height);
         lastDayFrame = dayLabel.frame;
+        if (iPhone6) {
+            [dayLabel setFont:[UIFont systemFontOfSize:8]];
+        } else if (iPhone5) {
+            [dayLabel setFont:[UIFont systemFontOfSize:7]];
+        }  else if (iPhone4S) {
+            [dayLabel setFont:[UIFont systemFontOfSize:6]];
+        } else {
+            
+        }
     }
     
     for (DateButton *dateButton in self.dateButtons) {
@@ -257,7 +285,6 @@
     NSDate *endDate = [self _firstDayOfNextMonthContainingDate:self.monthShowing];
     if (!self.onlyShowCurrentMonth) {
         NSDateComponents *comps = [[NSDateComponents alloc] init];
-        //[comps setWeek:numberOfWeeksToShow];
         [comps setWeekOfMonth:numberOfWeeksToShow];
         endDate = [self.calendar dateByAddingComponents:comps toDate:date options:0];
     }
@@ -269,6 +296,16 @@
         _dateButton = [_dateButtons objectAtIndex:index];
         
         _dateButton.date = date;
+        
+        if (iPhone6) {
+            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:10]];
+        } else if (iPhone5) {
+            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:9]];
+        }  else if (iPhone4S) {
+            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:8]];
+        } else {
+            
+        }
         
         DateCell *dateCell = [[DateCell alloc] init];
         
@@ -286,7 +323,7 @@
             [self.xlDelegate calendarComponent:self configureDateCell:dateCell forDate:date];
         }
         
-     
+        
         
         
         //NSLog(@"BOOL=======> %@" ,[self date:_selectedDate isSameDayAsDate:date] ? @"YES" : @"NO");
@@ -296,7 +333,7 @@
             _dateButton.backgroundColor = [UIColor blueColor];
             
             
-           
+            
             
             
         } else {
@@ -422,18 +459,18 @@
 }
 
 - (void)_moveCalendarToPreviousMonth {
-   // [UIView transitionWithView:self duration:0.5 options:UIViewAnimationOptionTransitionCurlDown animations:^(void) {
-        NSDateComponents* comps = [[NSDateComponents alloc] init];
-        [comps setMonth:-1];
-        NSDate *newMonth = [self.calendar dateByAddingComponents:comps toDate:self.monthShowing options:0];
-        if ([self.xlDelegate respondsToSelector:@selector(calendarComponent:willChangeToMonth:)] && ![self.xlDelegate calendarComponent:self willChangeToMonth:newMonth]) {
-            return;
-        } else {
-            self.monthShowing = newMonth;
-            if ([self.xlDelegate respondsToSelector:@selector(calendarComponent:didChangeToMonth:)] ) {
-                [self.xlDelegate calendarComponent:self didChangeToMonth:self.monthShowing];
-            }
+    // [UIView transitionWithView:self duration:0.5 options:UIViewAnimationOptionTransitionCurlDown animations:^(void) {
+    NSDateComponents* comps = [[NSDateComponents alloc] init];
+    [comps setMonth:-1];
+    NSDate *newMonth = [self.calendar dateByAddingComponents:comps toDate:self.monthShowing options:0];
+    if ([self.xlDelegate respondsToSelector:@selector(calendarComponent:willChangeToMonth:)] && ![self.xlDelegate calendarComponent:self willChangeToMonth:newMonth]) {
+        return;
+    } else {
+        self.monthShowing = newMonth;
+        if ([self.xlDelegate respondsToSelector:@selector(calendarComponent:didChangeToMonth:)] ) {
+            [self.xlDelegate calendarComponent:self didChangeToMonth:self.monthShowing];
         }
+    }
     //} completion:nil];
 }
 
