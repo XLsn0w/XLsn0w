@@ -257,13 +257,13 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self addSubview:self.pageControl];
     _pageControl.pageIndicatorTintColor = kUIColorFromRGB(0x00BFFF);
     
-//    self.skipButton = [[UIButton alloc] initWithFrame:CGRectMake(170*kFitWidth, 230*kFitHeight, 40*kFitWidth, 40*kFitHeight)];
-//    [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
-//    [self.skipButton setTitle:@"GO" forState:UIControlStateNormal];
-//    [self.skipButton addTarget:self action:@selector(skipIntroduction) forControlEvents:UIControlEventTouchUpInside];
-//    [self addSubview:self.skipButton];
-    
-   
+    self.skipButton = [[UIButton alloc] initWithFrame:CGRectMake(170*kFitWidth, 230*kFitHeight, 40*kFitWidth, 40*kFitHeight)];
+    [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
+    [self.skipButton setTitle:@"马上进入" forState:UIControlStateNormal];
+    [self.skipButton.titleLabel setFont:[UIFont boldSystemFontOfSize:15]];
+    [self.skipButton setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
+    [self.skipButton addTarget:self action:@selector(skipIntroduction) forControlEvents:UIControlEventTouchUpInside];
+    [self addSubview:self.skipButton];
 }
 
 #pragma mark - UIScrollView Delegate
