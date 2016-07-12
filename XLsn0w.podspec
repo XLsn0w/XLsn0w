@@ -18,6 +18,7 @@ Pod::Spec.new do |s|
   s.dependency "FMDB", "~> 2.6.2"
   s.dependency "MBProgressHUD", "~> 0.9.2"
   s.dependency "SDWebImage", "~> 3.8.1"
+  s.dependency "Masonry", "~> 1.0.1"
   s.requires_arc = true
 
 end

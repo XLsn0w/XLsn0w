@@ -22,21 +22,22 @@
 /*! XLDB */
 #import "XLDB.h"
 
-/* [Create podspec With Custom Framework push to CocoaPods]
+/* 
  
-   Command line               param
+  [Create podspec With Custom Framework push to CocoaPods]
  
-   git tag                    tagValue -> 1.1.1
+
+   git tag 1.1.1
  
-   git push origin --tags     git push origin --tags
+   git push origin --tags
  
-   pod spec create            frameworkName.podspec
+   pod spec create XLsn0w.podspec
  
-   pod spec lint              podspecPath
+   pod spec lint /Users/XL/XLsn0w/XLsn0w.podspec
  
-   pod trunk register         userName@gmail.com 'userName'
+   pod trunk register xlsn0w@qq.com 'xlsn0w'
  
-   pod trunk push             podspecPath
+   pod trunk push /Users/XL/XLsn0w/XLsn0w.podspec
  
 */
 

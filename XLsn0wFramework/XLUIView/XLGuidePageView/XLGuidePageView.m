@@ -1,5 +1,6 @@
 
 #import "XLGuidePageView.h"
+#import <Masonry.h>
 
 #define kFitWidth ([UIScreen mainScreen].bounds.size.width / 375.0)
 #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667.0)
@@ -258,13 +259,18 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     _pageControl.pageIndicatorTintColor = [UIColor whiteColor];
     _pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     
-    self.skipButton = [[UIButton alloc] initWithFrame:CGRectMake(170*kFitWidth, 230*kFitHeight, 40*kFitWidth, 40*kFitHeight)];
+    _skipButton = [[UIButton alloc] init];
+    [self addSubview:_skipButton];
+    [_skipButton mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.centerX.mas_equalTo(self);
+        make.centerY.mas_equalTo(self);
+    }];
+    
     [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
     [self.skipButton setTitle:@"马上进入" forState:UIControlStateNormal];
     [self.skipButton.titleLabel setFont:[UIFont boldSystemFontOfSize:15]];
     [self.skipButton setTitleColor:[UIColor whiteColor] forState:(UIControlStateNormal)];
     [self.skipButton addTarget:self action:@selector(skipIntroduction) forControlEvents:UIControlEventTouchUpInside];
-    [self addSubview:self.skipButton];
 }
 
 #pragma mark - UIScrollView Delegate
