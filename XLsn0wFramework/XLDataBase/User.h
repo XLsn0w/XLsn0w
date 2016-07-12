@@ -42,7 +42,30 @@
 /*! 头像URL 字符串类型 */
 @property(nonatomic, strong) NSString *imageUrl;
 
-/*! Token 用户令牌 */
+/*! UserToken 用户令牌 */
 @property(nonatomic, strong) NSString *userToken;
+
+/*****************************************************/
+
+/*! Token 令牌 */
+@property(nonatomic, strong) NSString *token;
+
+/*! 真实姓名 */
+@property(nonatomic, strong) NSString *trueName;
+
+/*! 房地产ID */
+@property(nonatomic, strong) NSString *estateId;
+
+/*! 任务|角色 */
+@property(nonatomic, strong) NSString *roles;
+
+/*! 账号ID */
+@property(nonatomic, strong) NSString *accountId;
+
+/*! 账号类型 */
+@property(nonatomic, strong) NSString *accountType;
+
+/*! 属性ID */
+@property(nonatomic, strong) NSString *propertyId;
 
 @end

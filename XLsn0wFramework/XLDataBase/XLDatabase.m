@@ -22,7 +22,7 @@ static XLDatabase *instance = nil;
         _fmdb = [FMDatabase databaseWithPath:databasePath];
        }
     if ([_fmdb open]) {
-        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userNumber text, userId text, imageUrl text, userToken text)"];
+        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userNumber text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, roles text, accountId text, accountType text, propertyId text)"];
         if (result) {
             NSLog(@"<创建XLDatabase成功>");
         } else {
@@ -35,7 +35,7 @@ static XLDatabase *instance = nil;
 /*******insert user into XLDatabase****************************************************************/
 - (void)insertUser:(User *)user {
     if ([_fmdb open]) {
-        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
+        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
         BOOL result = [_fmdb executeUpdate:insertCommand, user.primaryKeyId, user.imageData, user.userName, user.password, user.age, user.birthday, user.height, user.weight, user.phoneNumber, user.address, user.userNumber, user.userId, user.imageUrl, user.userToken];
         if (result) {
             NSLog(@"插入User成功");
@@ -276,6 +276,14 @@ static XLDatabase *instance = nil;
             user.userId = [resultSet stringForColumn:@"userId"];
             user.imageUrl = [resultSet stringForColumn:@"imageUrl"];
             user.userToken = [resultSet stringForColumn:@"userToken"];
+            
+            user.token = [resultSet stringForColumn:@"token"];
+            user.trueName = [resultSet stringForColumn:@"trueName"];
+            user.estateId = [resultSet stringForColumn:@"estateId"];
+            user.roles = [resultSet stringForColumn:@"roles"];
+            user.accountId = [resultSet stringForColumn:@"accountId"];
+            user.accountType = [resultSet stringForColumn:@"accountType"];
+            user.propertyId = [resultSet stringForColumn:@"propertyId"];
             
             // add user into userArray
             [userArray addObject:user];
