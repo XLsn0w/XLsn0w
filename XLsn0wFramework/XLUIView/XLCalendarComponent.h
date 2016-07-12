@@ -56,9 +56,6 @@
 
 @interface XLCalendarComponent : UIView
 
-/** 当天是否已经签到 */
-@property (nonatomic, assign) BOOL isSignForToday;
-
 /*! 自定义代理属性:xlsn0wDelegate */
 @property (nonatomic, weak) id<XLCalendarComponentDelegate> xlDelegate;
 

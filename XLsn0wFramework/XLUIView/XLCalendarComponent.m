@@ -200,21 +200,8 @@
     [self layoutSubviews];
 }
 
-/** 当用户“签到”时，更新“日历”中的 Item 显示签到 label */
-- (void)setIsSignForToday:(BOOL)isSignForToday {
-    _isSignForToday = isSignForToday;
-    if (_isSignForToday) { // 签到
-        
-        
-    } else { // 取消签到（通常不会出现这种情况）
-        // TODO:
-    }
-}
-
 #pragma mark - 点击日期
 - (void)clickDateButton:(DateButton *)dateButton {
-    
-    _isSignForToday = YES;
     
     _selectedDate = dateButton.buttonDate;
     
@@ -223,7 +210,7 @@
 }
 
 //根据屏幕高度判断真机设备
-#define iPhone4S    ([[UIScreen mainScreen] bounds].size.height == 480)
+#define iPhone4s    ([[UIScreen mainScreen] bounds].size.height == 480)
 #define iPhone5     ([[UIScreen mainScreen] bounds].size.height == 568)
 #define iPhone6     ([[UIScreen mainScreen] bounds].size.height == 667)
 #define iPhone6Plus ([[UIScreen mainScreen] bounds].size.height == 736)
@@ -263,10 +250,10 @@
             [dayLabel setFont:[UIFont systemFontOfSize:8]];
         } else if (iPhone5) {
             [dayLabel setFont:[UIFont systemFontOfSize:7]];
-        }  else if (iPhone4S) {
+        }  else if (iPhone4s) {
             [dayLabel setFont:[UIFont systemFontOfSize:6]];
         } else {
-            
+            [dayLabel setFont:[UIFont systemFontOfSize:14]];
         }
     }
     
@@ -301,10 +288,10 @@
             [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:10]];
         } else if (iPhone5) {
             [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:9]];
-        }  else if (iPhone4S) {
+        }  else if (iPhone4s) {
             [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:8]];
         } else {
-            
+            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
         }
         
         DateCell *dateCell = [[DateCell alloc] init];
