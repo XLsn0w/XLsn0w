@@ -105,3 +105,21 @@
 }
 
 @end
+
+#import "UIImage+XLsn0w.h"
+
+@implementation StretchButton
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+        [self setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
+        [self setBackgroundImage:[UIImage stretchImageSizeWithName:@"btn_normal"] forState:UIControlStateNormal];
+        [self setBackgroundImage:[UIImage stretchImageSizeWithName:@"btn_highlight"] forState:UIControlStateHighlighted];
+        [self setBackgroundImage:[UIImage stretchImageSizeWithName:@"btn_disable"] forState:UIControlStateDisabled];
+        self.layer.cornerRadius = 5.0;
+        self.layer.masksToBounds = YES;
+    }
+    return self;
+}
+
+@end

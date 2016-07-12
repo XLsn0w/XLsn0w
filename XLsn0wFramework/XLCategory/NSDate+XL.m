@@ -282,4 +282,70 @@
     comps = [calendar components:unitFlags fromDate:now];
     return [comps day];
 }
+
 @end
+
+
+
+@implementation NSDate (CurrentMonth)
+
++ (NSInteger)numberOfDaysInCurrentMonth {
+    // 初始化日历
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    // 获取系统当前日期
+    NSDate *currentDate = [NSDate date];
+    // 获取当前日期中当前月中天的范围
+    NSRange range = [calendar rangeOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitMonth forDate:currentDate];
+    // 得到当前月中总共有多少天（即范围的长度）
+    NSInteger numberOfDaysInCurrentMonth = range.length;
+    return numberOfDaysInCurrentMonth;
+}
+
+/** 获取当前月中共有多少周 */
++ (NSInteger)numberOfWeeksInCurrentMonth {
+    // 初始化日历
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    // 获取系统当前日期
+    NSDate *currentDate = [NSDate date];
+    // 获取当前日期中当前月中周的范围
+    NSRange range = [calendar rangeOfUnit:NSCalendarUnitWeekOfMonth inUnit:NSCalendarUnitMonth forDate:currentDate];
+    // 得到当前月中总共有多少周（即范围的长度）
+    NSInteger numberOfWeeksInCurrentMonth = range.length;
+    return numberOfWeeksInCurrentMonth;
+}
+
++ (NSInteger)indexOfWeekForFirstDayInCurrentMonth {
+    // 初始化日历
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    // 获取系统当前日期
+    NSDate *currentDate = [NSDate date];
+    // 获取当前月中的第一天的日期
+    NSDateComponents *dateComponents = [calendar components:NSCalendarUnitYear | NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekday fromDate:currentDate];
+    [dateComponents setDay:1];
+    NSDate *beginDate = [[NSCalendar currentCalendar] dateFromComponents:dateComponents];
+    // 当前月中的第一天的日期组件
+    NSDateComponents *beginDateComponents = [calendar components:NSCalendarUnitWeekday fromDate:beginDate];
+    // 将格式：日一, ……,五, 六  转换成格式：一二, ……, 六 日，获得索引
+    NSInteger indexOfWeek = ([beginDateComponents weekday] + 6) % 7;
+    
+    return indexOfWeek;
+}
+
++ (NSInteger)indexOfMonthForTodayInCurrentMonth {
+    // 初始化日历
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    // 获取系统当前日期
+    NSDate *currentDate = [NSDate date];
+    // 获取当前日期的组件
+    NSDateComponents *dateComponents = [calendar components:NSCalendarUnitDay fromDate:currentDate];
+    NSInteger indexOfMonthForTodayInCurrentMonth = [dateComponents day];
+    return indexOfMonthForTodayInCurrentMonth;
+}
+
+@end
+
+
+
+
+
+

@@ -53,3 +53,21 @@
 - (NSInteger)xl_getNowWeekday;
 
 @end
+
+@interface NSDate (CurrentMonth)
+
+/** 获取当前月总共有多少天 */
++ (NSInteger)numberOfDaysInCurrentMonth;
+/** 获取当前月中共有多少周 */
++ (NSInteger)numberOfWeeksInCurrentMonth;
+/** 获取当前月中第一天在一周内的索引 */
++ (NSInteger)indexOfWeekForFirstDayInCurrentMonth;
+/** 获取当天在当月中的索引(第几天) */
++ (NSInteger)indexOfMonthForTodayInCurrentMonth;
+
+@end
+
+
+
+
+

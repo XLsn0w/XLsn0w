@@ -49,3 +49,15 @@
 - (void)xlsn0w_centerImageAndTitle;
 
 @end
+
+@interface StretchButton : UIButton
+
+@end
+
+
+
+
+
+
+
+

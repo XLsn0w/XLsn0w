@@ -5,3 +5,4 @@
 #import "XLCalendarComponent.h"
 #import "XLProgressHUD.h"
 #import "XLSegmentedControl.h"
+#import "XLGuidePageView.h"

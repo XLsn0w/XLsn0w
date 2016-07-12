@@ -230,6 +230,7 @@
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
 		35BF65A91D23744C00993CAE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A51D23744C00993CAE /* User.m */; };
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
+		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35EF5BAD1D347939001D895D /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF5BAB1D347939001D895D /* JPEngine.m */; };
 		35EF5BAE1D347939001D895D /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 35EF5BAC1D347939001D895D /* JSPatch.js */; };
 		35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6DDF31D22636000874C91 /* XLNavViewController.m */; };
@@ -688,6 +689,8 @@
 		35BF65A61D23744C00993CAE /* XLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDatabase.h; sourceTree = "<group>"; };
 		35BF65A71D23744C00993CAE /* XLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDatabase.m; sourceTree = "<group>"; };
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
+		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
+		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35EF5BAA1D347939001D895D /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		35EF5BAB1D347939001D895D /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		35EF5BAC1D347939001D895D /* JSPatch.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = JSPatch.js; sourceTree = "<group>"; };
@@ -1174,6 +1177,7 @@
 				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
 				3532958A1D326DA20071A34A /* XLCalendarComponent.h */,
 				3532958B1D326DA20071A34A /* XLCalendarComponent.m */,
+				35DB329A1D34C6AC00A4B970 /* XLGuidePageView */,
 				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
 				358906571D3349750053BE45 /* XLProgressHUD */,
 			);
@@ -1274,6 +1278,15 @@
 				35BF65A71D23744C00993CAE /* XLDatabase.m */,
 			);
 			path = XLDatabase;
+			sourceTree = "<group>";
+		};
+		35DB329A1D34C6AC00A4B970 /* XLGuidePageView */ = {
+			isa = PBXGroup;
+			children = (
+				35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */,
+				35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */,
+			);
+			path = XLGuidePageView;
 			sourceTree = "<group>";
 		};
 		35EF5BA91D347939001D895D /* JSPatch */ = {
@@ -1442,6 +1455,7 @@
 				354EBB581D225115003D82CB /* UINavigationController+JKStackManager.m in Sources */,
 				354EBB8B1D225115003D82CB /* UIWebVIew+JKSwipeGesture.m in Sources */,
 				354EBB851D225115003D82CB /* UIWebView+JKBlocks.m in Sources */,
+				35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */,
 				354EBB191D225115003D82CB /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
 				354EBB241D225115003D82CB /* UIButton+JKImagePosition.m in Sources */,
 				354EBAF21D225115003D82CB /* NSObject+JKBlocks.m in Sources */,

@@ -32,3 +32,10 @@
 
 @end
 
+@interface UIImage (StretchSize)
+
+/** 返回一张图片，按指定方式拉伸的图片：width * 0.5 : height * 0.5 */
++ (UIImage *)stretchImageSizeWithName:(NSString *)name;
+
+@end
+
