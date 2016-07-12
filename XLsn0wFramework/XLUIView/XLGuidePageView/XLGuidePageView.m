@@ -255,7 +255,8 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [self.pageControl addTarget:self action:@selector(showPanelAtPageControl) forControlEvents:UIControlEventValueChanged];
     self.pageControl.numberOfPages = _pages.count;
     [self addSubview:self.pageControl];
-    _pageControl.pageIndicatorTintColor = kUIColorFromRGB(0x00BFFF);
+    _pageControl.pageIndicatorTintColor = [UIColor whiteColor];
+    _pageControl.currentPageIndicatorTintColor = [UIColor redColor];
     
     self.skipButton = [[UIButton alloc] initWithFrame:CGRectMake(170*kFitWidth, 230*kFitHeight, 40*kFitWidth, 40*kFitHeight)];
     [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
