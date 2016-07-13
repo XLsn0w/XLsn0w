@@ -22,7 +22,7 @@ static XLDatabase *instance = nil;
         _fmdb = [FMDatabase databaseWithPath:databasePath];
        }
     if ([_fmdb open]) {
-        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userNumber text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, roles text, accountId text, accountType text, propertyId text)"];
+        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, roles text, accountId text, accountType text, propertyId text)"];
         if (result) {
             NSLog(@"<创建XLDatabase成功>");
         } else {
@@ -35,8 +35,8 @@ static XLDatabase *instance = nil;
 /*******insert user into XLDatabase****************************************************************/
 - (void)insertUser:(User *)user {
     if ([_fmdb open]) {
-        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
-        BOOL result = [_fmdb executeUpdate:insertCommand, user.primaryKeyId, user.imageData, user.userName, user.password, user.age, user.birthday, user.height, user.weight, user.phoneNumber, user.address, user.userNumber, user.userId, user.imageUrl, user.userToken];
+        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
+        BOOL result = [_fmdb executeUpdate:insertCommand, user.primaryKeyId, user.imageData, user.userName, user.password, user.age, user.birthday, user.height, user.weight, user.phoneNumber, user.address, user.userId, user.imageUrl, user.userToken];
         if (result) {
             NSLog(@"插入User成功");
         } else {
@@ -188,20 +188,6 @@ static XLDatabase *instance = nil;
     }
 }
 
-//update XLDatabase userNumber Of User
-- (void)updateUserNumberOfUser:(User *)user {
-    if ([_fmdb open]) {
-        NSString *updateCommand = [NSString stringWithFormat:@"update XLDatabase set userNumber = ? where primaryKeyId = ?;"];
-        BOOL result = [_fmdb executeUpdate:updateCommand, user.userNumber, user.primaryKeyId];
-        if (result) {
-            NSLog(@"更新userNumber成功");
-        } else {
-            NSLog(@"更新userNumber失败");
-        }
-        [_fmdb close];
-    }
-}
-
 //update XLDatabase userId Of User
 - (void)updateUserIdOfUser:(User *)user {
     if ([_fmdb open]) {
@@ -272,7 +258,6 @@ static XLDatabase *instance = nil;
             user.weight = [resultSet stringForColumn:@"age"];
             user.phoneNumber = [resultSet stringForColumn:@"phoneNumber"];
             user.address = [resultSet stringForColumn:@"address"];
-            user.userNumber = [resultSet stringForColumn:@"userNumber"];
             user.userId = [resultSet stringForColumn:@"userId"];
             user.imageUrl = [resultSet stringForColumn:@"imageUrl"];
             user.userToken = [resultSet stringForColumn:@"userToken"];

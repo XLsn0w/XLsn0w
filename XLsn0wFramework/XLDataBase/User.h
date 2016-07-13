@@ -33,9 +33,6 @@
 /*! 地址 */
 @property (nonatomic, copy) NSString *address;
 
-/*! 用户编号 */
-@property (nonatomic, copy) NSString *userNumber;
-
 /*! <用户ID> 格式不限，可以为数字、GUID、或者任意的字符串（中文除外）*/
 @property(nonatomic, strong) NSString *userId;
 

@@ -29,7 +29,6 @@
 - (void)updateWeightOfUser:(User *)user;
 - (void)updatePhoneNumberOfUser:(User *)user;
 - (void)updateAddressOfUser:(User *)user;
-- (void)updateUserNumberOfUser:(User *)user;
 - (void)updateUserIdOfUser:(User *)user;
 - (void)updateImageUrlOfUser:(User *)user;
 - (void)updateUserTokenOfUser:(User *)user;
