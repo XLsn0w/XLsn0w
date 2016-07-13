@@ -24,9 +24,6 @@
 
 /* 
  
-  [Create podspec With Custom Framework push to CocoaPods]
- 
-
    git tag 1.1.1
  
    git push origin --tags
