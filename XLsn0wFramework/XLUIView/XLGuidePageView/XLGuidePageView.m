@@ -265,9 +265,10 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
     [_skipButton mas_makeConstraints:^(MASConstraintMaker *make) {
         make.centerX.mas_equalTo(self);
         make.centerY.mas_equalTo(self);
+        make.width.mas_equalTo(120);
     }];
     _skipButton.layer.borderWidth = 1;
-    _skipButton.layer.borderColor = [[UIColor redColor] CGColor];
+    _skipButton.layer.borderColor = [[UIColor whiteColor] CGColor];
     [_skipButton xlsn0w_addCornerRadius:10];
     
     [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];

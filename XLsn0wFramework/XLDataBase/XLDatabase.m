@@ -35,8 +35,28 @@ static XLDatabase *instance = nil;
 /*******insert user into XLDatabase****************************************************************/
 - (void)insertUser:(User *)user {
     if ([_fmdb open]) {
-        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userNumber, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
-        BOOL result = [_fmdb executeUpdate:insertCommand, user.primaryKeyId, user.imageData, user.userName, user.password, user.age, user.birthday, user.height, user.weight, user.phoneNumber, user.address, user.userId, user.imageUrl, user.userToken];
+        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
+        BOOL result = [_fmdb executeUpdate:insertCommand,
+                       user.primaryKeyId,
+                       user.imageData,
+                       user.userName,
+                       user.password,
+                       user.age,
+                       user.birthday,
+                       user.height,
+                       user.weight,
+                       user.phoneNumber,
+                       user.address,
+                       user.userId,
+                       user.imageUrl,
+                       user.userToken,
+                       user.token,
+                       user.trueName,
+                       user.estateId,
+                       user.roles,
+                       user.accountId,
+                       user.accountType,
+                       user.propertyId];
         if (result) {
             NSLog(@"插入User成功");
         } else {
@@ -275,7 +295,7 @@ static XLDatabase *instance = nil;
         }
         [_fmdb close];
     }
-    NSLog(@"[查询XLDatabase成功|得到用户数组取值]");
+    NSLog(@"[查询XLDatabase成功|Select UserArray Success]");
     return userArray;
 }
 
