@@ -1,6 +1,7 @@
 
 #import "XLGuidePageView.h"
 #import "Masonry.h"
+#import "UIView+XLsn0w.h"
 
 #define kFitWidth ([UIScreen mainScreen].bounds.size.width / 375.0)
 #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667.0)
@@ -265,6 +266,9 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
         make.centerX.mas_equalTo(self);
         make.centerY.mas_equalTo(self);
     }];
+    _skipButton.layer.borderWidth = 1;
+    _skipButton.layer.borderColor = [[UIColor redColor] CGColor];
+    [_skipButton xlsn0w_addCornerRadius:10];
     
     [self.skipButton setAutoresizingMask: UIViewAutoresizingFlexibleLeftMargin | UIViewAutoresizingFlexibleRightMargin];
     [self.skipButton setTitle:@"马上进入" forState:UIControlStateNormal];
