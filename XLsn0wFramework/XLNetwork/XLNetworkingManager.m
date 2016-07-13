@@ -11,9 +11,10 @@
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
-        success(task,dic);
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -30,10 +31,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
-        
-        success(task,dic);
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -49,9 +50,10 @@
     
     [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
-        success(task,dic);
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -68,9 +70,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
-        success(task,dic);
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -98,9 +101,10 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
-        success(task,dic);
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -125,12 +129,10 @@
         progress(uploadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        id dic = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
-        success(task,dic);
-        
-        
-        success(task,responseObject);
+        success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         failure(task,error);
     }];
@@ -189,7 +191,7 @@
     return manager;
 }
 
-+ (id)responseConfiguration:(id)responseObject {
++ (NSDictionary *)responseConfiguration:(id)responseObject {
     
     NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];

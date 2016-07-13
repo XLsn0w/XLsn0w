@@ -7,14 +7,14 @@
  *
  *  @param response 请求成功返回的数据
  */
-typedef void (^XLResponseSuccess)(NSURLSessionDataTask * task,id responseObject);
+typedef void (^XLResponseSuccess)(NSURLSessionDataTask *task, NSDictionary *JSONDictionary, NSString *JSONString);
 
 /**
  *  宏定义请求失败的block
  *
  *  @param error 报错信息
  */
-typedef void (^XLResponseFailure)(NSURLSessionDataTask * task, NSError * error);
+typedef void (^XLResponseFailure)(NSURLSessionDataTask *task, NSError *error);
 
 /**
  *  上传或者下载的进度
