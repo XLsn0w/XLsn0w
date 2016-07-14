@@ -14,11 +14,11 @@ Pod::Spec.new do |s|
   s.resources    = "XLsn0wFramework/XLsn0w.bundle"
   s.resources    = "XLsn0wFramework/XLNSObject/JSPatch/JSPatch.js"
   s.framework    = "QuartzCore"
-  s.dependency "AFNetworking", "~> 3.1.0"
-  s.dependency "FMDB", "~> 2.6.2"
-  s.dependency "MBProgressHUD", "~> 0.9.2"
-  s.dependency "SDWebImage", "~> 3.8.1"
-  s.dependency "Masonry", "~> 1.0.1"
+  s.dependency "AFNetworking"
+  s.dependency "FMDB"
+  s.dependency "MBProgressHUD"
+  s.dependency "SDWebImage"
+  s.dependency "Masonry"
   s.requires_arc = true
 
 end
