@@ -16,8 +16,8 @@
 
 /*! #import <XLsn0w.h> */
 
-/*! XLDependency */
-#import "XLDependency.h"
+/*! XLDepend */
+#import "XLDepend.h"
 
 /*! XLNSObject */
 #import "XLObject.h"
@@ -39,6 +39,3 @@
 
 /*! XLDB */
 #import "XLDB.h"
-
-/*! XLRefresh */
-#import "XLRefresh.h"
