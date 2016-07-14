@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
-		351910F11D22426700444211 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 351910F01D22426700444211 /* icon.png */; };
 		3532958C1D326DA20071A34A /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532958B1D326DA20071A34A /* XLCalendarComponent.m */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
 		354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
@@ -218,7 +217,6 @@
 		3574A81A1D2BFCCF0083906F /* XLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A8191D2BFCCF0083906F /* XLTools.m */; };
 		3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */; };
 		357D183B1D3396E1004C1BE9 /* XLSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */; };
-		358906561D3346EB0053BE45 /* XLsn0w.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 358906551D3346EB0053BE45 /* XLsn0w.bundle */; };
 		358906601D3349750053BE45 /* IndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358906591D3349750053BE45 /* IndefiniteAnimatedView.m */; };
 		358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065B1D3349750053BE45 /* ProgressAnimatedView.m */; };
 		358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065D1D3349750053BE45 /* RadialGradientLayer.m */; };
@@ -230,6 +228,7 @@
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
 		35BF65A91D23744C00993CAE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A51D23744C00993CAE /* User.m */; };
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
+		35C313141D37CB7A002A461C /* XLsn0w.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C313131D37CB7A002A461C /* XLsn0w.bundle */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35EF5BAD1D347939001D895D /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF5BAB1D347939001D895D /* JPEngine.m */; };
 		35EF5BAE1D347939001D895D /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 35EF5BAC1D347939001D895D /* JSPatch.js */; };
@@ -260,7 +259,6 @@
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
-		351910F01D22426700444211 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
 		3532958A1D326DA20071A34A /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
 		3532958B1D326DA20071A34A /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
@@ -684,7 +682,6 @@
 		3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XLsn0w.m"; sourceTree = "<group>"; };
 		357D18391D3396E1004C1BE9 /* XLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedControl.h; sourceTree = "<group>"; };
 		357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedControl.m; sourceTree = "<group>"; };
-		358906551D3346EB0053BE45 /* XLsn0w.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XLsn0w.bundle; sourceTree = "<group>"; };
 		358906581D3349750053BE45 /* IndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndefiniteAnimatedView.h; sourceTree = "<group>"; };
 		358906591D3349750053BE45 /* IndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndefiniteAnimatedView.m; sourceTree = "<group>"; };
 		3589065A1D3349750053BE45 /* ProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressAnimatedView.h; sourceTree = "<group>"; };
@@ -702,12 +699,12 @@
 		3598760D1D1BA44200C2EC10 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		359876131D1BA44F00C2EC10 /* XLsn0wViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wViewController.h; sourceTree = "<group>"; };
 		359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wViewController.m; sourceTree = "<group>"; };
-		35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */ = {isa = PBXFileReference; lastKnownFileType = file; path = ChineseCalendar.sqlite; sourceTree = "<group>"; };
 		35BF65A41D23744C00993CAE /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		35BF65A51D23744C00993CAE /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		35BF65A61D23744C00993CAE /* XLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDatabase.h; sourceTree = "<group>"; };
 		35BF65A71D23744C00993CAE /* XLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDatabase.m; sourceTree = "<group>"; };
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
+		35C313131D37CB7A002A461C /* XLsn0w.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XLsn0w.bundle; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35EF5BAA1D347939001D895D /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
@@ -776,6 +773,7 @@
 			isa = PBXGroup;
 			children = (
 				3515EEE51D1E1F7E0008F171 /* XLsn0w.h */,
+				35C313121D37CB7A002A461C /* Resources */,
 				354EBBA11D225175003D82CB /* XLDependency */,
 				354EBB8E1D225139003D82CB /* XLNSObject */,
 				354EBB991D22514D003D82CB /* XLUIView */,
@@ -784,7 +782,6 @@
 				35BF65A31D23744C00993CAE /* XLDatabase */,
 				354EB90C1D2250FB003D82CB /* XLNetwork */,
 				35F791921D378D6200C2A531 /* XLRefresh */,
-				358906551D3346EB0053BE45 /* XLsn0w.bundle */,
 			);
 			path = XLsn0wFramework;
 			sourceTree = "<group>";
@@ -1304,7 +1301,6 @@
 				359876081D1BA44200C2EC10 /* Assets.xcassets */,
 				3598760A1D1BA44200C2EC10 /* LaunchScreen.storyboard */,
 				3598760D1D1BA44200C2EC10 /* Info.plist */,
-				35A00E3A1D1BCBA400E88F93 /* XL */,
 				359876021D1BA44200C2EC10 /* Supporting Files */,
 			);
 			path = XLsn0w;
@@ -1318,15 +1314,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		35A00E3A1D1BCBA400E88F93 /* XL */ = {
-			isa = PBXGroup;
-			children = (
-				35A00E3B1D1BCBAB00E88F93 /* ChineseCalendar.sqlite */,
-				351910F01D22426700444211 /* icon.png */,
-			);
-			path = XL;
-			sourceTree = "<group>";
-		};
 		35BF65A31D23744C00993CAE /* XLDatabase */ = {
 			isa = PBXGroup;
 			children = (
@@ -1337,6 +1324,14 @@
 				35BF65A71D23744C00993CAE /* XLDatabase.m */,
 			);
 			path = XLDatabase;
+			sourceTree = "<group>";
+		};
+		35C313121D37CB7A002A461C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				35C313131D37CB7A002A461C /* XLsn0w.bundle */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 		35DB329A1D34C6AC00A4B970 /* XLGuidePageView */ = {
@@ -1540,10 +1535,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */,
+				35C313141D37CB7A002A461C /* XLsn0w.bundle in Resources */,
 				35EF5BAE1D347939001D895D /* JSPatch.js in Resources */,
-				358906561D3346EB0053BE45 /* XLsn0w.bundle in Resources */,
 				3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */,
-				351910F11D22426700444211 /* icon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
