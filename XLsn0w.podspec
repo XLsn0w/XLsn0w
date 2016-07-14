@@ -15,8 +15,8 @@ Pod::Spec.new do |s|
 
   s.source_files = "XLsn0wFramework/**/*.{h,m}"
 
-  s.resources    = "XLsn0wFramework/Resources/XLsn0w.bundle"
   s.resources    = "XLsn0wFramework/XLNSObject/JSPatch/JSPatch.js"
+  s.resources    = "XLsn0wFramework/Resources/Resources.bundle"
 
   s.framework    = "QuartzCore"
 

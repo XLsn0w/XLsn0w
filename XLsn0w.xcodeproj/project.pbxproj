@@ -228,7 +228,7 @@
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
 		35BF65A91D23744C00993CAE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A51D23744C00993CAE /* User.m */; };
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
-		35C313141D37CB7A002A461C /* XLsn0w.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35C313131D37CB7A002A461C /* XLsn0w.bundle */; };
+		35CA8F211D37D78D001D3055 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 35CA8F201D37D78D001D3055 /* Resources.bundle */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35EF5BAD1D347939001D895D /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF5BAB1D347939001D895D /* JPEngine.m */; };
 		35EF5BAE1D347939001D895D /* JSPatch.js in Resources */ = {isa = PBXBuildFile; fileRef = 35EF5BAC1D347939001D895D /* JSPatch.js */; };
@@ -704,7 +704,7 @@
 		35BF65A61D23744C00993CAE /* XLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDatabase.h; sourceTree = "<group>"; };
 		35BF65A71D23744C00993CAE /* XLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDatabase.m; sourceTree = "<group>"; };
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
-		35C313131D37CB7A002A461C /* XLsn0w.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = XLsn0w.bundle; sourceTree = "<group>"; };
+		35CA8F201D37D78D001D3055 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35EF5BAA1D347939001D895D /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
@@ -1329,7 +1329,7 @@
 		35C313121D37CB7A002A461C /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				35C313131D37CB7A002A461C /* XLsn0w.bundle */,
+				35CA8F201D37D78D001D3055 /* Resources.bundle */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1534,8 +1534,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35CA8F211D37D78D001D3055 /* Resources.bundle in Resources */,
 				359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */,
-				35C313141D37CB7A002A461C /* XLsn0w.bundle in Resources */,
 				35EF5BAE1D347939001D895D /* JSPatch.js in Resources */,
 				3598760C1D1BA44200C2EC10 /* LaunchScreen.storyboard in Resources */,
 			);
