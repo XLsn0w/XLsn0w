@@ -10,24 +10,27 @@
 @class XLSegmentedControl;
 
 typedef void (^IndexChangeBlock)(NSInteger index);
-typedef NSAttributedString *(^HMTitleFormatterBlock)(XLSegmentedControl *segmentedControl, NSString *title, NSUInteger index, BOOL selected);
+typedef NSAttributedString *(^TitleFormatterBlock)(XLSegmentedControl *segmentedControl, NSString *title, NSUInteger index, BOOL selected);
 
+/*! SelectionStyle */
 typedef enum {
-    SegmentedControlSelectionStyleTextWidthStripe, // Indicator width will only be as big as the text width
-    SegmentedControlSelectionStyleFullWidthStripe, // Indicator width will fill the whole segment
-    SegmentedControlSelectionStyleBox, // A rectangle that covers the whole segment
-    SegmentedControlSelectionStyleArrow // An arrow in the middle of the segment pointing up or down depending on `HMSegmentedControlSelectionIndicatorLocation`
+    SegmentedControlSelectionStyleTextWidthStripe,
+    SegmentedControlSelectionStyleFullWidthStripe,
+    SegmentedControlSelectionStyleBox,
+    SegmentedControlSelectionStyleArrow
 } SegmentedControlSelectionStyle;
 
+/*! IndicatorLocation */
 typedef enum {
     SegmentedControlSelectionIndicatorLocationUp,
     SegmentedControlSelectionIndicatorLocationDown,
-	SegmentedControlSelectionIndicatorLocationNone // No selection indicator
+	SegmentedControlSelectionIndicatorLocationNone
 } SegmentedControlSelectionIndicatorLocation;
 
+/*! SegmentWidthStyle */
 typedef enum {
-    SegmentedControlSegmentWidthStyleFixed, // Segment width is fixed
-    SegmentedControlSegmentWidthStyleDynamic, // Segment width will only be as big as the text width (including inset)
+    SegmentedControlSegmentWidthStyleFixed,
+    SegmentedControlSegmentWidthStyleDynamic,
 } SegmentedControlSegmentWidthStyle;
 
 typedef NS_OPTIONS(NSInteger, HMSegmentedControlBorderType) {
@@ -42,6 +45,7 @@ enum {
     SegmentedControlNoSegment = -1   // Segment index for no selected segment
 };
 
+/*! Type */
 typedef enum {
     SegmentedControlTypeText,
     SegmentedControlTypeImages,
@@ -66,7 +70,7 @@ typedef enum {
  
  When this block is set, no additional styling is applied to the `NSAttributedString` object returned from this block.
  */
-@property (nonatomic, copy) HMTitleFormatterBlock titleFormatter;
+@property (nonatomic, copy) TitleFormatterBlock titleFormatter;
 
 /**
  Text attributes to apply to item title text.
@@ -223,6 +227,6 @@ typedef enum {
 - (instancetype)initWithSectionImages:(NSArray *)sectionImages sectionSelectedImages:(NSArray *)sectionSelectedImages titlesForSections:(NSArray *)sectiontitles;
 - (void)setSelectedSegmentIndex:(NSUInteger)index animated:(BOOL)animated;
 - (void)setIndexChangeBlock:(IndexChangeBlock)indexChangeBlock;
-- (void)setTitleFormatter:(HMTitleFormatterBlock)titleFormatter;
+- (void)setTitleFormatter:(TitleFormatterBlock)titleFormatter;
 
 @end
