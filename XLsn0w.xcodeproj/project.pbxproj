@@ -1304,14 +1304,14 @@
 		358906571D3349750053BE45 /* XLProgressHUD */ = {
 			isa = PBXGroup;
 			children = (
+				3589065E1D3349750053BE45 /* XLProgressHUD.h */,
+				3589065F1D3349750053BE45 /* XLProgressHUD.m */,
 				358906581D3349750053BE45 /* IndefiniteAnimatedView.h */,
 				358906591D3349750053BE45 /* IndefiniteAnimatedView.m */,
 				3589065A1D3349750053BE45 /* ProgressAnimatedView.h */,
 				3589065B1D3349750053BE45 /* ProgressAnimatedView.m */,
 				3589065C1D3349750053BE45 /* RadialGradientLayer.h */,
 				3589065D1D3349750053BE45 /* RadialGradientLayer.m */,
-				3589065E1D3349750053BE45 /* XLProgressHUD.h */,
-				3589065F1D3349750053BE45 /* XLProgressHUD.m */,
 			);
 			path = XLProgressHUD;
 			sourceTree = "<group>";

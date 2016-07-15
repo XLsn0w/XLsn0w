@@ -1,12 +1,12 @@
 
-#if !__has_feature(objc_arc)
-#error SVProgressHUD is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
-#endif
-
 #import "XLProgressHUD.h"
 #import "IndefiniteAnimatedView.h"
 #import "ProgressAnimatedView.h"
 #import "RadialGradientLayer.h"
+
+#if !__has_feature(objc_arc)
+#error SVProgressHUD is ARC only. Either turn on ARC for the project or use -fobjc-arc flag
+#endif
 
 NSString * const SVProgressHUDDidReceiveTouchEventNotification = @"SVProgressHUDDidReceiveTouchEventNotification";
 NSString * const SVProgressHUDDidTouchDownInsideNotification = @"SVProgressHUDDidTouchDownInsideNotification";
@@ -342,7 +342,7 @@ static const CGFloat SVProgressHUDDefaultAnimationDuration = 0.15;
         }
         
         NSBundle *bundle = [NSBundle bundleForClass:[XLProgressHUD class]];
-        NSURL *url = [bundle URLForResource:@"XLsn0w" withExtension:@"bundle"];
+        NSURL *url = [bundle URLForResource:@"Resources" withExtension:@"bundle"];
         NSBundle *imageBundle = [NSBundle bundleWithURL:url];
         
         UIImage* infoImage = [UIImage imageWithContentsOfFile:[imageBundle pathForResource:@"info" ofType:@"png"]];
