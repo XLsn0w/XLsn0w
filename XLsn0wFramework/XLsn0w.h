@@ -37,18 +37,6 @@
 /*! XLDB */
 #import "XLDB.h"
 
-/*! XLDB */
-#import "XLDB.h"
-
-/*! XLRefresh */
-#import "XLRefresh.h"
-
-
-
-
-
-
-
-
-
+/*! XLComponent */
+#import "XLComponent.h"
 
