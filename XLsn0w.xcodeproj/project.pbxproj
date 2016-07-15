@@ -8,7 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
-		3532958C1D326DA20071A34A /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3532958B1D326DA20071A34A /* XLCalendarComponent.m */; };
+		3542BC551D387C3900674567 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC541D387C3900674567 /* ComboBoxView.m */; };
+		3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC581D387CAD00674567 /* XLCalendarComponent.m */; };
+		3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC5C1D387CB200674567 /* XLPickerView.m */; };
+		3542BC611D387CB600674567 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC601D387CB600674567 /* XLTextField.m */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
 		354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
 		354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91A1D225114003D82CB /* CAShapeLayer+JKUIBezierPath.m */; };
@@ -210,8 +213,6 @@
 		354EBB961D225139003D82CB /* XLCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB901D225139003D82CB /* XLCalendar.m */; };
 		354EBB971D225139003D82CB /* XLDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB921D225139003D82CB /* XLDateTime.m */; };
 		354EBB981D225139003D82CB /* XLMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB941D225139003D82CB /* XLMethods.m */; };
-		354EBB9F1D22514D003D82CB /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB9B1D22514D003D82CB /* XLPickerView.m */; };
-		354EBBA01D22514D003D82CB /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBB9D1D22514D003D82CB /* XLTextField.m */; };
 		355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */; };
 		355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */; };
 		355ED03A1D37DFC100383C60 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 355ED0391D37DFC100383C60 /* Resources.bundle */; };
@@ -259,8 +260,14 @@
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
 		351B64101D37E08000F27F82 /* XLDepend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDepend.h; sourceTree = "<group>"; };
-		3532958A1D326DA20071A34A /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
-		3532958B1D326DA20071A34A /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
+		3542BC531D387C3900674567 /* ComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBoxView.h; sourceTree = "<group>"; };
+		3542BC541D387C3900674567 /* ComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBoxView.m; sourceTree = "<group>"; };
+		3542BC571D387CAD00674567 /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
+		3542BC581D387CAD00674567 /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
+		3542BC5B1D387CB200674567 /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
+		3542BC5C1D387CB200674567 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
+		3542BC5F1D387CB600674567 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
+		3542BC601D387CB600674567 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
 		354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkingManager.m; sourceTree = "<group>"; };
 		354EB9171D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+JKAdditionalEquations.h"; sourceTree = "<group>"; };
@@ -665,10 +672,6 @@
 		354EBB931D225139003D82CB /* XLMethods.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMethods.h; sourceTree = "<group>"; };
 		354EBB941D225139003D82CB /* XLMethods.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLMethods.m; sourceTree = "<group>"; };
 		354EBB951D225139003D82CB /* XLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLObject.h; sourceTree = "<group>"; };
-		354EBB9A1D22514D003D82CB /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
-		354EBB9B1D22514D003D82CB /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
-		354EBB9C1D22514D003D82CB /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
-		354EBB9D1D22514D003D82CB /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
 		354EBB9E1D22514D003D82CB /* XLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView.h; sourceTree = "<group>"; };
 		354EBBA31D225256003D82CB /* XLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetwork.h; sourceTree = "<group>"; };
 		355126DE1D2B834800AF1D1C /* CAAnimation+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+XLsn0w.h"; sourceTree = "<group>"; };
@@ -790,6 +793,42 @@
 				351B64101D37E08000F27F82 /* XLDepend.h */,
 			);
 			path = XLDepend;
+			sourceTree = "<group>";
+		};
+		3542BC521D387C3900674567 /* ComboBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				3542BC531D387C3900674567 /* ComboBoxView.h */,
+				3542BC541D387C3900674567 /* ComboBoxView.m */,
+			);
+			path = ComboBoxView;
+			sourceTree = "<group>";
+		};
+		3542BC561D387CAD00674567 /* XLCalendarComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3542BC571D387CAD00674567 /* XLCalendarComponent.h */,
+				3542BC581D387CAD00674567 /* XLCalendarComponent.m */,
+			);
+			path = XLCalendarComponent;
+			sourceTree = "<group>";
+		};
+		3542BC5A1D387CB200674567 /* XLPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				3542BC5B1D387CB200674567 /* XLPickerView.h */,
+				3542BC5C1D387CB200674567 /* XLPickerView.m */,
+			);
+			path = XLPickerView;
+			sourceTree = "<group>";
+		};
+		3542BC5E1D387CB600674567 /* XLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3542BC5F1D387CB600674567 /* XLTextField.h */,
+				3542BC601D387CB600674567 /* XLTextField.m */,
+			);
+			path = XLTextField;
 			sourceTree = "<group>";
 		};
 		354EB90C1D2250FB003D82CB /* XLNetwork */ = {
@@ -1233,12 +1272,10 @@
 			isa = PBXGroup;
 			children = (
 				354EBB9E1D22514D003D82CB /* XLView.h */,
-				354EBB9C1D22514D003D82CB /* XLTextField.h */,
-				354EBB9D1D22514D003D82CB /* XLTextField.m */,
-				354EBB9A1D22514D003D82CB /* XLPickerView.h */,
-				354EBB9B1D22514D003D82CB /* XLPickerView.m */,
-				3532958A1D326DA20071A34A /* XLCalendarComponent.h */,
-				3532958B1D326DA20071A34A /* XLCalendarComponent.m */,
+				3542BC5E1D387CB600674567 /* XLTextField */,
+				3542BC5A1D387CB200674567 /* XLPickerView */,
+				3542BC561D387CAD00674567 /* XLCalendarComponent */,
+				3542BC521D387C3900674567 /* ComboBoxView */,
 				35DB329A1D34C6AC00A4B970 /* XLGuidePageView */,
 				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
 				358906571D3349750053BE45 /* XLProgressHUD */,
@@ -1553,6 +1590,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				354EBB111D225115003D82CB /* NSURL+JKQueryDictionary.m in Sources */,
+				3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */,
 				354EBB3E1D225115003D82CB /* UIImage+JKFileName.m in Sources */,
 				354EBB001D225115003D82CB /* NSString+JKHash.m in Sources */,
 				354EBB581D225115003D82CB /* UINavigationController+JKStackManager.m in Sources */,
@@ -1612,6 +1650,7 @@
 				35B6515E1D37EA8A009DCD6B /* NSBundle+MJRefresh.m in Sources */,
 				354EBAD91D225115003D82CB /* NSDecimalNumber+JKExtensions.m in Sources */,
 				354EBB871D225115003D82CB /* UIWebView+JKJavaScript.m in Sources */,
+				3542BC611D387CB600674567 /* XLTextField.m in Sources */,
 				354EBAF51D225115003D82CB /* NSObject+JKGCD.m in Sources */,
 				354EBAE01D225115003D82CB /* NSDictionary+XLsn0w.m in Sources */,
 				35EF5BAD1D347939001D895D /* JPEngine.m in Sources */,
@@ -1659,8 +1698,8 @@
 				354EBAEE1D225115003D82CB /* NSObject+JKAddProperty.m in Sources */,
 				354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				354EBB7A1D225115003D82CB /* UIView+JKShake.m in Sources */,
+				3542BC551D387C3900674567 /* ComboBoxView.m in Sources */,
 				354EBB101D225115003D82CB /* NSURL+JKParam.m in Sources */,
-				3532958C1D326DA20071A34A /* XLCalendarComponent.m in Sources */,
 				35B651611D37EA8A009DCD6B /* UIView+MJExtension.m in Sources */,
 				354EBAEC1D225115003D82CB /* NSNumber+JKRomanNumerals.m in Sources */,
 				35B6514F1D37EA8A009DCD6B /* MJRefreshAutoFooter.m in Sources */,
@@ -1765,9 +1804,9 @@
 				354EBADE1D225115003D82CB /* NSDictionary+JKURL.m in Sources */,
 				354EBB0D1D225115003D82CB /* NSString+XL.m in Sources */,
 				354EBB761D225115003D82CB /* UIView+JKFrame.m in Sources */,
+				3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */,
 				354EBB181D225115003D82CB /* UIApplication+JKKeyboardFrame.m in Sources */,
 				358906631D3349750053BE45 /* XLProgressHUD.m in Sources */,
-				354EBB9F1D22514D003D82CB /* XLPickerView.m in Sources */,
 				354EBB5B1D225115003D82CB /* UINavigationItem+JKLock.m in Sources */,
 				354EBB2D1D225115003D82CB /* UIColor+JKRandom.m in Sources */,
 				354EBB631D225115003D82CB /* UISearchBar+JKBlocks.m in Sources */,
@@ -1787,7 +1826,6 @@
 				354EBB791D225115003D82CB /* UIView+JKScreenshot.m in Sources */,
 				35B6515D1D37EA8A009DCD6B /* MJRefreshStateHeader.m in Sources */,
 				354EBB231D225115003D82CB /* UIButton+JKCountDown.m in Sources */,
-				354EBBA01D22514D003D82CB /* XLTextField.m in Sources */,
 				354EBB451D225115003D82CB /* UIImage+JKRoundedCorner.m in Sources */,
 				354EBAD51D225115003D82CB /* NSDate+JKUtilities.m in Sources */,
 				354EBAF61D225115003D82CB /* NSObject+JKKVOBlocks.m in Sources */,

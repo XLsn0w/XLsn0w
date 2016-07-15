@@ -6,3 +6,4 @@
 #import "XLProgressHUD.h"
 #import "XLSegmentedControl.h"
 #import "XLGuidePageView.h"
+#import "ComboBoxView.h"
