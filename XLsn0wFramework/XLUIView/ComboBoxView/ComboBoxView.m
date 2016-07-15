@@ -16,7 +16,6 @@ const CGFloat kComboBoxTableHeight = 200;
 @property (nonatomic, strong) UILabel *expandCollapseButtonTitle;
 @property (nonatomic, strong) UIView *holderView;
 @property (nonatomic, strong) UITableView *comboBoxTableView;
-@property (nonatomic, strong) UIButton *dropIndicatorButton;
 
 @property (nonatomic, assign) CGRect holderViewFrame;
 @property (nonatomic, assign) CGFloat maxViewHeight;
@@ -97,7 +96,7 @@ const CGFloat kComboBoxTableHeight = 200;
         [self.dropIndicatorButton setContentMode:UIViewContentModeScaleAspectFit];
         [self.dropIndicatorButton setFrame:CGRectMake((self.holderView.bounds.size.width - dropIndicatorImageWidth), 0.0, dropIndicatorImageWidth, self.holderView.bounds.size.height)];
         [self.dropIndicatorButton setBackgroundColor:[UIColor clearColor]];
-        [self.dropIndicatorButton setImage:[UIImage imageNamed:@"comboDropIndicator.png"] forState:UIControlStateNormal];
+        [self.dropIndicatorButton setImage:[UIImage imageNamed:@"dropIndicatorButton"] forState:UIControlStateNormal];
         [self.holderView addSubview:self.dropIndicatorButton];
     }
     

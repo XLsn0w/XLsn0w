@@ -36,16 +36,16 @@
 
 /*! 绘制NavigationBar 返回按钮 */
 - (void)drawNavigationBarBackButton {
-    UIButton *navBackButton = [self setBackButton];
-    if(!navBackButton){
-        navBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
-        navBackButton.frame = CGRectMake(0.0, 0.0, 44.0, 44.0);
+    self.navBackButton = [self drawNavBackButton];
+    if(!self.navBackButton){
+        self.navBackButton = [UIButton buttonWithType:UIButtonTypeCustom];
+        self.navBackButton.frame = CGRectMake(0.0, 0.0, 44.0, 44.0);
         /*! 自定义返回按钮 设置成图片 */
-        [navBackButton setImage:[UIImage imageNamed:@"NavigationBarBackButton"] forState:(UIControlStateNormal)];
-        navBackButton.imageEdgeInsets = UIEdgeInsetsMake(0.0, -16.0, 0.0, 16.0);
+        [self.navBackButton setImage:[UIImage imageNamed:@"navBackButton"] forState:(UIControlStateNormal)];
+        self.navBackButton.imageEdgeInsets = UIEdgeInsetsMake(0.0, -16.0, 0.0, 16.0);
     }
-    [navBackButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:navBackButton];
+    [self.navBackButton addTarget:self action:@selector(goBack) forControlEvents:UIControlEventTouchUpInside];
+    UIBarButtonItem *leftBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:self.navBackButton];
     self.navigationItem.leftBarButtonItem = leftBarButtonItem;
 }
 
@@ -54,8 +54,8 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-/*! 返回按钮(子类实现) */
-- (UIButton *)setBackButton {
+/*! 子类重绘返回按钮 */
+- (UIButton *)drawNavBackButton {
     return nil;
 }
 

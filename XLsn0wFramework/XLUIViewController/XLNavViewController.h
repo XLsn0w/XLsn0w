@@ -3,21 +3,24 @@
 
 @interface XLNavViewController : UIViewController
 
+/*! 子类点语法直接调用 NavBackButton */
+@property (nonatomic, strong) UIButton *navBackButton;
+
 #pragma mark - set NavigationBar NeedsDisplay
 
-/*! 重新绘制 navigationBar */
+/*! 重新绘制 NavigationBar */
 - (void)setNavigationBarNeedsDisplay;
 
 #pragma mark - NavigationBar 返回(左侧)按钮
 
-/*! 绘制NavigationBar 返回按钮 */
+/*! 绘制 NavigationBar 返回按钮 */
 - (void)drawNavigationBarBackButton;
 
-/*! navigationBar 返回事件方法 */
+/*! NavigationBar 返回事件方法 */
 - (void)goBack;
 
-/*! 返回按钮(子类实现) */
-- (UIButton *)setBackButton;
+/*! 子类重绘返回按钮 */
+- (UIButton *)drawNavBackButton;
 
 #pragma mark - NavgatinBar 颜色
 

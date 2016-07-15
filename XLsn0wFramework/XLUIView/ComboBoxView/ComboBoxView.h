@@ -21,6 +21,8 @@
 
 @property (nonatomic, assign) id<ComboBoxViewDelegate> xlDelegate;
 
+@property (nonatomic, strong) UIButton *dropIndicatorButton;
+
 #pragma mark - Custom Methods
 
 - (void)setShouldShowComboBoxBorder:(BOOL)showComboBoxBorder;     // Default Visible.
