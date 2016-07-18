@@ -4,11 +4,15 @@
 @implementation XLNetworkingManager
 
 + (void)GET:(NSString *)url
+      token:(NSString *)token
      params:(NSDictionary *)params
     success:(XLResponseSuccess)success
     failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
+    
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
         NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
@@ -24,12 +28,17 @@
 }
 
 + (void)GET:(NSString *)url
+      token:(NSString *)token
     baseURL:(NSString *)baseUrl
      params:(NSDictionary *)params
     success:(XLResponseSuccess)success
     failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
+    
     [manager GET:url parameters:params progress:^(NSProgress * _Nonnull downloadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -48,11 +57,15 @@
 }
 
 + (void)POST:(NSString *)url
+       token:(NSString *)token
       params:(NSDictionary *)params
      success:(XLResponseSuccess)success
      failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
@@ -69,12 +82,17 @@
 }
 
 + (void)POST:(NSString *)url
+       token:(NSString *)token
      baseURL:(NSString *)baseUrl
       params:(NSDictionary *)params
      success:(XLResponseSuccess)success
      failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
+    
     [manager POST:url parameters:params progress:^(NSProgress * _Nonnull uploadProgress) {
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
@@ -92,6 +110,7 @@
 }
 
 + (void)uploadWithURL:(NSString *)url
+                token:(NSString *)token
                params:(NSDictionary *)params
              fileData:(NSData *)filedata
                  name:(NSString *)name
@@ -102,6 +121,9 @@
               failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     [manager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         
@@ -126,6 +148,7 @@
 }
 
 + (void)uploadWithURL:(NSString *)url
+                token:(NSString *)token
               baseURL:(NSString *)baseurl
                params:(NSDictionary *)params
              fileData:(NSData *)filedata
@@ -137,6 +160,9 @@
               failure:(XLResponseFailure)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseurl sessionConfiguration:YES];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     [manager POST:url parameters:params constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
         [formData appendPartWithFileData:filedata name:name fileName:filename mimeType:mimeType];
@@ -157,11 +183,15 @@
 }
 
 + (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
+                                        token:(NSString *)token
                                   savePathURL:(NSURL *)fileURL
                                      progress:(XLProgress )progress
                                       success:(void (^)(NSURLResponse *, NSURL *))success
                                       failure:(void (^)(NSError *))failure {
     AFHTTPSessionManager *manager = [self managerWithBaseURL:nil sessionConfiguration:YES];
+    
+    /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
+    [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     NSURL *urlpath = [NSURL URLWithString:url];
     NSURLRequest *request = [NSURLRequest requestWithURL:urlpath];

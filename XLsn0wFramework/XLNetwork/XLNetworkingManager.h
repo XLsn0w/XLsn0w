@@ -32,9 +32,11 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success 成功回调
  *  @param failure 失败回调
  */
-+(void)GET:(NSString *)url
-    params:(NSDictionary *)params success:(XLResponseSuccess)success
-      failure:(XLResponseFailure)failure;
++ (void)GET:(NSString *)url
+      token:(NSString *)token
+     params:(NSDictionary *)params
+    success:(XLResponseSuccess)success
+    failure:(XLResponseFailure)failure;
 /**
  *  含有baseURL的get方法
  *
@@ -44,8 +46,12 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success 成功回调
  *  @param failure 失败回调
  */
-+(void)GET:(NSString *)url baseURL:(NSString *)baseUrl
-    params:(NSDictionary *)params success:(XLResponseSuccess)success failure:(XLResponseFailure)failure;
++ (void)GET:(NSString *)url
+      token:(NSString *)token
+    baseURL:(NSString *)baseUrl
+     params:(NSDictionary *)params
+    success:(XLResponseSuccess)success
+    failure:(XLResponseFailure)failure;
 
 /**
  *  普通post方法请求网络数据
@@ -55,10 +61,11 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success 成功回调
  *  @param failure 失败回调
  */
-+(void)POST:(NSString *)url
-     params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure;
++ (void)POST:(NSString *)url
+       token:(NSString *)token
+      params:(NSDictionary *)params
+     success:(XLResponseSuccess)success
+     failure:(XLResponseFailure)failure;
 
 /**
  *  含有baseURL的post方法
@@ -69,11 +76,12 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success 成功回调
  *  @param failure 失败回调
  */
-+(void)POST:(NSString *)url
-    baseURL:(NSString *)baseUrl
-     params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure;
++ (void)POST:(NSString *)url
+       token:(NSString *)token
+     baseURL:(NSString *)baseUrl
+      params:(NSDictionary *)params
+     success:(XLResponseSuccess)success
+     failure:(XLResponseFailure)failure;
 
 /**
  *  普通路径上传文件
@@ -88,15 +96,16 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success  成功回调
  *  @param failure  失败回调
  */
-+(void)uploadWithURL:(NSString *)url
-              params:(NSDictionary *)params
-            fileData:(NSData *)filedata
-                name:(NSString *)name
-            fileName:(NSString *)filename
-            mimeType:(NSString *) mimeType
-            progress:(XLProgress)progress
-             success:(XLResponseSuccess)success
-             failure:(XLResponseFailure)failure;
++ (void)uploadWithURL:(NSString *)url
+                token:(NSString *)token
+               params:(NSDictionary *)params
+             fileData:(NSData *)filedata
+                 name:(NSString *)name
+             fileName:(NSString *)filename
+             mimeType:(NSString *) mimeType
+             progress:(XLProgress)progress
+              success:(XLResponseSuccess)success
+              failure:(XLResponseFailure)failure;
 /**
  *  含有跟路径的上传文件
  *
@@ -111,16 +120,17 @@ typedef void (^XLProgress)(NSProgress *progress);
  *  @param success  成功回调
  *  @param failure  失败回调
  */
-+(void)uploadWithURL:(NSString *)url
-             baseURL:(NSString *)baseurl
-              params:(NSDictionary *)params
-            fileData:(NSData *)filedata
-                name:(NSString *)name
-            fileName:(NSString *)filename
-            mimeType:(NSString *) mimeType
-            progress:(XLProgress)progress
-             success:(XLResponseSuccess)success
-             failure:(XLResponseFailure)failure;
++ (void)uploadWithURL:(NSString *)url
+                token:(NSString *)token
+              baseURL:(NSString *)baseurl
+               params:(NSDictionary *)params
+             fileData:(NSData *)filedata
+                 name:(NSString *)name
+             fileName:(NSString *)filename
+             mimeType:(NSString *) mimeType
+             progress:(XLProgress)progress
+              success:(XLResponseSuccess)success
+              failure:(XLResponseFailure)failure;
 
 /**
  *  下载文件
@@ -133,11 +143,12 @@ typedef void (^XLProgress)(NSProgress *progress);
  *
  *  @return 返回NSURLSessionDownloadTask实例，可用于暂停继续，暂停调用suspend方法，重新开启下载调用resume方法
  */
-+(NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
-                                 savePathURL:(NSURL *)fileURL
-                                    progress:(XLProgress )progress
-                                     success:(void (^)(NSURLResponse *, NSURL *))success
-                                     failure:(void (^)(NSError *))failure;
++ (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
+                                        token:(NSString *)token
+                                  savePathURL:(NSURL *)fileURL
+                                     progress:(XLProgress )progress
+                                      success:(void (^)(NSURLResponse *, NSURL *))success
+                                      failure:(void (^)(NSError *))failure;
 
 
 
