@@ -206,14 +206,14 @@
     if(!self.hud)
         self.hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
     self.hud.mode = MBProgressHUDModeText;
-    self.hud.labelText = [message isKindOfClass:[NSString class]]?message:@"";
-    self.hud.yOffset = -50.0f;
+    self.hud.label.text = [message isKindOfClass:[NSString class]]?message:@"";
+    [self.hud setOffset:(CGPointMake(0, -50))];
     self.hud.userInteractionEnabled = NO;
-    [self.hud show:YES];
+    [self.hud showAnimated:YES];
 }
 
 - (void)xlsn0w_removeHUD{
-    [self.hud hide:YES];
+    [self.hud hideAnimated:YES];
     self.hud = nil;
 }
 
@@ -230,10 +230,10 @@
     }
     MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:parentView animated:YES];
     messageHud.mode = MBProgressHUDModeText;
-    messageHud.labelText = [message isKindOfClass:[NSString class]]?message:@"";
-    messageHud.yOffset = -50.0f;
+    messageHud.label.text = [message isKindOfClass:[NSString class]]?message:@"";
+    [messageHud setOffset:(CGPointMake(0, -50))];
     messageHud.userInteractionEnabled = NO;
-    [messageHud hide:YES afterDelay:1.5f];
+    [messageHud hideAnimated:YES afterDelay:1.5f];
 }
 
 + (void)xlsn0w_showDetailMessage:(NSString *)message {
@@ -247,11 +247,11 @@
     }
     MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:parentView animated:YES];
     messageHud.mode = MBProgressHUDModeText;
-    messageHud.labelText = @"提示";
-    messageHud.detailsLabelText = [message isKindOfClass:[NSString class]]?message:@"";
-    messageHud.yOffset = -50.0f;
+    messageHud.label.text = @"提示";
+    messageHud.detailsLabel.text = [message isKindOfClass:[NSString class]]?message:@"";
+    [messageHud setOffset:(CGPointMake(0, -50))];
     messageHud.userInteractionEnabled = NO;
-    [messageHud hide:YES afterDelay:1.0f];
+    [messageHud hideAnimated:YES afterDelay:1.0f];
 }
 
 @end
