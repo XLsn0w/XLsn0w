@@ -14,7 +14,7 @@ typedef void (^XLResponseSuccess)(NSURLSessionDataTask *task, NSDictionary *JSON
  *
  *  @param error 报错信息
  */
-typedef void (^XLResponseFailure)(NSURLSessionDataTask *task, NSError *error, NSInteger statusCode);
+typedef void (^XLResponseFailure)(NSURLSessionDataTask *task, NSError *error, NSInteger statusCode, NSString *requestFailedReason);
 
 /**
  *  上传或者下载的进度

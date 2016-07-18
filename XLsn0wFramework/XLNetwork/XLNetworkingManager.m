@@ -18,7 +18,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
 }
 
@@ -40,7 +41,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
     
 }
@@ -61,7 +63,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
 }
 
@@ -83,7 +86,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
 }
 
@@ -116,7 +120,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
 }
 
@@ -146,7 +151,8 @@
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
         NSInteger statusCode = HTTPURLResponse.statusCode;
-        failure(task, error, statusCode);
+        NSString *requestFailedReason = [error.userInfo objectForKey:NSLocalizedDescriptionKey];
+        failure(task, error, statusCode, requestFailedReason);
     }];
 }
 
