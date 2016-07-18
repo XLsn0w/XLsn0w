@@ -16,7 +16,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
 }
 
@@ -36,7 +38,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
     
 }
@@ -55,7 +59,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
 }
 
@@ -75,7 +81,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
 }
 
@@ -106,7 +114,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
 }
 
@@ -134,7 +144,9 @@
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        failure(task,error);
+        NSHTTPURLResponse *HTTPURLResponse = [error.userInfo objectForKey:AFNetworkingOperationFailingURLResponseErrorKey];
+        NSInteger statusCode = HTTPURLResponse.statusCode;
+        failure(task, error, statusCode);
     }];
 }
 
