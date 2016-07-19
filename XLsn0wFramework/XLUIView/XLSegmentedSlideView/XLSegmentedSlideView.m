@@ -1,24 +1,9 @@
 
 #import "XLSegmentedSlideView.h"
-#import "XL.h"
-
-static float const kSegmentedControlHeight = 44;
 
 @interface XLSegmentedSlideView () <UIScrollViewDelegate>
 
-@property (nonatomic, assign) CGPoint beginScrollOffset;
-@property (nonatomic, assign) NSInteger totaiPageNumber;
-@property (nonatomic, strong) NSMutableSet *visibleCells;
-@property (nonatomic, strong) NSMutableSet *recycledCells;
 @property (nonatomic, strong) NSArray *titles;
-@property (nonatomic, assign) NSUInteger prePageIndex;
-
-//
-- (void)slideViewRecycle;
-- (BOOL)isVisibleCellForIndex:(NSUInteger)index;
-- (void)drawRecycleTableView:(XLRecycleTableView *)recycleTableView forIndex:(NSUInteger)index;
-//
-- (void)drawSlideView;
 
 @end
 
@@ -27,225 +12,16 @@ static float const kSegmentedControlHeight = 44;
 - (instancetype)initWithFrame:(CGRect)frame forTitles:(NSArray *)titles {
     if ([super initWithFrame:frame]) {
         _titles  = [titles copy];
-        _prePageIndex = 1000;
-        [self drawSlideView];
-        //监听Delegate值改变以刷新数据，不想使用者做太多无谓的方法调用
-        [self addObserver:self
-               forKeyPath:@"xlDelegate"
-                  options:NSKeyValueObservingOptionNew
-                  context:nil];
+         [self drawSegmentedControl];
+         [self drawBottomScrollview];
     }
     return self;
 }
 
-- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSString *,id> *)change context:(void *)context{
-    if ([keyPath isEqualToString:@"xlDelegate"]) {
-        [self reloadData];
-    }
-}
-- (void)dealloc{
-    [self removeObserver:self forKeyPath:@"xlDelegate"];
-}
-
-#pragma mark - Recycle TableView
-
-- (void)slideViewRecycle {
-    
-    CGRect mainScrollViewBounds = _mainScrollview.bounds;
-    
-    NSUInteger currentPage = CGRectGetMinX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
-    
-    NSUInteger nextPage    = CGRectGetMaxX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
-    
-    currentPage            = MAX(currentPage, 0);
-    nextPage               = MIN(nextPage, _totaiPageNumber-1);
-    
-    //回收 unvisible cell
-    for (XLRecycleTableView *tableView  in _visibleCells) {
-        
-        if (!(tableView.index == currentPage)) {
-            //保存偏移量
-            [[XLCache sharedCache] setDataToMemoryWithData:[NSStringFromCGPoint(tableView.contentOffset) dataUsingEncoding:NSUTF8StringEncoding] forKey:[@(tableView.index) stringValue]];
-            
-            [_recycledCells addObject:tableView];
-            [tableView removeFromSuperview];
-        }
-    }
-    
-    [_visibleCells minusSet:_recycledCells];
-    
-    // 添加重用Cell
-    for (NSUInteger index = currentPage ; index < nextPage; index++) {
-        
-        if (![self isVisibleCellForIndex:index]) {
-            
-            XLRecycleTableView *recycleTableView = [_xlDelegate slideView:self cellForRowAtIndex:index];
-            
-            [self drawRecycleTableView:recycleTableView forIndex:index];
-            [_visibleCells addObject:recycleTableView];
-        }
-    }
-}
-
-//- (void)slideViewRecycle{
-//
-//    CGRect mainScrollViewBounds = _mainScrollview.bounds;
-//    
-//    NSUInteger currentPage = CGRectGetMinX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
-//    
-//    NSUInteger nextPage    = CGRectGetMaxX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
-//    
-//    currentPage            = MAX(currentPage, 0);
-//    nextPage               = MIN(nextPage, _totaiPageNumber-1);
-//    
-//    //回收 unvisible cell
-//    for (XLRecycleTableView * cell  in _visibleCells) {
-//        
-//        if (cell.index < currentPage || cell.index > nextPage) {
-//
-//            //保存偏移量
-//            [[XLCache sharedCache]setDataToMemoryWithData:[NSStringFromCGPoint(cell.contentOffset) dataUsingEncoding:NSUTF8StringEncoding] forKey:[@(cell.index) stringValue]];
-//            
-//            
-//            [_recycledCells addObject:cell];
-//            [cell removeFromSuperview];
-//            
-//        }
-//    }
-//   
-//    [_visibleCells minusSet:_recycledCells];
-//    
-//    // 添加重用Cell
-//    for (NSUInteger index = currentPage ; index <= nextPage; index++) {
-//        
-//        if (![self isVisibleCellForIndex:index]) {
-//        
-//           XLRecycleTableView *cell = [_xlDelegate slideView:self cellForRowAtIndex:index];
-//          
-//            
-//            [self drawRecycleTableView:cell forIndex:index];
-//            
-//            [_visibleCells addObject:cell];
-//            
-//        }
-//    }
-//}
-
-- (XLRecycleTableView *)dequeueRecycleTableView {
-
-    XLRecycleTableView * cell = [_recycledCells anyObject];
-    
-    if (cell) {
-        [_recycledCells removeObject:cell];
-    }
-    
-    return cell;
-}
-
-- (BOOL)isVisibleCellForIndex:(NSUInteger)index{
-
-    BOOL isVisibleCell = NO;
-    
-    for (XLRecycleTableView * cell in _visibleCells) {
-        
-        if (cell.index == index) {
-            isVisibleCell = YES;
-            break;
-        }
-        
-    }
-    return isVisibleCell;
-}
-
-- (XLRecycleTableView*)visibleCellForIndex:(NSUInteger)index{
-
-    XLRecycleTableView * visibleCell = nil;
-    
-    for (XLRecycleTableView * cell in _visibleCells) {
-        
-        if (cell.index == index) {
-            visibleCell = cell;
-            break;
-        }
-    }
-    return visibleCell;
-}
-
-- (void)drawRecycleTableView:(XLRecycleTableView *)recycleTableView forIndex:(NSUInteger)index {
-    
-    recycleTableView.index            = index;
-    CGRect cellFrame      = self.bounds;
-    cellFrame.origin.x    = CGRectGetWidth(self.frame)*index;
-    cellFrame.size.height = cellFrame.size.height - kSegmentedControlHeight;
-    
-    [recycleTableView setFrame:cellFrame];
-    [_mainScrollview addSubview:recycleTableView];
-    
-    if ([_xlDelegate respondsToSelector:@selector(slideViewInitiatedComplete:forIndex:)]) {
-        [_xlDelegate slideViewInitiatedComplete:recycleTableView forIndex:index];
-    }
-    
-    //获取偏移量
-   __block XLRecycleTableView *newCell = recycleTableView;
-    [[XLCache sharedCache] dataForKey:[@(recycleTableView.index) stringValue] block:^(NSData *data, NSString *key) {
-        
-        if (data) {
-            CGPoint offset = CGPointFromString([[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding]);
-            [newCell setContentOffset:offset];
-        }
-    }];
-    
-}
-
-#pragma make reloadData
-
-- (void)reloadData{
-
-    [_visibleCells  removeAllObjects];
-    [_recycledCells removeAllObjects];
-    
-    [[XLCache sharedCache]removeMemoryAllData];
-    
-    __WEAK_SELF_YLSLIDE
-    
-    if ([_xlDelegate respondsToSelector:@selector(columnNumber)]) {
-        
-            if (weakSelf) {
-                
-                __STRONG_SELF_YLSLIDE
-                
-                _totaiPageNumber = [strongSelf->_xlDelegate columnNumber];
-
-                [strongSelf.mainScrollview setContentSize:CGSizeMake(CGRectGetWidth(strongSelf.frame)*_totaiPageNumber, CGRectGetHeight(strongSelf.frame)-kSegmentedControlHeight)];
-                
-            }
-    }
-
-    [self slideViewRecycle];
-    
-    [self visibleViewDelegateForIndex:0];
-
-
-}
-
-- (void)visibleViewDelegateForIndex:(NSUInteger)index{
-
-    if (_prePageIndex != index) {
-        if ([_xlDelegate respondsToSelector:@selector(slideVisibleView:forIndex:)]) {
-            [_xlDelegate slideVisibleView:[self visibleCellForIndex:index] forIndex:index];
-        }
-    }
-    
-    _prePageIndex = index;
-
-}
-//屏幕宽/高
-#define kScreenWidth  [UIScreen mainScreen].bounds.size.width
-#define kScreenHeight [UIScreen mainScreen].bounds.size.height
 - (void)drawSegmentedControl {
     self.segmentedControl = [[XLSegmentedControl alloc] init];
     [self addSubview:_segmentedControl];
-    self.segmentedControl.frame = CGRectMake(0, 0, kScreenWidth, 50);
+    self.segmentedControl.frame = CGRectMake(0, 0, self.frame.size.width, 44);
     
     [self.segmentedControl setSectionTitles:_titles];
     self.segmentedControl.type = SegmentedControlTypeText;
@@ -254,7 +30,7 @@ static float const kSegmentedControlHeight = 44;
     self.segmentedControl.backgroundColor = [UIColor lightGrayColor];
     self.segmentedControl.selectionIndicatorLocation = SegmentedControlSelectionIndicatorLocationUp;
     self.segmentedControl.selectedTitleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14],NSForegroundColorAttributeName:[UIColor whiteColor]};
-    self.segmentedControl.selectionIndicatorColor = [UIColor blueColor];
+    self.segmentedControl.selectionIndicatorColor = [UIColor redColor];
     self.segmentedControl.selectionIndicatorHeight = 1.5;
     self.segmentedControl.selectionIndicatorEdgeInsets = UIEdgeInsetsMake(0, 0, -8, 0);
     
@@ -265,62 +41,41 @@ static float const kSegmentedControlHeight = 44;
 - (void)selectedSegmentIndex:(XLSegmentedControl *)segmentedControl {
     NSInteger selectedSegmentIndex = segmentedControl.selectedSegmentIndex;
     
-    CGRect frame   = self.mainScrollview.bounds;
-    frame.origin.x = CGRectGetWidth(self.frame) * selectedSegmentIndex;
-    [self.mainScrollview scrollRectToVisible:frame animated:NO];
-    [self visibleViewDelegateForIndex:selectedSegmentIndex];
+    CGFloat contentOffsetX = self.frame.size.width * selectedSegmentIndex;
+    
+    [_bottomScrollview setContentOffset:CGPointMake(contentOffsetX, 0)];
+    
+    [self.xlDelegate slideAndClickActionWithIndex:selectedSegmentIndex];
 }
 
-#pragma mark UIScrollView Delegate
-
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView{
-   [self slideViewRecycle];
+- (void)drawBottomScrollview {
+    _bottomScrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 44, self.frame.size.width, self.frame.size.height-44)];
+    _bottomScrollview.bounces = NO;
+    _bottomScrollview.delegate = self;
+    _bottomScrollview.backgroundColor = [UIColor whiteColor];
+    _bottomScrollview.pagingEnabled = YES;
+    _bottomScrollview.showsHorizontalScrollIndicator = NO;
+    [self addSubview:_bottomScrollview];
 }
 
-- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView{
+#pragma mark - UIScrollViewDelegate
+
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     CGFloat pageWidth = scrollView.frame.size.width;
     // 根据当前的x坐标和页宽度计算出当前页数
     int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    [self visibleViewDelegateForIndex:currentPage];
+    
     [self.segmentedControl setSelectedSegmentIndex:currentPage];
+    [self.xlDelegate slideAndClickActionWithIndex:currentPage];
 }
 
-#pragma mark configSlideView
-
-- (void)drawSlideView {
+- (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
+    CGFloat pageWidth = scrollView.frame.size.width;
+    // 根据当前的x坐标和页宽度计算出当前页数
+    int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     
-    _visibleCells  = [[NSMutableSet alloc]init];
-    _recycledCells = [[NSMutableSet alloc]init];
-    
-    _mainScrollview = ({
-        
-        UIScrollView *scrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0,
-                                                                                  kSegmentedControlHeight,
-                                                                                  CGRectGetWidth(self.frame),
-                                                                                  CGRectGetHeight(self.frame)-kSegmentedControlHeight)];
-        scrollView.bounces         = NO;
-        scrollView.delegate        = self;
-        scrollView.backgroundColor = [UIColor whiteColor];
-        scrollView.pagingEnabled   = YES;
-        scrollView.showsHorizontalScrollIndicator = NO;
-        
-        scrollView;
-    });
-    [self addSubview:_mainScrollview];
-    [self drawSegmentedControl];
-}
-
-
-#pragma mark Set Get
-- (void)setShowsScrollViewHorizontalScrollIndicator:(BOOL)showsScrollViewHorizontalScrollIndicator {
-    _mainScrollview.showsHorizontalScrollIndicator = showsScrollViewHorizontalScrollIndicator;
-
+    [self.segmentedControl setSelectedSegmentIndex:currentPage];
+    [self.xlDelegate slideAndClickActionWithIndex:currentPage];
 }
 
 @end
-
-
-
-
-
-
