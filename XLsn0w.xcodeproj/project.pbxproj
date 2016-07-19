@@ -223,6 +223,9 @@
 		358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065B1D3349750053BE45 /* ProgressAnimatedView.m */; };
 		358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065D1D3349750053BE45 /* RadialGradientLayer.m */; };
 		358906631D3349750053BE45 /* XLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065F1D3349750053BE45 /* XLProgressHUD.m */; };
+		358F633B1D3DC0C7003A338E /* XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F633A1D3DC0C7003A338E /* XL.m */; };
+		358F63411D3DC0F5003A338E /* XLRecycleTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F633E1D3DC0F5003A338E /* XLRecycleTableView.m */; };
+		358F63421D3DC0F5003A338E /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358F63401D3DC0F5003A338E /* XLSegmentedSlideView.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* XLsn0wAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* XLsn0wAppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
@@ -675,6 +678,12 @@
 		3589065D1D3349750053BE45 /* RadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientLayer.m; sourceTree = "<group>"; };
 		3589065E1D3349750053BE45 /* XLProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressHUD.h; sourceTree = "<group>"; };
 		3589065F1D3349750053BE45 /* XLProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressHUD.m; sourceTree = "<group>"; };
+		358F63391D3DC0C7003A338E /* XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XL.h; sourceTree = "<group>"; };
+		358F633A1D3DC0C7003A338E /* XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XL.m; sourceTree = "<group>"; };
+		358F633D1D3DC0F5003A338E /* XLRecycleTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRecycleTableView.h; sourceTree = "<group>"; };
+		358F633E1D3DC0F5003A338E /* XLRecycleTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRecycleTableView.m; sourceTree = "<group>"; };
+		358F633F1D3DC0F5003A338E /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
+		358F63401D3DC0F5003A338E /* XLSegmentedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedSlideView.m; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* XLsn0wAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wAppDelegate.h; sourceTree = "<group>"; };
@@ -1198,6 +1207,7 @@
 			isa = PBXGroup;
 			children = (
 				354EBB951D225139003D82CB /* XLObject.h */,
+				358F63381D3DC0C7003A338E /* XL */,
 				354EBB931D225139003D82CB /* XLMethods.h */,
 				354EBB941D225139003D82CB /* XLMethods.m */,
 				354EBB8F1D225139003D82CB /* XLCalendar.h */,
@@ -1215,12 +1225,13 @@
 			isa = PBXGroup;
 			children = (
 				354EBB9E1D22514D003D82CB /* XLView.h */,
+				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
+				358F633C1D3DC0F5003A338E /* XLSegmentedSlideView */,
 				3542BC5E1D387CB600674567 /* XLTextField */,
 				3542BC5A1D387CB200674567 /* XLPickerView */,
 				3542BC561D387CAD00674567 /* XLCalendarComponent */,
 				3542BC521D387C3900674567 /* ComboBoxView */,
 				35DB329A1D34C6AC00A4B970 /* XLGuidePageView */,
-				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
 				358906571D3349750053BE45 /* XLProgressHUD */,
 			);
 			path = XLUIView;
@@ -1256,6 +1267,26 @@
 				3589065D1D3349750053BE45 /* RadialGradientLayer.m */,
 			);
 			path = XLProgressHUD;
+			sourceTree = "<group>";
+		};
+		358F63381D3DC0C7003A338E /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				358F63391D3DC0C7003A338E /* XL.h */,
+				358F633A1D3DC0C7003A338E /* XL.m */,
+			);
+			path = XL;
+			sourceTree = "<group>";
+		};
+		358F633C1D3DC0F5003A338E /* XLSegmentedSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				358F633F1D3DC0F5003A338E /* XLSegmentedSlideView.h */,
+				358F63401D3DC0F5003A338E /* XLSegmentedSlideView.m */,
+				358F633D1D3DC0F5003A338E /* XLRecycleTableView.h */,
+				358F633E1D3DC0F5003A338E /* XLRecycleTableView.m */,
+			);
+			path = XLSegmentedSlideView;
 			sourceTree = "<group>";
 		};
 		359875F61D1BA44200C2EC10 = {
@@ -1601,6 +1632,7 @@
 				354EBB411D225115003D82CB /* UIImage+JKMerge.m in Sources */,
 				354EBAFB1D225115003D82CB /* NSString+JKBase64.m in Sources */,
 				354EBB5F1D225115003D82CB /* UIResponder+JKFirstResponder.m in Sources */,
+				358F633B1D3DC0C7003A338E /* XL.m in Sources */,
 				354EBB5E1D225115003D82CB /* UIResponder+JKChain.m in Sources */,
 				354EBB121D225115003D82CB /* NSURLConnection+JKSelfSigned.m in Sources */,
 				354EBB4B1D225115003D82CB /* UIImageView+JKFaceAwareFill.m in Sources */,
@@ -1658,6 +1690,7 @@
 				354EBB211D225115003D82CB /* UIButton+JKBackgroundColor.m in Sources */,
 				354EBB301D225115003D82CB /* UIControl+JKActionBlocks.m in Sources */,
 				354EBAF11D225115003D82CB /* NSObject+JKAutoCoding.m in Sources */,
+				358F63421D3DC0F5003A338E /* XLSegmentedSlideView.m in Sources */,
 				354EBB201D225115003D82CB /* UIBezierPath+JKThroughPointsBezier.m in Sources */,
 				354EBB401D225115003D82CB /* UIImage+JKGIF.m in Sources */,
 				354EBAFF1D225115003D82CB /* NSString+JKEncrypt.m in Sources */,
@@ -1675,6 +1708,7 @@
 				354EBB5A1D225115003D82CB /* UINavigationItem+JKLoading.m in Sources */,
 				354EBB861D225115003D82CB /* UIWebView+JKCanvas.m in Sources */,
 				354EBB3B1D225115003D82CB /* UIImage+JKBlur.m in Sources */,
+				358F63411D3DC0F5003A338E /* XLRecycleTableView.m in Sources */,
 				354EBB1A1D225115003D82CB /* UIApplication+JKPermissions.m in Sources */,
 				354EBB7B1D225115003D82CB /* UIView+JKToast.m in Sources */,
 				354EBB381D225115003D82CB /* UIImage+JKAlpha.m in Sources */,

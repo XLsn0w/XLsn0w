@@ -7,3 +7,4 @@
 #import "XLSegmentedControl.h"
 #import "XLGuidePageView.h"
 #import "ComboBoxView.h"
+#import "XLSegmentedSlideView.h"
