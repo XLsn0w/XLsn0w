@@ -46,10 +46,11 @@ static float const kSegmentedControlHeight = 44;
 - (void)dealloc{
     [self removeObserver:self forKeyPath:@"xlDelegate"];
 }
-#pragma mark RecycledCell
 
-- (void)slideViewRecycle{
+#pragma mark - Recycle TableView
 
+- (void)slideViewRecycle {
+    
     CGRect mainScrollViewBounds = _mainScrollview.bounds;
     
     NSUInteger currentPage = CGRectGetMinX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
@@ -60,37 +61,75 @@ static float const kSegmentedControlHeight = 44;
     nextPage               = MIN(nextPage, _totaiPageNumber-1);
     
     //回收 unvisible cell
-    for (XLRecycleTableView * cell  in _visibleCells) {
+    for (XLRecycleTableView *tableView  in _visibleCells) {
         
-        if (cell.index < currentPage || cell.index > nextPage) {
-
+        if (!(tableView.index == currentPage)) {
             //保存偏移量
-            [[XLCache sharedCache]setDataToMemoryWithData:[NSStringFromCGPoint(cell.contentOffset) dataUsingEncoding:NSUTF8StringEncoding] forKey:[@(cell.index) stringValue]];
+            [[XLCache sharedCache] setDataToMemoryWithData:[NSStringFromCGPoint(tableView.contentOffset) dataUsingEncoding:NSUTF8StringEncoding] forKey:[@(tableView.index) stringValue]];
             
-            
-            [_recycledCells addObject:cell];
-            [cell removeFromSuperview];
-            
+            [_recycledCells addObject:tableView];
+            [tableView removeFromSuperview];
         }
     }
-   
+    
     [_visibleCells minusSet:_recycledCells];
     
     // 添加重用Cell
-    for (NSUInteger index = currentPage ; index <= nextPage; index++) {
+    for (NSUInteger index = currentPage ; index < nextPage; index++) {
         
         if (![self isVisibleCellForIndex:index]) {
-        
-           XLRecycleTableView *cell = [_xlDelegate slideView:self cellForRowAtIndex:index];
-          
             
-            [self drawRecycleTableView:cell forIndex:index];
+            XLRecycleTableView *recycleTableView = [_xlDelegate slideView:self cellForRowAtIndex:index];
             
-            [_visibleCells addObject:cell];
-            
+            [self drawRecycleTableView:recycleTableView forIndex:index];
+            [_visibleCells addObject:recycleTableView];
         }
     }
 }
+
+//- (void)slideViewRecycle{
+//
+//    CGRect mainScrollViewBounds = _mainScrollview.bounds;
+//    
+//    NSUInteger currentPage = CGRectGetMinX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
+//    
+//    NSUInteger nextPage    = CGRectGetMaxX(mainScrollViewBounds)/SCREEN_WIDTH_YLSLIDE;
+//    
+//    currentPage            = MAX(currentPage, 0);
+//    nextPage               = MIN(nextPage, _totaiPageNumber-1);
+//    
+//    //回收 unvisible cell
+//    for (XLRecycleTableView * cell  in _visibleCells) {
+//        
+//        if (cell.index < currentPage || cell.index > nextPage) {
+//
+//            //保存偏移量
+//            [[XLCache sharedCache]setDataToMemoryWithData:[NSStringFromCGPoint(cell.contentOffset) dataUsingEncoding:NSUTF8StringEncoding] forKey:[@(cell.index) stringValue]];
+//            
+//            
+//            [_recycledCells addObject:cell];
+//            [cell removeFromSuperview];
+//            
+//        }
+//    }
+//   
+//    [_visibleCells minusSet:_recycledCells];
+//    
+//    // 添加重用Cell
+//    for (NSUInteger index = currentPage ; index <= nextPage; index++) {
+//        
+//        if (![self isVisibleCellForIndex:index]) {
+//        
+//           XLRecycleTableView *cell = [_xlDelegate slideView:self cellForRowAtIndex:index];
+//          
+//            
+//            [self drawRecycleTableView:cell forIndex:index];
+//            
+//            [_visibleCells addObject:cell];
+//            
+//        }
+//    }
+//}
 
 - (XLRecycleTableView *)dequeueRecycleTableView {
 
@@ -279,6 +318,9 @@ static float const kSegmentedControlHeight = 44;
 }
 
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com
+
+
+
+
+
+
