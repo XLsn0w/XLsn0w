@@ -1,6 +1,6 @@
 
 /*! XLNetworkingManager */
+#import "XLNetworkManager.h"
 #import "XLNetworkMonitor.h"
-#import "XLNetworkingManager.h"
 
 

@@ -13,7 +13,7 @@
 		3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC581D387CAD00674567 /* XLCalendarComponent.m */; };
 		3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC5C1D387CB200674567 /* XLPickerView.m */; };
 		3542BC611D387CB600674567 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC601D387CB600674567 /* XLTextField.m */; };
-		354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */; };
+		354EB90F1D2250FB003D82CB /* XLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkManager.m */; };
 		354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
 		354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91A1D225114003D82CB /* CAShapeLayer+JKUIBezierPath.m */; };
 		354EBABF1D225115003D82CB /* CATransaction+JKAnimateWithDuration.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91C1D225114003D82CB /* CATransaction+JKAnimateWithDuration.m */; };
@@ -254,8 +254,8 @@
 		3542BC5C1D387CB200674567 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
 		3542BC5F1D387CB600674567 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		3542BC601D387CB600674567 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
-		354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkingManager.h; sourceTree = "<group>"; };
-		354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkingManager.m; sourceTree = "<group>"; };
+		354EB90D1D2250FB003D82CB /* XLNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkManager.h; sourceTree = "<group>"; };
+		354EB90E1D2250FB003D82CB /* XLNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkManager.m; sourceTree = "<group>"; };
 		354EB9171D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+JKAdditionalEquations.h"; sourceTree = "<group>"; };
 		354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAMediaTimingFunction+JKAdditionalEquations.m"; sourceTree = "<group>"; };
 		354EB9191D225114003D82CB /* CAShapeLayer+JKUIBezierPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAShapeLayer+JKUIBezierPath.h"; sourceTree = "<group>"; };
@@ -784,10 +784,10 @@
 			isa = PBXGroup;
 			children = (
 				354EBBA31D225256003D82CB /* XLNetwork.h */,
+				354EB90D1D2250FB003D82CB /* XLNetworkManager.h */,
+				354EB90E1D2250FB003D82CB /* XLNetworkManager.m */,
 				3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */,
 				3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */,
-				354EB90D1D2250FB003D82CB /* XLNetworkingManager.h */,
-				354EB90E1D2250FB003D82CB /* XLNetworkingManager.m */,
 			);
 			path = XLNetwork;
 			sourceTree = "<group>";
@@ -1631,7 +1631,7 @@
 				354EBB5E1D225115003D82CB /* UIResponder+JKChain.m in Sources */,
 				354EBB121D225115003D82CB /* NSURLConnection+JKSelfSigned.m in Sources */,
 				354EBB4B1D225115003D82CB /* UIImageView+JKFaceAwareFill.m in Sources */,
-				354EB90F1D2250FB003D82CB /* XLNetworkingManager.m in Sources */,
+				354EB90F1D2250FB003D82CB /* XLNetworkManager.m in Sources */,
 				354EBB271D225115003D82CB /* UIButton+JKSubmitting.m in Sources */,
 				354EBB6D1D225115003D82CB /* UITextView+JKPinchZoom.m in Sources */,
 				354EBB4E1D225115003D82CB /* UIImageView+JKReflect.m in Sources */,

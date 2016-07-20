@@ -1,21 +1,21 @@
 
-#import "XLNetworkingManager.h"
+#import "XLNetworkManager.h"
 
-@implementation XLNetworkingManager
+@implementation XLNetworkManager
 
 + (void)GET:(NSString *)url
       token:(NSString *)token
      params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure {
+    success:(ParseSuccessBlock)success
+    failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -31,10 +31,10 @@
       token:(NSString *)token
     baseURL:(NSString *)baseUrl
      params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure {
+    success:(ParseSuccessBlock)success
+    failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -43,7 +43,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -59,17 +59,17 @@
 + (void)POST:(NSString *)url
        token:(NSString *)token
       params:(NSDictionary *)params
-     success:(XLResponseSuccess)success
-     failure:(XLResponseFailure)failure {
+     success:(ParseSuccessBlock)success
+     failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
     [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -85,10 +85,10 @@
        token:(NSString *)token
      baseURL:(NSString *)baseUrl
       params:(NSDictionary *)params
-     success:(XLResponseSuccess)success
-     failure:(XLResponseFailure)failure {
+     success:(ParseSuccessBlock)success
+     failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -97,7 +97,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -116,11 +116,11 @@
                  name:(NSString *)name
              fileName:(NSString *)filename
              mimeType:(NSString *) mimeType
-             progress:(XLProgress)progress
-              success:(XLResponseSuccess)success
-              failure:(XLResponseFailure)failure {
+             progress:(ProgressBlock)progress
+              success:(ParseSuccessBlock)success
+              failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -135,7 +135,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -155,11 +155,11 @@
                  name:(NSString *)name
              fileName:(NSString *)filename
              mimeType:(NSString *) mimeType
-             progress:(XLProgress)progress
-              success:(XLResponseSuccess)success
-              failure:(XLResponseFailure)failure {
+             progress:(ProgressBlock)progress
+              success:(ParseSuccessBlock)success
+              failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkingManager managerWithBaseURL:baseurl sessionConfiguration:YES];
+    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseurl sessionConfiguration:YES];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -170,7 +170,7 @@
         progress(uploadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkingManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         
         success(task, JSONDictionary, JSONString);
@@ -185,7 +185,7 @@
 + (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
                                         token:(NSString *)token
                                   savePathURL:(NSURL *)fileURL
-                                     progress:(XLProgress )progress
+                                     progress:(ProgressBlock)progress
                                       success:(void (^)(NSURLResponse *, NSURL *))success
                                       failure:(void (^)(NSError *))failure {
     AFHTTPSessionManager *manager = [self managerWithBaseURL:nil sessionConfiguration:YES];

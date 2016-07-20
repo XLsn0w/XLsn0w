@@ -7,27 +7,28 @@
  *
  *  @param response 请求成功返回的数据
  */
-typedef void (^XLResponseSuccess)(NSURLSessionDataTask *task, NSDictionary *JSONDictionary, NSString *JSONString);
+typedef void (^ParseSuccessBlock)(NSURLSessionDataTask *task, NSDictionary *JSONDictionary, NSString *JSONString);
 
 /**
  *  宏定义请求失败的block
  *
  *  @param error 报错信息
  */
-typedef void (^XLResponseFailure)(NSURLSessionDataTask *task, NSError *error, NSInteger statusCode, NSString *requestFailedReason);
+typedef void (^ParseFailureBlock)(NSURLSessionDataTask *task, NSError *error, NSInteger statusCode, NSString *requestFailedReason);
 
 /**
  *  上传或者下载的进度
  *
  *  @param progress 进度
  */
-typedef void (^XLProgress)(NSProgress *progress);
+typedef void (^ProgressBlock)(NSProgress *progress);
 
-@interface XLNetworkingManager : NSObject
+@interface XLNetworkManager : NSObject
 /**
  *  普通get方法请求网络数据
  *
  *  @param url     请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param params  请求参数
  *  @param success 成功回调
  *  @param failure 失败回调
@@ -35,12 +36,13 @@ typedef void (^XLProgress)(NSProgress *progress);
 + (void)GET:(NSString *)url
       token:(NSString *)token
      params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure;
+    success:(ParseSuccessBlock)success
+    failure:(ParseFailureBlock)failure;
 /**
  *  含有baseURL的get方法
  *
  *  @param url     请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param baseUrl 请求网址根路径
  *  @param params  请求参数
  *  @param success 成功回调
@@ -50,13 +52,14 @@ typedef void (^XLProgress)(NSProgress *progress);
       token:(NSString *)token
     baseURL:(NSString *)baseUrl
      params:(NSDictionary *)params
-    success:(XLResponseSuccess)success
-    failure:(XLResponseFailure)failure;
+    success:(ParseSuccessBlock)success
+    failure:(ParseFailureBlock)failure;
 
 /**
  *  普通post方法请求网络数据
  *
  *  @param url     请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param params  请求参数
  *  @param success 成功回调
  *  @param failure 失败回调
@@ -64,13 +67,14 @@ typedef void (^XLProgress)(NSProgress *progress);
 + (void)POST:(NSString *)url
        token:(NSString *)token
       params:(NSDictionary *)params
-     success:(XLResponseSuccess)success
-     failure:(XLResponseFailure)failure;
+     success:(ParseSuccessBlock)success
+     failure:(ParseFailureBlock)failure;
 
 /**
  *  含有baseURL的post方法
  *
  *  @param url     请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param baseUrl 请求网址根路径
  *  @param params  请求参数
  *  @param success 成功回调
@@ -80,13 +84,14 @@ typedef void (^XLProgress)(NSProgress *progress);
        token:(NSString *)token
      baseURL:(NSString *)baseUrl
       params:(NSDictionary *)params
-     success:(XLResponseSuccess)success
-     failure:(XLResponseFailure)failure;
+     success:(ParseSuccessBlock)success
+     failure:(ParseFailureBlock)failure;
 
 /**
  *  普通路径上传文件
  *
  *  @param url      请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param params   请求参数
  *  @param filedata 文件
  *  @param name     指定参数名
@@ -103,13 +108,14 @@ typedef void (^XLProgress)(NSProgress *progress);
                  name:(NSString *)name
              fileName:(NSString *)filename
              mimeType:(NSString *) mimeType
-             progress:(XLProgress)progress
-              success:(XLResponseSuccess)success
-              failure:(XLResponseFailure)failure;
+             progress:(ProgressBlock)progress
+              success:(ParseSuccessBlock)success
+              failure:(ParseFailureBlock)failure;
 /**
  *  含有跟路径的上传文件
  *
  *  @param url      请求网址路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param baseurl  请求网址根路径
  *  @param params   请求参数
  *  @param filedata 文件
@@ -128,14 +134,15 @@ typedef void (^XLProgress)(NSProgress *progress);
                  name:(NSString *)name
              fileName:(NSString *)filename
              mimeType:(NSString *) mimeType
-             progress:(XLProgress)progress
-              success:(XLResponseSuccess)success
-              failure:(XLResponseFailure)failure;
+             progress:(ProgressBlock)progress
+              success:(ParseSuccessBlock)success
+              failure:(ParseFailureBlock)failure;
 
 /**
  *  下载文件
  *
  *  @param url      请求网络路径
+ *  @param token   身份验证令牌 不需要传@""
  *  @param fileURL  保存文件url
  *  @param progress 下载进度
  *  @param success  成功回调
@@ -146,7 +153,7 @@ typedef void (^XLProgress)(NSProgress *progress);
 + (NSURLSessionDownloadTask *)downloadWithURL:(NSString *)url
                                         token:(NSString *)token
                                   savePathURL:(NSURL *)fileURL
-                                     progress:(XLProgress )progress
+                                     progress:(ProgressBlock)progress
                                       success:(void (^)(NSURLResponse *, NSURL *))success
                                       failure:(void (^)(NSError *))failure;
 

@@ -45,7 +45,7 @@
     
     [_bottomScrollview setContentOffset:CGPointMake(contentOffsetX, 0)];
     
-    [self.xlDelegate slideAndClickActionWithIndex:selectedSegmentIndex];
+    [self.xlDelegate slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:selectedSegmentIndex];
 }
 
 - (void)drawBottomScrollview {
@@ -60,22 +60,14 @@
 
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
-    CGFloat pageWidth = scrollView.frame.size.width;
-    // 根据当前的x坐标和页宽度计算出当前页数
-    int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
-    
-    [self.segmentedControl setSelectedSegmentIndex:currentPage];
-    [self.xlDelegate slideAndClickActionWithIndex:currentPage];
-}
-
 - (void)scrollViewDidEndDecelerating:(UIScrollView *)scrollView {
     CGFloat pageWidth = scrollView.frame.size.width;
     // 根据当前的x坐标和页宽度计算出当前页数
     int currentPage = floor((scrollView.contentOffset.x - pageWidth / 2) / pageWidth) + 1;
     
     [self.segmentedControl setSelectedSegmentIndex:currentPage];
-    [self.xlDelegate slideAndClickActionWithIndex:currentPage];
+    
+    [self.xlDelegate slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:currentPage];
 }
 
 @end

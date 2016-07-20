@@ -4,7 +4,7 @@
 
 @protocol XLSegmentedSlideViewDelegate <NSObject>
 
-- (void)slideAndClickActionWithIndex:(NSInteger)index;
+- (void)slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:(NSInteger)selectedIndex;
 
 @end
 
