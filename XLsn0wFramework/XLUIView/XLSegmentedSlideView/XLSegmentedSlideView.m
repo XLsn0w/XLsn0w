@@ -23,18 +23,22 @@
     [self addSubview:_segmentedControl];
     self.segmentedControl.frame = CGRectMake(0, 0, self.frame.size.width, 44);
     
+    self.segmentedControl.backgroundColor = [UIColor lightGrayColor];
     [self.segmentedControl setSectionTitles:_titles];
     self.segmentedControl.type = SegmentedControlTypeText;
+    self.segmentedControl.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14],
+                                                  NSForegroundColorAttributeName:[UIColor blackColor]};
+    /*! selected */
+    self.segmentedControl.selectedTitleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:16],
+                                                          NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.segmentedControl.selectionStyle = SegmentedControlSelectionStyleBox;
-    self.segmentedControl.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14],NSForegroundColorAttributeName:[UIColor blackColor]};
-    self.segmentedControl.backgroundColor = [UIColor lightGrayColor];
     self.segmentedControl.selectionIndicatorLocation = SegmentedControlSelectionIndicatorLocationUp;
-    self.segmentedControl.selectedTitleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:14],NSForegroundColorAttributeName:[UIColor whiteColor]};
     self.segmentedControl.selectionIndicatorColor = [UIColor redColor];
     self.segmentedControl.selectionIndicatorHeight = 1.5;
     self.segmentedControl.selectionIndicatorEdgeInsets = UIEdgeInsetsMake(0, 0, -8, 0);
     
-    [self.segmentedControl setSelectedSegmentIndex:0];
+    /*! selectedSegmentIndex */
+    self.segmentedControl.selectedSegmentIndex = 0;
     [self.segmentedControl addTarget:self action:@selector(selectedSegmentIndex:) forControlEvents:UIControlEventValueChanged];
 }
 
