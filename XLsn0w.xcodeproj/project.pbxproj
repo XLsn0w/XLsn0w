@@ -234,6 +234,7 @@
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
 		35BF65A91D23744C00993CAE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A51D23744C00993CAE /* User.m */; };
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
+		35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C321741D43C79C0096D3DC /* XLFlowLayout.m */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35EF5BAD1D347939001D895D /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF5BAB1D347939001D895D /* JPEngine.m */; };
 		35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6DDF31D22636000874C91 /* XLNavViewController.m */; };
@@ -700,6 +701,8 @@
 		35BF65A61D23744C00993CAE /* XLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDatabase.h; sourceTree = "<group>"; };
 		35BF65A71D23744C00993CAE /* XLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDatabase.m; sourceTree = "<group>"; };
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
+		35C321731D43C79C0096D3DC /* XLFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFlowLayout.h; sourceTree = "<group>"; };
+		35C321741D43C79C0096D3DC /* XLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFlowLayout.m; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35EF5BAA1D347939001D895D /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
@@ -1353,6 +1356,7 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
+				35C321721D43C79C0096D3DC /* XLFlowLayout */,
 				3585ACCA1D4319AA006A59A4 /* NullSafe */,
 			);
 			path = XLComponent;
@@ -1368,6 +1372,15 @@
 				35BF65A71D23744C00993CAE /* XLDatabase.m */,
 			);
 			path = XLDatabase;
+			sourceTree = "<group>";
+		};
+		35C321721D43C79C0096D3DC /* XLFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				35C321731D43C79C0096D3DC /* XLFlowLayout.h */,
+				35C321741D43C79C0096D3DC /* XLFlowLayout.m */,
+			);
+			path = XLFlowLayout;
 			sourceTree = "<group>";
 		};
 		35DB329A1D34C6AC00A4B970 /* XLGuidePageView */ = {
@@ -1687,6 +1700,7 @@
 				354EBAED1D225115003D82CB /* NSNumber+JKRound.m in Sources */,
 				354EBACB1D225115003D82CB /* NSData+JKEncrypt.m in Sources */,
 				354EBB3A1D225115003D82CB /* UIImage+JKBetterFace.m in Sources */,
+				35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */,
 				354EBAF01D225115003D82CB /* NSObject+JKAssociatedObject.m in Sources */,
 				354EBB511D225115003D82CB /* UILabel+JKAutomaticWriting.m in Sources */,
 				354EBB6C1D225115003D82CB /* UITextField+JKShake.m in Sources */,
