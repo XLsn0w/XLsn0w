@@ -300,8 +300,6 @@
             dateCell.textColor = [UIColor whiteColor];
             dateCell.backgroundColor = [UIColor redColor];
             
-            
-            
         } else if (!self.onlyShowCurrentMonth && [self _compareByMonth:date toDate:self.monthShowing] != NSOrderedSame) {
             dateCell.textColor = [UIColor lightGrayColor];
         }
@@ -310,19 +308,9 @@
             [self.xlDelegate calendarComponent:self configureDateCell:dateCell forDate:date];
         }
         
-        
-        
-        
-        //NSLog(@"BOOL=======> %@" ,[self date:_selectedDate isSameDayAsDate:date] ? @"YES" : @"NO");
-        
         if (_selectedDate && [self selectDate:_selectedDate isEqualToDate:date]) {//点击选中状态
             [_dateButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
             _dateButton.backgroundColor = [UIColor blueColor];
-            
-            
-            
-            
-            
         } else {
             [_dateButton setTitleColor:dateCell.textColor forState:UIControlStateNormal];
             _dateButton.backgroundColor = dateCell.backgroundColor;
@@ -344,7 +332,6 @@
 
 - (void)_updateDayOfWeekLabels {
     NSArray *weekdays = [self.dateFormatter shortWeekdaySymbols];
-    // adjust array depending on which weekday should be first
     NSUInteger firstWeekdayIndex = [self.calendar firstWeekday] - 1;
     if (firstWeekdayIndex > 0) {
         weekdays = [[weekdays subarrayWithRange:NSMakeRange(firstWeekdayIndex, 7 - firstWeekdayIndex)]
@@ -370,7 +357,6 @@
 
 - (NSArray *)datesShowing {
     NSMutableArray *dates = [NSMutableArray array];
-    // NOTE: these should already be in chronological order
     for (DateButton *dateButton in self.dateButtons) {
         if (dateButton.buttonDate) {
             [dates addObject:dateButton.buttonDate];
@@ -545,8 +531,6 @@
 
 - (NSComparisonResult)_compareByMonth:(NSDate *)date toDate:(NSDate *)otherDate {
     NSDateComponents *day = [self.calendar components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:date];
-    
-    
     NSDateComponents *day2 = [self.calendar components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:otherDate];
     
     if (day.year < day2.year) {
@@ -605,10 +589,6 @@
 
 - (NSInteger)_numberOfDaysFromDate:(NSDate *)startDate toDate:(NSDate *)endDate {
     NSInteger startDay = [self.calendar ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitEra forDate:startDate];
-    
-    
-    
-    
     NSInteger endDay = [self.calendar ordinalityOfUnit:NSCalendarUnitDay inUnit:NSCalendarUnitEra forDate:endDate];
     return endDay - startDay;
 }
