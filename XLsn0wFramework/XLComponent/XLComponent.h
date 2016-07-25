@@ -7,3 +7,7 @@
 #import "XLRefreshAutoGifFooter.h"
 #import "CXPhotoBrowser.h"
 #import "FSCalendar.h"
+#import "ImageArraySingleton.h"
+#import "UploadImageCell.h"
+#import "DisplayImageCell.h"
+#import "ChoosePicViewController.h"

@@ -244,6 +244,10 @@
 		355B89531D45AB95007A10E6 /* XLRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89511D45AB95007A10E6 /* XLRefreshGifHeader.m */; };
 		355B89571D45ABC0007A10E6 /* XLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89561D45ABC0007A10E6 /* XLWebView.m */; };
 		355B895B1D45AC02007A10E6 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B895A1D45AC02007A10E6 /* RegExCategories.m */; };
+		355B89651D45B6F3007A10E6 /* ChoosePicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B895E1D45B6F3007A10E6 /* ChoosePicViewController.m */; };
+		355B89661D45B6F3007A10E6 /* DisplayImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89601D45B6F3007A10E6 /* DisplayImageCell.m */; };
+		355B89671D45B6F3007A10E6 /* ImageArraySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89621D45B6F3007A10E6 /* ImageArraySingleton.m */; };
+		355B89681D45B6F3007A10E6 /* UploadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89641D45B6F3007A10E6 /* UploadImageCell.m */; };
 		355ED03A1D37DFC100383C60 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 355ED0391D37DFC100383C60 /* Resources.bundle */; };
 		3574A81A1D2BFCCF0083906F /* XLTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A8191D2BFCCF0083906F /* XLTools.m */; };
 		3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */; };
@@ -752,6 +756,14 @@
 		355B89561D45ABC0007A10E6 /* XLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWebView.m; sourceTree = "<group>"; };
 		355B89591D45AC02007A10E6 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
 		355B895A1D45AC02007A10E6 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
+		355B895D1D45B6F3007A10E6 /* ChoosePicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePicViewController.h; sourceTree = "<group>"; };
+		355B895E1D45B6F3007A10E6 /* ChoosePicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePicViewController.m; sourceTree = "<group>"; };
+		355B895F1D45B6F3007A10E6 /* DisplayImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayImageCell.h; sourceTree = "<group>"; };
+		355B89601D45B6F3007A10E6 /* DisplayImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayImageCell.m; sourceTree = "<group>"; };
+		355B89611D45B6F3007A10E6 /* ImageArraySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageArraySingleton.h; sourceTree = "<group>"; };
+		355B89621D45B6F3007A10E6 /* ImageArraySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageArraySingleton.m; sourceTree = "<group>"; };
+		355B89631D45B6F3007A10E6 /* UploadImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageCell.h; sourceTree = "<group>"; };
+		355B89641D45B6F3007A10E6 /* UploadImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageCell.m; sourceTree = "<group>"; };
 		355ED0391D37DFC100383C60 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		3574A8181D2BFCCF0083906F /* XLTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTools.h; sourceTree = "<group>"; };
 		3574A8191D2BFCCF0083906F /* XLTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTools.m; sourceTree = "<group>"; };
@@ -1420,6 +1432,21 @@
 			path = RegExCategories;
 			sourceTree = "<group>";
 		};
+		355B895C1D45B6F3007A10E6 /* UploadImage */ = {
+			isa = PBXGroup;
+			children = (
+				355B895D1D45B6F3007A10E6 /* ChoosePicViewController.h */,
+				355B895E1D45B6F3007A10E6 /* ChoosePicViewController.m */,
+				355B895F1D45B6F3007A10E6 /* DisplayImageCell.h */,
+				355B89601D45B6F3007A10E6 /* DisplayImageCell.m */,
+				355B89611D45B6F3007A10E6 /* ImageArraySingleton.h */,
+				355B89621D45B6F3007A10E6 /* ImageArraySingleton.m */,
+				355B89631D45B6F3007A10E6 /* UploadImageCell.h */,
+				355B89641D45B6F3007A10E6 /* UploadImageCell.m */,
+			);
+			path = UploadImage;
+			sourceTree = "<group>";
+		};
 		355ED0381D37DFC100383C60 /* XLResource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1533,6 +1560,7 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
+				355B895C1D45B6F3007A10E6 /* UploadImage */,
 				355B89581D45AC02007A10E6 /* RegExCategories */,
 				355B89541D45ABC0007A10E6 /* XLWebView */,
 				355B894D1D45AB95007A10E6 /* XLRefresh */,
@@ -1755,6 +1783,7 @@
 				354EBAE21D225115003D82CB /* NSFileHandle+JKReadLine.m in Sources */,
 				354EBB841D225115003D82CB /* UIViewController+XLsn0w.m in Sources */,
 				354EBB031D225115003D82CB /* NSString+JKNormalRegex.m in Sources */,
+				355B89661D45B6F3007A10E6 /* DisplayImageCell.m in Sources */,
 				354EBB641D225115003D82CB /* UISplitViewController+JKQuickAccess.m in Sources */,
 				354EBB0A1D225115003D82CB /* NSString+JKURLEncode.m in Sources */,
 				354EBB571D225115003D82CB /* UINavigationController+JKKeyboardFix.m in Sources */,
@@ -1850,6 +1879,7 @@
 				354EBAEC1D225115003D82CB /* NSNumber+JKRomanNumerals.m in Sources */,
 				354EBAC81D225115003D82CB /* NSData+JKAPNSToken.m in Sources */,
 				355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */,
+				355B89681D45B6F3007A10E6 /* UploadImageCell.m in Sources */,
 				354EBB4C1D225115003D82CB /* UIImageView+JKGeometryConversion.m in Sources */,
 				3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */,
 				354EBADA1D225115003D82CB /* NSDictionary+JKBlock.m in Sources */,
@@ -1862,6 +1892,7 @@
 				354EBB5F1D225115003D82CB /* UIResponder+JKFirstResponder.m in Sources */,
 				358F633B1D3DC0C7003A338E /* XL.m in Sources */,
 				354EBB5E1D225115003D82CB /* UIResponder+JKChain.m in Sources */,
+				355B89671D45B6F3007A10E6 /* ImageArraySingleton.m in Sources */,
 				354EBB121D225115003D82CB /* NSURLConnection+JKSelfSigned.m in Sources */,
 				354EBB4B1D225115003D82CB /* UIImageView+JKFaceAwareFill.m in Sources */,
 				354EB90F1D2250FB003D82CB /* XLNetworkManager.m in Sources */,
@@ -1950,6 +1981,7 @@
 				354EBB381D225115003D82CB /* UIImage+JKAlpha.m in Sources */,
 				354EBADC1D225115003D82CB /* NSDictionary+JKMerge.m in Sources */,
 				354EBAC01D225115003D82CB /* CLLocation+JKCH1903.m in Sources */,
+				355B89651D45B6F3007A10E6 /* ChoosePicViewController.m in Sources */,
 				354EBADE1D225115003D82CB /* NSDictionary+JKURL.m in Sources */,
 				354EBB0D1D225115003D82CB /* NSString+XL.m in Sources */,
 				354EBB761D225115003D82CB /* UIView+JKFrame.m in Sources */,
