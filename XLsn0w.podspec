@@ -24,6 +24,7 @@ Pod::Spec.new do |s|
   s.dependency "MBProgressHUD"
   s.dependency "SDWebImage"
   s.dependency "Masonry"
+  s.dependency "MJRefresh"
 
 end
 

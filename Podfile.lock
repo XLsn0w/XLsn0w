@@ -19,6 +19,7 @@ PODS:
   - FMDB/standard (2.6.2)
   - Masonry (1.0.1)
   - MBProgressHUD (1.0.0)
+  - MJRefresh (3.1.12)
   - SDWebImage (3.8.1):
     - SDWebImage/Core (= 3.8.1)
   - SDWebImage/Core (3.8.1)
@@ -28,6 +29,7 @@ DEPENDENCIES:
   - FMDB
   - Masonry
   - MBProgressHUD
+  - MJRefresh
   - SDWebImage
 
 SPEC CHECKSUMS:
@@ -35,6 +37,7 @@ SPEC CHECKSUMS:
   FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
   Masonry: a1a931a0d08870ed8ae415a2ea5ea68ebcac77df
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
   SDWebImage: 35f9627a3e44b4f292a8a8ce6a531fa488239b91
 
 COCOAPODS: 0.39.0
