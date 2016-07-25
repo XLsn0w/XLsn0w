@@ -683,9 +683,8 @@ static CGFloat kToolBarViewHeightLadnScape = 100;
         [_delegate photoBrowser:self didChangedToPageAtIndex:index];
     }
     
-    if (_shouldUseDefaultUINavigationBar)
-    {
-        self.title = [NSString stringWithFormat:@"%lu of %lu", index+1, (unsigned long)_photoCount];
+    if (_shouldUseDefaultUINavigationBar) {
+        self.title = [NSString stringWithFormat:@"%ld of %ld", index+1, _photoCount];
     }
 }
 
