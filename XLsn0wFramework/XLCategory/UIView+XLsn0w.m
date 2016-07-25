@@ -230,7 +230,7 @@
     }
     MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:parentView animated:YES];
     messageHud.mode = MBProgressHUDModeText;
-    messageHud.label.text = [message isKindOfClass:[NSString class]]?message:@"";
+    messageHud.label.text = [message isKindOfClass:[NSString class]] ? message : @"";
     [messageHud setOffset:(CGPointMake(0, -50))];
     messageHud.userInteractionEnabled = NO;
     [messageHud hideAnimated:YES afterDelay:1.5f];
@@ -248,7 +248,7 @@
     MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:parentView animated:YES];
     messageHud.mode = MBProgressHUDModeText;
     messageHud.label.text = @"提示";
-    messageHud.detailsLabel.text = [message isKindOfClass:[NSString class]]?message:@"";
+    messageHud.detailsLabel.text = [message isKindOfClass:[NSString class]] ? message : @"";
     [messageHud setOffset:(CGPointMake(0, -50))];
     messageHud.userInteractionEnabled = NO;
     [messageHud hideAnimated:YES afterDelay:1.0f];
