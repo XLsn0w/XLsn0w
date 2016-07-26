@@ -15,12 +15,13 @@
     return number;
 }//2
 
-+ (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize {
-    UIGraphicsBeginImageContext(CGSizeMake(newSize.width, newSize.height));
+//压缩图片
++ (UIImage *)xl_getCompressedImageWithNewSize:(CGSize)newSize currentImage:(UIImage *)currentImage {
+    UIGraphicsBeginImageContext(newSize);
     [currentImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
-    UIImage *newSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIImage *compressedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
-    return newSizeImage;
+    return compressedImage;
 }//3
 
 + (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage {

@@ -1,12 +1,16 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
-
+/*!
+ * @author XLsn0w
+ *
+ * < XL类方法 封装OC常用方法 提高效率 >
+ */
 @interface XL : NSObject
 
 + (NSString *)xl_getNSStringWithNumber:(NSNumber *)number;
 + (NSNumber *)xl_getNSNumberWithString:(NSString *)string;
-+ (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize;
++ (UIImage *)xl_getCompressedImageWithNewSize:(CGSize)newSize currentImage:(UIImage *)currentImage;
 + (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage;
 + (NSString *)xl_getBase64EncodedStringWithCurrentImage:(UIImage *)currentImage;
 + (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString;
