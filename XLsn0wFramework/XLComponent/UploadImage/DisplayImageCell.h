@@ -18,5 +18,9 @@
 ///右下角显示小叉号
 - (void)displayCellWithChoosedPics :(id)imagePath;
 
+- (void)setChooseCellImage:(UIImage *)indexPathImage;
+
+- (void)setNoMinusImage:(UIImage *)indexPathImage;
+
 @end
 

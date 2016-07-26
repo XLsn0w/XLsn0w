@@ -90,9 +90,15 @@
    
 }
 
+- (void)setChooseCellImage:(UIImage *)indexPathImage {
+    [self.picImageV setImage:[UIImage imageNamed:@"plus"]];
+    [self.choosePic setImage:[UIImage imageNamed:@""]];
+}
 
-
-
+- (void)setNoMinusImage:(UIImage *)indexPathImage {
+    [self.picImageV setImage:[UIImage imageNamed:@"plus"]];
+    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];
+}
 
 //- (NSString *)getCachePath {
 //    ///沙盒路径
