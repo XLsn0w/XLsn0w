@@ -1,6 +1,10 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "MBProgressHUD.h"
+
+/**************************************************************************************************/
+
 /*!
  * @author XLsn0w
  *
@@ -18,9 +22,7 @@
 
 @end
 
-#import <UIKit/UIKit.h>
-#import <Foundation/NSObject.h>
-#import "MBProgressHUD.h"
+/**************************************************************************************************/
 
 @interface XLMethods : NSObject
 
