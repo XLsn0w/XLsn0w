@@ -6,6 +6,8 @@
 
 + (NSString *)xl_getNSStringWithNumber:(NSNumber *)number;
 + (NSNumber *)xl_getNSNumberWithString:(NSString *)string;
++ (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize;
++ (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage;
 
 @end
 

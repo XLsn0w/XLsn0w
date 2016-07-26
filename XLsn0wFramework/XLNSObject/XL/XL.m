@@ -15,6 +15,19 @@
     return number;
 }
 
++ (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize {
+    UIGraphicsBeginImageContext(CGSizeMake(newSize.width, newSize.height));
+    [currentImage drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newSizeImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newSizeImage;
+}
+
++ (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage {
+    NSData *imageData = UIImagePNGRepresentation(currentImage);
+    return imageData;
+}
+
 @end
 
 
