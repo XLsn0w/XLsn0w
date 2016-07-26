@@ -51,6 +51,18 @@
     [messageHud hideAnimated:YES afterDelay:1.5f];
 }//7
 
+- (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage {
+    UIImageWriteToSavedPhotosAlbum(currentImage, self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
+}//8
+
+- (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
+    if (!error) {
+        [XL xl_showTipText:@"成功保存到相册"];
+    } else {
+        [XL xl_showTipText:@"保存图片失败"];
+    }
+}//8
+
 @end
 
 /**************************************************************************************************/
