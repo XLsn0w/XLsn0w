@@ -7,13 +7,13 @@
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     NSString *numberString = [numberFormatter stringFromNumber:number];
     return numberString;
-}
+}//1
 
 + (NSNumber *)xl_getNSNumberWithString:(NSString *)string {
     NSInteger integer = [string integerValue];
     NSNumber *number = @(integer);
     return number;
-}
+}//2
 
 + (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize {
     UIGraphicsBeginImageContext(CGSizeMake(newSize.width, newSize.height));
@@ -21,12 +21,33 @@
     UIImage *newSizeImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return newSizeImage;
-}
+}//3
 
 + (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage {
     NSData *imageData = UIImagePNGRepresentation(currentImage);
     return imageData;
-}
+}//4
+
++ (NSString *)xl_getBase64EncodedStringWithCurrentImage:(UIImage *)currentImage {
+    NSData *imageData = UIImagePNGRepresentation(currentImage);
+    NSString *base64EncodedString = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
+    return base64EncodedString;
+}//5
+
++ (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString {
+    NSData *imageData = [[NSData alloc] initWithBase64EncodedString:base64EncodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
+    UIImage *image = [UIImage imageWithData:imageData];
+    return image;
+}//6
+
++ (void)xl_showTipText:(NSString *)tipText {
+    MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:[[[UIApplication sharedApplication] windows] lastObject] animated:YES];
+    messageHud.mode = MBProgressHUDModeText;
+    messageHud.label.text = [tipText isKindOfClass:[NSString class]] ? tipText : @"";
+    [messageHud setOffset:(CGPointMake(0, -50))];
+    messageHud.userInteractionEnabled = NO;
+    [messageHud hideAnimated:YES afterDelay:1.5f];
+}//7
 
 @end
 

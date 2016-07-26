@@ -8,6 +8,9 @@
 + (NSNumber *)xl_getNSNumberWithString:(NSString *)string;
 + (UIImage *)xl_getNewSizeImageWithCurrentImage:(UIImage *)currentImage newSize:(CGSize)newSize;
 + (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage;
++ (NSString *)xl_getBase64EncodedStringWithCurrentImage:(UIImage *)currentImage;
++ (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString;
++ (void)xl_showTipText:(NSString *)tipText;
 
 @end
 
