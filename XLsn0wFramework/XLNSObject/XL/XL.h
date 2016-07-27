@@ -20,6 +20,7 @@
 + (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString;
 + (void)xl_showTipText:(NSString *)tipText;
 - (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage;
++ (UIImage *)xl_getURLImageWithURLString:(NSString *)URLString;//9
 
 @end
 

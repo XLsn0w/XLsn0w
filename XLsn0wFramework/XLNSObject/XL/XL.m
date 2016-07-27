@@ -63,6 +63,13 @@
     }
 }//8
 
++ (UIImage *)xl_getURLImageWithURLString:(NSString *)URLString {
+    NSURL *URL = [NSURL URLWithString:URLString];
+    NSData *URLData = [NSData dataWithContentsOfURL:URL];
+    UIImage *URLImage = [UIImage imageWithData:URLData];
+    return URLImage;
+}//9
+
 @end
 
 /**************************************************************************************************/
