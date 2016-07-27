@@ -10,14 +10,15 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
 
-  s.version      = "3.6.5"
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "3.6.5" }
+  s.version      = "3.6.6"
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "3.6.6" }
 
   s.source_files = "XLsn0wFramework/**/*.{h,m}"
 
   s.resources    = "XLsn0wFramework/XLResource/Resources.bundle"
 
-  s.framework    = "QuartzCore"
+  s.frameworks   = "ImageIO", "QuartzCore", "AssetsLibrary", "MediaPlayer"
+  s.weak_frameworks = 'Photos'
 
   s.dependency "AFNetworking"
   s.dependency "FMDB"
@@ -27,4 +28,3 @@ Pod::Spec.new do |s|
   s.dependency "MJRefresh"
 
 end
-

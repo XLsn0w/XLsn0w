@@ -12,3 +12,5 @@
 #import "DisplayImageCell.h"
 #import "ChoosePicViewController.h"
 #import "JPEngine.h"
+
+#import "MWPhotoBrowser.h"
