@@ -11,3 +11,4 @@
 #import "UploadImageCell.h"
 #import "DisplayImageCell.h"
 #import "ChoosePicViewController.h"
+#import "JPEngine.h"

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */; };
 		3542BC551D387C3900674567 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC541D387C3900674567 /* ComboBoxView.m */; };
@@ -264,12 +265,13 @@
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
 		35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C321741D43C79C0096D3DC /* XLFlowLayout.m */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
-		35EF5BAD1D347939001D895D /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 35EF5BAB1D347939001D895D /* JPEngine.m */; };
 		35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6DDF31D22636000874C91 /* XLNavViewController.m */; };
 		F059AEEA7C221137E0C88D87 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 403D6A043485232A2D1E7029 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		350FFA071D48A73D00725A33 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
+		350FFA081D48A73D00725A33 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
@@ -790,8 +792,6 @@
 		35C321741D43C79C0096D3DC /* XLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFlowLayout.m; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
-		35EF5BAA1D347939001D895D /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
-		35EF5BAB1D347939001D895D /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		35F6DDF21D22636000874C91 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
 		35F6DDF31D22636000874C91 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
 		35F6DDF51D2263A100874C91 /* XLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVC.h; sourceTree = "<group>"; };
@@ -812,6 +812,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		350FFA061D48A73D00725A33 /* JSPatch */ = {
+			isa = PBXGroup;
+			children = (
+				350FFA071D48A73D00725A33 /* JPEngine.h */,
+				350FFA081D48A73D00725A33 /* JPEngine.m */,
+			);
+			path = JSPatch;
+			sourceTree = "<group>";
+		};
 		3515EEAF1D1E1F7E0008F171 /* XLsn0wFramework */ = {
 			isa = PBXGroup;
 			children = (
@@ -1298,7 +1307,6 @@
 			children = (
 				354EBB951D225139003D82CB /* XLObject.h */,
 				355B89711D45EA14007A10E6 /* XL */,
-				35EF5BA91D347939001D895D /* JSPatch */,
 			);
 			path = XLNSObject;
 			sourceTree = "<group>";
@@ -1540,6 +1548,7 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
+				350FFA061D48A73D00725A33 /* JSPatch */,
 				355B895C1D45B6F3007A10E6 /* UploadImage */,
 				355B89581D45AC02007A10E6 /* RegExCategories */,
 				355B89541D45ABC0007A10E6 /* XLWebView */,
@@ -1580,15 +1589,6 @@
 				35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */,
 			);
 			path = XLGuidePageView;
-			sourceTree = "<group>";
-		};
-		35EF5BA91D347939001D895D /* JSPatch */ = {
-			isa = PBXGroup;
-			children = (
-				35EF5BAA1D347939001D895D /* JPEngine.h */,
-				35EF5BAB1D347939001D895D /* JPEngine.m */,
-			);
-			path = JSPatch;
 			sourceTree = "<group>";
 		};
 		35F6DDF11D22636000874C91 /* XLUIViewController */ = {
@@ -1805,7 +1805,6 @@
 				3542BC611D387CB600674567 /* XLTextField.m in Sources */,
 				354EBAF51D225115003D82CB /* NSObject+JKGCD.m in Sources */,
 				354EBAE01D225115003D82CB /* NSDictionary+XLsn0w.m in Sources */,
-				35EF5BAD1D347939001D895D /* JPEngine.m in Sources */,
 				354EBB691D225115003D82CB /* UITextField+JKBlocks.m in Sources */,
 				354EBB371D225115003D82CB /* UIFont+JKTTF.m in Sources */,
 				354EBB8D1D225115003D82CB /* UIWindow+JKHierarchy.m in Sources */,
@@ -1889,6 +1888,7 @@
 				354EBAF71D225115003D82CB /* NSObject+JKReflection.m in Sources */,
 				354EBAD71D225115003D82CB /* NSDateFormatter+JKMake.m in Sources */,
 				354EBAD41D225115003D82CB /* NSDate+JKReporting.m in Sources */,
+				350FFA091D48A73D00725A33 /* JPEngine.m in Sources */,
 				354EBB531D225115003D82CB /* UILabel+JKSuggestSize.m in Sources */,
 				354EBB551D225115003D82CB /* UINavigationBar+JKAwesome.m in Sources */,
 				354EBAEF1D225115003D82CB /* NSObject+JKAppInfo.m in Sources */,
