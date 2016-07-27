@@ -6,9 +6,10 @@
 //  Copyright 2010 d3i. All rights reserved.
 //
 
-#import <DACircularProgress/DACircularProgressView.h>
-#import "MWCommon.h"
 #import "MWZoomingScrollView.h"
+
+#import "DACircularProgressView.h"
+#import "MWCommon.h"
 #import "MWPhotoBrowser.h"
 #import "MWPhoto.h"
 #import "MWPhotoBrowserPrivate.h"
