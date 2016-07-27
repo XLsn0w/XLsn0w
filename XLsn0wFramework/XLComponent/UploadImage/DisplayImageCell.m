@@ -90,14 +90,26 @@
    
 }
 
-- (void)setChooseCellImage:(UIImage *)indexPathImage {
-    [self.picImageV setImage:[UIImage imageNamed:@"plus"]];
+/*****************************************************/
+
+- (void)setCellImage:(UIImage *)indexPathImage {
+    [self.picImageV setImage:indexPathImage];
+    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];
+    self.choosePic.userInteractionEnabled = YES;
+}
+
+- (void)setNoMinusCellImage:(UIImage *)indexPathImage {
+    [self.picImageV setImage:indexPathImage];
+    self.choosePic.userInteractionEnabled = NO;
     [self.choosePic setImage:[UIImage imageNamed:@""]];
 }
 
-- (void)setNoMinusImage:(UIImage *)indexPathImage {
-    [self.picImageV setImage:[UIImage imageNamed:@"plus"]];
-    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];
+/*****************************************************/
+
+
+- (void)dealloc{
+    self.choosePic = nil;
+    self.picImageV = nil;
 }
 
 //- (NSString *)getCachePath {
@@ -107,15 +119,4 @@
 //    return filePath;
 //}
 
-
-
-
-
-- (void)dealloc{
-    self.choosePic = nil;
-    self.picImageV = nil;
-}
 @end
-// 版权属于原作者
-// http://code4app.com (cn) http://code4app.net (en)
-// 发布代码于最专业的源码分享网站: Code4App.com

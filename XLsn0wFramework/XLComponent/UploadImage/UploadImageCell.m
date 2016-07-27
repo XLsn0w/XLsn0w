@@ -24,7 +24,7 @@
     
     self.collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
-    [self.collectionView registerClass:[DisplayImageCell class] forCellWithReuseIdentifier:@"cellX"];
+    [self.collectionView registerClass:[DisplayImageCell class] forCellWithReuseIdentifier:@"DisplayImageCell"];
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.showsHorizontalScrollIndicator = NO;
 }

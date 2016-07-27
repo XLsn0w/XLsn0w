@@ -9,8 +9,7 @@
 ///选中显示对号
 @property (nonatomic, retain) UIImageView *choosePic;
 
-/////将照片存到沙盒后展示
-//- (void)cellDisplayWith:(NSString *)image;
+
 
 ///将照片直接展示
 - (void)displayCellWith :(NSString *)image;
@@ -18,9 +17,15 @@
 ///右下角显示小叉号
 - (void)displayCellWithChoosedPics :(id)imagePath;
 
-- (void)setChooseCellImage:(UIImage *)indexPathImage;
+/*****************************************************/
 
-- (void)setNoMinusImage:(UIImage *)indexPathImage;
+- (void)setCellImage:(UIImage *)indexPathImage;
+- (void)setNoMinusCellImage:(UIImage *)indexPathImage;
+
+/*****************************************************/
+
+/////将照片存到沙盒后展示
+//- (void)cellDisplayWith:(NSString *)image;
 
 @end
 
