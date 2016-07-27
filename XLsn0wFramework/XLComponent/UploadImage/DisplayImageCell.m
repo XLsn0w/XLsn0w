@@ -94,18 +94,27 @@
 
 - (void)setCellImage:(UIImage *)indexPathImage {
     [self.picImageV setImage:indexPathImage];
-    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];
-    self.choosePic.userInteractionEnabled = YES;
+    /*****************************************************/
+    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];//显示减号图片
+    UITapGestureRecognizer *minusTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(minusTapGestureAction:)];//创建手势 添加事件
+    [self.choosePic addGestureRecognizer:minusTapGesture];//把手势添加到减号图片上面
+    self.choosePic.userInteractionEnabled = YES;//开启减号图片用户交互
 }
 
 - (void)setNoMinusCellImage:(UIImage *)indexPathImage {
     [self.picImageV setImage:indexPathImage];
+    /*****************************************************/
+    [self.choosePic setImage:[UIImage imageNamed:@""]];//一定要执行setImage方法 设置为空
     self.choosePic.userInteractionEnabled = NO;
-    [self.choosePic setImage:[UIImage imageNamed:@""]];
+}
+
+- (void)minusTapGestureAction:(UITapGestureRecognizer *)minusTapGesture {
+    UIImageView *minusImageView = (UIImageView *)minusTapGesture.view;
+    DisplayImageCell *displayImageCell = (DisplayImageCell *)[minusImageView.superview superview];
+    [self.xlDelegate deleteDisplayImageCell:displayImageCell];
 }
 
 /*****************************************************/
-
 
 - (void)dealloc{
     self.choosePic = nil;
