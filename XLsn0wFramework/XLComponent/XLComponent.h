@@ -14,3 +14,11 @@
 #import "JPEngine.h"
 
 #import "MWPhotoBrowser.h"
+#import "MWPhoto.h"
+#import "UIImage+MWPhotoBrowser.h"
+#import "MWTapDetectingImageView.h"
+#import "MWZoomingScrollView.h"
+#import "MWTapDetectingView.h"
+#import "MWPhotoBrowserPrivate.h"
+#import "MWGridViewController.h"
+#import "DACircularProgressView.h"

@@ -263,7 +263,6 @@
 		359876151D1BA44F00C2EC10 /* XLsn0wViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876141D1BA44F00C2EC10 /* XLsn0wViewController.m */; };
 		35A317B01D48F0590075314E /* XLsn0w.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 35A317AF1D48F0590075314E /* XLsn0w.podspec */; };
 		35A317CB1D48F1FF0075314E /* DACircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A317B31D48F1FF0075314E /* DACircularProgressView.m */; };
-		35A317CC1D48F1FF0075314E /* DALabeledCircularProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A317B51D48F1FF0075314E /* DALabeledCircularProgressView.m */; };
 		35A317CD1D48F1FF0075314E /* MWCaptionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A317B71D48F1FF0075314E /* MWCaptionView.m */; };
 		35A317CE1D48F1FF0075314E /* MWGridCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A317BA1D48F1FF0075314E /* MWGridCell.m */; };
 		35A317CF1D48F1FF0075314E /* MWGridViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35A317BC1D48F1FF0075314E /* MWGridViewController.m */; };
@@ -798,8 +797,6 @@
 		35A317AF1D48F0590075314E /* XLsn0w.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = XLsn0w.podspec; sourceTree = "<group>"; };
 		35A317B21D48F1FF0075314E /* DACircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DACircularProgressView.h; sourceTree = "<group>"; };
 		35A317B31D48F1FF0075314E /* DACircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DACircularProgressView.m; sourceTree = "<group>"; };
-		35A317B41D48F1FF0075314E /* DALabeledCircularProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DALabeledCircularProgressView.h; sourceTree = "<group>"; };
-		35A317B51D48F1FF0075314E /* DALabeledCircularProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DALabeledCircularProgressView.m; sourceTree = "<group>"; };
 		35A317B61D48F1FF0075314E /* MWCaptionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCaptionView.h; sourceTree = "<group>"; };
 		35A317B71D48F1FF0075314E /* MWCaptionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MWCaptionView.m; sourceTree = "<group>"; };
 		35A317B81D48F1FF0075314E /* MWCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MWCommon.h; sourceTree = "<group>"; };
@@ -1588,8 +1585,6 @@
 			children = (
 				35A317B21D48F1FF0075314E /* DACircularProgressView.h */,
 				35A317B31D48F1FF0075314E /* DACircularProgressView.m */,
-				35A317B41D48F1FF0075314E /* DALabeledCircularProgressView.h */,
-				35A317B51D48F1FF0075314E /* DALabeledCircularProgressView.m */,
 				35A317B61D48F1FF0075314E /* MWCaptionView.h */,
 				35A317B71D48F1FF0075314E /* MWCaptionView.m */,
 				35A317B81D48F1FF0075314E /* MWCommon.h */,
@@ -1914,7 +1909,6 @@
 				354EBB3F1D225115003D82CB /* UIImage+JKFXImage.m in Sources */,
 				354EBB0E1D225115003D82CB /* NSTimer+JKAddition.m in Sources */,
 				354EBB311D225115003D82CB /* UIControl+JKBlock.m in Sources */,
-				35A317CC1D48F1FF0075314E /* DALabeledCircularProgressView.m in Sources */,
 				354EBAE81D225115003D82CB /* NSMutableArray+XLsn0w.m in Sources */,
 				354EBAC91D225115003D82CB /* NSData+JKBase64.m in Sources */,
 				354EBB1F1D225115003D82CB /* UIBezierPath+JKSymbol.m in Sources */,

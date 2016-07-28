@@ -26,3 +26,21 @@
 - (void)setProgress:(CGFloat)progress animated:(BOOL)animated initialDelay:(CFTimeInterval)initialDelay withDuration:(CFTimeInterval)duration;
 
 @end
+
+/**************************************************************************************************/
+
+/**
+ @class DALabeledCircularProgressView
+ 
+ @brief Subclass of DACircularProgressView that adds a UILabel.
+ */
+@interface DALabeledCircularProgressView : DACircularProgressView
+
+/**
+ UILabel placed right on the DACircularProgressView.
+ */
+@property (strong, nonatomic) UILabel *progressLabel;
+
+@end
+
+/**************************************************************************************************/

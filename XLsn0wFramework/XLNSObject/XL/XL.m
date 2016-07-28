@@ -139,7 +139,6 @@
     return dict;
 }
 
-
 //MD5转换
 + (NSString *)md5HexDigest:(NSString *)inputString {
     const char * str = [inputString UTF8String];

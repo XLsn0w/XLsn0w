@@ -10,15 +10,15 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
 
-  s.version      = "3.7.0"
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "3.7.0" }
+  s.version      = "3.7.1"
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "3.7.1" }
 
   s.source_files = "XLsn0wFramework/**/*.{h,m}"
 
   s.resources    = "XLsn0wFramework/XLResource/Resources.bundle"
 
   s.frameworks   = "ImageIO", "QuartzCore", "AssetsLibrary", "MediaPlayer"
-  s.weak_frameworks = 'Photos'
+  s.weak_frameworks = "Photos"
 
   s.dependency "AFNetworking"
   s.dependency "FMDB"

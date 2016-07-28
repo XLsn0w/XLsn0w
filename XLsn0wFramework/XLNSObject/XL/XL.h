@@ -31,21 +31,20 @@
 + (NSDictionary*)dictionaryFromBundleWithName:(NSString*)fileName withType:(NSString*)typeName;
 //字符串MD5转换
 + (NSString *)md5HexDigest:(NSString*)input;
-+(NSString *)fileMd5sum:(NSString * )filename; //md5转换
++ (NSString *)fileMd5sum:(NSString * )filename; //md5转换
 
 //时间格式
 + (NSDate *)getNowTime;
 + (NSString *)getyyyymmdd;
-+(NSString *)getyyyymmddHHmmss;
++ (NSString *)getyyyymmddHHmmss;
 + (NSString *)get1970timeString;
 + (NSString *)getTimeString:(NSDate *)date;
 + (NSString *)gethhmmss;
 
-
 + (void)showTipsWithHUD:(NSString *)labelText;
 + (void)showTipsWithHUD:(NSString *)labelText inView:(UIView *)inView;
 + (void)showTipsWithView:(UIView *)uiview labelText:(NSString *)labelText showTime:(CGFloat)time;
-+ (void) showHudMessage:(NSString*) msg hideAfterDelay:(NSInteger) sec uiview:(UIView *)uiview;
++ (void)showHudMessage:(NSString*)msg hideAfterDelay:(NSInteger)sec uiview:(UIView *)uiview;
 
 //+ (NetworkStatus)getCurrentNetworkStatus;
 + (void)showNotReachabileTips;

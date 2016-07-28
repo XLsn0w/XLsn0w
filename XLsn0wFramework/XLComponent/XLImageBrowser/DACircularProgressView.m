@@ -32,8 +32,7 @@
 @dynamic progress;
 @dynamic clockwiseProgress;
 
-+ (BOOL)needsDisplayForKey:(NSString *)key
-{
++ (BOOL)needsDisplayForKey:(NSString *)key {
     if ([key isEqualToString:@"progress"]) {
         return YES;
     } else {
@@ -316,6 +315,43 @@
 {
     self.circularProgressLayer.clockwiseProgress = clockwiseProgres;
     [self.circularProgressLayer setNeedsDisplay];
+}
+
+@end
+
+/**************************************************************************************************/
+
+@implementation DALabeledCircularProgressView
+
+- (id)initWithFrame:(CGRect)frame {
+    self = [super initWithFrame:frame];
+    if (self) {
+        [self initializeLabel];
+    }
+    return self;
+}
+
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
+    if (self) {
+        [self initializeLabel];
+    }
+    return self;
+}
+
+
+#pragma mark - Internal methods
+
+/**
+ Creates and initializes
+ -[DALabeledCircularProgressView progressLabel].
+ */
+- (void)initializeLabel {
+    self.progressLabel = [[UILabel alloc] initWithFrame:self.bounds];
+    self.progressLabel.autoresizingMask = UIViewAutoresizingFlexibleHeight | UIViewAutoresizingFlexibleWidth;
+    self.progressLabel.textAlignment = NSTextAlignmentCenter;
+    self.progressLabel.backgroundColor = [UIColor clearColor];
+    [self addSubview:self.progressLabel];
 }
 
 @end

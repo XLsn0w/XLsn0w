@@ -6,11 +6,12 @@
 //  Copyright 2010 d3i. All rights reserved.
 //
 
+#import "MWPhoto.h"
+
 #import <SDWebImage/SDWebImageDecoder.h>
 #import <SDWebImage/SDWebImageManager.h>
 #import <SDWebImage/SDWebImageOperation.h>
 #import <AssetsLibrary/AssetsLibrary.h>
-#import "MWPhoto.h"
 #import "MWPhotoBrowser.h"
 
 @interface MWPhoto () {
