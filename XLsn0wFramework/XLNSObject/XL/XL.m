@@ -70,18 +70,14 @@
     return URLImage;
 }
 
-/*!
- * 跳转到指定的控制器页面
- * @param navigationController  即根控制器:self.navigationController (targetIndex = 0)
- * @param targetIndex           即(当前控制器)相对于(根控制器)递增的targetIndex
- */
 + (void)xl_getNavigationController:(UINavigationController *)navigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex {
     [navigationController popToViewController:[navigationController.viewControllers objectAtIndex:targetIndex] animated:YES];
 }
 
-/***************************************10*********************************************************/
-
-
++ (NSUInteger)xl_getCurrentViewControllerIndexWithNavigationController:(UINavigationController *)navigationController currentViewController:(UIViewController *)currentViewController {
+    NSUInteger currentViewControllerIndex = [navigationController.viewControllers indexOfObject:currentViewController];
+    return currentViewControllerIndex;
+}
 
 @end
 
