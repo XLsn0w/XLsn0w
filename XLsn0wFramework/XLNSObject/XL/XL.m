@@ -8,13 +8,13 @@
     NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
     NSString *numberString = [numberFormatter stringFromNumber:number];
     return numberString;
-}//1
+}
 
 + (NSNumber *)xl_getNSNumberWithString:(NSString *)string {
     NSInteger integer = [string integerValue];
     NSNumber *number = @(integer);
     return number;
-}//2
+}
 
 //压缩图片
 + (UIImage *)xl_getCompressedImageWithNewSize:(CGSize)newSize currentImage:(UIImage *)currentImage {
@@ -23,24 +23,24 @@
     UIImage *compressedImage = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return compressedImage;
-}//3
+}
 
 + (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage {
     NSData *imageData = UIImagePNGRepresentation(currentImage);
     return imageData;
-}//4
+}
 
 + (NSString *)xl_getBase64EncodedStringWithCurrentImage:(UIImage *)currentImage {
     NSData *imageData = UIImagePNGRepresentation(currentImage);
     NSString *base64EncodedString = [imageData base64EncodedStringWithOptions:NSDataBase64Encoding64CharacterLineLength];
     return base64EncodedString;
-}//5
+}
 
 + (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString {
     NSData *imageData = [[NSData alloc] initWithBase64EncodedString:base64EncodedString options:NSDataBase64DecodingIgnoreUnknownCharacters];
     UIImage *image = [UIImage imageWithData:imageData];
     return image;
-}//6
+}
 
 + (void)xl_showTipText:(NSString *)tipText {
     MBProgressHUD *messageHud = [MBProgressHUD showHUDAddedTo:[[[UIApplication sharedApplication] windows] lastObject] animated:YES];
@@ -49,11 +49,11 @@
     [messageHud setOffset:(CGPointMake(0, -50))];
     messageHud.userInteractionEnabled = NO;
     [messageHud hideAnimated:YES afterDelay:1.5f];
-}//7
+}
 
-- (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage {
++ (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage {
     UIImageWriteToSavedPhotosAlbum(currentImage, self, @selector(imageSavedToPhotosAlbum:didFinishSavingWithError:contextInfo:), nil);
-}//8
+}
 
 - (void)imageSavedToPhotosAlbum:(UIImage *)image didFinishSavingWithError:(NSError *)error contextInfo:(void *)contextInfo {
     if (!error) {
@@ -61,14 +61,27 @@
     } else {
         [XL xl_showTipText:@"保存图片失败"];
     }
-}//8
+}
 
 + (UIImage *)xl_getURLImageWithURLString:(NSString *)URLString {
     NSURL *URL = [NSURL URLWithString:URLString];
     NSData *URLData = [NSData dataWithContentsOfURL:URL];
     UIImage *URLImage = [UIImage imageWithData:URLData];
     return URLImage;
-}//9
+}
+
+/*!
+ * 跳转到指定的控制器页面
+ * @param navigationController  即根控制器:self.navigationController (targetIndex = 0)
+ * @param targetIndex           即(当前控制器)相对于(根控制器)递增的targetIndex
+ */
++ (void)xl_getNavigationController:(UINavigationController *)navigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex {
+    [navigationController popToViewController:[navigationController.viewControllers objectAtIndex:targetIndex] animated:YES];
+}
+
+/***************************************10*********************************************************/
+
+
 
 @end
 
@@ -199,8 +212,6 @@
     [viewToLoadData addSubview:loadingView];
     
 }
-
-
 
 #pragma mark - Only ActivityView
 
