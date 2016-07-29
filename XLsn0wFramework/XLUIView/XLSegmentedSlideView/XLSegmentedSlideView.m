@@ -47,19 +47,19 @@
     
     CGFloat contentOffsetX = self.frame.size.width * selectedSegmentIndex;
     
-    [_bottomScrollview setContentOffset:CGPointMake(contentOffsetX, 0)];
+    [_bottomScrollView setContentOffset:CGPointMake(contentOffsetX, 0)];
     
-    [self.xlDelegate slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:selectedSegmentIndex];
+    [self.xlDelegate slideBottomScrollViewActionOrClickSegmentedControlActionWithSelectedIndex:selectedSegmentIndex];
 }
 
 - (void)drawBottomScrollview {
-    _bottomScrollview = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 44, self.frame.size.width, self.frame.size.height-44)];
-    _bottomScrollview.bounces = NO;
-    _bottomScrollview.delegate = self;
-    _bottomScrollview.backgroundColor = [UIColor whiteColor];
-    _bottomScrollview.pagingEnabled = YES;
-    _bottomScrollview.showsHorizontalScrollIndicator = NO;
-    [self addSubview:_bottomScrollview];
+    _bottomScrollView = [[UIScrollView alloc] initWithFrame:CGRectMake(0, 44, self.frame.size.width, self.frame.size.height-44)];
+    _bottomScrollView.bounces = NO;
+    _bottomScrollView.delegate = self;
+    _bottomScrollView.backgroundColor = [UIColor whiteColor];
+    _bottomScrollView.pagingEnabled = YES;
+    _bottomScrollView.showsHorizontalScrollIndicator = NO;
+    [self addSubview:_bottomScrollView];
 }
 
 #pragma mark - UIScrollViewDelegate
@@ -71,7 +71,7 @@
     
     [self.segmentedControl setSelectedSegmentIndex:currentPage];
     
-    [self.xlDelegate slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:currentPage];
+    [self.xlDelegate slideBottomScrollViewActionOrClickSegmentedControlActionWithSelectedIndex:currentPage];
 }
 
 @end

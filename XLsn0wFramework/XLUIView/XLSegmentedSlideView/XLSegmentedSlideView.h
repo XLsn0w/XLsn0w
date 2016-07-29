@@ -4,7 +4,7 @@
 
 @protocol XLSegmentedSlideViewDelegate <NSObject>
 
-- (void)slideScrollviewAndClickSegmentedControlActionWithSelectedIndex:(NSInteger)selectedIndex;
+- (void)slideBottomScrollViewActionOrClickSegmentedControlActionWithSelectedIndex:(NSInteger)selectedIndex;
 
 @end
 
@@ -14,7 +14,7 @@
 
 @property (nonatomic, strong) XLSegmentedControl *segmentedControl;
 
-@property (nonatomic, strong) UIScrollView *bottomScrollview;
+@property (nonatomic, strong) UIScrollView *bottomScrollView;
 
 - (instancetype)initWithFrame:(CGRect)frame forTitles:(NSArray *)titles;
 
