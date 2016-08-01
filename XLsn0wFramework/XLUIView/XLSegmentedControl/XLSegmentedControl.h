@@ -33,7 +33,7 @@ typedef enum {
     SegmentedControlSegmentWidthStyleDynamic,
 } SegmentedControlSegmentWidthStyle;
 
-typedef NS_OPTIONS(NSInteger, HMSegmentedControlBorderType) {
+typedef NS_OPTIONS(NSInteger, SegmentedControlBorderType) {
     SegmentedControlBorderTypeNone = 0,
     SegmentedControlBorderTypeTop = (1 << 0),
     SegmentedControlBorderTypeLeft = (1 << 1),
@@ -152,7 +152,7 @@ typedef enum {
  
  Default is `HMSegmentedControlBorderTypeNone`
  */
-@property (nonatomic, assign) HMSegmentedControlBorderType borderType;
+@property (nonatomic, assign) SegmentedControlBorderType borderType;
 
 /**
  Specifies the border color.

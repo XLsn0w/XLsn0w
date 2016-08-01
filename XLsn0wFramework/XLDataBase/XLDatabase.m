@@ -22,7 +22,7 @@ static XLDatabase *instance = nil;
         _fmdb = [FMDatabase databaseWithPath:databasePath];
        }
     if ([_fmdb open]) {
-        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, roles text, accountId text, accountType text, propertyId text)"];
+        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, gender text, accountId text, accountType text, propertyId text)"];
         if (result) {
             NSLog(@"<创建XLDatabase成功>");
         } else {
@@ -35,7 +35,7 @@ static XLDatabase *instance = nil;
 /*******insert user into XLDatabase****************************************************************/
 - (void)insertUser:(User *)user {
     if ([_fmdb open]) {
-        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userId, imageUrl, userToken, token, trueName, estateId, roles, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
+        NSString *insertCommand = [NSString stringWithFormat:@"insert into XLDatabase (primaryKeyId, imageData, userName, password, age, birthday, height, weight, phoneNumber, address, userId, imageUrl, userToken, token, trueName, estateId, gender, accountId, accountType, propertyId) values(?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)"];
         BOOL result = [_fmdb executeUpdate:insertCommand,
                        user.primaryKeyId,
                        user.imageData,
@@ -53,7 +53,7 @@ static XLDatabase *instance = nil;
                        user.token,
                        user.trueName,
                        user.estateId,
-                       user.roles,
+                       user.gender,
                        user.accountId,
                        user.accountType,
                        user.propertyId];
@@ -272,6 +272,7 @@ static XLDatabase *instance = nil;
             // NSString *
             user.userName = [resultSet stringForColumn:@"userName"];
             user.password = [resultSet stringForColumn:@"password"];
+            
             user.age = [resultSet stringForColumn:@"age"];
             user.birthday = [resultSet stringForColumn:@"age"];
             user.height = [resultSet stringForColumn:@"age"];
@@ -285,7 +286,8 @@ static XLDatabase *instance = nil;
             user.token = [resultSet stringForColumn:@"token"];
             user.trueName = [resultSet stringForColumn:@"trueName"];
             user.estateId = [resultSet stringForColumn:@"estateId"];
-            user.roles = [resultSet stringForColumn:@"roles"];
+            
+            user.gender = [resultSet stringForColumn:@"gender"];
             user.accountId = [resultSet stringForColumn:@"accountId"];
             user.accountType = [resultSet stringForColumn:@"accountType"];
             user.propertyId = [resultSet stringForColumn:@"propertyId"];

@@ -53,8 +53,8 @@
 /*! 房地产ID */
 @property(nonatomic, strong) NSString *estateId;
 
-/*! 任务|角色 */
-@property(nonatomic, strong) NSString *roles;
+/*! 性别 */
+@property (nonatomic, copy) NSString *gender;
 
 /*! 账号ID */
 @property(nonatomic, strong) NSString *accountId;
