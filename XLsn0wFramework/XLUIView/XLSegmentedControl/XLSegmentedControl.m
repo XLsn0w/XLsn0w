@@ -202,7 +202,7 @@
     }
 }
 
-- (void)setBorderType:(HMSegmentedControlBorderType)borderType {
+- (void)setBorderType:(SegmentedControlBorderType)borderType {
     _borderType = borderType;
     [self setNeedsDisplay];
 }
