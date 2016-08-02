@@ -70,13 +70,33 @@
     return URLImage;
 }
 
-+ (void)xl_getNavigationController:(UINavigationController *)navigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex {
-    [navigationController popToViewController:[navigationController.viewControllers objectAtIndex:targetIndex] animated:YES];
++ (void)xl_getCurrentNavigationController:(UINavigationController *)currentNavigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex {
+    [currentNavigationController popToViewController:[currentNavigationController.viewControllers objectAtIndex:targetIndex] animated:YES];
 }
 
-+ (NSUInteger)xl_getCurrentViewControllerIndexWithNavigationController:(UINavigationController *)navigationController currentViewController:(UIViewController *)currentViewController {
-    NSUInteger currentViewControllerIndex = [navigationController.viewControllers indexOfObject:currentViewController];
++ (NSUInteger)xl_getCurrentIndexWithCurrentNavigationController:(UINavigationController *)currentNavigationController currentViewController:(UIViewController *)currentViewController {
+    NSUInteger currentViewControllerIndex = [currentNavigationController.viewControllers indexOfObject:currentViewController];
     return currentViewControllerIndex;
+}
+
++ (void)xl_getPhoneNumber:(NSString *)phoneNumber currentViewController:(UIViewController *)currentViewController {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"提示"
+                                                                             message:[NSString stringWithFormat:@"确定拨打: %@ ?", phoneNumber]
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    
+    UIAlertAction *okAlertAction = [UIAlertAction actionWithTitle:@"确定"
+                                                            style:UIAlertActionStyleDefault
+                                                          handler:^(UIAlertAction * _Nonnull action) {
+                                                              
+                                                              [[UIApplication sharedApplication] openURL:[NSURL URLWithString:[NSString stringWithFormat:@"tel://%@", phoneNumber]]];
+                                                          }];
+    
+    UIAlertAction *cancleAlertAction = [UIAlertAction actionWithTitle:@"取消"
+                                                                style:UIAlertActionStyleDefault
+                                                              handler:nil];
+    [alertController addAction:okAlertAction];
+    [alertController addAction:cancleAlertAction];
+    [currentViewController presentViewController:alertController animated:YES completion:nil];
 }
 
 @end

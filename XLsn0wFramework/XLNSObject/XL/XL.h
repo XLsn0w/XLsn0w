@@ -21,8 +21,9 @@
 + (void)xl_showTipText:(NSString *)tipText;
 + (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage;
 + (UIImage *)xl_getURLImageWithURLString:(NSString *)URLString;
-+ (void)xl_getNavigationController:(UINavigationController *)navigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex;
-+ (NSUInteger)xl_getCurrentViewControllerIndexWithNavigationController:(UINavigationController *)navigationController currentViewController:(UIViewController *)currentViewController;
++ (void)xl_getCurrentNavigationController:(UINavigationController *)currentNavigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex;
++ (NSUInteger)xl_getCurrentIndexWithCurrentNavigationController:(UINavigationController *)currentNavigationController currentViewController:(UIViewController *)currentViewController;
++ (void)xl_getPhoneNumber:(NSString *)phoneNumber currentViewController:(UIViewController *)currentViewController;
 
 @end
 
