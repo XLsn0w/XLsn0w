@@ -22,7 +22,7 @@ static XLDatabase *instance = nil;
         _fmdb = [FMDatabase databaseWithPath:databasePath];
        }
     if ([_fmdb open]) {
-        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId integer primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, gender text, accountId text, accountType text, propertyId text)"];
+        BOOL result = [_fmdb executeUpdate:@"create table XLDatabase (primaryKeyId text primary key not null, imageData blob, userName text, password text, age text, birthday text, height text, weight text, phoneNumber text, address text, userId text, imageUrl text, userToken text, token text, trueName text, estateId text, gender text, accountId text, accountType text, propertyId text)"];
         if (result) {
             NSLog(@"<创建XLDatabase成功>");
         } else {
@@ -237,7 +237,7 @@ static XLDatabase *instance = nil;
 }
 
 //update XLDatabase userToken Of User
-- (void)updateUserTokenOfUser:(User *)user {
+- (void)updateUserTokenWithUser:(User *)user {
     if ([_fmdb open]) {
         NSString *updateCommand = [NSString stringWithFormat:@"update XLDatabase set userToken = ? where primaryKeyId = ?;"];
         BOOL result = [_fmdb executeUpdate:updateCommand, user.userToken, user.primaryKeyId];
@@ -245,6 +245,20 @@ static XLDatabase *instance = nil;
             NSLog(@"更新userToken成功");
         } else {
             NSLog(@"更新userToken失败");
+        }
+        [_fmdb close];
+    }
+}
+
+//update XLDatabase gender Of User
+- (void)updateGenderOfUser:(User *)user {
+    if ([_fmdb open]) {
+        NSString *updateCommand = [NSString stringWithFormat:@"update XLDatabase set gender = ? where primaryKeyId = ?;"];
+        BOOL result = [_fmdb executeUpdate:updateCommand, user.gender, user.primaryKeyId];
+        if (result) {
+            NSLog(@"更新gender成功");
+        } else {
+            NSLog(@"更新gender失败");
         }
         [_fmdb close];
     }

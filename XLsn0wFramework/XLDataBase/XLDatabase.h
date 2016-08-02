@@ -31,7 +31,9 @@
 - (void)updateAddressOfUser:(User *)user;
 - (void)updateUserIdOfUser:(User *)user;
 - (void)updateImageUrlOfUser:(User *)user;
-- (void)updateUserTokenOfUser:(User *)user;
+- (void)updateGenderOfUser:(User *)user;
+
+- (void)updateUserTokenWithUser:(User *)user;
 
 //(查)取值
 - (NSMutableArray *)selectUserArrayFromXLDatabase;
