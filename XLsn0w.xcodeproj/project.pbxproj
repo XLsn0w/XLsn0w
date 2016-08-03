@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
+		351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351670D91D51ED21001683B3 /* JKAlertDialog.m */; };
 		353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */; };
 		3542BC551D387C3900674567 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC541D387C3900674567 /* ComboBoxView.m */; };
 		3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC581D387CAD00674567 /* XLCalendarComponent.m */; };
@@ -286,6 +287,8 @@
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
+		351670D81D51ED21001683B3 /* JKAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertDialog.h; sourceTree = "<group>"; };
+		351670D91D51ED21001683B3 /* JKAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertDialog.m; sourceTree = "<group>"; };
 		35190B621D387F5F006A73C6 /* XLComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLComponent.h; sourceTree = "<group>"; };
 		351B64101D37E08000F27F82 /* XLDepend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDepend.h; sourceTree = "<group>"; };
 		353F16F71D3E28C800409A27 /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
@@ -874,6 +877,15 @@
 			path = XLsn0wFramework;
 			sourceTree = "<group>";
 		};
+		351670D71D51ED21001683B3 /* XLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				351670D81D51ED21001683B3 /* JKAlertDialog.h */,
+				351670D91D51ED21001683B3 /* JKAlertDialog.m */,
+			);
+			path = XLAlertView;
+			sourceTree = "<group>";
+		};
 		351B640F1D37E08000F27F82 /* XLDepend */ = {
 			isa = PBXGroup;
 			children = (
@@ -1351,6 +1363,7 @@
 			isa = PBXGroup;
 			children = (
 				354EBB9E1D22514D003D82CB /* XLView.h */,
+				351670D71D51ED21001683B3 /* XLAlertView */,
 				359134C31D40B229004F49CB /* XLTextView */,
 				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
 				358F633C1D3DC0F5003A338E /* XLSegmentedSlideView */,
@@ -2061,6 +2074,7 @@
 				354EBACC1D225115003D82CB /* NSData+JKGzip.m in Sources */,
 				354EBAC71D225115003D82CB /* NSBundle+JKAppIcon.m in Sources */,
 				355B894B1D45AB8D007A10E6 /* CXTapDetectingView.m in Sources */,
+				351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */,
 				354EBAFD1D225115003D82CB /* NSString+JKDictionaryValue.m in Sources */,
 				354EBB4F1D225115003D82CB /* UIImageView+XLsn0w.m in Sources */,
 				354EBB331D225115003D82CB /* UIDevice+JKHardware.m in Sources */,
