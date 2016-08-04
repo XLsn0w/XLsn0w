@@ -1,0 +1,89 @@
+
+#import "RMPickerViewController.h"
+
+#import <QuartzCore/QuartzCore.h>
+
+#define RM_PICKER_HEIGHT_PORTRAIT 216
+#define RM_PICKER_HEIGHT_LANDSCAPE 162
+
+#if !__has_feature(attribute_availability_app_extension)
+//Normal App
+#define RM_CURRENT_ORIENTATION_IS_LANDSCAPE_PREDICATE UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)
+#else
+//App Extension
+#define RM_CURRENT_ORIENTATION_IS_LANDSCAPE_PREDICATE [UIScreen mainScreen].bounds.size.height < [UIScreen mainScreen].bounds.size.width
+#endif
+
+@interface RMPickerViewController ()
+
+@property (nonatomic, readwrite, strong) UIPickerView *picker;
+@property (nonatomic, weak) NSLayoutConstraint *pickerHeightConstraint;
+
+@end
+
+@implementation RMPickerViewController
+
+#pragma mark - Class
+- (instancetype)initWithStyle:(RMActionControllerStyle)style title:(NSString *)aTitle message:(NSString *)aMessage selectAction:(RMAction *)selectAction andCancelAction:(RMAction *)cancelAction {
+    self = [super initWithStyle:style title:aTitle message:aMessage selectAction:selectAction andCancelAction:cancelAction];
+    if(self) {
+        self.picker = [[UIPickerView alloc] initWithFrame:CGRectZero];
+        self.picker.translatesAutoresizingMaskIntoConstraints = NO;
+        
+        self.pickerHeightConstraint = [NSLayoutConstraint constraintWithItem:self.picker attribute:NSLayoutAttributeHeight relatedBy:NSLayoutRelationEqual toItem:nil attribute:NSLayoutAttributeNotAnAttribute multiplier:1 constant:0];
+        
+        if(RM_CURRENT_ORIENTATION_IS_LANDSCAPE_PREDICATE) {
+            self.pickerHeightConstraint.constant = RM_PICKER_HEIGHT_LANDSCAPE;
+        } else {
+            self.pickerHeightConstraint.constant = RM_PICKER_HEIGHT_PORTRAIT;
+        }
+        
+        [self.picker addConstraint:self.pickerHeightConstraint];
+    }
+    return self;
+}
+
+#pragma mark - Init and Dealloc
+- (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
+    
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(didRotate) name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [[NSNotificationCenter defaultCenter] removeObserver:self name:UIApplicationDidChangeStatusBarOrientationNotification object:nil];
+    
+    [super viewDidDisappear:animated];
+}
+
+#pragma mark - Orientation
+- (void)didRotate {
+    NSTimeInterval duration = 0.4;
+    
+    if([UIDevice currentDevice].userInterfaceIdiom == UIUserInterfaceIdiomPhone) {
+        duration = 0.3;
+        
+        if(RM_CURRENT_ORIENTATION_IS_LANDSCAPE_PREDICATE) {
+            self.pickerHeightConstraint.constant = RM_PICKER_HEIGHT_LANDSCAPE;
+        } else {
+            self.pickerHeightConstraint.constant = RM_PICKER_HEIGHT_PORTRAIT;
+        }
+        
+        [self.picker setNeedsUpdateConstraints];
+        [self.picker layoutIfNeeded];
+    }
+    
+    [self.view.superview setNeedsUpdateConstraints];
+    __weak RMPickerViewController *blockself = self;
+    [UIView animateWithDuration:duration delay:0 options:UIViewAnimationOptionBeginFromCurrentState animations:^{
+        [blockself.view.superview layoutIfNeeded];
+    } completion:^(BOOL finished) {
+    }];
+}
+
+#pragma mark - Properties
+- (UIView *)contentView {
+    return self.picker;
+}
+
+@end

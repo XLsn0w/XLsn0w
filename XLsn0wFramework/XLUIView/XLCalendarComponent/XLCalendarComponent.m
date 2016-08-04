@@ -253,7 +253,7 @@
         }  else if (iPhone4s) {
             [dayLabel setFont:[UIFont systemFontOfSize:6]];
         } else {
-            [dayLabel setFont:[UIFont systemFontOfSize:14]];
+            [dayLabel setFont:[UIFont systemFontOfSize:11]];
         }
     }
     
@@ -291,7 +291,7 @@
         }  else if (iPhone4s) {
             [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:8]];
         } else {
-            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:14]];
+            [_dateButton.titleLabel setFont:[UIFont systemFontOfSize:12]];
         }
         
         DateCell *dateCell = [[DateCell alloc] init];

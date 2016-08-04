@@ -10,6 +10,8 @@
 		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351670D91D51ED21001683B3 /* JKAlertDialog.m */; };
+		35170D081D531940001F7020 /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35170D051D531940001F7020 /* RMActionController.m */; };
+		35170D091D531940001F7020 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35170D071D531940001F7020 /* RMPickerViewController.m */; };
 		353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */; };
 		3542BC551D387C3900674567 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC541D387C3900674567 /* ComboBoxView.m */; };
 		3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC581D387CAD00674567 /* XLCalendarComponent.m */; };
@@ -289,6 +291,10 @@
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
 		351670D81D51ED21001683B3 /* JKAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertDialog.h; sourceTree = "<group>"; };
 		351670D91D51ED21001683B3 /* JKAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertDialog.m; sourceTree = "<group>"; };
+		35170D041D531940001F7020 /* RMActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMActionController.h; sourceTree = "<group>"; };
+		35170D051D531940001F7020 /* RMActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionController.m; sourceTree = "<group>"; };
+		35170D061D531940001F7020 /* RMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPickerViewController.h; sourceTree = "<group>"; };
+		35170D071D531940001F7020 /* RMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewController.m; sourceTree = "<group>"; };
 		35190B621D387F5F006A73C6 /* XLComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLComponent.h; sourceTree = "<group>"; };
 		351B64101D37E08000F27F82 /* XLDepend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDepend.h; sourceTree = "<group>"; };
 		353F16F71D3E28C800409A27 /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
@@ -884,6 +890,17 @@
 				351670D91D51ED21001683B3 /* JKAlertDialog.m */,
 			);
 			path = XLAlertView;
+			sourceTree = "<group>";
+		};
+		35170D031D531940001F7020 /* ActionController */ = {
+			isa = PBXGroup;
+			children = (
+				35170D041D531940001F7020 /* RMActionController.h */,
+				35170D051D531940001F7020 /* RMActionController.m */,
+				35170D061D531940001F7020 /* RMPickerViewController.h */,
+				35170D071D531940001F7020 /* RMPickerViewController.m */,
+			);
+			path = ActionController;
 			sourceTree = "<group>";
 		};
 		351B640F1D37E08000F27F82 /* XLDepend */ = {
@@ -1677,6 +1694,7 @@
 				35F6DDF51D2263A100874C91 /* XLVC.h */,
 				35F6DDF21D22636000874C91 /* XLNavViewController.h */,
 				35F6DDF31D22636000874C91 /* XLNavViewController.m */,
+				35170D031D531940001F7020 /* ActionController */,
 			);
 			path = XLUIViewController;
 			sourceTree = "<group>";
@@ -1984,6 +2002,7 @@
 				354EBB131D225115003D82CB /* NSURLRequest+JKParamsFromDictionary.m in Sources */,
 				354EBB521D225115003D82CB /* UILabel+JKAutoSize.m in Sources */,
 				353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */,
+				35170D081D531940001F7020 /* RMActionController.m in Sources */,
 				354EBAD81D225115003D82CB /* NSDecimalNumber+JKCalculatingByString.m in Sources */,
 				355B894A1D45AB8D007A10E6 /* CXTapDetectingImageView.m in Sources */,
 				35BF65A91D23744C00993CAE /* User.m in Sources */,
@@ -2028,6 +2047,7 @@
 				354EBB6E1D225115003D82CB /* UITextView+JKPlaceHolder.m in Sources */,
 				354EBB6B1D225115003D82CB /* UITextField+JKSelect.m in Sources */,
 				358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */,
+				35170D091D531940001F7020 /* RMPickerViewController.m in Sources */,
 				354EBB821D225115003D82CB /* UIViewController+JKStoreKit.m in Sources */,
 				35A317D11D48F1FF0075314E /* MWPhotoBrowser.m in Sources */,
 				354EBB561D225115003D82CB /* UINavigationBar+XLsn0w.m in Sources */,
