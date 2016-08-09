@@ -31,20 +31,6 @@
 #define iPhone6     ([[UIScreen mainScreen] bounds].size.height == 667)
 #define iPhone6Plus ([[UIScreen mainScreen] bounds].size.height == 736)
 
-
-#ifndef MacroDefinition_h
-#define MacroDefinition_h
-
-//-------------------获取设备大小-------------------------
-//NavBar高度
-#define NavigationBar_HEIGHT 44
-//获取屏幕 宽度、高度
-#define SCREEN_WIDTH ([UIScreen mainScreen].bounds.size.width)
-#define SCREEN_HEIGHT ([UIScreen mainScreen].bounds.size.height)
-
-//-------------------获取设备大小-------------------------
-
-
 //-------------------打印日志-------------------------
 //DEBUG  模式下打印日志,当前行
 #ifdef DEBUG
@@ -54,9 +40,9 @@
 #endif
 
 
-//重写NSLog,Debug模式下打印日志和当前行数
+//重写NSLog, Debug模式下打印日志和当前行数
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"\nfunction:%s line:%d content:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr,"\n方法名:%s 行数:%d 内容:%s\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
