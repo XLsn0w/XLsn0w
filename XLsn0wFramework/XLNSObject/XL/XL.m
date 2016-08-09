@@ -99,6 +99,12 @@
     [currentViewController presentViewController:alertController animated:YES completion:nil];
 }
 
++ (BOOL)xl_isPhoneNumber:(NSString *)phoneNumber {
+    //手机号以13， 15，18开头，八个 \d 数字字符
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF MATCHES %@", @"^((13[0-9])|(15[^4,\\D])|(18[0,0-9]))\\d{8}$"];
+    return [predicate evaluateWithObject:phoneNumber];
+}
+
 @end
 
 /**************************************************************************************************/

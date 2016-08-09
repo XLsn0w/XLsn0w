@@ -24,6 +24,8 @@
 + (void)xl_getCurrentNavigationController:(UINavigationController *)currentNavigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex;
 + (NSUInteger)xl_getCurrentIndexWithCurrentNavigationController:(UINavigationController *)currentNavigationController currentViewController:(UIViewController *)currentViewController;
 + (void)xl_getPhoneNumber:(NSString *)phoneNumber currentViewController:(UIViewController *)currentViewController;
+//手机号码验证
++ (BOOL)xl_isPhoneNumber:(NSString *)phoneNumber;
 
 @end
 
