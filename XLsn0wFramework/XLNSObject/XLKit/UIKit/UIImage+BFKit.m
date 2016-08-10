@@ -28,7 +28,7 @@
 #import "NSNumber+BFKit.h"
 #import "UIColor+BFKit.h"
 #import "UIDevice+BFKit.h"
-
+#import "BFLog.h"
 
 @implementation UIImage (BFKit)
 
@@ -199,7 +199,7 @@
     UIGraphicsEndImageContext();
     
     if (newImage == nil) {
-        //BFLog(@"Could not scale image");
+        BFLog(@"Could not scale image");
     }
     
     return newImage;
@@ -293,7 +293,7 @@
     UIGraphicsEndImageContext();
     
     if (newImage == nil) {
-       // BFLog(@"Could not scale image");
+        BFLog(@"Could not scale image");
     }
     
     return newImage;
@@ -325,7 +325,7 @@
     UIGraphicsEndImageContext();
     
     if (newImage == nil) {
-        //BFLog(@"Could not scale image");
+        BFLog(@"Could not scale image");
     }
     
     return newImage;
@@ -634,7 +634,7 @@
     pixelBuffer = malloc(CGImageGetBytesPerRow(img) * CGImageGetHeight(img));
     
     if (pixelBuffer == NULL) {
-        //BFLog(@"No pixelbuffer");
+        BFLog(@"No pixelbuffer");
     }
     
     outBuffer.data = pixelBuffer;
@@ -645,7 +645,7 @@
     error = vImageBoxConvolve_ARGB8888(&inBuffer, &outBuffer, NULL, 0, 0, boxSize, boxSize, NULL, kvImageEdgeExtend);
     
     if (error) {
-        //BFLog(@"Error from convolution %ld", error);
+        BFLog(@"Error from convolution %ld", error);
     }
     
     CGColorSpaceRef colorSpace = CGColorSpaceCreateDeviceRGB();

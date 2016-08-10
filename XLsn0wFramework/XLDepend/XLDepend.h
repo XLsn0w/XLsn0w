@@ -43,13 +43,15 @@
 #   define DLog(...)
 #endif
 
+/***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 
-//重写NSLog, Debug模式下打印日志和当前行数
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr, "\n<CurrentMethod:%s> \n(CurrentLine:%d) \n[CurrentLog:%s]\n", __FUNCTION__, __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr, "\n <<CurrentLine:%d>> | <<CurrentMethod:%s>> | CurrentNSLog:%s",__LINE__, __FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
+
+/**************************************************************************************************/
 
 //DEBUG  模式下打印日志,当前行 并弹出一个警告
 #ifdef DEBUG

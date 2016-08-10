@@ -26,6 +26,7 @@
 
 #import "UIFont+BFKit.h"
 #import "NSMutableArray+BFKit.h"
+#import "BFLog.h"
 
 @implementation UIFont (BFKit)
 
@@ -69,7 +70,8 @@ static UIFont * _Nullable boldFont;
         [fontFamilyDic setObject:fontNames forKey:fontFamily];
     }
     
-        
+    BFLog(@"%@", fontFamilyDic);
+    
     return fontFamilyDic;
 }
 
@@ -307,7 +309,7 @@ static UIFont * _Nullable boldFont;
             break;
     }
     
-   
+    BFLog(@"%@", fontNames);
     
     return fontNames;
 }

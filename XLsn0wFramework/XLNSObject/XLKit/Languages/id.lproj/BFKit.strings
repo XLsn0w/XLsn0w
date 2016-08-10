@@ -1,5 +1,5 @@
 //
-//  BFSystemSound.m
+//  BFKit.strings
 //  BFKit
 //
 //  The MIT License (MIT)
@@ -24,36 +24,51 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-#import "BFSystemSound.h"
+// Generals
+"OK" = "Ok";
+"CONTINUE" = "Lanjutkan";
+"CANCEL" = "Batal";
+"DONE" = "Selesai";
+"ERROR" = "Kesalahan";
+"WARNING" = "Peringatan";
+"CLOSE" = "Tutup";
+"OPEN" = "Buka";
+"YES" = "Ya";
+"NO" = "Tidak";
 
-@implementation BFSystemSound
+// Days
+"TODAY" = "Hari Ini";
+"TOMORROW" = "Besok";
+"SUNDAY" = "Minggu";
+"MONDAY"= "Senin";
+"TUESDAY" = "Selasa";
+"WEDNESDAY" = "Rabu";
+"THURSDAY" = "Kamis";
+"FRIDAY" = "Jumat";
+"SATURDAY" = "Sabtu";
 
-+ (void)playSystemSound:(AudioID)audioID {
-    AudioServicesPlaySystemSound(audioID);
-}
+// Months
+"JANUARY" = "Januari";
+"FEBRUARY" = "Februari";
+"MARCH" = "Maret";
+"APRIL" = "April";
+"MAY" = "Mei";
+"JUNE" = "Juni";
+"JULY" = "Juli";
+"AUGUST" = "Agustus";
+"SEPTEMBER" = "September";
+"OCTOBER" = "Oktober";
+"NOVEMBER" = "November";
+"DECEMBER" = "Desember";
 
-+ (void)playSystemSoundVibrate {
-    AudioServicesPlaySystemSound(kSystemSoundID_Vibrate);
-}
+// Time zones
+"NIGHT" = "Malam";
+"MORNING" = "Pagi";
+"AFTERNOON" = "Siang";
+"EVENING" = "Petang";
 
-+ (SystemSoundID)playCustomSound:(NSURL * _Nonnull)soundURL {
-    SystemSoundID soundID;
-
-    OSStatus error = AudioServicesCreateSystemSoundID((CFURLRef)CFBridgingRetain(soundURL), &soundID);
-    if (error != kAudioServicesNoError) {
-        NSLog(@"Could not load %@", soundURL);
-    }
-    return soundID;
-}
-
-+ (BOOL)disposeSound:(SystemSoundID)soundID {
-    OSStatus error = AudioServicesDisposeSystemSoundID(soundID);
-    if (error != kAudioServicesNoError) {
-        NSLog(@"Error while disposing sound %i", (unsigned int)soundID);
-        return NO;
-    }
-    
-    return YES;
-}
-
-@end
+// Authorization
+"AUTHENTICATION" = "Otentikasi";
+"AUTHORIZATION" = "Otorisasi";
+"AUTHORIZED" = "Resmi";
+"NOT_OWNER" = "Tidak pemilik";

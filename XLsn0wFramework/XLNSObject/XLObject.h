@@ -1,5 +1,4 @@
 
 /*! NSObject */
 #import "XL.h"
-
-#import "XLog.h"
+#import "XLKit.h"
