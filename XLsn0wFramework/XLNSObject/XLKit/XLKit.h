@@ -1,11 +1,12 @@
 /**
  *  BFKit Classes
  */
+#import "XLsn0wLog.h"
+
 #import "BFApp.h"
 #import "BFButton.h"
 #import "BFCryptor.h"
 #import "BFDataStructures.h"
-#import "BFLog.h"
 #import "BFPassword.h"
 #import "BFSystemSound.h"
 #import "BFTextField.h"

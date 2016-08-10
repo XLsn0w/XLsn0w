@@ -283,7 +283,7 @@
 		35DE3C781D5AFFC0004712CF /* BFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C1D1D5AFFC0004712CF /* BFButton.m */; };
 		35DE3C791D5AFFC0004712CF /* BFCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C1F1D5AFFC0004712CF /* BFCryptor.m */; };
 		35DE3C7A1D5AFFC0004712CF /* BFDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C211D5AFFC0004712CF /* BFDataStructures.m */; };
-		35DE3C7B1D5AFFC0004712CF /* BFLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C231D5AFFC0004712CF /* BFLog.m */; };
+		35DE3C7B1D5AFFC0004712CF /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */; };
 		35DE3C7C1D5AFFC0004712CF /* BFPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C251D5AFFC0004712CF /* BFPassword.m */; };
 		35DE3C7D1D5AFFC0004712CF /* BFSystemSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C271D5AFFC0004712CF /* BFSystemSound.m */; };
 		35DE3C7E1D5AFFC0004712CF /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C291D5AFFC0004712CF /* BFTextField.m */; };
@@ -884,8 +884,8 @@
 		35DE3C1F1D5AFFC0004712CF /* BFCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCryptor.m; sourceTree = "<group>"; };
 		35DE3C201D5AFFC0004712CF /* BFDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFDataStructures.h; sourceTree = "<group>"; };
 		35DE3C211D5AFFC0004712CF /* BFDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFDataStructures.m; sourceTree = "<group>"; };
-		35DE3C221D5AFFC0004712CF /* BFLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFLog.h; sourceTree = "<group>"; };
-		35DE3C231D5AFFC0004712CF /* BFLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFLog.m; sourceTree = "<group>"; };
+		35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
+		35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
 		35DE3C241D5AFFC0004712CF /* BFPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPassword.h; sourceTree = "<group>"; };
 		35DE3C251D5AFFC0004712CF /* BFPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPassword.m; sourceTree = "<group>"; };
 		35DE3C261D5AFFC0004712CF /* BFSystemSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSystemSound.h; sourceTree = "<group>"; };
@@ -1841,8 +1841,8 @@
 				35DE3C1F1D5AFFC0004712CF /* BFCryptor.m */,
 				35DE3C201D5AFFC0004712CF /* BFDataStructures.h */,
 				35DE3C211D5AFFC0004712CF /* BFDataStructures.m */,
-				35DE3C221D5AFFC0004712CF /* BFLog.h */,
-				35DE3C231D5AFFC0004712CF /* BFLog.m */,
+				35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */,
+				35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */,
 				35DE3C241D5AFFC0004712CF /* BFPassword.h */,
 				35DE3C251D5AFFC0004712CF /* BFPassword.m */,
 				35DE3C261D5AFFC0004712CF /* BFSystemSound.h */,
@@ -2366,7 +2366,7 @@
 				35DE3C871D5AFFC0004712CF /* NSNumber+BFKit.m in Sources */,
 				354EBB0D1D225115003D82CB /* NSString+XL.m in Sources */,
 				354EBB761D225115003D82CB /* UIView+JKFrame.m in Sources */,
-				35DE3C7B1D5AFFC0004712CF /* BFLog.m in Sources */,
+				35DE3C7B1D5AFFC0004712CF /* XLsn0wLog.m in Sources */,
 				35DE3C7F1D5AFFC0004712CF /* BFTouchID.m in Sources */,
 				3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */,
 				355B89451D45AB8D007A10E6 /* CXBrowserNavBarView.m in Sources */,

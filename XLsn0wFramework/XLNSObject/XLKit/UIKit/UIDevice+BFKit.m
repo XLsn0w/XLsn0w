@@ -175,14 +175,6 @@ static NSString * const BFUserUniqueIdentifierDefaultsKey = @"BFUserUniqueIdenti
     }
 }
 
-+ (BOOL)isRetina {
-    return [UIScreen isRetina];
-}
-
-+ (BOOL)isRetinaHD {
-    return [UIScreen isRetinaHD];
-}
-
 + (NSInteger)iOSVersion {
     return [[[UIDevice currentDevice] systemVersion] integerValue];
 }

@@ -28,7 +28,7 @@
 
 @implementation UIScreen (BFKit)
 
-+ (BOOL)isRetina {
++ (BOOL)isRetinaScreen {
     if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0 || [UIScreen mainScreen].scale == 3.0)) {
         return YES;
     } else {
@@ -36,7 +36,7 @@
     }
 }
 
-+ (BOOL)isRetinaHD {
++ (BOOL)isRetinaHDScreen {
     if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 3.0)) {
         return YES;
     } else {
