@@ -8,9 +8,12 @@
 #import <MJRefresh.h>
 
 /* Apple Framework */
-#import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+#import <QuartzCore/QuartzCore.h>
 #import <Photos/Photos.h>
+#import <WebKit/WebKit.h>
+#import <JavaScriptCore/JavaScriptCore.h>
 
 /*! 当前设备屏幕 宽/高 */
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
