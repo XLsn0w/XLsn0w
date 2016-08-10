@@ -10,6 +10,7 @@
 /* Apple Framework */
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import <Photos/Photos.h>
 
 /*! 当前设备屏幕 宽/高 */
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -283,4 +284,3 @@ return nil; \
 return self; \
 }
 
-#endif
