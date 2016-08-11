@@ -278,6 +278,7 @@
 		35BF65A91D23744C00993CAE /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A51D23744C00993CAE /* User.m */; };
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
 		35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C321741D43C79C0096D3DC /* XLFlowLayout.m */; };
+		35D2B2E61D5C4A0B00AC2532 /* XLPullDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35DE3C771D5AFFC0004712CF /* BFApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C1B1D5AFFC0004712CF /* BFApp.m */; };
 		35DE3C781D5AFFC0004712CF /* BFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DE3C1D1D5AFFC0004712CF /* BFButton.m */; };
@@ -874,6 +875,8 @@
 		35BF65A81D23744C00993CAE /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
 		35C321731D43C79C0096D3DC /* XLFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFlowLayout.h; sourceTree = "<group>"; };
 		35C321741D43C79C0096D3DC /* XLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFlowLayout.m; sourceTree = "<group>"; };
+		35D2B2E41D5C4A0B00AC2532 /* XLPullDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPullDownMenuView.h; sourceTree = "<group>"; };
+		35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPullDownMenuView.m; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35DE3C1A1D5AFFC0004712CF /* BFApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFApp.h; sourceTree = "<group>"; };
@@ -1774,6 +1777,7 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
+				35D2B2E31D5C4A0B00AC2532 /* XLPullDownMenuView */,
 				35A317B11D48F1FF0075314E /* XLImageBrowser */,
 				350FFA061D48A73D00725A33 /* JSPatch */,
 				355B895C1D45B6F3007A10E6 /* UploadImage */,
@@ -1807,6 +1811,15 @@
 				35C321741D43C79C0096D3DC /* XLFlowLayout.m */,
 			);
 			path = XLFlowLayout;
+			sourceTree = "<group>";
+		};
+		35D2B2E31D5C4A0B00AC2532 /* XLPullDownMenuView */ = {
+			isa = PBXGroup;
+			children = (
+				35D2B2E41D5C4A0B00AC2532 /* XLPullDownMenuView.h */,
+				35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */,
+			);
+			path = XLPullDownMenuView;
 			sourceTree = "<group>";
 		};
 		35DB329A1D34C6AC00A4B970 /* XLGuidePageView */ = {
@@ -2400,6 +2413,7 @@
 				354EBB231D225115003D82CB /* UIButton+JKCountDown.m in Sources */,
 				355B893B1D45AB8D007A10E6 /* FSCalendarAppearance.m in Sources */,
 				355B89401D45AB8D007A10E6 /* FSCalendarFlowLayout.m in Sources */,
+				35D2B2E61D5C4A0B00AC2532 /* XLPullDownMenuView.m in Sources */,
 				354EBB451D225115003D82CB /* UIImage+JKRoundedCorner.m in Sources */,
 				354EBAD51D225115003D82CB /* NSDate+JKUtilities.m in Sources */,
 				354EBAF61D225115003D82CB /* NSObject+JKKVOBlocks.m in Sources */,
