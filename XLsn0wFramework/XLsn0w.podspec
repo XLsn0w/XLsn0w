@@ -10,8 +10,8 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
 
-  s.version      = "4.0.4"
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "4.0.4" }
+  s.version      = "4.0.5"
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "4.0.5" }
 
   s.source_files = "XLsn0wFramework/**/*.{h,m}"
 
