@@ -46,7 +46,7 @@
 /***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr, "\n Method:%s | NSLog:%s \n \n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr, "\n |[NSLog]| Method:%s | NSLog:%s \n \n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
