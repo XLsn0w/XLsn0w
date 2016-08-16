@@ -9,7 +9,7 @@ static NSString *logDetailedString = @"";
 
 @implementation XLsn0wLog
 
-void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnull function, NSString *format, ...) {
+void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull function, NSString *format, ...) {
     va_list ap;
     
     va_start(ap, format);
@@ -29,12 +29,14 @@ void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnu
     }
     
     NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent].stringByDeletingPathExtension;
-    NSString *log = [NSString stringWithFormat:@"%s:%d %s: %s", [fileName UTF8String], lineNumber, [functionName UTF8String], [body UTF8String]];
-    fprintf(stderr, "%s %s:%d %s: %s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], lineNumber, [functionName UTF8String], [body UTF8String]);
+    
+    NSString *XLsn0wLog = [NSString stringWithFormat:@"|[XLsn0wLog]| %s:%d %s: %s", [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]];
+    
+    fprintf(stderr, "|[XLsn0wLog]| %s %s:%d %s: %s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]);
     
     logString = [logString stringByAppendingString:[NSString stringWithFormat:@"%@", body]];
     
-    logDetailedString = [logDetailedString stringByAppendingString:[NSString stringWithFormat:@"%@", log]];
+    logDetailedString = [logDetailedString stringByAppendingString:[NSString stringWithFormat:@"%@", XLsn0wLog]];
 }
 
 + (NSString * _Nonnull)logString {

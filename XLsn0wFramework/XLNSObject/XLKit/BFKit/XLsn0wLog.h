@@ -9,7 +9,7 @@
  *  @param functionName Function name
  *  @param format       Format
  */
-void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnull function, NSString * _Nonnull format, ...);
+void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull function, NSString * _Nonnull format, ...);
 
 /**
  *  This class adds some useful methods to NSLog
