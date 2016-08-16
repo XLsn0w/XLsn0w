@@ -46,7 +46,13 @@
 /***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr, "\n |[XLsn0wLog]| __File__:%s| __Line__:%d| __Method__:%s| __Log__:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr, "\n Method:%s | NSLog:%s \n \n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#else
+#define NSLog(FORMAT, ...) nil
+#endif
+
+#if DEBUG
+#define XLog(FORMAT, ...) fprintf(stderr, "\n |[XLog]| File:%s | Line:%d | Method:%s | XLog:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
