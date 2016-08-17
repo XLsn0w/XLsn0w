@@ -887,8 +887,8 @@
 		35DE3C1F1D5AFFC0004712CF /* BFCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCryptor.m; sourceTree = "<group>"; };
 		35DE3C201D5AFFC0004712CF /* BFDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFDataStructures.h; sourceTree = "<group>"; };
 		35DE3C211D5AFFC0004712CF /* BFDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFDataStructures.m; sourceTree = "<group>"; };
-		35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
-		35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
+		35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XLsn0wLog.h; path = BFKit/XLsn0wLog.h; sourceTree = "<group>"; };
+		35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XLsn0wLog.m; path = BFKit/XLsn0wLog.m; sourceTree = "<group>"; };
 		35DE3C241D5AFFC0004712CF /* BFPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPassword.h; sourceTree = "<group>"; };
 		35DE3C251D5AFFC0004712CF /* BFPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPassword.m; sourceTree = "<group>"; };
 		35DE3C261D5AFFC0004712CF /* BFSystemSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSystemSound.h; sourceTree = "<group>"; };
@@ -1835,6 +1835,8 @@
 			isa = PBXGroup;
 			children = (
 				35DE3C2C1D5AFFC0004712CF /* XLKit.h */,
+				35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */,
+				35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */,
 				35DE3C191D5AFFC0004712CF /* BFKit */,
 				35DE3C2D1D5AFFC0004712CF /* Foundation */,
 				35DE3C461D5AFFC0004712CF /* Languages */,
@@ -1854,8 +1856,6 @@
 				35DE3C1F1D5AFFC0004712CF /* BFCryptor.m */,
 				35DE3C201D5AFFC0004712CF /* BFDataStructures.h */,
 				35DE3C211D5AFFC0004712CF /* BFDataStructures.m */,
-				35DE3C221D5AFFC0004712CF /* XLsn0wLog.h */,
-				35DE3C231D5AFFC0004712CF /* XLsn0wLog.m */,
 				35DE3C241D5AFFC0004712CF /* BFPassword.h */,
 				35DE3C251D5AFFC0004712CF /* BFPassword.m */,
 				35DE3C261D5AFFC0004712CF /* BFSystemSound.h */,

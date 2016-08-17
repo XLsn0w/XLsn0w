@@ -31,7 +31,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     /**
      *  Exented NSLog
      */
-    #define XLsn0wLog(args ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, args);
+    #define XLsn0wLog(PrintFormat, ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, PrintFormat);
     /**
      *  Log string
      */
@@ -45,7 +45,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
      */
     #define XLsn0wLogClear [XLsn0wLog clearLog]
 #else
-    #define XLsn0wLog(args ...)
+    #define XLsn0wLog(PrintFormat, ...)
     #define XLsn0wLogString
     #define XLsn0wLogDetailedString
     #define XLsn0wLogClear
