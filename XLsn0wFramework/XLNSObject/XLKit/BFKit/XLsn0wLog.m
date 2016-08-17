@@ -47,10 +47,6 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     return logDetailedString;
 }
 
-+ (NSString * _Nonnull)logDetailedString {
-    return logDetailedString;
-}
-
 + (void)clearLog {
     logString = @"";
     logDetailedString = @"";

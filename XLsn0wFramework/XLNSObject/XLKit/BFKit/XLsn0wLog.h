@@ -31,7 +31,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     /**
      *  Exented NSLog
      */
-    #define XLsn0wLog(PrintFormat, ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, PrintFormat);
+    #define XLsn0wLog(FORMAT, ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, FORMAT);
     /**
      *  Log string
      */
@@ -45,7 +45,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
      */
     #define XLsn0wLogClear [XLsn0wLog clearLog]
 #else
-    #define XLsn0wLog(PrintFormat, ...)
+    #define XLsn0wLog(FORMAT, ...)
     #define XLsn0wLogString
     #define XLsn0wLogDetailedString
     #define XLsn0wLogClear
@@ -72,13 +72,5 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
  *  @return Returns the detailed log string
  */
 + (NSString * _Nonnull)detailedLogString;
-
-/**
- *  Get the detailed log string.
- *  You can call it with the BFLogDetailedString macro
- *
- *  @return Returns the detailed log string
- */
-+ (NSString * _Nonnull)logDetailedString DEPRECATED_MSG_ATTRIBUTE("Use -detailedLogString");
 
 @end
