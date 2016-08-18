@@ -46,13 +46,13 @@
 /***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 
 #if DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr, "\n |[NSLog]| Method:%s |[NSLog]|:%s \n \n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr, "\n <-------Method:%s | NSLog------->:%s \n \n", __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
 
 #if DEBUG
-#define XLog(FORMAT, ...) fprintf(stderr, "\n |[XLog]| File:%s | Line:%d | Method:%s |[XLog]|:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | XLog------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(FORMAT, ...) nil
 #endif
@@ -61,9 +61,9 @@
 
 //DEBUG  模式下打印日志,当前行 并弹出一个警告
 #ifdef DEBUG
-#   define XLLog(fmt, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
+#   define XLLog(FORMAT, ....)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
 #else
-#   define XLLog(...)
+#   define XLLog(FORMAT, ...)
 #endif
 
 

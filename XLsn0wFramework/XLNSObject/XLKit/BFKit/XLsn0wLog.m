@@ -30,9 +30,9 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     
     NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent].stringByDeletingPathExtension;
     
-    NSString *XLsn0wLog = [NSString stringWithFormat:@"|[XLsn0wLog]| :%s :%d :%s |[XLsn0wLog]|%s", [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]];
+    NSString *XLsn0wLog = [NSString stringWithFormat:@"<---:%s :%d :%s | XLsn0wLog--->:%s", [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]];
     
-    fprintf(stderr, "|[XLsn0wLog]| :%s :%s :%d :%s |[XLsn0wLog]|%s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]);
+    fprintf(stderr, "<---:%s :%s :%d :%s | XLsn0wLog--->:%s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]);
     
     logString = [logString stringByAppendingString:[NSString stringWithFormat:@"%@", body]];
     
