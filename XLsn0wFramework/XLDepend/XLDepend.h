@@ -51,6 +51,8 @@
 #define NSLog(FORMAT, ...) nil
 #endif
 
+/*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*/
+
 #if DEBUG
 #define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | XLog------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
@@ -61,11 +63,12 @@
 
 //DEBUG  模式下打印日志,当前行 并弹出一个警告
 #ifdef DEBUG
-#   define XLLog(FORMAT, ....)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"%s\n [Line %d] ", __PRETTY_FUNCTION__, __LINE__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
+#   define XLLog(FORMAT, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"\n XLLog--->:%s \n", __PRETTY_FUNCTION__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
 #else
 #   define XLLog(FORMAT, ...)
 #endif
 
+/*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*/
 
 #define ITTDEBUG
 #define ITTLOGLEVEL_INFO     10
