@@ -25,11 +25,11 @@
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
-/*! 屏幕比率 以iPhone6为基准 */
+/*! 屏幕比率 以iPhone 6 Plus为基准 */
 #define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 414)
 #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 736)
 
-/*! Masonry相关比率 以iPhone6为基准 */
+/*! Masonry相关比率 以iPhone 6 Plus为基准 */
 #define kFitLeft   ([UIScreen mainScreen].bounds.size.width / 414)
 #define kFitRight  ([UIScreen mainScreen].bounds.size.width / 414)
 #define kFitTop    ([UIScreen mainScreen].bounds.size.height / 736)
