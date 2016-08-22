@@ -15,19 +15,25 @@
 #import <WebKit/WebKit.h>
 #import <JavaScriptCore/JavaScriptCore.h>
 
+/*!
+ *1. iPhone 5      分辨率: 320x568，像素640x1136， @2x
+ *2. iPhone 6      分辨率: 375x667，像素750x1334， @2x
+ *3. iPhone 6 Plus 分辨率: 414x736，像素1242x2208，@3x
+ */
+
 /*! 当前设备屏幕 宽/高 */
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 
 /*! 屏幕比率 以iPhone6为基准 */
-#define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 375)
-#define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667)
+#define kFitWidth  ([UIScreen mainScreen].bounds.size.width / 414)
+#define kFitHeight ([UIScreen mainScreen].bounds.size.height / 736)
 
 /*! Masonry相关比率 以iPhone6为基准 */
-#define kFitLeft   ([UIScreen mainScreen].bounds.size.width / 375)
-#define kFitRight  ([UIScreen mainScreen].bounds.size.width / 375)
-#define kFitTop    ([UIScreen mainScreen].bounds.size.height / 667)
-#define kFitBottom ([UIScreen mainScreen].bounds.size.height / 667)
+#define kFitLeft   ([UIScreen mainScreen].bounds.size.width / 414)
+#define kFitRight  ([UIScreen mainScreen].bounds.size.width / 414)
+#define kFitTop    ([UIScreen mainScreen].bounds.size.height / 736)
+#define kFitBottom ([UIScreen mainScreen].bounds.size.height / 736)
 
 /*! 根据屏幕高度判断真机设备 */
 #define iPhone4s    ([[UIScreen mainScreen] bounds].size.height == 480)

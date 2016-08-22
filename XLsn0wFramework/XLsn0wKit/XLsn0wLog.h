@@ -9,18 +9,18 @@
  *  @param functionName Function name
  *  @param format       Format
  */
-void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull function, NSString * _Nonnull format, ...);
+void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnull function, NSString * _Nonnull format, ...);
 
 /**
  *  This class adds some useful methods to NSLog
  *
- *  BFLog(): Exented NSLog
+ *  XLsn0wLog(): Exented NSLog
  *
- *  BFLogString: Log string
+ *  XLsn0wLogString: Log string
  *
- *  BFLogDetailedString: Detailed log string
+ *  XLsn0wLogDetailedString: Detailed log string
  *
- *  BFLogClear: Clear the log string
+ *  XLsn0wLogClear: Clear the log string
  */
 @interface XLsn0wLog : NSObject
 
@@ -31,7 +31,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     /**
      *  Exented NSLog
      */
-    #define XLsn0wLog(FORMAT, ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, FORMAT);
+    #define XLsn0wLog(args ...) ExtendNSLog(__FILE__, __LINE__, __PRETTY_FUNCTION__, args);
     /**
      *  Log string
      */
@@ -45,7 +45,7 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
      */
     #define XLsn0wLogClear [XLsn0wLog clearLog]
 #else
-    #define XLsn0wLog(FORMAT, ...)
+    #define XLsn0wLog(args ...)
     #define XLsn0wLogString
     #define XLsn0wLogDetailedString
     #define XLsn0wLogClear
@@ -72,5 +72,13 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
  *  @return Returns the detailed log string
  */
 + (NSString * _Nonnull)detailedLogString;
+
+/**
+ *  Get the detailed log string.
+ *  You can call it with the BFLogDetailedString macro
+ *
+ *  @return Returns the detailed log string
+ */
++ (NSString * _Nonnull)logDetailedString DEPRECATED_MSG_ATTRIBUTE("Use -detailedLogString");
 
 @end

@@ -1,5 +1,5 @@
 //
-//  BFKit.strings
+//  UIScreen+BFKit.m
 //  BFKit
 //
 //  The MIT License (MIT)
@@ -24,51 +24,42 @@
 //  OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 //  SOFTWARE.
 
-// Generals
-"OK" = "Ok";
-"CONTINUE" = "Lanjutkan";
-"CANCEL" = "Batal";
-"DONE" = "Selesai";
-"ERROR" = "Kesalahan";
-"WARNING" = "Peringatan";
-"CLOSE" = "Tutup";
-"OPEN" = "Buka";
-"YES" = "Ya";
-"NO" = "Tidak";
+#import "UIScreen+BFKit.h"
 
-// Days
-"TODAY" = "Hari Ini";
-"TOMORROW" = "Besok";
-"SUNDAY" = "Minggu";
-"MONDAY"= "Senin";
-"TUESDAY" = "Selasa";
-"WEDNESDAY" = "Rabu";
-"THURSDAY" = "Kamis";
-"FRIDAY" = "Jumat";
-"SATURDAY" = "Sabtu";
+@implementation UIScreen (BFKit)
 
-// Months
-"JANUARY" = "Januari";
-"FEBRUARY" = "Februari";
-"MARCH" = "Maret";
-"APRIL" = "April";
-"MAY" = "Mei";
-"JUNE" = "Juni";
-"JULY" = "Juli";
-"AUGUST" = "Agustus";
-"SEPTEMBER" = "September";
-"OCTOBER" = "Oktober";
-"NOVEMBER" = "November";
-"DECEMBER" = "Desember";
++ (BOOL)isRetina {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 2.0 || [UIScreen mainScreen].scale == 3.0)) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
-// Time zones
-"NIGHT" = "Malam";
-"MORNING" = "Pagi";
-"AFTERNOON" = "Siang";
-"EVENING" = "Petang";
++ (BOOL)isRetinaHD {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(displayLinkWithTarget:selector:)] && ([UIScreen mainScreen].scale == 3.0)) {
+        return YES;
+    } else {
+        return NO;
+    }
+}
 
-// Authorization
-"AUTHENTICATION" = "Otentikasi";
-"AUTHORIZATION" = "Otorisasi";
-"AUTHORIZED" = "Resmi";
-"NOT_OWNER" = "Tidak pemilik";
+- (CGSize)fixedScreenSize {
+    CGSize screenSize = self.bounds.size;
+    
+    if ((NSFoundationVersionNumber <= NSFoundationVersionNumber_iOS_7_1) && UIInterfaceOrientationIsLandscape([UIApplication sharedApplication].statusBarOrientation)) {
+        return CGSizeMake(screenSize.height, screenSize.width);
+    }
+    
+    return screenSize;
+}
+
++ (CGFloat)brightness {
+    return [UIScreen mainScreen].brightness;
+}
+
++ (void)setBrightness:(CGFloat)brightness {
+    [[UIScreen mainScreen] setBrightness:brightness];
+}
+
+@end

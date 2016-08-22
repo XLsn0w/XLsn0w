@@ -129,6 +129,20 @@
 + (BOOL)isSimulator;
 
 /**
+ *  Check if the current device has a Retina display
+ *
+ *  @return Returns YES if it has a Retina display, NO if not
+ */
++ (BOOL)isRetina DEPRECATED_MSG_ATTRIBUTE("Use +isRetina in UIScreen class");
+
+/**
+ *  Check if the current device has a Retina HD display
+ *
+ *  @return Returns YES if it has a Retina HD display, NO if not
+ */
++ (BOOL)isRetinaHD DEPRECATED_MSG_ATTRIBUTE("Use +isRetinaHD in UIScreen class");
+
+/**
  *  Returns the iOS version without the subversion
  *  Example: 7
  *

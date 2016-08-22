@@ -1,6 +1,5 @@
 
 #import "XLsn0wLog.h"
-
 #import "NSDate+BFKit.h"
 #import "NSString+BFKit.h"
 
@@ -9,7 +8,7 @@ static NSString *logDetailedString = @"";
 
 @implementation XLsn0wLog
 
-void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull function, NSString *format, ...) {
+void ExtendNSLog(const char * _Nonnull file, int lineNumber, const char * _Nonnull function, NSString *format, ...) {
     va_list ap;
     
     va_start(ap, format);
@@ -29,14 +28,12 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
     }
     
     NSString *fileName = [[NSString stringWithUTF8String:file] lastPathComponent].stringByDeletingPathExtension;
-    
-    NSString *XLsn0wLog = [NSString stringWithFormat:@"<---:%s :%d :%s | XLsn0wLog--->:%s", [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]];
-    
-    fprintf(stderr, "<---:%s :%s :%d :%s | XLsn0wLog--->:%s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], line, [functionName UTF8String], [body UTF8String]);
+    NSString *log = [NSString stringWithFormat:@"%s:%d %s: %s", [fileName UTF8String], lineNumber, [functionName UTF8String], [body UTF8String]];
+    fprintf(stderr, "%s %s:%d %s: %s", [[NSDate dateInformationDescriptionWithInformation:[[NSDate date] dateInformation] dateSeparator:@"-" usFormat:YES nanosecond:YES] UTF8String], [fileName UTF8String], lineNumber, [functionName UTF8String], [body UTF8String]);
     
     logString = [logString stringByAppendingString:[NSString stringWithFormat:@"%@", body]];
     
-    logDetailedString = [logDetailedString stringByAppendingString:[NSString stringWithFormat:@"%@", XLsn0wLog]];
+    logDetailedString = [logDetailedString stringByAppendingString:[NSString stringWithFormat:@"%@", log]];
 }
 
 + (NSString * _Nonnull)logString {
@@ -44,6 +41,10 @@ void ExtendNSLog(const char * _Nonnull file, int line, const char * _Nonnull fun
 }
 
 + (NSString * _Nonnull)detailedLogString {
+    return logDetailedString;
+}
+
++ (NSString * _Nonnull)logDetailedString {
     return logDetailedString;
 }
 

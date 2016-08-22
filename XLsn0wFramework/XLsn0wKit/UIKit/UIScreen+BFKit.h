@@ -62,14 +62,14 @@
  *
  *  @return Returns YES if it has a Retina display, NO if not
  */
-+ (BOOL)isRetinaScreen;
++ (BOOL)isRetina;
 
 /**
  *  Check if the current device has a Retina display
  *
  *  @return Returns YES if it has a Retina HD display, NO if not
  */
-+ (BOOL)isRetinaHDScreen;
++ (BOOL)isRetinaHD;
 
 /**
  *  Returns the fixed screen size, based on device orientation
