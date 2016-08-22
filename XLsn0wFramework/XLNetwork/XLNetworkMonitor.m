@@ -1,5 +1,6 @@
 
 #import "XLNetworkMonitor.h"
+#import "XLsn0wLog.h"
 
 @implementation XLNetworkMonitor : NSObject 
 
@@ -18,22 +19,20 @@ static XLNetworkMonitor *instance = nil;
         switch (status) {
                 
             case AFNetworkReachabilityStatusReachableViaWiFi:
-                NSLog(@"WiFi网络");
-                [UIView xlsn0w_showMessage:@"当期使用无线网络 !"];
+                XLsn0wLog(@"WiFi网络");
                 break;
                 
             case AFNetworkReachabilityStatusReachableViaWWAN:
-                NSLog(@"蜂窝网络");
-                [UIView xlsn0w_showMessage:@"当期使用移动网络 !"];
+                XLsn0wLog(@"蜂窝网络");
                 break;
                 
             case AFNetworkReachabilityStatusNotReachable:
-                NSLog(@"您的网络已经断开");
+                XLsn0wLog(@"您的网络已经断开");
                 [UIView xlsn0w_showMessage:@"当前网络已断开, 请检查网络设置 !"];
                 break;
                 
             case AFNetworkReachabilityStatusUnknown:
-                NSLog(@"未知网络");
+                XLsn0wLog(@"未知网络");
                 [UIView xlsn0w_showMessage:@"未知网络 !"];
                 break;
                 
