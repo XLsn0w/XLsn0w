@@ -15,6 +15,7 @@
 		3506C5501D70264E00EA294E /* BFSystemSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5461D70264E00EA294E /* BFSystemSound.m */; };
 		3506C5511D70264E00EA294E /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5481D70264E00EA294E /* BFTextField.m */; };
 		3506C5521D70264E00EA294E /* BFTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C54A1D70264E00EA294E /* BFTouchID.m */; };
+		3506C5561D7029A100EA294E /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5551D7029A100EA294E /* NoDataView.m */; };
 		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351670D91D51ED21001683B3 /* JKAlertDialog.m */; };
@@ -341,6 +342,8 @@
 		3506C5481D70264E00EA294E /* BFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTextField.m; sourceTree = "<group>"; };
 		3506C5491D70264E00EA294E /* BFTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTouchID.h; sourceTree = "<group>"; };
 		3506C54A1D70264E00EA294E /* BFTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTouchID.m; sourceTree = "<group>"; };
+		3506C5541D7029A100EA294E /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
+		3506C5551D7029A100EA294E /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
 		350FFA071D48A73D00725A33 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		350FFA081D48A73D00725A33 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
@@ -998,6 +1001,15 @@
 				3506C54A1D70264E00EA294E /* BFTouchID.m */,
 			);
 			path = Classes;
+			sourceTree = "<group>";
+		};
+		3506C5531D7029A100EA294E /* XLNoDataView */ = {
+			isa = PBXGroup;
+			children = (
+				3506C5541D7029A100EA294E /* NoDataView.h */,
+				3506C5551D7029A100EA294E /* NoDataView.m */,
+			);
+			path = XLNoDataView;
 			sourceTree = "<group>";
 		};
 		350FFA061D48A73D00725A33 /* JSPatch */ = {
@@ -1789,6 +1801,7 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
+				3506C5531D7029A100EA294E /* XLNoDataView */,
 				35D2B2E31D5C4A0B00AC2532 /* XLPullDownMenuView */,
 				35A317B11D48F1FF0075314E /* XLImageBrowser */,
 				350FFA061D48A73D00725A33 /* JSPatch */,
@@ -2378,6 +2391,7 @@
 				354EBB151D225115003D82CB /* NSUserDefaults+JKSafeAccess.m in Sources */,
 				354EBB541D225115003D82CB /* UILabel+XLsn0w.m in Sources */,
 				354EBACC1D225115003D82CB /* NSData+JKGzip.m in Sources */,
+				3506C5561D7029A100EA294E /* NoDataView.m in Sources */,
 				354EBAC71D225115003D82CB /* NSBundle+JKAppIcon.m in Sources */,
 				355B894B1D45AB8D007A10E6 /* CXTapDetectingView.m in Sources */,
 				351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */,
