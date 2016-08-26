@@ -23,19 +23,19 @@
     [self addSubview:_segmentedControl];
     self.segmentedControl.frame = CGRectMake(0, 0, self.frame.size.width, 44);
     
-    self.segmentedControl.backgroundColor = [UIColor lightGrayColor];
+    self.segmentedControl.backgroundColor = [UIColor colorWithWhite:0 alpha:0.05];
     [self.segmentedControl setSectionTitles:_titles];
     self.segmentedControl.type = SegmentedControlTypeText;
     self.segmentedControl.titleTextAttributes = @{NSFontAttributeName:[UIFont systemFontOfSize:14],
                                                   NSForegroundColorAttributeName:[UIColor blackColor]};
     /*! selected */
-    self.segmentedControl.selectedTitleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:16],
-                                                          NSForegroundColorAttributeName:[UIColor whiteColor]};
-    self.segmentedControl.selectionStyle = SegmentedControlSelectionStyleBox;
-    self.segmentedControl.selectionIndicatorLocation = SegmentedControlSelectionIndicatorLocationUp;
-    self.segmentedControl.selectionIndicatorColor = [UIColor redColor];
     self.segmentedControl.selectionIndicatorHeight = 1.5;
     self.segmentedControl.selectionIndicatorEdgeInsets = UIEdgeInsetsMake(0, 0, -8, 0);
+    self.segmentedControl.selectionIndicatorColor = [UIColor redColor];//被选中的指示器为红色
+    self.segmentedControl.selectionStyle = SegmentedControlSelectionStyleTextWidthStripe;//和文字等宽
+    self.segmentedControl.selectionIndicatorLocation = SegmentedControlSelectionIndicatorLocationDown;//在下面
+    self.segmentedControl.selectedTitleTextAttributes = @{NSFontAttributeName:[UIFont boldSystemFontOfSize:18],
+                                               NSForegroundColorAttributeName:[UIColor redColor]};//被选中红色字体
     
     /*! selectedSegmentIndex */
     self.segmentedControl.selectedSegmentIndex = 0;

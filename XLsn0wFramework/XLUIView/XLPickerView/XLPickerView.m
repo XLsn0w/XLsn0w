@@ -278,16 +278,18 @@
     }
 }
 
--(void)remove {
-    
+//removeFromSuperview
+- (void)remove {
+    [[NSNotificationCenter defaultCenter] postNotificationName:@"remove" object:nil];
     [self removeFromSuperview];
 }
--(void)show {
-    
+
+//addSubview
+- (void)show {
     [[UIApplication sharedApplication].keyWindow addSubview:self];
-    
 }
--(void)doneClick {
+
+- (void)doneClick {
     if (_pickerView) {
         
         if (_resultString) {
