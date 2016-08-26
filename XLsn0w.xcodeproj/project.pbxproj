@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3506C54B1D70264E00EA294E /* BFApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C53C1D70264E00EA294E /* BFApp.m */; };
+		3506C54C1D70264E00EA294E /* BFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C53E1D70264E00EA294E /* BFButton.m */; };
+		3506C54D1D70264E00EA294E /* BFCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5401D70264E00EA294E /* BFCryptor.m */; };
+		3506C54E1D70264E00EA294E /* BFDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5421D70264E00EA294E /* BFDataStructures.m */; };
+		3506C54F1D70264E00EA294E /* BFPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5441D70264E00EA294E /* BFPassword.m */; };
+		3506C5501D70264E00EA294E /* BFSystemSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5461D70264E00EA294E /* BFSystemSound.m */; };
+		3506C5511D70264E00EA294E /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5481D70264E00EA294E /* BFTextField.m */; };
+		3506C5521D70264E00EA294E /* BFTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C54A1D70264E00EA294E /* BFTouchID.m */; };
 		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
 		351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351670D91D51ED21001683B3 /* JKAlertDialog.m */; };
@@ -280,15 +288,7 @@
 		35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C321741D43C79C0096D3DC /* XLFlowLayout.m */; };
 		35D2B2E61D5C4A0B00AC2532 /* XLPullDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */; };
 		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
-		35DC65E71D6A864800766FC3 /* BFApp.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65D61D6A864800766FC3 /* BFApp.m */; };
-		35DC65E81D6A864800766FC3 /* BFButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65D81D6A864800766FC3 /* BFButton.m */; };
-		35DC65E91D6A864800766FC3 /* BFCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65DA1D6A864800766FC3 /* BFCryptor.m */; };
-		35DC65EA1D6A864800766FC3 /* BFDataStructures.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65DC1D6A864800766FC3 /* BFDataStructures.m */; };
 		35DC65EB1D6A864800766FC3 /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65DE1D6A864800766FC3 /* XLsn0wLog.m */; };
-		35DC65EC1D6A864800766FC3 /* BFPassword.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65E01D6A864800766FC3 /* BFPassword.m */; };
-		35DC65ED1D6A864800766FC3 /* BFSystemSound.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65E21D6A864800766FC3 /* BFSystemSound.m */; };
-		35DC65EE1D6A864800766FC3 /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65E41D6A864800766FC3 /* BFTextField.m */; };
-		35DC65EF1D6A864800766FC3 /* BFTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65E61D6A864800766FC3 /* BFTouchID.m */; };
 		35DC662E1D6A865300766FC3 /* NSArray+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65F21D6A865300766FC3 /* NSArray+BFKit.m */; };
 		35DC662F1D6A865300766FC3 /* NSData+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65F41D6A865300766FC3 /* NSData+BFKit.m */; };
 		35DC66301D6A865300766FC3 /* NSDate+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65F61D6A865300766FC3 /* NSDate+BFKit.m */; };
@@ -325,6 +325,22 @@
 
 /* Begin PBXFileReference section */
 		164BEDD138457FFEAC9810AA /* Pods-XLsn0w.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.debug.xcconfig"; sourceTree = "<group>"; };
+		3506C53B1D70264E00EA294E /* BFApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFApp.h; sourceTree = "<group>"; };
+		3506C53C1D70264E00EA294E /* BFApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFApp.m; sourceTree = "<group>"; };
+		3506C53D1D70264E00EA294E /* BFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFButton.h; sourceTree = "<group>"; };
+		3506C53E1D70264E00EA294E /* BFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFButton.m; sourceTree = "<group>"; };
+		3506C53F1D70264E00EA294E /* BFCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFCryptor.h; sourceTree = "<group>"; };
+		3506C5401D70264E00EA294E /* BFCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCryptor.m; sourceTree = "<group>"; };
+		3506C5411D70264E00EA294E /* BFDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFDataStructures.h; sourceTree = "<group>"; };
+		3506C5421D70264E00EA294E /* BFDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFDataStructures.m; sourceTree = "<group>"; };
+		3506C5431D70264E00EA294E /* BFPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPassword.h; sourceTree = "<group>"; };
+		3506C5441D70264E00EA294E /* BFPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPassword.m; sourceTree = "<group>"; };
+		3506C5451D70264E00EA294E /* BFSystemSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSystemSound.h; sourceTree = "<group>"; };
+		3506C5461D70264E00EA294E /* BFSystemSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFSystemSound.m; sourceTree = "<group>"; };
+		3506C5471D70264E00EA294E /* BFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTextField.h; sourceTree = "<group>"; };
+		3506C5481D70264E00EA294E /* BFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTextField.m; sourceTree = "<group>"; };
+		3506C5491D70264E00EA294E /* BFTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTouchID.h; sourceTree = "<group>"; };
+		3506C54A1D70264E00EA294E /* BFTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTouchID.m; sourceTree = "<group>"; };
 		350FFA071D48A73D00725A33 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		350FFA081D48A73D00725A33 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
@@ -879,24 +895,8 @@
 		35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPullDownMenuView.m; sourceTree = "<group>"; };
 		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
-		35DC65D51D6A864800766FC3 /* BFApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFApp.h; sourceTree = "<group>"; };
-		35DC65D61D6A864800766FC3 /* BFApp.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFApp.m; sourceTree = "<group>"; };
-		35DC65D71D6A864800766FC3 /* BFButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFButton.h; sourceTree = "<group>"; };
-		35DC65D81D6A864800766FC3 /* BFButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFButton.m; sourceTree = "<group>"; };
-		35DC65D91D6A864800766FC3 /* BFCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFCryptor.h; sourceTree = "<group>"; };
-		35DC65DA1D6A864800766FC3 /* BFCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFCryptor.m; sourceTree = "<group>"; };
-		35DC65DB1D6A864800766FC3 /* BFDataStructures.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFDataStructures.h; sourceTree = "<group>"; };
-		35DC65DC1D6A864800766FC3 /* BFDataStructures.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFDataStructures.m; sourceTree = "<group>"; };
 		35DC65DD1D6A864800766FC3 /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
 		35DC65DE1D6A864800766FC3 /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
-		35DC65DF1D6A864800766FC3 /* BFPassword.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFPassword.h; sourceTree = "<group>"; };
-		35DC65E01D6A864800766FC3 /* BFPassword.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFPassword.m; sourceTree = "<group>"; };
-		35DC65E11D6A864800766FC3 /* BFSystemSound.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFSystemSound.h; sourceTree = "<group>"; };
-		35DC65E21D6A864800766FC3 /* BFSystemSound.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFSystemSound.m; sourceTree = "<group>"; };
-		35DC65E31D6A864800766FC3 /* BFTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTextField.h; sourceTree = "<group>"; };
-		35DC65E41D6A864800766FC3 /* BFTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTextField.m; sourceTree = "<group>"; };
-		35DC65E51D6A864800766FC3 /* BFTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BFTouchID.h; sourceTree = "<group>"; };
-		35DC65E61D6A864800766FC3 /* BFTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTouchID.m; sourceTree = "<group>"; };
 		35DC65F11D6A865300766FC3 /* NSArray+BFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BFKit.h"; sourceTree = "<group>"; };
 		35DC65F21D6A865300766FC3 /* NSArray+BFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+BFKit.m"; sourceTree = "<group>"; };
 		35DC65F31D6A865300766FC3 /* NSData+BFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+BFKit.h"; sourceTree = "<group>"; };
@@ -977,6 +977,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3506C53A1D70264E00EA294E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3506C53B1D70264E00EA294E /* BFApp.h */,
+				3506C53C1D70264E00EA294E /* BFApp.m */,
+				3506C53D1D70264E00EA294E /* BFButton.h */,
+				3506C53E1D70264E00EA294E /* BFButton.m */,
+				3506C53F1D70264E00EA294E /* BFCryptor.h */,
+				3506C5401D70264E00EA294E /* BFCryptor.m */,
+				3506C5411D70264E00EA294E /* BFDataStructures.h */,
+				3506C5421D70264E00EA294E /* BFDataStructures.m */,
+				3506C5431D70264E00EA294E /* BFPassword.h */,
+				3506C5441D70264E00EA294E /* BFPassword.m */,
+				3506C5451D70264E00EA294E /* BFSystemSound.h */,
+				3506C5461D70264E00EA294E /* BFSystemSound.m */,
+				3506C5471D70264E00EA294E /* BFTextField.h */,
+				3506C5481D70264E00EA294E /* BFTextField.m */,
+				3506C5491D70264E00EA294E /* BFTouchID.h */,
+				3506C54A1D70264E00EA294E /* BFTouchID.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		350FFA061D48A73D00725A33 /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1826,24 +1849,9 @@
 				35DC664C1D6A866A00766FC3 /* XLsn0wKit.h */,
 				35DC65DD1D6A864800766FC3 /* XLsn0wLog.h */,
 				35DC65DE1D6A864800766FC3 /* XLsn0wLog.m */,
+				3506C53A1D70264E00EA294E /* Classes */,
 				35DC65F01D6A865300766FC3 /* Foundation */,
 				35DC66091D6A865300766FC3 /* UIKit */,
-				35DC65D51D6A864800766FC3 /* BFApp.h */,
-				35DC65D61D6A864800766FC3 /* BFApp.m */,
-				35DC65D71D6A864800766FC3 /* BFButton.h */,
-				35DC65D81D6A864800766FC3 /* BFButton.m */,
-				35DC65D91D6A864800766FC3 /* BFCryptor.h */,
-				35DC65DA1D6A864800766FC3 /* BFCryptor.m */,
-				35DC65DB1D6A864800766FC3 /* BFDataStructures.h */,
-				35DC65DC1D6A864800766FC3 /* BFDataStructures.m */,
-				35DC65DF1D6A864800766FC3 /* BFPassword.h */,
-				35DC65E01D6A864800766FC3 /* BFPassword.m */,
-				35DC65E11D6A864800766FC3 /* BFSystemSound.h */,
-				35DC65E21D6A864800766FC3 /* BFSystemSound.m */,
-				35DC65E31D6A864800766FC3 /* BFTextField.h */,
-				35DC65E41D6A864800766FC3 /* BFTextField.m */,
-				35DC65E51D6A864800766FC3 /* BFTouchID.h */,
-				35DC65E61D6A864800766FC3 /* BFTouchID.m */,
 			);
 			path = XLsn0wKit;
 			sourceTree = "<group>";
@@ -2085,12 +2093,12 @@
 				35DC663E1D6A865300766FC3 /* UIFont+BFKit.m in Sources */,
 				35DC66441D6A865300766FC3 /* UIScrollView+BFKit.m in Sources */,
 				35A317D41D48F1FF0075314E /* MWZoomingScrollView.m in Sources */,
+				3506C54E1D70264E00EA294E /* BFDataStructures.m in Sources */,
 				3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */,
 				354EBB3E1D225115003D82CB /* UIImage+JKFileName.m in Sources */,
 				354EBB001D225115003D82CB /* NSString+JKHash.m in Sources */,
 				354EBB581D225115003D82CB /* UINavigationController+JKStackManager.m in Sources */,
 				355B89421D45AB8D007A10E6 /* FSCalendarScopeHandle.m in Sources */,
-				35DC65EF1D6A864800766FC3 /* BFTouchID.m in Sources */,
 				354EBB8B1D225115003D82CB /* UIWebVIew+JKSwipeGesture.m in Sources */,
 				35A317CB1D48F1FF0075314E /* DACircularProgressView.m in Sources */,
 				354EBB851D225115003D82CB /* UIWebView+JKBlocks.m in Sources */,
@@ -2154,25 +2162,22 @@
 				35DC66361D6A865300766FC3 /* NSObject+BFKit.m in Sources */,
 				354EBACE1D225115003D82CB /* NSData+JKPCM.m in Sources */,
 				358906601D3349750053BE45 /* IndefiniteAnimatedView.m in Sources */,
-				35DC65ED1D6A864800766FC3 /* BFSystemSound.m in Sources */,
 				354EBB7D1D225115003D82CB /* UIView+XLsn0w.m in Sources */,
 				35DC662F1D6A865300766FC3 /* NSData+BFKit.m in Sources */,
-				35DC65EE1D6A864800766FC3 /* BFTextField.m in Sources */,
 				35A317CE1D48F1FF0075314E /* MWGridCell.m in Sources */,
 				354EBB731D225115003D82CB /* UIView+JKCustomBorder.m in Sources */,
 				354EBB7F1D225115003D82CB /* UIViewController+JKBackButtonTouched.m in Sources */,
+				3506C54C1D70264E00EA294E /* BFButton.m in Sources */,
 				354EBAD91D225115003D82CB /* NSDecimalNumber+JKExtensions.m in Sources */,
 				354EBB871D225115003D82CB /* UIWebView+JKJavaScript.m in Sources */,
 				3542BC611D387CB600674567 /* XLTextField.m in Sources */,
 				354EBAF51D225115003D82CB /* NSObject+JKGCD.m in Sources */,
 				354EBAE01D225115003D82CB /* NSDictionary+XLsn0w.m in Sources */,
 				354EBB691D225115003D82CB /* UITextField+JKBlocks.m in Sources */,
-				35DC65E81D6A864800766FC3 /* BFButton.m in Sources */,
 				354EBB371D225115003D82CB /* UIFont+JKTTF.m in Sources */,
 				354EBB8D1D225115003D82CB /* UIWindow+JKHierarchy.m in Sources */,
 				354EBB591D225115003D82CB /* UINavigationController+JKTransitions.m in Sources */,
 				354EBB801D225115003D82CB /* UIViewController+JKBlockSegue.m in Sources */,
-				35DC65EC1D6A864800766FC3 /* BFPassword.m in Sources */,
 				354EBB701D225115003D82CB /* UIView+JKAnimation.m in Sources */,
 				354EBB071D225115003D82CB /* NSString+JKSize.m in Sources */,
 				354EBAD01D225115003D82CB /* NSDate+JKCupertinoYankee.m in Sources */,
@@ -2217,6 +2222,7 @@
 				354EBB061D225115003D82CB /* NSString+JKScore.m in Sources */,
 				354EBAEE1D225115003D82CB /* NSObject+JKAddProperty.m in Sources */,
 				35DC664A1D6A865300766FC3 /* UIWebView+BFKit.m in Sources */,
+				3506C5511D70264E00EA294E /* BFTextField.m in Sources */,
 				35A317D21D48F1FF0075314E /* MWTapDetectingImageView.m in Sources */,
 				354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				354EBB7A1D225115003D82CB /* UIView+JKShake.m in Sources */,
@@ -2295,7 +2301,6 @@
 				35DC66391D6A865300766FC3 /* NSThread+BFKit.m in Sources */,
 				354EBB2C1D225115003D82CB /* UIColor+JKModify.m in Sources */,
 				3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */,
-				35DC65E91D6A864800766FC3 /* BFCryptor.m in Sources */,
 				354EBB721D225115003D82CB /* UIView+JKConstraints.m in Sources */,
 				354EBB811D225115003D82CB /* UIViewController+JKRecursiveDescription.m in Sources */,
 				354EBAF41D225115003D82CB /* NSObject+JKEasyCopy.m in Sources */,
@@ -2303,11 +2308,11 @@
 				354EBB0F1D225115003D82CB /* NSTimer+JKBlocks.m in Sources */,
 				354EBAF31D225115003D82CB /* NSObject+JKBlockTimer.m in Sources */,
 				354EBAD61D225115003D82CB /* NSDate+XL.m in Sources */,
-				35DC65EA1D6A864800766FC3 /* BFDataStructures.m in Sources */,
 				35DC66401D6A865300766FC3 /* UIImageView+BFKit.m in Sources */,
 				358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */,
 				354EBB051D225115003D82CB /* NSString+JKRemoveEmoji.m in Sources */,
 				354EBAC41D225115003D82CB /* NSArray+JKBlock.m in Sources */,
+				3506C5521D70264E00EA294E /* BFTouchID.m in Sources */,
 				35DC65EB1D6A864800766FC3 /* XLsn0wLog.m in Sources */,
 				354EBAE51D225115003D82CB /* NSIndexPath+JKOffset.m in Sources */,
 				354EBB251D225115003D82CB /* UIButton+JKIndicator.m in Sources */,
@@ -2317,15 +2322,16 @@
 				354EBAF11D225115003D82CB /* NSObject+JKAutoCoding.m in Sources */,
 				354EBB201D225115003D82CB /* UIBezierPath+JKThroughPointsBezier.m in Sources */,
 				35DC66311D6A865300766FC3 /* NSDictionary+BFKit.m in Sources */,
+				3506C54B1D70264E00EA294E /* BFApp.m in Sources */,
 				354EBB401D225115003D82CB /* UIImage+JKGIF.m in Sources */,
 				354EBAFF1D225115003D82CB /* NSString+JKEncrypt.m in Sources */,
+				3506C54F1D70264E00EA294E /* BFPassword.m in Sources */,
 				355B89461D45AB8D007A10E6 /* CXBrowserToolBarView.m in Sources */,
 				354EBB6E1D225115003D82CB /* UITextView+JKPlaceHolder.m in Sources */,
 				354EBB6B1D225115003D82CB /* UITextField+JKSelect.m in Sources */,
 				358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */,
 				35170D091D531940001F7020 /* RMPickerViewController.m in Sources */,
 				354EBB821D225115003D82CB /* UIViewController+JKStoreKit.m in Sources */,
-				35DC65E71D6A864800766FC3 /* BFApp.m in Sources */,
 				35DC663B1D6A865300766FC3 /* UIButton+BFKit.m in Sources */,
 				35A317D11D48F1FF0075314E /* MWPhotoBrowser.m in Sources */,
 				35DC662E1D6A865300766FC3 /* NSArray+BFKit.m in Sources */,
@@ -2375,7 +2381,9 @@
 				354EBAC71D225115003D82CB /* NSBundle+JKAppIcon.m in Sources */,
 				355B894B1D45AB8D007A10E6 /* CXTapDetectingView.m in Sources */,
 				351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */,
+				3506C5501D70264E00EA294E /* BFSystemSound.m in Sources */,
 				354EBAFD1D225115003D82CB /* NSString+JKDictionaryValue.m in Sources */,
+				3506C54D1D70264E00EA294E /* BFCryptor.m in Sources */,
 				354EBB4F1D225115003D82CB /* UIImageView+XLsn0w.m in Sources */,
 				354EBB331D225115003D82CB /* UIDevice+JKHardware.m in Sources */,
 				354EBB791D225115003D82CB /* UIView+JKScreenshot.m in Sources */,

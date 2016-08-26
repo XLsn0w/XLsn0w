@@ -62,7 +62,7 @@
  *
  *  @return Returns YES if it has a Retina display, NO if not
  */
-+ (BOOL)isRetina;
++ (BOOL)isScreenRetina;
 
 /**
  *  Check if the current device has a Retina display
