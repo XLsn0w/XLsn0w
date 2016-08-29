@@ -16,17 +16,8 @@
 		3506C5511D70264E00EA294E /* BFTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5481D70264E00EA294E /* BFTextField.m */; };
 		3506C5521D70264E00EA294E /* BFTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C54A1D70264E00EA294E /* BFTouchID.m */; };
 		3506C5561D7029A100EA294E /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5551D7029A100EA294E /* NoDataView.m */; };
-		3506C5631D70400900EA294E /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3506C5621D70400900EA294E /* UITableView+Placeholder.m */; };
 		350FFA091D48A73D00725A33 /* JPEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 350FFA081D48A73D00725A33 /* JPEngine.m */; };
 		3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */; };
-		351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 351670D91D51ED21001683B3 /* JKAlertDialog.m */; };
-		35170D081D531940001F7020 /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35170D051D531940001F7020 /* RMActionController.m */; };
-		35170D091D531940001F7020 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35170D071D531940001F7020 /* RMPickerViewController.m */; };
-		353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */; };
-		3542BC551D387C3900674567 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC541D387C3900674567 /* ComboBoxView.m */; };
-		3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC581D387CAD00674567 /* XLCalendarComponent.m */; };
-		3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC5C1D387CB200674567 /* XLPickerView.m */; };
-		3542BC611D387CB600674567 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3542BC601D387CB600674567 /* XLTextField.m */; };
 		354EB90F1D2250FB003D82CB /* XLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB90E1D2250FB003D82CB /* XLNetworkManager.m */; };
 		354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB9181D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m */; };
 		354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EB91A1D225114003D82CB /* CAShapeLayer+JKUIBezierPath.m */; };
@@ -227,6 +218,24 @@
 		354EBB8D1D225115003D82CB /* UIWindow+JKHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 354EBAB81D225115003D82CB /* UIWindow+JKHierarchy.m */; };
 		355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */; };
 		355126E31D2B851F00AF1D1C /* CALayer+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */; };
+		3553EC5D1D74171600DA1669 /* UITableView+Placeholder.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC5C1D74171600DA1669 /* UITableView+Placeholder.m */; };
+		3553EC631D7417C200DA1669 /* XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC611D7417C200DA1669 /* XL.m */; };
+		3553EC8A1D7417F000DA1669 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC671D7417F000DA1669 /* ComboBoxView.m */; };
+		3553EC8B1D7417F000DA1669 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC6A1D7417F000DA1669 /* JKAlertDialog.m */; };
+		3553EC8C1D7417F000DA1669 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC6D1D7417F000DA1669 /* XLCalendarComponent.m */; };
+		3553EC8D1D7417F000DA1669 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC701D7417F000DA1669 /* XLGuidePageView.m */; };
+		3553EC8E1D7417F000DA1669 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC731D7417F000DA1669 /* XLPickerView.m */; };
+		3553EC8F1D7417F000DA1669 /* IndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC761D7417F000DA1669 /* IndefiniteAnimatedView.m */; };
+		3553EC901D7417F000DA1669 /* ProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC781D7417F000DA1669 /* ProgressAnimatedView.m */; };
+		3553EC911D7417F000DA1669 /* RadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC7A1D7417F000DA1669 /* RadialGradientLayer.m */; };
+		3553EC921D7417F000DA1669 /* XLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC7C1D7417F000DA1669 /* XLProgressHUD.m */; };
+		3553EC931D7417F000DA1669 /* XLSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC7F1D7417F000DA1669 /* XLSegmentedControl.m */; };
+		3553EC941D7417F000DA1669 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC821D7417F000DA1669 /* XLSegmentedSlideView.m */; };
+		3553EC951D7417F000DA1669 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC851D7417F000DA1669 /* XLTextField.m */; };
+		3553EC961D7417F000DA1669 /* XLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC881D7417F000DA1669 /* XLTextView.m */; };
+		3553ECA01D74181400DA1669 /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC9A1D74181400DA1669 /* RMActionController.m */; };
+		3553ECA11D74181400DA1669 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC9C1D74181400DA1669 /* RMPickerViewController.m */; };
+		3553ECA21D74181400DA1669 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3553EC9E1D74181400DA1669 /* XLNavViewController.m */; };
 		355B89351D45AB8D007A10E6 /* CALayer+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89041D45AB8D007A10E6 /* CALayer+FSExtension.m */; };
 		355B89361D45AB8D007A10E6 /* FSCalendar+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89051D45AB8D007A10E6 /* FSCalendar+DateTools.m */; };
 		355B89371D45AB8D007A10E6 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89061D45AB8D007A10E6 /* FSCalendar+Deprecated.m */; };
@@ -259,16 +268,9 @@
 		355B89661D45B6F3007A10E6 /* DisplayImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89601D45B6F3007A10E6 /* DisplayImageCell.m */; };
 		355B89671D45B6F3007A10E6 /* ImageArraySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89621D45B6F3007A10E6 /* ImageArraySingleton.m */; };
 		355B89681D45B6F3007A10E6 /* UploadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89641D45B6F3007A10E6 /* UploadImageCell.m */; };
-		355B89741D45EA14007A10E6 /* XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 355B89731D45EA14007A10E6 /* XL.m */; };
 		355ED03A1D37DFC100383C60 /* Resources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 355ED0391D37DFC100383C60 /* Resources.bundle */; };
 		3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = 3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */; };
-		357D183B1D3396E1004C1BE9 /* XLSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */; };
 		3585ACCC1D4319AA006A59A4 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 3585ACCB1D4319AA006A59A4 /* NullSafe.m */; };
-		358906601D3349750053BE45 /* IndefiniteAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 358906591D3349750053BE45 /* IndefiniteAnimatedView.m */; };
-		358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065B1D3349750053BE45 /* ProgressAnimatedView.m */; };
-		358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065D1D3349750053BE45 /* RadialGradientLayer.m */; };
-		358906631D3349750053BE45 /* XLProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 3589065F1D3349750053BE45 /* XLProgressHUD.m */; };
-		359134C61D40B229004F49CB /* XLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 359134C51D40B229004F49CB /* XLTextView.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* XLsn0wAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* XLsn0wAppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
@@ -289,7 +291,6 @@
 		35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35BF65A71D23744C00993CAE /* XLDatabase.m */; };
 		35C321751D43C79C0096D3DC /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35C321741D43C79C0096D3DC /* XLFlowLayout.m */; };
 		35D2B2E61D5C4A0B00AC2532 /* XLPullDownMenuView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */; };
-		35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */; };
 		35DC65EB1D6A864800766FC3 /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65DE1D6A864800766FC3 /* XLsn0wLog.m */; };
 		35DC662E1D6A865300766FC3 /* NSArray+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65F21D6A865300766FC3 /* NSArray+BFKit.m */; };
 		35DC662F1D6A865300766FC3 /* NSData+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC65F41D6A865300766FC3 /* NSData+BFKit.m */; };
@@ -321,7 +322,6 @@
 		35DC66491D6A865300766FC3 /* UIView+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC66291D6A865300766FC3 /* UIView+BFKit.m */; };
 		35DC664A1D6A865300766FC3 /* UIWebView+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC662B1D6A865300766FC3 /* UIWebView+BFKit.m */; };
 		35DC664B1D6A865300766FC3 /* UIWindow+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35DC662D1D6A865300766FC3 /* UIWindow+BFKit.m */; };
-		35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35F6DDF31D22636000874C91 /* XLNavViewController.m */; };
 		CDD426CF5A419811B30E4B17 /* libPods-XLsn0w.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 81FCAC02C0EC7FE4FB20D02B /* libPods-XLsn0w.a */; };
 /* End PBXBuildFile section */
 
@@ -345,31 +345,13 @@
 		3506C54A1D70264E00EA294E /* BFTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BFTouchID.m; sourceTree = "<group>"; };
 		3506C5541D7029A100EA294E /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
 		3506C5551D7029A100EA294E /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
-		3506C5611D70400900EA294E /* UITableView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
-		3506C5621D70400900EA294E /* UITableView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
 		350FFA071D48A73D00725A33 /* JPEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JPEngine.h; sourceTree = "<group>"; };
 		350FFA081D48A73D00725A33 /* JPEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JPEngine.m; sourceTree = "<group>"; };
 		3511071B1D23A1DE003B5C5C /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		3511071C1D23A1DE003B5C5C /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		3515EEE51D1E1F7E0008F171 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
-		351670D81D51ED21001683B3 /* JKAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertDialog.h; sourceTree = "<group>"; };
-		351670D91D51ED21001683B3 /* JKAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertDialog.m; sourceTree = "<group>"; };
-		35170D041D531940001F7020 /* RMActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMActionController.h; sourceTree = "<group>"; };
-		35170D051D531940001F7020 /* RMActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionController.m; sourceTree = "<group>"; };
-		35170D061D531940001F7020 /* RMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPickerViewController.h; sourceTree = "<group>"; };
-		35170D071D531940001F7020 /* RMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewController.m; sourceTree = "<group>"; };
 		35190B621D387F5F006A73C6 /* XLComponent.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLComponent.h; sourceTree = "<group>"; };
 		351B64101D37E08000F27F82 /* XLDepend.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDepend.h; sourceTree = "<group>"; };
-		353F16F71D3E28C800409A27 /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
-		353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedSlideView.m; sourceTree = "<group>"; };
-		3542BC531D387C3900674567 /* ComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBoxView.h; sourceTree = "<group>"; };
-		3542BC541D387C3900674567 /* ComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBoxView.m; sourceTree = "<group>"; };
-		3542BC571D387CAD00674567 /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
-		3542BC581D387CAD00674567 /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
-		3542BC5B1D387CB200674567 /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
-		3542BC5C1D387CB200674567 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
-		3542BC5F1D387CB600674567 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
-		3542BC601D387CB600674567 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
 		354EB90D1D2250FB003D82CB /* XLNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkManager.h; sourceTree = "<group>"; };
 		354EB90E1D2250FB003D82CB /* XLNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkManager.m; sourceTree = "<group>"; };
 		354EB9171D225114003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAMediaTimingFunction+JKAdditionalEquations.h"; sourceTree = "<group>"; };
@@ -767,13 +749,50 @@
 		354EBAB71D225115003D82CB /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
 		354EBAB81D225115003D82CB /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
 		354EBAB91D225115003D82CB /* XLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCategory.h; sourceTree = "<group>"; };
-		354EBB951D225139003D82CB /* XLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLObject.h; sourceTree = "<group>"; };
-		354EBB9E1D22514D003D82CB /* XLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView.h; sourceTree = "<group>"; };
 		354EBBA31D225256003D82CB /* XLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetwork.h; sourceTree = "<group>"; };
 		355126DE1D2B834800AF1D1C /* CAAnimation+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CAAnimation+XLsn0w.h"; sourceTree = "<group>"; };
 		355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CAAnimation+XLsn0w.m"; sourceTree = "<group>"; };
 		355126E11D2B851F00AF1D1C /* CALayer+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+XLsn0w.h"; sourceTree = "<group>"; };
 		355126E21D2B851F00AF1D1C /* CALayer+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+XLsn0w.m"; sourceTree = "<group>"; };
+		3553EC5B1D74171600DA1669 /* UITableView+Placeholder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+Placeholder.h"; sourceTree = "<group>"; };
+		3553EC5C1D74171600DA1669 /* UITableView+Placeholder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+Placeholder.m"; sourceTree = "<group>"; };
+		3553EC601D7417C200DA1669 /* XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XL.h; sourceTree = "<group>"; };
+		3553EC611D7417C200DA1669 /* XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XL.m; sourceTree = "<group>"; };
+		3553EC621D7417C200DA1669 /* XLObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLObject.h; sourceTree = "<group>"; };
+		3553EC661D7417F000DA1669 /* ComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBoxView.h; sourceTree = "<group>"; };
+		3553EC671D7417F000DA1669 /* ComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBoxView.m; sourceTree = "<group>"; };
+		3553EC691D7417F000DA1669 /* JKAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertDialog.h; sourceTree = "<group>"; };
+		3553EC6A1D7417F000DA1669 /* JKAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertDialog.m; sourceTree = "<group>"; };
+		3553EC6C1D7417F000DA1669 /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
+		3553EC6D1D7417F000DA1669 /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
+		3553EC6F1D7417F000DA1669 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
+		3553EC701D7417F000DA1669 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
+		3553EC721D7417F000DA1669 /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
+		3553EC731D7417F000DA1669 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
+		3553EC751D7417F000DA1669 /* IndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndefiniteAnimatedView.h; sourceTree = "<group>"; };
+		3553EC761D7417F000DA1669 /* IndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndefiniteAnimatedView.m; sourceTree = "<group>"; };
+		3553EC771D7417F000DA1669 /* ProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressAnimatedView.h; sourceTree = "<group>"; };
+		3553EC781D7417F000DA1669 /* ProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimatedView.m; sourceTree = "<group>"; };
+		3553EC791D7417F000DA1669 /* RadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradientLayer.h; sourceTree = "<group>"; };
+		3553EC7A1D7417F000DA1669 /* RadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientLayer.m; sourceTree = "<group>"; };
+		3553EC7B1D7417F000DA1669 /* XLProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressHUD.h; sourceTree = "<group>"; };
+		3553EC7C1D7417F000DA1669 /* XLProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressHUD.m; sourceTree = "<group>"; };
+		3553EC7E1D7417F000DA1669 /* XLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedControl.h; sourceTree = "<group>"; };
+		3553EC7F1D7417F000DA1669 /* XLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedControl.m; sourceTree = "<group>"; };
+		3553EC811D7417F000DA1669 /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
+		3553EC821D7417F000DA1669 /* XLSegmentedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedSlideView.m; sourceTree = "<group>"; };
+		3553EC841D7417F000DA1669 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
+		3553EC851D7417F000DA1669 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
+		3553EC871D7417F000DA1669 /* XLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextView.h; sourceTree = "<group>"; };
+		3553EC881D7417F000DA1669 /* XLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextView.m; sourceTree = "<group>"; };
+		3553EC891D7417F000DA1669 /* XLView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLView.h; sourceTree = "<group>"; };
+		3553EC991D74181400DA1669 /* RMActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMActionController.h; sourceTree = "<group>"; };
+		3553EC9A1D74181400DA1669 /* RMActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionController.m; sourceTree = "<group>"; };
+		3553EC9B1D74181400DA1669 /* RMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPickerViewController.h; sourceTree = "<group>"; };
+		3553EC9C1D74181400DA1669 /* RMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewController.m; sourceTree = "<group>"; };
+		3553EC9D1D74181400DA1669 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
+		3553EC9E1D74181400DA1669 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
+		3553EC9F1D74181400DA1669 /* XLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVC.h; sourceTree = "<group>"; };
 		355B89031D45AB8D007A10E6 /* CALayer+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FSExtension.h"; sourceTree = "<group>"; };
 		355B89041D45AB8D007A10E6 /* CALayer+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FSExtension.m"; sourceTree = "<group>"; };
 		355B89051D45AB8D007A10E6 /* FSCalendar+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+DateTools.m"; sourceTree = "<group>"; };
@@ -839,24 +858,10 @@
 		355B89621D45B6F3007A10E6 /* ImageArraySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageArraySingleton.m; sourceTree = "<group>"; };
 		355B89631D45B6F3007A10E6 /* UploadImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageCell.h; sourceTree = "<group>"; };
 		355B89641D45B6F3007A10E6 /* UploadImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageCell.m; sourceTree = "<group>"; };
-		355B89721D45EA14007A10E6 /* XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XL.h; sourceTree = "<group>"; };
-		355B89731D45EA14007A10E6 /* XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XL.m; sourceTree = "<group>"; };
 		355ED0391D37DFC100383C60 /* Resources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Resources.bundle; sourceTree = "<group>"; };
 		3574A81B1D2C01210083906F /* NSObject+XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+XLsn0w.h"; sourceTree = "<group>"; };
 		3574A81C1D2C01210083906F /* NSObject+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+XLsn0w.m"; sourceTree = "<group>"; };
-		357D18391D3396E1004C1BE9 /* XLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedControl.h; sourceTree = "<group>"; };
-		357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedControl.m; sourceTree = "<group>"; };
 		3585ACCB1D4319AA006A59A4 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
-		358906581D3349750053BE45 /* IndefiniteAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IndefiniteAnimatedView.h; sourceTree = "<group>"; };
-		358906591D3349750053BE45 /* IndefiniteAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IndefiniteAnimatedView.m; sourceTree = "<group>"; };
-		3589065A1D3349750053BE45 /* ProgressAnimatedView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressAnimatedView.h; sourceTree = "<group>"; };
-		3589065B1D3349750053BE45 /* ProgressAnimatedView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressAnimatedView.m; sourceTree = "<group>"; };
-		3589065C1D3349750053BE45 /* RadialGradientLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RadialGradientLayer.h; sourceTree = "<group>"; };
-		3589065D1D3349750053BE45 /* RadialGradientLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RadialGradientLayer.m; sourceTree = "<group>"; };
-		3589065E1D3349750053BE45 /* XLProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLProgressHUD.h; sourceTree = "<group>"; };
-		3589065F1D3349750053BE45 /* XLProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLProgressHUD.m; sourceTree = "<group>"; };
-		359134C41D40B229004F49CB /* XLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextView.h; sourceTree = "<group>"; };
-		359134C51D40B229004F49CB /* XLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextView.m; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* XLsn0wAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wAppDelegate.h; sourceTree = "<group>"; };
@@ -899,8 +904,6 @@
 		35C321741D43C79C0096D3DC /* XLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFlowLayout.m; sourceTree = "<group>"; };
 		35D2B2E41D5C4A0B00AC2532 /* XLPullDownMenuView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPullDownMenuView.h; sourceTree = "<group>"; };
 		35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPullDownMenuView.m; sourceTree = "<group>"; };
-		35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
-		35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35DC65DD1D6A864800766FC3 /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
 		35DC65DE1D6A864800766FC3 /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
 		35DC65F11D6A865300766FC3 /* NSArray+BFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+BFKit.h"; sourceTree = "<group>"; };
@@ -964,9 +967,6 @@
 		35DC662C1D6A865300766FC3 /* UIWindow+BFKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+BFKit.h"; sourceTree = "<group>"; };
 		35DC662D1D6A865300766FC3 /* UIWindow+BFKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+BFKit.m"; sourceTree = "<group>"; };
 		35DC664C1D6A866A00766FC3 /* XLsn0wKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wKit.h; sourceTree = "<group>"; };
-		35F6DDF21D22636000874C91 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
-		35F6DDF31D22636000874C91 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
-		35F6DDF51D2263A100874C91 /* XLVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLVC.h; sourceTree = "<group>"; };
 		81FCAC02C0EC7FE4FB20D02B /* libPods-XLsn0w.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0w.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B70CE420BBDB793B474E6BE5 /* Pods-XLsn0w.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -1015,15 +1015,6 @@
 			path = XLNoDataView;
 			sourceTree = "<group>";
 		};
-		3506C5601D70400900EA294E /* UITableView+Placeholder */ = {
-			isa = PBXGroup;
-			children = (
-				3506C5611D70400900EA294E /* UITableView+Placeholder.h */,
-				3506C5621D70400900EA294E /* UITableView+Placeholder.m */,
-			);
-			path = "UITableView+Placeholder";
-			sourceTree = "<group>";
-		};
 		350FFA061D48A73D00725A33 /* JSPatch */ = {
 			isa = PBXGroup;
 			children = (
@@ -1038,38 +1029,18 @@
 			children = (
 				35A317AF1D48F0590075314E /* XLsn0w.podspec */,
 				3515EEE51D1E1F7E0008F171 /* XLsn0w.h */,
-				35DC65D41D6A85F400766FC3 /* XLsn0wKit */,
-				355ED0381D37DFC100383C60 /* XLResource */,
 				351B640F1D37E08000F27F82 /* XLDepend */,
+				35DC65D41D6A85F400766FC3 /* XLsn0wKit */,
+				3553EC5E1D7417C200DA1669 /* XLObject */,
+				3553EC641D7417F000DA1669 /* XLView */,
+				3553EC971D74181400DA1669 /* XLViewController */,
 				35B651271D37EA50009DCD6B /* XLComponent */,
-				354EBB8E1D225139003D82CB /* XLNSObject */,
-				354EBB991D22514D003D82CB /* XLUIView */,
-				35F6DDF11D22636000874C91 /* XLUIViewController */,
 				354EB9101D225114003D82CB /* XLCategory */,
 				35BF65A31D23744C00993CAE /* XLDatabase */,
 				354EB90C1D2250FB003D82CB /* XLNetwork */,
+				355ED0381D37DFC100383C60 /* XLResource */,
 			);
 			path = XLsn0wFramework;
-			sourceTree = "<group>";
-		};
-		351670D71D51ED21001683B3 /* XLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				351670D81D51ED21001683B3 /* JKAlertDialog.h */,
-				351670D91D51ED21001683B3 /* JKAlertDialog.m */,
-			);
-			path = XLAlertView;
-			sourceTree = "<group>";
-		};
-		35170D031D531940001F7020 /* ActionController */ = {
-			isa = PBXGroup;
-			children = (
-				35170D041D531940001F7020 /* RMActionController.h */,
-				35170D051D531940001F7020 /* RMActionController.m */,
-				35170D061D531940001F7020 /* RMPickerViewController.h */,
-				35170D071D531940001F7020 /* RMPickerViewController.m */,
-			);
-			path = ActionController;
 			sourceTree = "<group>";
 		};
 		351B640F1D37E08000F27F82 /* XLDepend */ = {
@@ -1078,42 +1049,6 @@
 				351B64101D37E08000F27F82 /* XLDepend.h */,
 			);
 			path = XLDepend;
-			sourceTree = "<group>";
-		};
-		3542BC521D387C3900674567 /* ComboBoxView */ = {
-			isa = PBXGroup;
-			children = (
-				3542BC531D387C3900674567 /* ComboBoxView.h */,
-				3542BC541D387C3900674567 /* ComboBoxView.m */,
-			);
-			path = ComboBoxView;
-			sourceTree = "<group>";
-		};
-		3542BC561D387CAD00674567 /* XLCalendarComponent */ = {
-			isa = PBXGroup;
-			children = (
-				3542BC571D387CAD00674567 /* XLCalendarComponent.h */,
-				3542BC581D387CAD00674567 /* XLCalendarComponent.m */,
-			);
-			path = XLCalendarComponent;
-			sourceTree = "<group>";
-		};
-		3542BC5A1D387CB200674567 /* XLPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				3542BC5B1D387CB200674567 /* XLPickerView.h */,
-				3542BC5C1D387CB200674567 /* XLPickerView.m */,
-			);
-			path = XLPickerView;
-			sourceTree = "<group>";
-		};
-		3542BC5E1D387CB600674567 /* XLTextField */ = {
-			isa = PBXGroup;
-			children = (
-				3542BC5F1D387CB600674567 /* XLTextField.h */,
-				3542BC601D387CB600674567 /* XLTextField.m */,
-			);
-			path = XLTextField;
 			sourceTree = "<group>";
 		};
 		354EB90C1D2250FB003D82CB /* XLNetwork */ = {
@@ -1131,6 +1066,7 @@
 		354EB9101D225114003D82CB /* XLCategory */ = {
 			isa = PBXGroup;
 			children = (
+				3553EC5A1D74171600DA1669 /* UITableView+Placeholder */,
 				355126DE1D2B834800AF1D1C /* CAAnimation+XLsn0w.h */,
 				355126DF1D2B834800AF1D1C /* CAAnimation+XLsn0w.m */,
 				355126E11D2B851F00AF1D1C /* CALayer+XLsn0w.h */,
@@ -1536,31 +1472,167 @@
 			path = XLCategory;
 			sourceTree = "<group>";
 		};
-		354EBB8E1D225139003D82CB /* XLNSObject */ = {
+		3553EC5A1D74171600DA1669 /* UITableView+Placeholder */ = {
 			isa = PBXGroup;
 			children = (
-				354EBB951D225139003D82CB /* XLObject.h */,
-				355B89711D45EA14007A10E6 /* XL */,
+				3553EC5B1D74171600DA1669 /* UITableView+Placeholder.h */,
+				3553EC5C1D74171600DA1669 /* UITableView+Placeholder.m */,
 			);
-			path = XLNSObject;
+			path = "UITableView+Placeholder";
 			sourceTree = "<group>";
 		};
-		354EBB991D22514D003D82CB /* XLUIView */ = {
+		3553EC5E1D7417C200DA1669 /* XLObject */ = {
 			isa = PBXGroup;
 			children = (
-				354EBB9E1D22514D003D82CB /* XLView.h */,
-				351670D71D51ED21001683B3 /* XLAlertView */,
-				359134C31D40B229004F49CB /* XLTextView */,
-				357D18381D3396E1004C1BE9 /* XLSegmentedControl */,
-				358F633C1D3DC0F5003A338E /* XLSegmentedSlideView */,
-				3542BC5E1D387CB600674567 /* XLTextField */,
-				3542BC5A1D387CB200674567 /* XLPickerView */,
-				3542BC561D387CAD00674567 /* XLCalendarComponent */,
-				3542BC521D387C3900674567 /* ComboBoxView */,
-				35DB329A1D34C6AC00A4B970 /* XLGuidePageView */,
-				358906571D3349750053BE45 /* XLProgressHUD */,
+				3553EC5F1D7417C200DA1669 /* XL */,
+				3553EC621D7417C200DA1669 /* XLObject.h */,
 			);
-			path = XLUIView;
+			path = XLObject;
+			sourceTree = "<group>";
+		};
+		3553EC5F1D7417C200DA1669 /* XL */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC601D7417C200DA1669 /* XL.h */,
+				3553EC611D7417C200DA1669 /* XL.m */,
+			);
+			path = XL;
+			sourceTree = "<group>";
+		};
+		3553EC641D7417F000DA1669 /* XLView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC651D7417F000DA1669 /* ComboBoxView */,
+				3553EC681D7417F000DA1669 /* XLAlertView */,
+				3553EC6B1D7417F000DA1669 /* XLCalendarComponent */,
+				3553EC6E1D7417F000DA1669 /* XLGuidePageView */,
+				3553EC711D7417F000DA1669 /* XLPickerView */,
+				3553EC741D7417F000DA1669 /* XLProgressHUD */,
+				3553EC7D1D7417F000DA1669 /* XLSegmentedControl */,
+				3553EC801D7417F000DA1669 /* XLSegmentedSlideView */,
+				3553EC831D7417F000DA1669 /* XLTextField */,
+				3553EC861D7417F000DA1669 /* XLTextView */,
+				3553EC891D7417F000DA1669 /* XLView.h */,
+			);
+			path = XLView;
+			sourceTree = "<group>";
+		};
+		3553EC651D7417F000DA1669 /* ComboBoxView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC661D7417F000DA1669 /* ComboBoxView.h */,
+				3553EC671D7417F000DA1669 /* ComboBoxView.m */,
+			);
+			path = ComboBoxView;
+			sourceTree = "<group>";
+		};
+		3553EC681D7417F000DA1669 /* XLAlertView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC691D7417F000DA1669 /* JKAlertDialog.h */,
+				3553EC6A1D7417F000DA1669 /* JKAlertDialog.m */,
+			);
+			path = XLAlertView;
+			sourceTree = "<group>";
+		};
+		3553EC6B1D7417F000DA1669 /* XLCalendarComponent */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC6C1D7417F000DA1669 /* XLCalendarComponent.h */,
+				3553EC6D1D7417F000DA1669 /* XLCalendarComponent.m */,
+			);
+			path = XLCalendarComponent;
+			sourceTree = "<group>";
+		};
+		3553EC6E1D7417F000DA1669 /* XLGuidePageView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC6F1D7417F000DA1669 /* XLGuidePageView.h */,
+				3553EC701D7417F000DA1669 /* XLGuidePageView.m */,
+			);
+			path = XLGuidePageView;
+			sourceTree = "<group>";
+		};
+		3553EC711D7417F000DA1669 /* XLPickerView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC721D7417F000DA1669 /* XLPickerView.h */,
+				3553EC731D7417F000DA1669 /* XLPickerView.m */,
+			);
+			path = XLPickerView;
+			sourceTree = "<group>";
+		};
+		3553EC741D7417F000DA1669 /* XLProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC751D7417F000DA1669 /* IndefiniteAnimatedView.h */,
+				3553EC761D7417F000DA1669 /* IndefiniteAnimatedView.m */,
+				3553EC771D7417F000DA1669 /* ProgressAnimatedView.h */,
+				3553EC781D7417F000DA1669 /* ProgressAnimatedView.m */,
+				3553EC791D7417F000DA1669 /* RadialGradientLayer.h */,
+				3553EC7A1D7417F000DA1669 /* RadialGradientLayer.m */,
+				3553EC7B1D7417F000DA1669 /* XLProgressHUD.h */,
+				3553EC7C1D7417F000DA1669 /* XLProgressHUD.m */,
+			);
+			path = XLProgressHUD;
+			sourceTree = "<group>";
+		};
+		3553EC7D1D7417F000DA1669 /* XLSegmentedControl */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC7E1D7417F000DA1669 /* XLSegmentedControl.h */,
+				3553EC7F1D7417F000DA1669 /* XLSegmentedControl.m */,
+			);
+			path = XLSegmentedControl;
+			sourceTree = "<group>";
+		};
+		3553EC801D7417F000DA1669 /* XLSegmentedSlideView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC811D7417F000DA1669 /* XLSegmentedSlideView.h */,
+				3553EC821D7417F000DA1669 /* XLSegmentedSlideView.m */,
+			);
+			path = XLSegmentedSlideView;
+			sourceTree = "<group>";
+		};
+		3553EC831D7417F000DA1669 /* XLTextField */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC841D7417F000DA1669 /* XLTextField.h */,
+				3553EC851D7417F000DA1669 /* XLTextField.m */,
+			);
+			path = XLTextField;
+			sourceTree = "<group>";
+		};
+		3553EC861D7417F000DA1669 /* XLTextView */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC871D7417F000DA1669 /* XLTextView.h */,
+				3553EC881D7417F000DA1669 /* XLTextView.m */,
+			);
+			path = XLTextView;
+			sourceTree = "<group>";
+		};
+		3553EC971D74181400DA1669 /* XLViewController */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC981D74181400DA1669 /* ActionController */,
+				3553EC9D1D74181400DA1669 /* XLNavViewController.h */,
+				3553EC9E1D74181400DA1669 /* XLNavViewController.m */,
+				3553EC9F1D74181400DA1669 /* XLVC.h */,
+			);
+			path = XLViewController;
+			sourceTree = "<group>";
+		};
+		3553EC981D74181400DA1669 /* ActionController */ = {
+			isa = PBXGroup;
+			children = (
+				3553EC991D74181400DA1669 /* RMActionController.h */,
+				3553EC9A1D74181400DA1669 /* RMActionController.m */,
+				3553EC9B1D74181400DA1669 /* RMPickerViewController.h */,
+				3553EC9C1D74181400DA1669 /* RMPickerViewController.m */,
+			);
+			path = ActionController;
 			sourceTree = "<group>";
 		};
 		355B89021D45AB8D007A10E6 /* FSCalendar */ = {
@@ -1670,15 +1742,6 @@
 			path = UploadImage;
 			sourceTree = "<group>";
 		};
-		355B89711D45EA14007A10E6 /* XL */ = {
-			isa = PBXGroup;
-			children = (
-				355B89721D45EA14007A10E6 /* XL.h */,
-				355B89731D45EA14007A10E6 /* XL.m */,
-			);
-			path = XL;
-			sourceTree = "<group>";
-		};
 		355ED0381D37DFC100383C60 /* XLResource */ = {
 			isa = PBXGroup;
 			children = (
@@ -1687,54 +1750,12 @@
 			path = XLResource;
 			sourceTree = "<group>";
 		};
-		357D18381D3396E1004C1BE9 /* XLSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				357D18391D3396E1004C1BE9 /* XLSegmentedControl.h */,
-				357D183A1D3396E1004C1BE9 /* XLSegmentedControl.m */,
-			);
-			path = XLSegmentedControl;
-			sourceTree = "<group>";
-		};
 		3585ACCA1D4319AA006A59A4 /* NullSafe */ = {
 			isa = PBXGroup;
 			children = (
 				3585ACCB1D4319AA006A59A4 /* NullSafe.m */,
 			);
 			path = NullSafe;
-			sourceTree = "<group>";
-		};
-		358906571D3349750053BE45 /* XLProgressHUD */ = {
-			isa = PBXGroup;
-			children = (
-				3589065E1D3349750053BE45 /* XLProgressHUD.h */,
-				3589065F1D3349750053BE45 /* XLProgressHUD.m */,
-				358906581D3349750053BE45 /* IndefiniteAnimatedView.h */,
-				358906591D3349750053BE45 /* IndefiniteAnimatedView.m */,
-				3589065A1D3349750053BE45 /* ProgressAnimatedView.h */,
-				3589065B1D3349750053BE45 /* ProgressAnimatedView.m */,
-				3589065C1D3349750053BE45 /* RadialGradientLayer.h */,
-				3589065D1D3349750053BE45 /* RadialGradientLayer.m */,
-			);
-			path = XLProgressHUD;
-			sourceTree = "<group>";
-		};
-		358F633C1D3DC0F5003A338E /* XLSegmentedSlideView */ = {
-			isa = PBXGroup;
-			children = (
-				353F16F71D3E28C800409A27 /* XLSegmentedSlideView.h */,
-				353F16F81D3E28C800409A27 /* XLSegmentedSlideView.m */,
-			);
-			path = XLSegmentedSlideView;
-			sourceTree = "<group>";
-		};
-		359134C31D40B229004F49CB /* XLTextView */ = {
-			isa = PBXGroup;
-			children = (
-				359134C41D40B229004F49CB /* XLTextView.h */,
-				359134C51D40B229004F49CB /* XLTextView.m */,
-			);
-			path = XLTextView;
 			sourceTree = "<group>";
 		};
 		359875F61D1BA44200C2EC10 = {
@@ -1813,7 +1834,6 @@
 			isa = PBXGroup;
 			children = (
 				35190B621D387F5F006A73C6 /* XLComponent.h */,
-				3506C5601D70400900EA294E /* UITableView+Placeholder */,
 				3506C5531D7029A100EA294E /* XLNoDataView */,
 				35D2B2E31D5C4A0B00AC2532 /* XLPullDownMenuView */,
 				35A317B11D48F1FF0075314E /* XLImageBrowser */,
@@ -1858,15 +1878,6 @@
 				35D2B2E51D5C4A0B00AC2532 /* XLPullDownMenuView.m */,
 			);
 			path = XLPullDownMenuView;
-			sourceTree = "<group>";
-		};
-		35DB329A1D34C6AC00A4B970 /* XLGuidePageView */ = {
-			isa = PBXGroup;
-			children = (
-				35DB329B1D34C6AC00A4B970 /* XLGuidePageView.h */,
-				35DB329C1D34C6AC00A4B970 /* XLGuidePageView.m */,
-			);
-			path = XLGuidePageView;
 			sourceTree = "<group>";
 		};
 		35DC65D41D6A85F400766FC3 /* XLsn0wKit */ = {
@@ -1954,17 +1965,6 @@
 				35DC662D1D6A865300766FC3 /* UIWindow+BFKit.m */,
 			);
 			path = UIKit;
-			sourceTree = "<group>";
-		};
-		35F6DDF11D22636000874C91 /* XLUIViewController */ = {
-			isa = PBXGroup;
-			children = (
-				35F6DDF51D2263A100874C91 /* XLVC.h */,
-				35F6DDF21D22636000874C91 /* XLNavViewController.h */,
-				35F6DDF31D22636000874C91 /* XLNavViewController.m */,
-				35170D031D531940001F7020 /* ActionController */,
-			);
-			path = XLUIViewController;
 			sourceTree = "<group>";
 		};
 		BA8FB178983C01FA846857BB /* Frameworks */ = {
@@ -2120,7 +2120,6 @@
 				35DC66441D6A865300766FC3 /* UIScrollView+BFKit.m in Sources */,
 				35A317D41D48F1FF0075314E /* MWZoomingScrollView.m in Sources */,
 				3506C54E1D70264E00EA294E /* BFDataStructures.m in Sources */,
-				3542BC591D387CAD00674567 /* XLCalendarComponent.m in Sources */,
 				354EBB3E1D225115003D82CB /* UIImage+JKFileName.m in Sources */,
 				354EBB001D225115003D82CB /* NSString+JKHash.m in Sources */,
 				354EBB581D225115003D82CB /* UINavigationController+JKStackManager.m in Sources */,
@@ -2128,7 +2127,6 @@
 				354EBB8B1D225115003D82CB /* UIWebVIew+JKSwipeGesture.m in Sources */,
 				35A317CB1D48F1FF0075314E /* DACircularProgressView.m in Sources */,
 				354EBB851D225115003D82CB /* UIWebView+JKBlocks.m in Sources */,
-				35DB329D1D34C6AC00A4B970 /* XLGuidePageView.m in Sources */,
 				35DC663F1D6A865300766FC3 /* UIImage+BFKit.m in Sources */,
 				354EBB191D225115003D82CB /* UIApplication+JKNetworkActivityIndicator.m in Sources */,
 				354EBB241D225115003D82CB /* UIButton+JKImagePosition.m in Sources */,
@@ -2164,12 +2162,15 @@
 				354EBB011D225115003D82CB /* NSString+JKMatcher.m in Sources */,
 				354EBB441D225115003D82CB /* UIImage+JKResize.m in Sources */,
 				354EBB491D225115003D82CB /* UIImageView+JKAddition.m in Sources */,
+				3553EC8B1D7417F000DA1669 /* JKAlertDialog.m in Sources */,
 				354EBB4D1D225115003D82CB /* UIImageView+JKLetters.m in Sources */,
+				3553ECA01D74181400DA1669 /* RMActionController.m in Sources */,
 				35DC66471D6A865300766FC3 /* UITextView+BFKit.m in Sources */,
 				354EBAE71D225115003D82CB /* NSInvocation+JKBlock.m in Sources */,
 				35BF65AA1D23744C00993CAE /* XLDatabase.m in Sources */,
 				354EBB7C1D225115003D82CB /* UIView+JKVisuals.m in Sources */,
 				35A317D31D48F1FF0075314E /* MWTapDetectingView.m in Sources */,
+				3553EC631D7417C200DA1669 /* XL.m in Sources */,
 				355B893E1D45AB8D007A10E6 /* FSCalendarConstance.m in Sources */,
 				354EBAC21D225115003D82CB /* MKMapView+JKMoveLogo.m in Sources */,
 				354EBAC51D225115003D82CB /* NSArray+JKSafeAccess.m in Sources */,
@@ -2182,12 +2183,12 @@
 				354EBB361D225115003D82CB /* UIFont+JKDynamicFontControl.m in Sources */,
 				35DC66461D6A865300766FC3 /* UITextField+BFKit.m in Sources */,
 				35DC66431D6A865300766FC3 /* UIScreen+BFKit.m in Sources */,
+				3553ECA21D74181400DA1669 /* XLNavViewController.m in Sources */,
 				355B89381D45AB8D007A10E6 /* FSCalendar+IBExtension.m in Sources */,
 				354EBB261D225115003D82CB /* UIButton+JKMiddleAligning.m in Sources */,
 				355B89491D45AB8D007A10E6 /* CXPhotoLoadingView.m in Sources */,
 				35DC66361D6A865300766FC3 /* NSObject+BFKit.m in Sources */,
 				354EBACE1D225115003D82CB /* NSData+JKPCM.m in Sources */,
-				358906601D3349750053BE45 /* IndefiniteAnimatedView.m in Sources */,
 				354EBB7D1D225115003D82CB /* UIView+XLsn0w.m in Sources */,
 				35DC662F1D6A865300766FC3 /* NSData+BFKit.m in Sources */,
 				35A317CE1D48F1FF0075314E /* MWGridCell.m in Sources */,
@@ -2196,7 +2197,6 @@
 				3506C54C1D70264E00EA294E /* BFButton.m in Sources */,
 				354EBAD91D225115003D82CB /* NSDecimalNumber+JKExtensions.m in Sources */,
 				354EBB871D225115003D82CB /* UIWebView+JKJavaScript.m in Sources */,
-				3542BC611D387CB600674567 /* XLTextField.m in Sources */,
 				354EBAF51D225115003D82CB /* NSObject+JKGCD.m in Sources */,
 				354EBAE01D225115003D82CB /* NSDictionary+XLsn0w.m in Sources */,
 				354EBB691D225115003D82CB /* UITextField+JKBlocks.m in Sources */,
@@ -2226,6 +2226,7 @@
 				354EBAC61D225115003D82CB /* NSArray+XL.m in Sources */,
 				354EBAE91D225115003D82CB /* NSMutableURLRequest+JKUpload.m in Sources */,
 				354EBB471D225115003D82CB /* UIImage+JKVector.m in Sources */,
+				3553EC8E1D7417F000DA1669 /* XLPickerView.m in Sources */,
 				355B893C1D45AB8D007A10E6 /* FSCalendarCell.m in Sources */,
 				355B89481D45AB8D007A10E6 /* CXPhotoBrowser.m in Sources */,
 				354EBB5C1D225115003D82CB /* UINavigationItem+JKMargin.m in Sources */,
@@ -2237,7 +2238,6 @@
 				354EBAC91D225115003D82CB /* NSData+JKBase64.m in Sources */,
 				354EBB1F1D225115003D82CB /* UIBezierPath+JKSymbol.m in Sources */,
 				354EBB1C1D225115003D82CB /* UIBezierPath+JKBasicShapes.m in Sources */,
-				359134C61D40B229004F49CB /* XLTextView.m in Sources */,
 				354EBB481D225115003D82CB /* UIImage+XLsn0w.m in Sources */,
 				354EBAEB1D225115003D82CB /* NSNumber+JKCGFloat.m in Sources */,
 				35DC66341D6A865300766FC3 /* NSMutableDictionary+BFKit.m in Sources */,
@@ -2245,6 +2245,8 @@
 				354EBABD1D225115003D82CB /* CAMediaTimingFunction+JKAdditionalEquations.m in Sources */,
 				354EBAF91D225115003D82CB /* NSRunLoop+JKPerformBlock.m in Sources */,
 				354EBACD1D225115003D82CB /* NSData+JKHash.m in Sources */,
+				3553EC8F1D7417F000DA1669 /* IndefiniteAnimatedView.m in Sources */,
+				3553EC951D7417F000DA1669 /* XLTextField.m in Sources */,
 				354EBB061D225115003D82CB /* NSString+JKScore.m in Sources */,
 				354EBAEE1D225115003D82CB /* NSObject+JKAddProperty.m in Sources */,
 				35DC664A1D6A865300766FC3 /* UIWebView+BFKit.m in Sources */,
@@ -2252,12 +2254,11 @@
 				35A317D21D48F1FF0075314E /* MWTapDetectingImageView.m in Sources */,
 				354EBABE1D225115003D82CB /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				354EBB7A1D225115003D82CB /* UIView+JKShake.m in Sources */,
-				3542BC551D387C3900674567 /* ComboBoxView.m in Sources */,
 				354EBB101D225115003D82CB /* NSURL+JKParam.m in Sources */,
 				354EBAEC1D225115003D82CB /* NSNumber+JKRomanNumerals.m in Sources */,
-				355B89741D45EA14007A10E6 /* XL.m in Sources */,
 				354EBAC81D225115003D82CB /* NSData+JKAPNSToken.m in Sources */,
 				355126E01D2B834800AF1D1C /* CAAnimation+XLsn0w.m in Sources */,
+				3553EC931D7417F000DA1669 /* XLSegmentedControl.m in Sources */,
 				355B89681D45B6F3007A10E6 /* UploadImageCell.m in Sources */,
 				354EBB4C1D225115003D82CB /* UIImageView+JKGeometryConversion.m in Sources */,
 				3511071D1D23A1DE003B5C5C /* XLNetworkMonitor.m in Sources */,
@@ -2301,8 +2302,6 @@
 				354EBB131D225115003D82CB /* NSURLRequest+JKParamsFromDictionary.m in Sources */,
 				354EBB521D225115003D82CB /* UILabel+JKAutoSize.m in Sources */,
 				35DC66331D6A865300766FC3 /* NSMutableArray+BFKit.m in Sources */,
-				353F16F91D3E28C800409A27 /* XLSegmentedSlideView.m in Sources */,
-				35170D081D531940001F7020 /* RMActionController.m in Sources */,
 				354EBAD81D225115003D82CB /* NSDecimalNumber+JKCalculatingByString.m in Sources */,
 				355B894A1D45AB8D007A10E6 /* CXTapDetectingImageView.m in Sources */,
 				35BF65A91D23744C00993CAE /* User.m in Sources */,
@@ -2310,7 +2309,6 @@
 				354EBB8C1D225115003D82CB /* UIWebView+JKTS_JavaScriptContext.m in Sources */,
 				354EBAD21D225115003D82CB /* NSDate+JKFormatter.m in Sources */,
 				354EBB711D225115003D82CB /* UIView+JKBlockGesture.m in Sources */,
-				357D183B1D3396E1004C1BE9 /* XLSegmentedControl.m in Sources */,
 				354EBAED1D225115003D82CB /* NSNumber+JKRound.m in Sources */,
 				354EBACB1D225115003D82CB /* NSData+JKEncrypt.m in Sources */,
 				354EBB3A1D225115003D82CB /* UIImage+JKBetterFace.m in Sources */,
@@ -2321,9 +2319,12 @@
 				354EBB6C1D225115003D82CB /* UITextField+JKShake.m in Sources */,
 				35DC66411D6A865300766FC3 /* UILabel+BFKit.m in Sources */,
 				354EBB2B1D225115003D82CB /* UIColor+JKHEX.m in Sources */,
+				3553EC941D7417F000DA1669 /* XLSegmentedSlideView.m in Sources */,
+				3553EC961D7417F000DA1669 /* XLTextView.m in Sources */,
 				354EBB6F1D225115003D82CB /* UITextView+JKSelect.m in Sources */,
 				355B89441D45AB8D007A10E6 /* UIView+FSExtension.m in Sources */,
 				354EBAE11D225115003D82CB /* NSException+JKTrace.m in Sources */,
+				3553EC8D1D7417F000DA1669 /* XLGuidePageView.m in Sources */,
 				35DC66391D6A865300766FC3 /* NSThread+BFKit.m in Sources */,
 				354EBB2C1D225115003D82CB /* UIColor+JKModify.m in Sources */,
 				3574A81D1D2C01210083906F /* NSObject+XLsn0w.m in Sources */,
@@ -2331,16 +2332,16 @@
 				354EBB811D225115003D82CB /* UIViewController+JKRecursiveDescription.m in Sources */,
 				354EBAF41D225115003D82CB /* NSObject+JKEasyCopy.m in Sources */,
 				354EBAC31D225115003D82CB /* MKMapView+JKZoomLevel.m in Sources */,
-				3506C5631D70400900EA294E /* UITableView+Placeholder.m in Sources */,
+				3553EC5D1D74171600DA1669 /* UITableView+Placeholder.m in Sources */,
 				354EBB0F1D225115003D82CB /* NSTimer+JKBlocks.m in Sources */,
 				354EBAF31D225115003D82CB /* NSObject+JKBlockTimer.m in Sources */,
 				354EBAD61D225115003D82CB /* NSDate+XL.m in Sources */,
 				35DC66401D6A865300766FC3 /* UIImageView+BFKit.m in Sources */,
-				358906611D3349750053BE45 /* ProgressAnimatedView.m in Sources */,
 				354EBB051D225115003D82CB /* NSString+JKRemoveEmoji.m in Sources */,
 				354EBAC41D225115003D82CB /* NSArray+JKBlock.m in Sources */,
 				3506C5521D70264E00EA294E /* BFTouchID.m in Sources */,
 				35DC65EB1D6A864800766FC3 /* XLsn0wLog.m in Sources */,
+				3553EC921D7417F000DA1669 /* XLProgressHUD.m in Sources */,
 				354EBAE51D225115003D82CB /* NSIndexPath+JKOffset.m in Sources */,
 				354EBB251D225115003D82CB /* UIButton+JKIndicator.m in Sources */,
 				354EBB431D225115003D82CB /* UIImage+JKRemoteSize.m in Sources */,
@@ -2356,8 +2357,6 @@
 				355B89461D45AB8D007A10E6 /* CXBrowserToolBarView.m in Sources */,
 				354EBB6E1D225115003D82CB /* UITextView+JKPlaceHolder.m in Sources */,
 				354EBB6B1D225115003D82CB /* UITextField+JKSelect.m in Sources */,
-				358906621D3349750053BE45 /* RadialGradientLayer.m in Sources */,
-				35170D091D531940001F7020 /* RMPickerViewController.m in Sources */,
 				354EBB821D225115003D82CB /* UIViewController+JKStoreKit.m in Sources */,
 				35DC663B1D6A865300766FC3 /* UIButton+BFKit.m in Sources */,
 				35A317D11D48F1FF0075314E /* MWPhotoBrowser.m in Sources */,
@@ -2385,22 +2384,22 @@
 				354EBADE1D225115003D82CB /* NSDictionary+JKURL.m in Sources */,
 				354EBB0D1D225115003D82CB /* NSString+XL.m in Sources */,
 				354EBB761D225115003D82CB /* UIView+JKFrame.m in Sources */,
-				3542BC5D1D387CB200674567 /* XLPickerView.m in Sources */,
 				355B89451D45AB8D007A10E6 /* CXBrowserNavBarView.m in Sources */,
 				355B89521D45AB95007A10E6 /* XLRefreshAutoGifFooter.m in Sources */,
 				354EBB181D225115003D82CB /* UIApplication+JKKeyboardFrame.m in Sources */,
-				358906631D3349750053BE45 /* XLProgressHUD.m in Sources */,
 				354EBB5B1D225115003D82CB /* UINavigationItem+JKLock.m in Sources */,
 				355B89361D45AB8D007A10E6 /* FSCalendar+DateTools.m in Sources */,
 				354EBB2D1D225115003D82CB /* UIColor+JKRandom.m in Sources */,
 				354EBB631D225115003D82CB /* UISearchBar+JKBlocks.m in Sources */,
 				355B89351D45AB8D007A10E6 /* CALayer+FSExtension.m in Sources */,
 				354EBB0B1D225115003D82CB /* NSString+JKUUID.m in Sources */,
-				35F6DDF41D22636000874C91 /* XLNavViewController.m in Sources */,
+				3553EC901D7417F000DA1669 /* ProgressAnimatedView.m in Sources */,
 				35A317D51D48F1FF0075314E /* UIImage+MWPhotoBrowser.m in Sources */,
 				355B893D1D45AB8D007A10E6 /* FSCalendarCollectionView.m in Sources */,
+				3553EC8C1D7417F000DA1669 /* XLCalendarComponent.m in Sources */,
 				354EBB291D225115003D82CB /* UIButton+XLsn0w.m in Sources */,
 				354EBB771D225115003D82CB /* UIView+JKNib.m in Sources */,
+				3553ECA11D74181400DA1669 /* RMPickerViewController.m in Sources */,
 				354EBB041D225115003D82CB /* NSString+JKPinyin.m in Sources */,
 				354EBB151D225115003D82CB /* NSUserDefaults+JKSafeAccess.m in Sources */,
 				354EBB541D225115003D82CB /* UILabel+XLsn0w.m in Sources */,
@@ -2408,7 +2407,6 @@
 				3506C5561D7029A100EA294E /* NoDataView.m in Sources */,
 				354EBAC71D225115003D82CB /* NSBundle+JKAppIcon.m in Sources */,
 				355B894B1D45AB8D007A10E6 /* CXTapDetectingView.m in Sources */,
-				351670DA1D51ED21001683B3 /* JKAlertDialog.m in Sources */,
 				3506C5501D70264E00EA294E /* BFSystemSound.m in Sources */,
 				354EBAFD1D225115003D82CB /* NSString+JKDictionaryValue.m in Sources */,
 				3506C54D1D70264E00EA294E /* BFCryptor.m in Sources */,
@@ -2417,12 +2415,14 @@
 				354EBB791D225115003D82CB /* UIView+JKScreenshot.m in Sources */,
 				354EBB231D225115003D82CB /* UIButton+JKCountDown.m in Sources */,
 				35DC66491D6A865300766FC3 /* UIView+BFKit.m in Sources */,
+				3553EC8A1D7417F000DA1669 /* ComboBoxView.m in Sources */,
 				35DC66321D6A865300766FC3 /* NSFileManager+BFKit.m in Sources */,
 				355B893B1D45AB8D007A10E6 /* FSCalendarAppearance.m in Sources */,
 				355B89401D45AB8D007A10E6 /* FSCalendarFlowLayout.m in Sources */,
 				35D2B2E61D5C4A0B00AC2532 /* XLPullDownMenuView.m in Sources */,
 				354EBB451D225115003D82CB /* UIImage+JKRoundedCorner.m in Sources */,
 				354EBAD51D225115003D82CB /* NSDate+JKUtilities.m in Sources */,
+				3553EC911D7417F000DA1669 /* RadialGradientLayer.m in Sources */,
 				354EBAF61D225115003D82CB /* NSObject+JKKVOBlocks.m in Sources */,
 				354EBB7E1D225115003D82CB /* UIViewController+JKBackButtonItemTitle.m in Sources */,
 				354EBB421D225115003D82CB /* UIImage+JKOrientation.m in Sources */,

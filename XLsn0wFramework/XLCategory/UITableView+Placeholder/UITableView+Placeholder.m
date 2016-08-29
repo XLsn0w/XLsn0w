@@ -36,13 +36,12 @@
     }
     
     // hide or show
-    if (numberOfRows) {
-        self.separatorStyle = self.originalSeparatorStyle;
-        placeholderView.hidden = YES;
-    }
-    else {
-        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    if (numberOfRows == 0) {//No Data -> No Rows -> numberOfRows = 0 -> hidden = YES
         placeholderView.hidden = NO;
+        self.separatorStyle = UITableViewCellSeparatorStyleNone;
+    } else {//numberOfRows != 0
+        placeholderView.hidden = YES;
+        self.separatorStyle = self.originalSeparatorStyle;
     }
     
     // change frame
