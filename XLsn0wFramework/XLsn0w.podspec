@@ -1,8 +1,10 @@
 
 Pod::Spec.new do |s|
 
+  s.version      = "4.5.0"
+
   s.name         = "XLsn0w"
-  s.summary      = "XLsn0w Custom An iOS CocoaPods Framework"
+  s.summary      = "A CocoaPods Library Of iOS Components via XLsn0w"
   s.description  = "Copyright © 2016年 XLsn0w Custom An iOS CocoaPods Framework"
   s.homepage     = "https://github.com/XLsn0w/XLsn0w"
 
@@ -11,9 +13,7 @@ Pod::Spec.new do |s|
   s.platform     = :ios, "7.0"
   s.requires_arc = true
 
-  s.version      = "4.4.7"
-  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => "4.4.7" }
-
+  s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => s.version.to_s }
   s.source_files = "XLsn0wFramework/**/*.{h,m}"
 
   s.resources    = "XLsn0wFramework/XLResource/Resources.bundle"
