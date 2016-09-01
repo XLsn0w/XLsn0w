@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "4.5.1"
+  s.version      = "4.5.2"
 
   s.name         = "XLsn0w"
   s.summary      = "A CocoaPods Library Of iOS Components via XLsn0w"
@@ -33,8 +33,8 @@ Pod::Spec.new do |s|
   s.subspec 'XLsn0wFoundation' do |ss|
 
     ss.ios.deployment_target = '7.0'
-    ss.public_header_files = 'XLsn0wFoundation/*.h'
-    ss.source_files = 'XLsn0wFoundation'
+    ss.public_header_files = 'XLsn0wFramework/XLsn0wFoundation/XLsn0wFoundation.h'
+    ss.source_files = "XLsn0wFoundation/**/*.{h,m}"
 
   end
 
