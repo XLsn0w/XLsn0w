@@ -1461,8 +1461,8 @@
 		3553EC5E1D7417C200DA1669 /* XLObject */ = {
 			isa = PBXGroup;
 			children = (
-				3553EC5F1D7417C200DA1669 /* XL */,
 				3553EC621D7417C200DA1669 /* XLObject.h */,
+				3553EC5F1D7417C200DA1669 /* XL */,
 			);
 			path = XLObject;
 			sourceTree = "<group>";
