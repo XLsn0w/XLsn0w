@@ -10,6 +10,12 @@
     failure:(ParseFailureBlock)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
@@ -35,6 +41,11 @@
     failure:(ParseFailureBlock)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -64,6 +75,11 @@
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
@@ -89,6 +105,11 @@
      failure:(ParseFailureBlock)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -121,6 +142,11 @@
               failure:(ParseFailureBlock)failure {
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -161,6 +187,11 @@
     
     AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseurl sessionConfiguration:YES];
     
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
+    
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
     
@@ -189,6 +220,11 @@
                                       success:(void (^)(NSURLResponse *, NSURL *))success
                                       failure:(void (^)(NSError *))failure {
     AFHTTPSessionManager *manager = [self managerWithBaseURL:nil sessionConfiguration:YES];
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     /*! <Add HTTPHeader> [key : value格式] {@"Authorization" : @"Bearer空格Token"} */
     [manager.requestSerializer setValue:[NSString stringWithFormat:@"Bearer %@", token] forHTTPHeaderField:@"Authorization"];
@@ -229,9 +265,16 @@
     if (isconfiguration) {
         
         manager = [[AFHTTPSessionManager alloc] initWithBaseURL:url sessionConfiguration:configuration];
-    }else{
+        
+    } else {
+        
         manager = [[AFHTTPSessionManager alloc] initWithBaseURL:url];
     }
+    
+    //add timeoutInterval = 5
+    [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
+    manager.requestSerializer.timeoutInterval = 5;
+    [manager.requestSerializer didChangeValueForKey:@"timeoutInterval"];
     
     manager.requestSerializer = [AFHTTPRequestSerializer serializer];
     manager.responseSerializer = [AFHTTPResponseSerializer serializer];
