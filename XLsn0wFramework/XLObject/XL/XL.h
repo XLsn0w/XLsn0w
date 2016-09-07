@@ -27,6 +27,8 @@
 //手机号码验证
 + (BOOL)xl_isPhoneNumber:(NSString *)phoneNumber;
 
++ (void)xl_showTimeoutWithCurrentSelf:(UIViewController *)currentSelf statusCode:(NSInteger)statusCode;
+
 @end
 
 /**************************************************************************************************/
