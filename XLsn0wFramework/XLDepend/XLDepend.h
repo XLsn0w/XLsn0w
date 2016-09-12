@@ -52,7 +52,7 @@
 /***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 
 #ifdef DEBUG
-#define NSLog(FORMAT, ...) fprintf(stderr,"\n 文件:<%s>, 第<%d>行, 日志:%s \n \n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define NSLog(FORMAT, ...) fprintf(stderr,"\n ©XLsn0wLog© -> 文件:<%s>, 第<%d>行, 日志:%s \n \n",[[[NSString stringWithUTF8String:__FILE__] lastPathComponent] UTF8String], __LINE__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(...)
 #endif

@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "4.5.9"
+  s.version      = "4.6.0"
 
   s.name         = "XLsn0w"
   s.summary      = "A CocoaPods Library Of iOS Components via XLsn0w"
