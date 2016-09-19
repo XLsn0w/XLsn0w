@@ -239,9 +239,9 @@ description:__VA_ARGS__];                             \
 
 //----------------------Directory--------------------------
 
-#define XLsn0wCaches    ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject])
-#define XLsn0wDocuments ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
-#define XLsn0wBundleID  ([[NSBundle mainBundle] bundleIdentifier])
+#define XLsn0wCachesDirectory    ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject])
+#define XLsn0wDocumentDirectory  ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
+#define XLsn0wBundleID           ([[NSBundle mainBundle] bundleIdentifier])
 
 //----------------------其他----------------------------
 
