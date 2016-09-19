@@ -60,7 +60,7 @@
 /*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*/
 
 #if DEBUG
-#define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | XLog------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+#define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | ©XLsn0wLog© ------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
 #else
 #define NSLog(...) nil
 #endif
@@ -69,7 +69,7 @@
 
 //DEBUG  模式下打印日志,当前行 并弹出一个警告
 #ifdef DEBUG
-#   define XLLog(FORMAT, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"\n XLLog--->:%s \n", __PRETTY_FUNCTION__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
+#   define XLLog(FORMAT, ...)  { UIAlertView *alert = [[UIAlertView alloc] initWithTitle:[NSString stringWithFormat:@"\n ©XLsn0wLog© --->:%s \n", __PRETTY_FUNCTION__] message:[NSString stringWithFormat:fmt, ##__VA_ARGS__]  delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil]; [alert show]; }
 #else
 #   define XLLog(...)
 #endif
@@ -237,9 +237,11 @@ description:__VA_ARGS__];                             \
 #define RGBCOLOR(r,g,b) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:1]
 #define RGBACOLOR(r,g,b,a) [UIColor colorWithRed:(r)/255.0f green:(g)/255.0f blue:(b)/255.0f alpha:(a)]
 
-//----------------------颜色类--------------------------
+//----------------------Directory--------------------------
 
-
+#define XLsn0wCaches    ([NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject])
+#define XLsn0wDocuments ([NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) lastObject])
+#define XLsn0wBundleID  ([[NSBundle mainBundle] bundleIdentifier])
 
 //----------------------其他----------------------------
 
