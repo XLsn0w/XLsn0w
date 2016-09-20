@@ -1479,6 +1479,7 @@
 		3553EC641D7417F000DA1669 /* XLView */ = {
 			isa = PBXGroup;
 			children = (
+				3553EC891D7417F000DA1669 /* XLView.h */,
 				3553EC651D7417F000DA1669 /* ComboBoxView */,
 				3553EC681D7417F000DA1669 /* XLAlertView */,
 				3553EC6B1D7417F000DA1669 /* XLCalendarComponent */,
@@ -1489,7 +1490,6 @@
 				3553EC801D7417F000DA1669 /* XLSegmentedSlideView */,
 				3553EC831D7417F000DA1669 /* XLTextField */,
 				3553EC861D7417F000DA1669 /* XLTextView */,
-				3553EC891D7417F000DA1669 /* XLView.h */,
 			);
 			path = XLView;
 			sourceTree = "<group>";
