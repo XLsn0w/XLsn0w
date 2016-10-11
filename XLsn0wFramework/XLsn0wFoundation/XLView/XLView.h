@@ -9,17 +9,14 @@
  *                                                                                           *
  *********************************************************************************************/
 
-/*! XLsn0w's Macro */
-#import "XLMacro.h"
-
-/*! XLsn0w's Category */
-#import "XLCategory.h"
-
-/*! XLsn0w's Components */
-#import "XLComponent.h"
-
-/*! XLsn0w's Foundation */
-#import "XLsn0wFoundation.h"
+#import "XLTextField.h"
+#import "XLPickerView.h"
+#import "XLCalendarComponent.h"
+#import "XLSegmentedControl.h"
+#import "XLGuidePageView.h"
+#import "ComboBoxView.h"
+#import "XLSegmentedSlideView.h"
+#import "XLTextView.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *

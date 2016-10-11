@@ -9,17 +9,7 @@
  *                                                                                           *
  *********************************************************************************************/
 
-/*! XLsn0w's Macro */
-#import "XLMacro.h"
-
-/*! XLsn0w's Category */
-#import "XLCategory.h"
-
-/*! XLsn0w's Components */
-#import "XLComponent.h"
-
-/*! XLsn0w's Foundation */
-#import "XLsn0wFoundation.h"
+#import "XL.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *

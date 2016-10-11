@@ -1,3 +1,0 @@
-
-/*! XLNavViewController */
-#import "XLNavViewController.h"
