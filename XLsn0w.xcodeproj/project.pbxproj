@@ -312,6 +312,8 @@
 		357AE6B41DACB359006BEB7A /* UIWebVIew+JKSwipeGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AE5E71DACB358006BEB7A /* UIWebVIew+JKSwipeGesture.m */; };
 		357AE6B51DACB359006BEB7A /* UIWebView+JKTS_JavaScriptContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AE5E91DACB358006BEB7A /* UIWebView+JKTS_JavaScriptContext.m */; };
 		357AE6B61DACB359006BEB7A /* UIWindow+JKHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AE5EC1DACB358006BEB7A /* UIWindow+JKHierarchy.m */; };
+		357AE6DA1DACD85F006BEB7A /* UIColor+BgColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AE6D81DACD85F006BEB7A /* UIColor+BgColor.m */; };
+		357AE6DD1DACD871006BEB7A /* UILabel+MultipleLines.m in Sources */ = {isa = PBXBuildFile; fileRef = 357AE6DB1DACD871006BEB7A /* UILabel+MultipleLines.m */; };
 		359876041D1BA44200C2EC10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876031D1BA44200C2EC10 /* main.m */; };
 		359876071D1BA44200C2EC10 /* XLsn0wAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 359876061D1BA44200C2EC10 /* XLsn0wAppDelegate.m */; };
 		359876091D1BA44200C2EC10 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 359876081D1BA44200C2EC10 /* Assets.xcassets */; };
@@ -945,6 +947,10 @@
 		357AE5EB1DACB358006BEB7A /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
 		357AE5EC1DACB358006BEB7A /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
 		357AE5ED1DACB358006BEB7A /* XLCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCategory.h; sourceTree = "<group>"; };
+		357AE6D81DACD85F006BEB7A /* UIColor+BgColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BgColor.m"; sourceTree = "<group>"; };
+		357AE6D91DACD85F006BEB7A /* UIColor+BgColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+BgColor.h"; sourceTree = "<group>"; };
+		357AE6DB1DACD871006BEB7A /* UILabel+MultipleLines.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+MultipleLines.m"; sourceTree = "<group>"; };
+		357AE6DC1DACD871006BEB7A /* UILabel+MultipleLines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+MultipleLines.h"; sourceTree = "<group>"; };
 		359875FF1D1BA44200C2EC10 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		359876031D1BA44200C2EC10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		359876051D1BA44200C2EC10 /* XLsn0wAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = XLsn0wAppDelegate.h; sourceTree = "<group>"; };
@@ -976,8 +982,8 @@
 			children = (
 				35A317AF1D48F0590075314E /* XLsn0w.podspec */,
 				3515EEE51D1E1F7E0008F171 /* XLsn0w.h */,
-				357AE41D1DACB358006BEB7A /* XLCategory */,
 				357AE41B1DAC8E0A006BEB7A /* XLMacro */,
+				357AE41D1DACB358006BEB7A /* XLCategory */,
 				357AE2BA1DAC8BDD006BEB7A /* XLComponent */,
 				357AE3681DAC8C1B006BEB7A /* XLsn0wFoundation */,
 				355ED0381D37DFC100383C60 /* XLResource */,
@@ -1490,6 +1496,7 @@
 		357AE41D1DACB358006BEB7A /* XLCategory */ = {
 			isa = PBXGroup;
 			children = (
+				357AE5ED1DACB358006BEB7A /* XLCategory.h */,
 				357AE41E1DACB358006BEB7A /* CAAnimation */,
 				357AE4211DACB358006BEB7A /* CALayer */,
 				357AE4241DACB358006BEB7A /* CAMediaTimingFunction */,
@@ -1551,7 +1558,6 @@
 				357AE5CA1DACB358006BEB7A /* UIViewController */,
 				357AE5D91DACB358006BEB7A /* UIWebView */,
 				357AE5EA1DACB358006BEB7A /* UIWindow */,
-				357AE5ED1DACB358006BEB7A /* XLCategory.h */,
 			);
 			path = XLCategory;
 			sourceTree = "<group>";
@@ -2036,6 +2042,8 @@
 		357AE51D1DACB358006BEB7A /* UIColor */ = {
 			isa = PBXGroup;
 			children = (
+				357AE6D91DACD85F006BEB7A /* UIColor+BgColor.h */,
+				357AE6D81DACD85F006BEB7A /* UIColor+BgColor.m */,
 				357AE51E1DACB358006BEB7A /* UIColor+JKGradient.h */,
 				357AE51F1DACB358006BEB7A /* UIColor+JKGradient.m */,
 				357AE5201DACB358006BEB7A /* UIColor+JKHEX.h */,
@@ -2146,6 +2154,8 @@
 		357AE5671DACB358006BEB7A /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
+				357AE6DC1DACD871006BEB7A /* UILabel+MultipleLines.h */,
+				357AE6DB1DACD871006BEB7A /* UILabel+MultipleLines.m */,
 				357AE5681DACB358006BEB7A /* UILabel+JKAutomaticWriting.h */,
 				357AE5691DACB358006BEB7A /* UILabel+JKAutomaticWriting.m */,
 				357AE56A1DACB358006BEB7A /* UILabel+JKAutoSize.h */,
@@ -2599,6 +2609,7 @@
 				357AE3461DAC8BDD006BEB7A /* NullSafe.m in Sources */,
 				357AE6261DACB358006BEB7A /* NSObject+JKGCD.m in Sources */,
 				357AE6091DACB358006BEB7A /* NSDateFormatter+JKMake.m in Sources */,
+				357AE6DD1DACD871006BEB7A /* UILabel+MultipleLines.m in Sources */,
 				357AE68D1DACB358006BEB7A /* UIScrollView+JKAddition.m in Sources */,
 				357AE6731DACB358006BEB7A /* UIImage+JKRoundedCorner.m in Sources */,
 				357AE3391DAC8BDD006BEB7A /* FSCalendar.m in Sources */,
@@ -2820,6 +2831,7 @@
 				357AE3F41DAC8C1B006BEB7A /* NSMutableArray+BFKit.m in Sources */,
 				357AE3511DAC8BDD006BEB7A /* MWGridCell.m in Sources */,
 				357AE6251DACB358006BEB7A /* NSObject+JKEasyCopy.m in Sources */,
+				357AE6DA1DACD85F006BEB7A /* UIColor+BgColor.m in Sources */,
 				357AE6571DACB358006BEB7A /* UIButton+JKMiddleAligning.m in Sources */,
 				357AE5EE1DACB358006BEB7A /* CAAnimation+XLsn0w.m in Sources */,
 				357AE6501DACB358006BEB7A /* UIBezierPath+JKSymbol.m in Sources */,
