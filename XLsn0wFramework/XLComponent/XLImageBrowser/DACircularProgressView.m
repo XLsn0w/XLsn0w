@@ -122,7 +122,13 @@
 
 @end
 
-@interface DACircularProgressView ()
+#if __IPHONE_OS_VERSION_MAX_ALLOWED >= 100000//假如是iOS10 就遵守协议
+@interface DACircularProgressView () <CAAnimationDelegate>
+
+#else
+@interface DACircularProgressView ()//不遵守协议
+
+#endif
 
 @end
 
@@ -199,8 +205,8 @@
 - (void)setProgress:(CGFloat)progress
            animated:(BOOL)animated
        initialDelay:(CFTimeInterval)initialDelay
-       withDuration:(CFTimeInterval)duration
-{
+       withDuration:(CFTimeInterval)duration {
+    
     [self.layer removeAnimationForKey:@"indeterminateAnimation"];
     [self.circularProgressLayer removeAnimationForKey:@"progress"];
     
@@ -213,7 +219,7 @@
         animation.fromValue = [NSNumber numberWithFloat:self.progress];
         animation.toValue = [NSNumber numberWithFloat:pinnedProgress];
         animation.beginTime = CACurrentMediaTime() + initialDelay;
-        animation.delegate = self;
+        animation.delegate = self;//@property(nullable, strong) id <CAAnimationDelegate> delegate;
         [self.circularProgressLayer addAnimation:animation forKey:@"progress"];
     } else {
         [self.circularProgressLayer setNeedsDisplay];
@@ -221,8 +227,7 @@
     }
 }
 
-- (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag
-{
+- (void)animationDidStop:(CAAnimation *)animation finished:(BOOL)flag {
    NSNumber *pinnedProgressNumber = [animation valueForKey:@"toValue"];
    self.circularProgressLayer.progress = [pinnedProgressNumber floatValue];
 }
