@@ -1,3 +1,4 @@
+
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *
  *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
@@ -9,7 +10,6 @@
  *                                                                                           *
  *********************************************************************************************/
 
-/*! Custom Component */
 #import "XLFlowLayout.h"
 #import "RegExCategories.h"
 #import "XLWebView.h"
@@ -21,8 +21,6 @@
 #import "UploadImageCell.h"
 #import "DisplayImageCell.h"
 #import "ChoosePicViewController.h"
-#import "JPEngine.h"
-
 #import "MWPhotoBrowser.h"
 #import "MWPhoto.h"
 #import "UIImage+MWPhotoBrowser.h"
@@ -32,10 +30,8 @@
 #import "MWPhotoBrowserPrivate.h"
 #import "MWGridViewController.h"
 #import "DACircularProgressView.h"
-#import "XLPullDownMenuView.h"
 #import "NoDataView.h"
 #import "UITableView+Placeholder.h"
-
 #import "XLNetwork.h"
 #import "XLDB.h"
 
@@ -49,5 +45,3 @@
  *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
  *                                                                                           *
  *********************************************************************************************/
-
-
