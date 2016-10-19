@@ -237,6 +237,12 @@ description:__VA_ARGS__];                             \
 #define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
 #define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
+//RGB red, green, blue 颜色
+#define XLsn0wRGBColor(red, green, blue)         [UIColor colorWithRed:(red)/255.0 green:(green)/255.0 blue:(blue)/255.0 alpha:1]
+
+//RGBA red, green, blue, alpha 颜色
+#define XLsn0wRGBAColor(red, green, blue, alpha) [UIColor colorWithRed:(red)/255.0 green:(green)/255.0 blue:(blue)/255.0 alpha:alpha]
+
 //背景色
 #define BACKGROUND_COLOR [UIColor colorWithRed:242.0/255.0 green:236.0/255.0 blue:231.0/255.0 alpha:1.0]
 
