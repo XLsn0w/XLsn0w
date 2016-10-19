@@ -1,5 +1,5 @@
 
-target:XLsn0w do
+target:XLsn0wLibrary do
     
 platform :ios,'7.0'
     
