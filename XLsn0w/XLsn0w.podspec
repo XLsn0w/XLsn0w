@@ -14,9 +14,9 @@ Pod::Spec.new do |s|
   s.homepage     = "https://github.com/XLsn0w/XLsn0w"
   s.source       = { :git => "https://github.com/XLsn0w/XLsn0w.git", :tag => s.version.to_s }
 
-  s.source_files = "XLsn0wFramework/**/*.{h,m}"
+  s.source_files = "XLsn0w/**/*.{h,m}"
 
-  s.resources    = "XLsn0wFramework/XLResource/Resources.bundle"
+  s.resources    = "XLsn0w/Resources/Resources.bundle"
 
   s.frameworks   = "ImageIO", "QuartzCore", "AssetsLibrary", "MediaPlayer"
 
