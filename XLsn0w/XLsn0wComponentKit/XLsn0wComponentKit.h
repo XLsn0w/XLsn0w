@@ -34,6 +34,17 @@
 #import "UITableView+Placeholder.h"
 #import "XLNetwork.h"
 #import "XLDB.h"
+#import "XLTextField.h"
+#import "XLPickerView.h"
+#import "XLCalendarComponent.h"
+#import "XLSegmentedControl.h"
+#import "XLGuidePageView.h"
+#import "ComboBoxView.h"
+#import "XLSegmentedSlideView.h"
+#import "XLTextView.h"
+#import "XLNavViewController.h"
+#import "XLsn0wTouchID.h"
+#import "XLButton.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *

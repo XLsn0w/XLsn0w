@@ -56,11 +56,16 @@
 /**
  *  16进制转UIColor | Convert hex color string into UIColor
  *
- *  @param hexstring @"#FFFFFF" ,@"OXFFFFFF" ,@"FFFFFF"
+ *  @param hexString @"#FFFFFF" ,@"OXFFFFFF" ,@"FFFFFF"
  *
  *  @return UIColor
  */
-+ (UIColor *)xl_getColorWithInputHexString:(NSString *)hexString;
++ (UIColor *)xlsn0w_hexString:(NSString *)hexString;
+
+/**
+ * The Method is deprecated
+ */
++ (UIColor *)xl_getColorWithInputHexString:(NSString *)hexString __attribute__((deprecated("Use xlsn0w_hexString")));
 
 @end
 
