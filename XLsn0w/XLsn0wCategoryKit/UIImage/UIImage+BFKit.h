@@ -87,7 +87,7 @@
 /**
  *  Scale the image to the maxinum given size
  *
- *  @param maxSize The site to scale to
+ *  @param targetSize The site to scale to
  *
  *  @return Returns the scaled image
  */
@@ -114,7 +114,7 @@
 /**
  *  Rotate the image to the given degrees
  *
- *  @param radians Degrees to rotate to
+ *  @param degrees Degrees to rotate to
  *
  *  @return Returns the rotated image
  */

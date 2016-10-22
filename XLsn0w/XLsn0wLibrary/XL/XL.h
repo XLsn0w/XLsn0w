@@ -611,21 +611,21 @@ typedef NS_ENUM(NSInteger, AudioID) {
 + (BOOL)disposeSound:(SystemSoundID)soundID;
 
 
-+ (NSString *)xl_getNSStringWithNumber:(NSNumber *)number;
-+ (NSNumber *)xl_getNSNumberWithString:(NSString *)string;
-+ (UIImage *)xl_getCompressedImageWithNewSize:(CGSize)newSize currentImage:(UIImage *)currentImage;
-+ (NSData *)xl_getImageDataWithCurrentImage:(UIImage *)currentImage;
-+ (NSString *)xl_getBase64EncodedStringWithCurrentImage:(UIImage *)currentImage;
-+ (UIImage *)xl_getImageWithBase64EncodedString:(NSString *)base64EncodedString;
-+ (void)xl_showTipText:(NSString *)tipText;
-+ (void)xl_saveImageToAlbumWithCurrentImage:(UIImage *)currentImage;
-+ (UIImage *)xl_getURLImageWithURLString:(NSString *)URLString;
-+ (void)xl_getCurrentNavigationController:(UINavigationController *)currentNavigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex;
-+ (NSUInteger)xl_getCurrentIndexWithCurrentNavigationController:(UINavigationController *)currentNavigationController currentViewController:(UIViewController *)currentViewController;
-+ (void)xl_getPhoneNumber:(NSString *)phoneNumber currentViewController:(UIViewController *)currentViewController;
++ (NSString * _Nullable)xl_getNSStringWithNumber:(NSNumber * _Nullable)number;
++ (NSNumber * _Nullable)xl_getNSNumberWithString:(NSString * _Nullable)string;
++ (UIImage * _Nullable)xl_getCompressedImageWithNewSize:(CGSize)newSize currentImage:(UIImage * _Nullable)currentImage;
++ (NSData * _Nullable)xl_getImageDataWithCurrentImage:(UIImage * _Nullable)currentImage;
++ (NSString * _Nullable)xl_getBase64EncodedStringWithCurrentImage:(UIImage * _Nullable)currentImage;
++ (UIImage * _Nullable)xl_getImageWithBase64EncodedString:(NSString * _Nullable)base64EncodedString;
++ (void)xl_showTipText:(NSString * _Nullable)tipText;
++ (void)xl_saveImageToAlbumWithCurrentImage:(UIImage * _Nullable)currentImage;
++ (UIImage * _Nullable)xl_getURLImageWithURLString:(NSString * _Nullable)URLString;
++ (void)xl_getCurrentNavigationController:(UINavigationController * _Nullable)currentNavigationController popToViewControllerAtTargetIndex:(NSUInteger)targetIndex;
++ (NSUInteger)xl_getCurrentIndexWithCurrentNavigationController:(UINavigationController * _Nullable)currentNavigationController currentViewController:(UIViewController * _Nullable)currentViewController;
++ (void)xl_getPhoneNumber:(NSString * _Nullable)phoneNumber currentViewController:(UIViewController * _Nullable)currentViewController;
 //手机号码验证
-+ (BOOL)xl_isPhoneNumber:(NSString *)phoneNumber;
-+ (void)xl_showTimeoutWithCurrentSelf:(UIViewController *)currentSelf statusCode:(NSInteger)statusCode;
++ (BOOL)xl_isPhoneNumber:(NSString * _Nullable)phoneNumber;
++ (void)xl_showTimeoutWithCurrentSelf:(UIViewController * _Nullable)currentSelf statusCode:(NSInteger)statusCode;
 
 /**************************************************************************************************/
 /**
@@ -765,7 +765,7 @@ typedef NS_ENUM(NSInteger, AudioID) {
 /**
  *  Encrypt NSString in AES128
  *
- *  @param data NSString to be encrypted
+ *  @param string NSString to be encrypted
  *  @param key  Key to encrypt data
  *
  *  @return Returns the encrypted NSData
@@ -776,7 +776,7 @@ typedef NS_ENUM(NSInteger, AudioID) {
 /**
  *  Decrypt NSString in AES128
  *
- *  @param data NSString to be decrypted
+ *  @param string NSString to be decrypted
  *  @param key  Key to decrypt data
  *
  *  @return Returns the decrypted NSData
@@ -787,7 +787,7 @@ typedef NS_ENUM(NSInteger, AudioID) {
 /**
  *  Encrypt NSString in AES256
  *
- *  @param data NSString to be encrypted
+ *  @param string NSString to be encrypted
  *  @param key  Key to encrypt data
  *
  *  @return Returns the encrypted NSData
@@ -798,7 +798,7 @@ typedef NS_ENUM(NSInteger, AudioID) {
 /**
  *  Decrypt NSString in AES256
  *
- *  @param data NSString to be decrypted
+ *  @param string NSString to be decrypted
  *  @param key  Key to decrypt data
  *
  *  @return Returns the decrypted NSData
@@ -814,108 +814,107 @@ typedef NS_ENUM(NSInteger, AudioID) {
 
 @interface XLMethods : NSObject
 
-+ (NSDictionary*)dictionaryFromBundleWithName:(NSString*)fileName withType:(NSString*)typeName;
++ (NSDictionary* _Nullable)dictionaryFromBundleWithName:(NSString * _Nullable)fileName withType:(NSString* _Nullable)typeName;
 //字符串MD5转换
-+ (NSString *)md5HexDigest:(NSString*)input;
-+ (NSString *)fileMd5sum:(NSString * )filename; //md5转换
++ (NSString * _Nullable)md5HexDigest:(NSString* _Nullable)input;
++ (NSString *_Nullable)fileMd5sum:(NSString * _Nullable)filename; //md5转换
 
 //时间格式
-+ (NSDate *)getNowTime;
-+ (NSString *)getyyyymmdd;
-+ (NSString *)getyyyymmddHHmmss;
-+ (NSString *)get1970timeString;
-+ (NSString *)getTimeString:(NSDate *)date;
-+ (NSString *)gethhmmss;
++ (NSDate * _Nullable)getNowTime;
++ (NSString * _Nullable)getyyyymmdd;
++ (NSString * _Nullable)getyyyymmddHHmmss;
++ (NSString * _Nullable)get1970timeString;
++ (NSString * _Nullable)getTimeString:(NSDate * _Nullable)date;
++ (NSString * _Nullable)gethhmmss;
 
-+ (void)showTipsWithHUD:(NSString *)labelText;
-+ (void)showTipsWithHUD:(NSString *)labelText inView:(UIView *)inView;
-+ (void)showTipsWithView:(UIView *)uiview labelText:(NSString *)labelText showTime:(CGFloat)time;
-+ (void)showHudMessage:(NSString*)msg hideAfterDelay:(NSInteger)sec uiview:(UIView *)uiview;
++ (void)showTipsWithHUD:(NSString * _Nullable)labelText;
++ (void)showTipsWithHUD:(NSString * _Nullable)labelText inView:(UIView *_Nullable)inView;
++ (void)showTipsWithView:(UIView * _Nullable)uiview labelText:(NSString *_Nullable)labelText showTime:(CGFloat)time;
++ (void)showHudMessage:(NSString* _Nullable)msg hideAfterDelay:(NSInteger)sec uiview:(UIView *_Nullable)uiview;
 
 //+ (NetworkStatus)getCurrentNetworkStatus;
 + (void)showNotReachabileTips;
 
-+ (NSDate *)dateFromString:(NSString *)dateString usingFormat:(NSString*)format;
-+ (NSDate *)dateFromString:(NSString *)dateString;
-+ (NSString *)stringFromDate:(NSDate *)date;
-+ (NSString *)stringFromDate:(NSDate *)date usingFormat:(NSString*)format;
++ (NSDate * _Nullable)dateFromString:(NSString * _Nullable)dateString usingFormat:(NSString*_Nullable)format;
++ (NSDate * _Nullable)dateFromString:(NSString * _Nullable)dateString;
++ (NSString * _Nullable)stringFromDate:(NSDate *_Nullable)date;
++ (NSString *_Nullable)stringFromDate:(NSDate *_Nullable)date usingFormat:(NSString*_Nullable)format;
 
 //获取后台服务器主机名
 //+(NSString*)readFromUmengOlineHostname;
 
 //loadingView方法集
-+(void)addLoadingViewInView:(UIView*)viewToLoadData usingUIActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)aStyle;
-+(void)removeLoadingViewInView:(UIView*)viewToLoadData;
-+(void)addLoadingViewInView:(UIView*)viewToLoadData usingUIActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)aStyle usingColor:(UIColor*)color;
-+(void)removeLoadingViewAndLabelInView:(UIView*)viewToLoadData;
-+(void)addLoadingViewAndLabelInView:(UIView*)viewToLoadData usingOrignalYPosition:(CGFloat)yPosition;
-+(void)showProgessInView:(UIView *)view withExtBlock:(void (^)())exBlock withComBlock:(void (^)())comBlock;
-+ (UIImage *)image:(UIImage *)image rotation:(UIImageOrientation)orientation; //图片旋转
++(void)addLoadingViewInView:(UIView* _Nullable)viewToLoadData usingUIActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)aStyle;
++(void)removeLoadingViewInView:(UIView* _Nullable)viewToLoadData;
++(void)addLoadingViewInView:(UIView* _Nullable)viewToLoadData usingUIActivityIndicatorViewStyle:(UIActivityIndicatorViewStyle)aStyle usingColor:(UIColor *_Nullable)color;
++(void)removeLoadingViewAndLabelInView:(UIView*_Nullable)viewToLoadData;
++(void)addLoadingViewAndLabelInView:(UIView*_Nullable)viewToLoadData usingOrignalYPosition:(CGFloat)yPosition;
++(void)showProgessInView:(UIView * _Nullable)view withExtBlock:(void (^ _Nullable)() )exBlock withComBlock:(void (^ _Nullable)())comBlock;
++ (UIImage *_Nullable)image:(UIImage *_Nullable)image rotation:(UIImageOrientation)orientation; //图片旋转
 
 //将图片保存到应用程序沙盒中去,imageNameString的格式为 @"upLoad.png"
-+ (void)saveImagetoLocal:(UIImage*)image imageName:(NSString *)imageNameString;
-+ (NSString *)getDeviceOSType;
-
++ (void)saveImagetoLocal:(UIImage* _Nullable)image imageName:(NSString * _Nullable)imageNameString;
++ (NSString * _Nullable)getDeviceOSType;
 
 //判断字符串长度
-+ (int)convertToInt:(NSString*)strtemp;
++ (int)convertToInt:(NSString* _Nullable)strtemp;
 //end
 
-+(NSMutableArray *)decorateString:(NSString *)string;
++(NSMutableArray *_Nullable)decorateString:(NSString *_Nullable)string;
 //正则表达式部分
-+ (BOOL) validateEmail:(NSString *)email;
++ (BOOL) validateEmail:(NSString *_Nullable)email;
 //手机号码验证
-+ (BOOL) validateMobile:(NSString *)mobile;
++ (BOOL) validateMobile:(NSString *_Nullable)mobile;
 //用户名
-+ (BOOL) validateUserName:(NSString *)name;
++ (BOOL) validateUserName:(NSString *_Nullable)name;
 //密码
-+ (BOOL) validatePassword:(NSString *)passWord;
++ (BOOL) validatePassword:(NSString *_Nullable)passWord;
 //昵称
-+ (BOOL) validateNickname:(NSString *)nickname;
++ (BOOL) validateNickname:(NSString *_Nullable)nickname;
 //身份证号
-+ (BOOL) validateIdentityCard: (NSString *)identityCard;
++ (BOOL) validateIdentityCard: (NSString *_Nullable)identityCard;
 //银行卡
-+ (BOOL) validateBankCardNumber: (NSString *)bankCardNumber;
++ (BOOL) validateBankCardNumber: (NSString *_Nullable)bankCardNumber;
 //银行卡后四位
-+ (BOOL) validateBankCardLastNumber: (NSString *)bankCardNumber;
++ (BOOL) validateBankCardLastNumber: (NSString *_Nullable)bankCardNumber;
 //CVN
-+ (BOOL) validateCVNCode: (NSString *)cvnCode;
++ (BOOL) validateCVNCode: (NSString *_Nullable)cvnCode;
 //month
-+ (BOOL) validateMonth: (NSString *)month;
++ (BOOL) validateMonth: (NSString *_Nullable)month;
 //year
-+ (BOOL) validateYear: (NSString *)year;
++ (BOOL) validateYear: (NSString *_Nullable)year;
 //verifyCode
-+ (BOOL) validateVerifyCode: (NSString *)verifyCode;
++ (BOOL) validateVerifyCode: (NSString *_Nullable)verifyCode;
 //压缩图片质量
-+(UIImage *)reduceImage:(UIImage *)image percent:(float)percent;
++(UIImage * _Nullable)reduceImage:(UIImage * _Nullable)image percent:(float)percent;
 //压缩图片尺寸
-+ (UIImage*)imageWithImageSimple:(UIImage*)image scaledToSize:(CGSize)newSize;
-+ (UIColor *) colorWithHexString: (NSString *)color;
-+ (NSString *)documentsDirectoryPath;
++ (UIImage* _Nullable)imageWithImageSimple:(UIImage*_Nullable)image scaledToSize:(CGSize)newSize;
++ (UIColor * _Nullable) colorWithHexString: (NSString *_Nullable)color;
++ (NSString * _Nullable)documentsDirectoryPath;
 /**
  *  返回字符串所占用的尺寸
  *
  *  @param stringFont    字体
  *  @param stringSize 最大尺寸
  */
-+ (CGSize)getWidthByString:(NSString*)string withFont:(UIFont*)stringFont withStringSize:(CGSize)stringSize;
++ (CGSize)getWidthByString:(NSString* _Nullable)string withFont:(UIFont* _Nullable)stringFont withStringSize:(CGSize)stringSize;
 /**
  *  正则表达式验证数字
  */
-+ (BOOL)checkNum:(NSString *)str;
++ (BOOL)checkNum:(NSString *_Nullable)str;
 
 // View转化为图片
-+ (UIImage *)getImageFromView:(UIView *)view;
++ (UIImage * _Nullable)getImageFromView:(UIView *_Nullable)view;
 // imageView转化为图片
-+ (UIImage *)getImageFromImageView:(UIImageView *)imageView;
++ (UIImage * _Nullable)getImageFromImageView:(UIImageView *_Nullable)imageView;
 
 + (NSInteger)getCellMaxNum:(CGFloat)cellHeight maxHeight:(CGFloat)height;//得到tableview最大页数
 //匹配数字和英文字母
-+ (BOOL) isNumberOrEnglish:(NSString *)string;
++ (BOOL) isNumberOrEnglish:(NSString *_Nullable)string;
 //匹配数字
-+ (BOOL) isKimiNumber:(NSString *)number;
++ (BOOL) isKimiNumber:(NSString *_Nullable)number;
 //是否存在字段
-+ (BOOL)rangeString:(NSString *)string searchString:(NSString *)searchString;
++ (BOOL)rangeString:(NSString *_Nullable)string searchString:(NSString *_Nullable)searchString;
 
 @end
 
@@ -924,48 +923,48 @@ typedef NS_ENUM(NSInteger, AudioID) {
 
 @class YGPMemoryCache;
 
-typedef void(^YGPCacheDataCacheObjectBlock)(NSData *data ,NSString *key);
-typedef void(^YGPCacheImageCacheObjectBlock)(UIImage *image ,NSString *key);
+typedef void(^YGPCacheDataCacheObjectBlock)(NSData * _Nullable data ,NSString * _Nullable key);
+typedef void(^YGPCacheImageCacheObjectBlock)(UIImage * _Nullable image ,NSString * _Nullable key);
 
-typedef void(^YGPCacheObjectBlock)(id object,NSString *key);
+typedef void(^YGPCacheObjectBlock)(id _Nullable object,NSString * _Nullable key);
 
 @interface XLCache : NSObject
 
 @property (nonatomic,assign)NSTimeInterval timeoutInterval;
 
-+ (instancetype)sharedCache;
-- (instancetype)initWithCacheDirectory:(NSString*)cacheDirectory;
++ (instancetype _Nullable)sharedCache;
+- (instancetype _Nullable)initWithCacheDirectory:(NSString* _Nullable)cacheDirectory;
 
 #pragma mark save get
-- (void)setDataToDiskWithData:(NSData*)data forKey:(NSString*)key;
-- (void)setDataToMemoryWithData:(NSData*)data forKey:(NSString*)key;
+- (void)setDataToDiskWithData:(NSData* _Nullable)data forKey:(NSString* _Nullable)key;
+- (void)setDataToMemoryWithData:(NSData* _Nullable)data forKey:(NSString* _Nullable)key;
 
-- (void)dataForKey:(NSString*)key block:(YGPCacheDataCacheObjectBlock)block;
+- (void)dataForKey:(NSString* _Nullable)key block:(YGPCacheDataCacheObjectBlock _Nullable)block;
 
 
 #pragma mark Image
-- (void)setImageToDiskWithImage:(UIImage*)image forKey:(NSString*)key;
-- (void)setImageToMemoryWithImage:(UIImage*)image forKey:(NSString*)key;
+- (void)setImageToDiskWithImage:(UIImage* _Nullable)image forKey:(NSString* _Nullable)key;
+- (void)setImageToMemoryWithImage:(UIImage* _Nullable)image forKey:(NSString* _Nullable)key;
 
-- (void)imageForKey:(NSString*)key block:(YGPCacheImageCacheObjectBlock)block;
+- (void)imageForKey:(NSString* _Nullable)key block:(YGPCacheImageCacheObjectBlock _Nullable)block;
 
 #pragma mark Object
 
-- (void)setObjectToDisk:(id<NSCopying>)object forKey:(NSString*)aKey;
-- (void)setObjectToMemory:(id<NSCopying>)object forKey:(NSString*)aKey;
+- (void)setObjectToDisk:(id<NSCopying> _Nullable)object forKey:(NSString* _Nullable)aKey;
+- (void)setObjectToMemory:(id<NSCopying> _Nullable)object forKey:(NSString* _Nullable)aKey;
 
-- (void)objectForKey:(NSString*)key block:(YGPCacheObjectBlock)block;
+- (void)objectForKey:(NSString* _Nullable)key block:(YGPCacheObjectBlock _Nullable)block;
 
 #pragma mark Remove
-- (void)removeDiskCacheDataForKey:(NSString*)key;
+- (void)removeDiskCacheDataForKey:(NSString* _Nullable)key;
 - (void)removeDiskAllData;
 
-- (void)removeMemoryCacheDataForKey:(NSString*)key;
+- (void)removeMemoryCacheDataForKey:(NSString* _Nullable)key;
 - (void)removeMemoryAllData;
 
 
-- (BOOL)isDataExistOnDiskForKey:(NSString*)key;
-- (BOOL)containsMemoryObjectForKey:(NSString*)key;
+- (BOOL)isDataExistOnDiskForKey:(NSString* _Nullable)key;
+- (BOOL)containsMemoryObjectForKey:(NSString* _Nullable)key;
 
 - (float)diskCacheSize;
 - (NSUInteger)diskCacheFileCount;
@@ -975,26 +974,26 @@ typedef void(^YGPCacheObjectBlock)(id object,NSString *key);
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 
-typedef void(^YGPCacheDataCacheObjectBlock)(NSData *data ,NSString *key);
-typedef void(^YGPCacheImageCacheObjectBlock)(UIImage *image ,NSString *key);
-typedef void(^YGPCacheDataCacheImageBlock)(UIImage *image,NSString *key);
+typedef void(^YGPCacheDataCacheObjectBlock)(NSData * _Nullable data ,NSString *_Nullable key);
+typedef void(^YGPCacheImageCacheObjectBlock)(UIImage *_Nullable image ,NSString *_Nullable key);
+typedef void(^YGPCacheDataCacheImageBlock)(UIImage *_Nullable image,NSString *_Nullable key);
 
 @interface YGPCacheDisk : NSObject
 @property (nonatomic,assign)NSTimeInterval timeoutInterval;
 
-+ (instancetype)sharedDisk;
-- (instancetype)initWithCacheDirectory:(NSString*)cacheDirectory;
++ (instancetype _Nullable)sharedDisk;
+- (instancetype _Nullable)initWithCacheDirectory:(NSString*_Nullable)cacheDirectory;
 
-- (void)setData:(NSData*)data forKey:(NSString*)key;
+- (void)setData:(NSData*_Nullable)data forKey:(NSString*_Nullable)key;
 
-- (void)dataForKey:(NSString*)key
-             block:(YGPCacheDataCacheObjectBlock)block;
+- (void)dataForKey:(NSString*_Nullable)key
+             block:(YGPCacheDataCacheObjectBlock _Nullable)block;
 
-- (void)removeDataForKey:(NSString *)key;
+- (void)removeDataForKey:(NSString *_Nullable)key;
 
 - (void)removeAllData;
 
-- (BOOL)isDataExistOnDiskForKey:(NSString *)key;
+- (BOOL)isDataExistOnDiskForKey:(NSString *_Nullable)key;
 
 - (float)diskCacheSize;
 
@@ -1005,62 +1004,62 @@ typedef void(^YGPCacheDataCacheImageBlock)(UIImage *image,NSString *key);
 @interface YGPCacheMemory : NSObject
 @property (nonatomic,assign)NSUInteger memoryCacheCountLimit;
 
-+ (instancetype)sharedMemory;
++ (instancetype _Nullable)sharedMemory;
 
-- (void)setData:(NSData*)data forKey:(NSString*)key;
+- (void)setData:(NSData*_Nullable)data forKey:(NSString*_Nullable)key;
 
-- (NSData*)objectForKey:(NSString*)key;
+- (NSData* _Nullable)objectForKey:(NSString*_Nullable)key;
 
-- (void)removeDataForKey:(NSString*)key;
+- (void)removeDataForKey:(NSString*_Nullable)key;
 
 - (void)removeAllData;
 
-- (BOOL)containsDataForKey:(NSString*)key;
+- (BOOL)containsDataForKey:(NSString*_Nullable)key;
 
 @end
 
 @interface XLTools : NSObject
 
-+ (NSString *)xl_htmlShuangyinhao:(NSString *)values;
-+ (UIColor *)xl_colorWithHexString:(NSString *)stringToConvert;
-+ (NSString *)xl_nullDefultString:(NSString *)fromString null:(NSString *)nullStr;
++ (NSString *_Nullable)xl_htmlShuangyinhao:(NSString *_Nullable)values;
++ (UIColor *_Nullable)xl_colorWithHexString:(NSString *_Nullable)stringToConvert;
++ (NSString *_Nullable)xl_nullDefultString:(NSString *_Nullable)fromString null:(NSString *_Nullable)nullStr;
 
 #pragma 正则匹配邮箱号
-+ (BOOL)checkMailAccount:(NSString *)mail;
++ (BOOL)checkMailAccount:(NSString *_Nullable)mail;
 
 #pragma 正则匹配手机号
-+ (BOOL)checkPhoneNumber:(NSString *)phoneNumber;
++ (BOOL)checkPhoneNumber:(NSString *_Nullable)phoneNumber;
 
 #pragma 正则匹配用户密码6-18位数字和字母组合
-+ (BOOL)checkPassword:(NSString *)password;
++ (BOOL)checkPassword:(NSString *_Nullable)password;
 
 #pragma 正则匹配用户姓名,20位的中文或英文
-+ (BOOL)checkUserName : (NSString *)userName;
++ (BOOL)checkUserName : (NSString *_Nullable)userName;
 
 #pragma 正则匹配用户身份证号
-+ (BOOL)checkUserIDCard: (NSString *)IDCard;
++ (BOOL)checkUserIDCard: (NSString *_Nullable)IDCard;
 
 #pragma 正则匹配URL
-+ (BOOL)checkURL:(NSString *)url;
++ (BOOL)checkURL:(NSString *_Nullable)url;
 
 /*****************************************************/
 
 #pragma 正则匹员工号,12位的数字
-+ (BOOL)checkEmployeeNumber:(NSString *)number;
++ (BOOL)checkEmployeeNumber:(NSString *_Nullable)number;
 #pragma 正则匹配昵称
-+ (BOOL)checkNickname:(NSString *)nickname;
++ (BOOL)checkNickname:(NSString *_Nullable)nickname;
 #pragma 正则匹配以C开头的18位字符
-+ (BOOL) checkCtooNumberTo18:(NSString *)nickNumber;
++ (BOOL) checkCtooNumberTo18:(NSString *_Nullable)nickNumber;
 #pragma 正则匹配以C开头字符
-+ (BOOL) checkCtooNumber:(NSString *)nickNumber;
++ (BOOL) checkCtooNumber:(NSString *_Nullable)nickNumber;
 #pragma 正则匹配银行卡号是否正确
-+ (BOOL) checkBankNumber:(NSString *)bankNumber;
++ (BOOL) checkBankNumber:(NSString *_Nullable)bankNumber;
 #pragma 正则匹配17位车架号
-+ (BOOL) checkCheJiaNumber:(NSString *)cheJiaNumber;
++ (BOOL) checkCheJiaNumber:(NSString *_Nullable)cheJiaNumber;
 #pragma 正则只能输入数字和字母
-+ (BOOL) checkTeshuZifuNumber:(NSString *)cheJiaNumber;
++ (BOOL) checkTeshuZifuNumber:(NSString *_Nullable)cheJiaNumber;
 #pragma 车牌号验证
-+ (BOOL)checkCarNumber:(NSString *)carNumber;
++ (BOOL)checkCarNumber:(NSString *_Nullable)carNumber;
 
 @end
 
@@ -1070,21 +1069,21 @@ typedef void(^YGPCacheDataCacheImageBlock)(UIImage *image,NSString *key);
 @interface XLFileManager : NSObject
 
 /// 把对象归档存到沙盒里
-+(void)saveObject:(id)object byFileName:(NSString*)fileName;
++(void)saveObject:(id _Nullable)object byFileName:(NSString*_Nullable)fileName;
 /// 通过文件名从沙盒中找到归档的对象
-+(id)getObjectByFileName:(NSString*)fileName;
++(id _Nullable)getObjectByFileName:(NSString*_Nullable)fileName;
 
 /// 根据文件名删除沙盒中的 plist 文件
-+(void)removeFileByFileName:(NSString*)fileName;
++(void)removeFileByFileName:(NSString*_Nullable)fileName;
 
 /// 存储用户偏好设置 到 NSUserDefults
-+(void)saveUserData:(id)data forKey:(NSString*)key;
++(void)saveUserData:(id _Nullable)data forKey:(NSString*_Nullable)key;
 
 /// 读取用户偏好设置
-+(id)readUserDataForKey:(NSString*)key;
++(id _Nullable)readUserDataForKey:(NSString*_Nullable)key;
 
 /// 删除用户偏好设置
-+(void)removeUserDataForkey:(NSString*)key;
++(void)removeUserDataForkey:(NSString*_Nullable)key;
 
 @end
 
@@ -1092,31 +1091,31 @@ typedef void(^YGPCacheDataCacheImageBlock)(UIImage *image,NSString *key);
 
 @interface LocalPush : NSObject
 
-+ (NSDate *)fireDateWithWeek:(NSInteger)week
++ (NSDate *_Nullable)fireDateWithWeek:(NSInteger)week
                         hour:(NSInteger)hour
                       minute:(NSInteger)minute
                       second:(NSInteger)second;
 
 //本地发送推送（先取消上一个 再push现在的）
-+ (void)localPushForDate:(NSDate *)fireDate
-                  forKey:(NSString *)key
-               alertBody:(NSString *)alertBody
-             alertAction:(NSString *)alertAction
-               soundName:(NSString *)soundName
-             launchImage:(NSString *)launchImage
-                userInfo:(NSDictionary *)userInfo
++ (void)localPushForDate:(NSDate *_Nullable)fireDate
+                  forKey:(NSString *_Nullable)key
+               alertBody:(NSString *_Nullable)alertBody
+             alertAction:(NSString *_Nullable)alertAction
+               soundName:(NSString *_Nullable)soundName
+             launchImage:(NSString *_Nullable)launchImage
+                userInfo:(NSDictionary *_Nullable)userInfo
               badgeCount:(NSUInteger)badgeCount
           repeatInterval:(NSCalendarUnit)repeatInterval;
 
 #pragma mark - 退出
 + (void)cancelAllLocalPhsh;
 
-+ (void)cancleLocalPushWithKey:(NSString *)key;
++ (void)cancleLocalPushWithKey:(NSString * _Nullable)key;
 
 @end
 
 struct SolarTerm {
-    __unsafe_unretained NSString *solarName;
+    __unsafe_unretained NSString * _Nullable solarName;
     int solarDate;
 };
 
@@ -1161,7 +1160,7 @@ struct SolarTerm {
     NSMutableArray *holiday;//节日
 }
 
--(void)loadWithDate:(NSDate *)date;//加载数据
+-(void)loadWithDate:(NSDate *_Nullable)date;//加载数据
 
 -(void)InitializeValue;//添加数据
 -(int)LunarYearDays:(int)y;
@@ -1177,23 +1176,23 @@ struct SolarTerm {
 -(int)DayDifference:(int)y :(int)m :(int)d;
 -(double)Tail:(double)x;
 
--(NSString *)MonthLunar;//农历
--(NSString *)DayLunar;//农历日
--(NSString *)ZodiacLunar;//年生肖
--(NSString *)YearHeavenlyStem;//年天干
--(NSString *)MonthHeavenlyStem;//月天干
--(NSString *)DayHeavenlyStem;//日天干
--(NSString *)YearEarthlyBranch;//年地支
--(NSString *)MonthEarthlyBranch;//月地支
--(NSString *)DayEarthlyBranch;//日地支
--(NSString *)SolarTermTitle;//节气
--(NSMutableArray *)Holiday;//节日
+-(NSString *_Nullable)MonthLunar;//农历
+-(NSString *_Nullable)DayLunar;//农历日
+-(NSString *_Nullable)ZodiacLunar;//年生肖
+-(NSString *_Nullable)YearHeavenlyStem;//年天干
+-(NSString *_Nullable)MonthHeavenlyStem;//月天干
+-(NSString *_Nullable)DayHeavenlyStem;//日天干
+-(NSString *_Nullable)YearEarthlyBranch;//年地支
+-(NSString *_Nullable)MonthEarthlyBranch;//月地支
+-(NSString *_Nullable)DayEarthlyBranch;//日地支
+-(NSString *_Nullable)SolarTermTitle;//节气
+-(NSMutableArray * _Nullable)Holiday;//节日
 -(bool)IsLeap;//是不是农历闰年？？
 -(int)GregorianYear;//阳历年
 -(int)GregorianMonth;//阳历月
 -(int)GregorianDay;//阳历天
 -(int)Weekday;//一周的第几天
--(NSString *)Constellation;//星座
+-(NSString * _Nullable)Constellation;//星座
 
 @end
 
@@ -1205,7 +1204,7 @@ struct SolarTerm {
  *@Params:nil
  *@Return:NSDate对应的中国日历（农历）的LunarCalendar
  ****************************************************/
-- (XLCalendar *)chineseCalendarDate;//加载中国农历
+- (XLCalendar * _Nullable)chineseCalendarDate;//加载中国农历
 
 @end
 
@@ -1215,6 +1214,6 @@ struct SolarTerm {
 @property (nonatomic, assign) NSInteger month;
 @property (nonatomic, assign) NSInteger day;
 
-- (NSDate *)convertDate;
+- (NSDate * _Nullable)convertDate;
 
 @end

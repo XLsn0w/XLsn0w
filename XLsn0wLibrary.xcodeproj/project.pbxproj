@@ -1000,10 +1000,10 @@
 			children = (
 				350377FA1DB754FC00D09C52 /* XLsn0w.podspec */,
 				350377F91DB754FC00D09C52 /* XLsn0w.h */,
-				35037BF81DB7567C00D09C52 /* Resources */,
 				35037A451DB754FC00D09C52 /* XLsn0wLibrary */,
 				350377FB1DB754FC00D09C52 /* XLsn0wCategoryKit */,
 				350379D01DB754FC00D09C52 /* XLsn0wComponentKit */,
+				35037BF81DB7567C00D09C52 /* Resources */,
 			);
 			path = XLsn0w;
 			sourceTree = "<group>";

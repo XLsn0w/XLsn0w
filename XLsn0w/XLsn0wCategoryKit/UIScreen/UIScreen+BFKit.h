@@ -64,7 +64,7 @@
 /**
  *  Set the new device's brightness
  *
- *  @param newLightFont The new brightness
+ *  @param brightness The new brightness
  */
 + (void)setBrightness:(CGFloat)brightness;
 

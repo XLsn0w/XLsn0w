@@ -1,10 +1,3 @@
-//
-//  CXPhotoBrowser.h
-//  CXPhotoBrowserDemo
-//
-//  Created by ChrisXu on 13/4/19.
-//  Copyright (c) 2013年 ChrisXu. All rights reserved.
-//
 
 #import <UIKit/UIKit.h>
 #import "CXPhoto.h"
@@ -50,15 +43,14 @@
 @required
 
 /**
- @param photoBrower The current photobrowser to present.
+ @param photoBrowser The current photobrowser to present.
  
  @return number of photos.
  */
 - (NSUInteger)numberOfPhotosInPhotoBrowser:(CXPhotoBrowser *)photoBrowser;
 
 /**
- @param photoBrower The current photobrowser to present.
- @param index 
+ @param photoBrowser The current photobrowser to present.
  
  @return CXPhoto for showing.
  */
@@ -68,7 +60,6 @@
 /**
  *  Height for your customlize NavigationBarView.
  *
- *  @param orientation
  *
  *  @return Height
  */
@@ -77,7 +68,6 @@
 /**
  *  Height for your customlize ToolBarView.
  *
- *  @param orientation
  *
  *  @return Height
  */

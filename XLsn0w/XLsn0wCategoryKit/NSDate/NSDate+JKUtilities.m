@@ -1,13 +1,6 @@
-//
-//  NSDate+Utilities.m
-//  JKCategories (https://github.com/shaojiankui/JKCategories)
-//
-//  Created by Jakey on 14/12/30.
-//  Copyright (c) 2014年 www.skyfox.org. All rights reserved.
-//
 
 #import "NSDate+JKUtilities.h"
-#define DATE_COMPONENTS (NSYearCalendarUnit| NSMonthCalendarUnit | NSDayCalendarUnit | NSWeekCalendarUnit | NSHourCalendarUnit | NSMinuteCalendarUnit | NSSecondCalendarUnit | NSWeekdayCalendarUnit | NSWeekdayOrdinalCalendarUnit)
+#define DATE_COMPONENTS (NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfMonth | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal)
 #define CURRENT_CALENDAR [NSCalendar currentCalendar]
 @implementation NSDate (JKUtilities)
 
@@ -131,7 +124,7 @@
 #pragma mark Comparing Dates
 - (BOOL) jk_isEqualToDateIgnoringTime: (NSDate *) aDate
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:self];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:(NSCalendarUnitYear| NSCalendarUnitMonth | NSCalendarUnitDay | NSCalendarUnitWeekOfMonth | NSCalendarUnitHour | NSCalendarUnitMinute | NSCalendarUnitSecond | NSCalendarUnitWeekday | NSCalendarUnitWeekdayOrdinal) fromDate:self];
     NSDateComponents *components2 = [CURRENT_CALENDAR components:DATE_COMPONENTS fromDate:aDate];
     return ((components1.year == components2.year) &&
             (components1.month == components2.month) &&
@@ -178,8 +171,8 @@
 // Thanks, mspasov
 - (BOOL)jk_isSameMonthAsDate: (NSDate *) aDate
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSYearCalendarUnit | NSMonthCalendarUnit fromDate:aDate];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:self];
+    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear | NSCalendarUnitMonth fromDate:aDate];
     return ((components1.month == components2.month) &&
             (components1.year == components2.year));
 }
@@ -200,8 +193,8 @@
 
 - (BOOL)jk_isSameYearAsDate: (NSDate *) aDate
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:aDate];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:aDate];
     return (components1.year == components2.year);
 }
 - (BOOL) jk_isThisYear
@@ -211,14 +204,14 @@
 }
 - (BOOL) jk_isNextYear
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:[NSDate date]];
     return (components1.year == (components2.year + 1));
 }
 - (BOOL) jk_isLastYear
 {
-    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:self];
-    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSYearCalendarUnit fromDate:[NSDate date]];
+    NSDateComponents *components1 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:self];
+    NSDateComponents *components2 = [CURRENT_CALENDAR components:NSCalendarUnitYear fromDate:[NSDate date]];
     return (components1.year == (components2.year - 1));
 }
 - (BOOL) jk_isEarlierThanDate: (NSDate *) aDate

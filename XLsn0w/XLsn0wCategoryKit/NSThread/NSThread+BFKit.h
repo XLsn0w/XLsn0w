@@ -29,7 +29,7 @@
 /**
  *  Runs a block in the main thread
  *
- *  @param ^block Block to be executed
+ *  @param block Block to be executed
  */
 NS_INLINE void runOnMainThread(void  (^ _Nonnull block)(void)) {
     dispatch_async(dispatch_get_main_queue(), ^{

@@ -1338,7 +1338,7 @@ typedef NS_ENUM(NSInteger, FontName) {
 /**
  *  Set the new light font for the App
  *
- *  @param newLightFont The new font
+ *  @param lightFont The new font
  */
 + (void)setLightFont:(UIFont * _Nullable)lightFont;
 
@@ -1352,7 +1352,7 @@ typedef NS_ENUM(NSInteger, FontName) {
 /**
  *  Set the new regular font for the App
  *
- *  @param newRegularFont The new font
+ *  @param regularFont The new font
  */
 + (void)setRegularFont:(UIFont * _Nullable)regularFont;
 
@@ -1366,7 +1366,7 @@ typedef NS_ENUM(NSInteger, FontName) {
 /**
  *  Set the new bold font for the App
  *
- *  @param newBoldFont The new font
+ *  @param boldFont The new font
  */
 + (void)setBoldFont:(UIFont * _Nullable)boldFont;
 

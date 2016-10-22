@@ -32,14 +32,7 @@
  */
 -(instancetype)initPickviewWithArray:(NSArray *)array isHaveNavControler:(BOOL)isHaveNavControler;
 
-/**
- *  通过时间创建一个DatePicker
- *
- *  @param date               默认选中时间
- *  @param isHaveNavControler是否在NavControler之内
- *
- *  @return 带有toolbar的datePicker
- */
+
 -(instancetype)initDatePickWithDate:(NSDate *)defaulDate datePickerMode:(UIDatePickerMode)datePickerMode isHaveNavControler:(BOOL)isHaveNavControler;
 
 /**

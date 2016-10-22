@@ -104,7 +104,7 @@
  *  - #RRGGBB
  *  - #AARRGGBB
  *
- *  @param hex HEX string
+ *  @param hexString HEX string
  *
  *  @return Returns the UIColor instance
  */
