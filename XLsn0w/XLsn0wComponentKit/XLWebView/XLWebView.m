@@ -22,7 +22,7 @@ static XLWebView *instance = nil;
 }
 
 - (void)load {
-    self.backgroundColor = [UIColor xl_getColorWithInputHexString:@"#EFEFF4"];
+    self.backgroundColor = [UIColor xlsn0w_hexString:@"#EFEFF4"];
     if(!_isLoad){
         [self loadRequest:[self addHeaderIntoRequest:[NSURL URLWithString:_url]]];
         _isLoad = !_isLoad;

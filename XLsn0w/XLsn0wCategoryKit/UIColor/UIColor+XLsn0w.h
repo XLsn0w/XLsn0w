@@ -63,7 +63,7 @@
 + (UIColor *)xlsn0w_hexString:(NSString *)hexString;
 
 /**
- * The Method is deprecated
+ * The Method is deprecated, Use xlsn0w_hexString | 此方法已经被弃用, 请使用 xlsn0w_hexString
  */
 + (UIColor *)xl_getColorWithInputHexString:(NSString *)hexString __attribute__((deprecated("Use xlsn0w_hexString")));
 
