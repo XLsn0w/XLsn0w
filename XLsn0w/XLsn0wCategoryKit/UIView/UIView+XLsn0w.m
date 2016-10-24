@@ -284,6 +284,13 @@
 
 @implementation UIView (XLCornerRadius)
 
+- (void)xlsn0w_layerBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor cornerRadius:(CGFloat)cornerRadius {
+    self.layer.borderWidth = borderWidth;
+    self.layer.borderColor = borderColor.CGColor;
+    self.layer.cornerRadius = cornerRadius;
+    self.layer.masksToBounds = YES;
+}
+
 - (void)xlsn0w_addCornerRadius:(CGFloat)radius {
     self.layer.cornerRadius = radius;
     self.layer.masksToBounds = YES;

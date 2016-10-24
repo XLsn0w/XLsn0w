@@ -162,6 +162,11 @@ typedef NS_OPTIONS(NSUInteger, ViewSeparatorType) {
 
 @interface UIView (XLCornerRadius)
 
+/*
+ * draw layer borderWidth, borderColor, cornerRadius.
+ */
+- (void)xlsn0w_layerBorderWidth:(CGFloat)borderWidth borderColor:(UIColor *)borderColor cornerRadius:(CGFloat)cornerRadius;
+
 /**
  *  Add corner radius layer on the view
  *
