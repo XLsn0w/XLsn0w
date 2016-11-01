@@ -43,7 +43,7 @@ typedef NS_ENUM(NSInteger, DirectoryType) {
  *  Save a given array into a PLIST with the given filename
  *
  *  @param path     Path of the PLIST
- *  @param filename PLIST filename
+ *  @param fileName PLIST filename
  *  @param array    Array to save into PLIST
  *
  *  @return Returns YES if the operation was successful, otherwise NO
@@ -112,9 +112,6 @@ typedef NS_ENUM(NSInteger, DirectoryType) {
 
 /**
  *  Delete a file with the given filename
- *
- *  @param filename Filename to delete
- *  @param origin   Directory of the file
  *
  *  @return Returns YES if the operation was successful, otherwise NO
  */

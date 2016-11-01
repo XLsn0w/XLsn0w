@@ -610,6 +610,9 @@ typedef NS_ENUM(NSInteger, AudioID) {
  */
 + (BOOL)disposeSound:(SystemSoundID)soundID;
 
++ (NSDictionary * _Nullable)xl_receiveJSONDictionaryWithData:(NSData * _Nullable)data;
++ (NSData * _Nullable)xl_receiveStringDataWithString:(NSString * _Nullable)string encoding:(NSStringEncoding)encoding;
++ (NSString * _Nullable)xl_receiveJSONStringWithDictionary:(NSDictionary * _Nullable)dictionary;
 
 + (NSString * _Nullable)xl_getNSStringWithNumber:(NSNumber * _Nullable)number;
 + (NSNumber * _Nullable)xl_getNSNumberWithString:(NSString * _Nullable)string;

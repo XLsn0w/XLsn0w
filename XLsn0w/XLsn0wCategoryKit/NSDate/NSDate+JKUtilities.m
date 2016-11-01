@@ -235,7 +235,7 @@
 #pragma mark Roles
 - (BOOL) jk_isTypicallyWeekend
 {
-    NSDateComponents *components = [CURRENT_CALENDAR components:NSWeekdayCalendarUnit fromDate:self];
+    NSDateComponents *components = [CURRENT_CALENDAR components:NSCalendarUnitWeekday fromDate:self];
     if ((components.weekday == 1) ||
         (components.weekday == 7))
         return YES;
@@ -363,8 +363,8 @@
 // I have not yet thoroughly tested this
 - (NSInteger)jk_distanceInDaysToDate:(NSDate *)anotherDate
 {
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [gregorianCalendar components:NSDayCalendarUnit fromDate:self toDate:anotherDate options:0];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay fromDate:self toDate:anotherDate options:0];
     return components.day;
 }
 #pragma mark Decomposing Dates
@@ -372,7 +372,7 @@
 {
     NSTimeInterval aTimeInterval = [[NSDate date] timeIntervalSinceReferenceDate] + D_MINUTE * 30;
     NSDate *newDate = [NSDate dateWithTimeIntervalSinceReferenceDate:aTimeInterval];
-    NSDateComponents *components = [CURRENT_CALENDAR components:NSHourCalendarUnit fromDate:newDate];
+    NSDateComponents *components = [CURRENT_CALENDAR components:NSCalendarUnitHour fromDate:newDate];
     return components.hour;
 }
 - (NSInteger) jk_hour

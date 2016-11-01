@@ -1,11 +1,12 @@
 
 #import <Foundation/Foundation.h>
-#import "AFNetworking.h"
+
+@class AFNetworking;
 
 /**
  *  宏定义请求成功的block
  *
- *  @param response 请求成功返回的数据
+ *  response 请求成功返回的数据
  */
 typedef void (^ParseSuccessBlock)(NSURLSessionDataTask *task, NSDictionary *JSONDictionary, NSString *JSONString);
 

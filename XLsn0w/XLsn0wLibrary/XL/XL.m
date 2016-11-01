@@ -17,6 +17,27 @@
 
 @implementation XL
 
++ (NSData *)xl_receiveStringDataWithString:(NSString *)string encoding:(NSStringEncoding)encoding {
+    NSData *stringData = [string dataUsingEncoding:encoding];
+    return stringData;
+}
+
++ (NSDictionary *)xl_receiveJSONDictionaryWithData:(NSData *)data {
+    NSDictionary *JSONDictionary = [NSJSONSerialization JSONObjectWithData:data options:0 error:nil];
+    return JSONDictionary;
+}
+
++ (NSString *)xl_receiveJSONStringWithDictionary:(NSDictionary *)dictionary {
+    NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:dictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+    //格式化变成纯净的{JSON}
+    JSONString = [JSONString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];//去除掉首尾的空白字符和换行字符
+    JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\n" withString:@""];//去除多余的换行
+    JSONString = [JSONString stringByReplacingOccurrencesOfString:@" " withString:@""];//去除多余的空格
+    JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];//去除多余的\
+    
+    return JSONString;
+}
+
 + (PasswordStrengthLevel)checkPasswordStrength:(NSString * _Nonnull)password {
     NSInteger length = [password length];
     int lowercase = [self countLowercaseLetters:password];
@@ -3062,7 +3083,7 @@ int LunarCalendarInfo[] = {
     NSDate* date = [formater dateFromString:dateStr];
     
     
-    NSDateComponents *components = [[NSCalendar currentCalendar] components: NSWeekdayCalendarUnit | NSDayCalendarUnit | NSMonthCalendarUnit | NSYearCalendarUnit fromDate:date];
+    NSDateComponents *components = [[NSCalendar currentCalendar] components: NSCalendarUnitWeekday | NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear fromDate:date];
     int firstWeek = (int)[components weekday]-1;
     int result=0;
     aDay=aDay+1;
@@ -3137,7 +3158,7 @@ int LunarCalendarInfo[] = {
         [components setHour:hour];
         [components setMinute:minute];
         
-        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+        NSCalendar *gregorian = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
         NSDate *ldate = [gregorian dateFromComponents:components];
         
         

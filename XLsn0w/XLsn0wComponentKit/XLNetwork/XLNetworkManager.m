@@ -1,6 +1,12 @@
 
 #import "XLNetworkManager.h"
 
+#import "AFNetworking.h"
+
+@interface XLNetworkManager ()
+
+@end
+
 @implementation XLNetworkManager
 
 + (void)GET:(NSString *)url
@@ -23,6 +29,10 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+//        JSONString = [JSONString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];//去除掉首尾的空白字符和换行字符
+//        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\n" withString:@""];//去除多余的换行
+//        JSONString = [JSONString stringByReplacingOccurrencesOfString:@" " withString:@""];//去除多余的空格
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];//去除多余的\
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -56,6 +66,7 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -87,6 +98,7 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -120,6 +132,7 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -163,6 +176,7 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -203,6 +217,7 @@
         
         NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
+        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
         success(task, JSONDictionary, JSONString);
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
@@ -283,11 +298,11 @@
 }
 
 + (NSDictionary *)responseConfiguration:(id)responseObject {
-    
     NSString *string = [[NSString alloc] initWithData:responseObject encoding:NSUTF8StringEncoding];
     string = [string stringByReplacingOccurrencesOfString:@"\n" withString:@""];
     NSData *data = [string dataUsingEncoding:NSUTF8StringEncoding];
     NSDictionary *dic = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+    
     return dic;
 }
 

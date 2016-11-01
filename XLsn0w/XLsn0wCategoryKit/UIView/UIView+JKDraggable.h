@@ -1,12 +1,4 @@
-//
-//  UIView+draggable.h
-//  UIView+draggable
-//
-//  Created by Andrea on 13/03/14.
-//  Copyright (c) 2014 Fancy Pixel. All rights reserved.
-//
-//  https://github.com/andreamazz/UIView-draggable
-//  UIView category that adds dragging capabilities
+
 
 
 @import UIKit;
@@ -20,7 +12,7 @@
 
 /** The pan gestures that handles the view dragging
  *
- * @param panGesture The tint color of the blurred view. Set to nil to reset.
+ * panGesture The tint color of the blurred view. Set to nil to reset.
  */
 @property (nonatomic) UIPanGestureRecognizer *jk_panGesture;
 
