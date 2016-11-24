@@ -11,7 +11,7 @@
         self.layer.borderColor = [[UIColor blackColor] CGColor];
         self.layer.borderWidth = 1;
         [self.contentView addSubview:self.picImageV];
-        [self.contentView addSubview:self.choosePic];
+        [self.contentView addSubview:self.minusPic];
         
     }
     return self;
@@ -23,11 +23,12 @@
     }
     return _picImageV;
 }
+
 - (UIImageView *)choosePic {
-    if (!_choosePic) {
-        self.choosePic = [[UIImageView alloc] initWithFrame:CGRectMake(self.bounds.size.width - 40, self.bounds.size.height - 40, 30, 30)];
+    if (!_minusPic) {
+        _minusPic = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width-25, self.frame.size.height-25, 20, 20)];
     }
-    return _choosePic;
+    return _minusPic;
 }
 
 /////此方法为存入沙盒后在提取展示,暂时没用
@@ -117,7 +118,7 @@
 /*****************************************************/
 
 - (void)dealloc{
-    self.choosePic = nil;
+    self.minusPic = nil;
     self.picImageV = nil;
 }
 

@@ -99,9 +99,9 @@
     [cell displayCellWith:self.picArray[indexPath.row]];
     
     if ([self.dataSoure containsObject:[self.picArray objectAtIndex:indexPath.row]]) {
-    cell.choosePic.image = [UIImage imageNamed:@"photoSelected"];
+    cell.minusPic.image = [UIImage imageNamed:@"photoSelected"];
     }else {
-    cell.choosePic.image = nil;
+    cell.minusPic.image = nil;
     }
     return cell;
 

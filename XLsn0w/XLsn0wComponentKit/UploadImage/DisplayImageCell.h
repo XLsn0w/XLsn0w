@@ -16,7 +16,7 @@
 @property (nonatomic ,retain) UIImageView *picImageV;
 
 ///选中显示对号
-@property (nonatomic, retain) UIImageView *choosePic;
+@property (nonatomic, retain) UIImageView *minusPic;
 
 
 ///将照片直接展示

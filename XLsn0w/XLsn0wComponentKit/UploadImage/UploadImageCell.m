@@ -19,8 +19,8 @@
 
 - (void)creatCollectionView {
     self.collectionViewFlowLayout = [[UICollectionViewFlowLayout alloc] init];
-    self.collectionViewFlowLayout.sectionInset = UIEdgeInsetsMake(1, 10, 10, 10);
-    self.collectionViewFlowLayout.itemSize = CGSizeMake(150, 150);
+    self.collectionViewFlowLayout.sectionInset = UIEdgeInsetsMake(10, 10, 10, 10);
+    self.collectionViewFlowLayout.itemSize = CGSizeMake(100, 100);
     
     self.collectionViewFlowLayout.scrollDirection = UICollectionViewScrollDirectionHorizontal;
     self.collectionView = [[UICollectionView alloc] initWithFrame:CGRectZero collectionViewLayout:self.collectionViewFlowLayout];
@@ -28,6 +28,7 @@
     self.collectionView.backgroundColor = [UIColor whiteColor];
     self.collectionView.showsHorizontalScrollIndicator = NO;
 }
+
 - (void)layoutSubviews {
     [super layoutSubviews];
     self.collectionView.frame = self.contentView.bounds;
