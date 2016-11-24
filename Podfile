@@ -1,7 +1,7 @@
 
-target:XLsn0wLibrary do
-    
-platform :ios,'7.0'
+platform :ios, ‘8.0’
+
+target 'XLsn0wLibrary' do
     
 pod 'AFNetworking'
 pod 'FMDB'
