@@ -29,7 +29,7 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-XLsn0wLibrary.xcscheme</key>
+		<key>Pods-XLsn0w.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -47,17 +47,17 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>1F8ECF267D40B526806971FDF894268A</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>24D022D575B66DF456186A32980A9F2B</key>
+		<key>46386384D6D0A5C088C802DFDA7DE22E</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
 		<key>586F2DFA9BDCC6675C2546793A69E5CC</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>6768ED16931953D42DC77196AC5F5595</key>
 		<dict>
 			<key>primary</key>
 			<true/>
