@@ -1,11 +1,9 @@
 
-#import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface XLGuidePage : NSObject
 
-// title image Y position - from top of the screen
-// title and description labels Y position - from bottom of the screen
 @property (nonatomic, retain) UIImage *bgImage;
 @property (nonatomic, retain) UIImage *titleImage;
 @property (nonatomic, assign) CGFloat imgPositionY;
@@ -17,8 +15,6 @@
 @property (nonatomic, retain) UIFont *descFont;
 @property (nonatomic, retain) UIColor *descColor;
 @property (nonatomic, assign) CGFloat descPositionY;
-
-// if customView is set - all other properties are ignored
 @property (nonatomic, retain) UIView *customView;
 
 + (XLGuidePage *)page;

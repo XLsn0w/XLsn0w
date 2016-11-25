@@ -11,30 +11,23 @@
  *********************************************************************************************/
 
 #import "XLFlowLayout.h"
-#import "RegExCategories.h"
-#import "XLWebView.h"
+
 #import "XLRefreshGifHeader.h"
 #import "XLRefreshAutoGifFooter.h"
-#import "FSCalendar.h"
-#import "ImageArraySingleton.h"
+
 #import "UploadImageCell.h"
 #import "DisplayImageCell.h"
-#import "ChoosePicViewController.h"
-#import "NoDataView.h"
-#import "UITableView+Placeholder.h"
-#import "XLNetwork.h"
-#import "XLDB.h"
-#import "XLTextField.h"
-#import "XLPickerView.h"
-#import "XLCalendarComponent.h"
-#import "XLSegmentedControl.h"
-#import "XLGuidePageView.h"
-#import "ComboBoxView.h"
-#import "XLSegmentedSlideView.h"
-#import "XLTextView.h"
+
 #import "XLNavViewController.h"
+#import "XLGuidePageView.h"
 #import "XLsn0wTouchID.h"
+#import "XLTextField.h"
 #import "XLButton.h"
+
+#import "XLNetworkManager.h"
+#import "XLNetworkMonitor.h"
+#import "XLDataBase.h"
+#import "User.h"
 
 /*********************************************************************************************
  *   __      __   _         _________     _ _     _    _________   __         _         __   *

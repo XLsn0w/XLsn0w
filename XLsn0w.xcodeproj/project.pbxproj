@@ -248,34 +248,9 @@
 		35867F2F1DE7E35100091160 /* UIWebView+JKTS_JavaScriptContext.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DC31DE7E35100091160 /* UIWebView+JKTS_JavaScriptContext.m */; };
 		35867F301DE7E35100091160 /* UIWindow+BFKit.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DC61DE7E35100091160 /* UIWindow+BFKit.m */; };
 		35867F311DE7E35100091160 /* UIWindow+JKHierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DC81DE7E35100091160 /* UIWindow+JKHierarchy.m */; };
-		35867F321DE7E35100091160 /* RMActionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DCD1DE7E35100091160 /* RMActionController.m */; };
-		35867F331DE7E35100091160 /* RMPickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DCF1DE7E35100091160 /* RMPickerViewController.m */; };
-		35867F341DE7E35100091160 /* ComboBoxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DD21DE7E35100091160 /* ComboBoxView.m */; };
-		35867F351DE7E35100091160 /* CALayer+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DD51DE7E35100091160 /* CALayer+FSExtension.m */; };
-		35867F361DE7E35100091160 /* FSCalendar+DateTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DD61DE7E35100091160 /* FSCalendar+DateTools.m */; };
-		35867F371DE7E35100091160 /* FSCalendar+Deprecated.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DD71DE7E35100091160 /* FSCalendar+Deprecated.m */; };
-		35867F381DE7E35100091160 /* FSCalendar+IBExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DD91DE7E35100091160 /* FSCalendar+IBExtension.m */; };
-		35867F391DE7E35100091160 /* FSCalendar.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DDB1DE7E35100091160 /* FSCalendar.m */; };
-		35867F3A1DE7E35100091160 /* FSCalendarAnimator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DDD1DE7E35100091160 /* FSCalendarAnimator.m */; };
-		35867F3B1DE7E35100091160 /* FSCalendarAppearance.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DDF1DE7E35100091160 /* FSCalendarAppearance.m */; };
-		35867F3C1DE7E35100091160 /* FSCalendarCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DE11DE7E35100091160 /* FSCalendarCell.m */; };
-		35867F3D1DE7E35100091160 /* FSCalendarCollectionView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DE31DE7E35100091160 /* FSCalendarCollectionView.m */; };
-		35867F3E1DE7E35100091160 /* FSCalendarConstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DE51DE7E35100091160 /* FSCalendarConstance.m */; };
-		35867F3F1DE7E35100091160 /* FSCalendarEventIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DE81DE7E35100091160 /* FSCalendarEventIndicator.m */; };
-		35867F401DE7E35100091160 /* FSCalendarFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DEA1DE7E35100091160 /* FSCalendarFlowLayout.m */; };
-		35867F411DE7E35100091160 /* FSCalendarHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DEC1DE7E35100091160 /* FSCalendarHeader.m */; };
-		35867F421DE7E35100091160 /* FSCalendarScopeHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DEE1DE7E35100091160 /* FSCalendarScopeHandle.m */; };
-		35867F431DE7E35100091160 /* FSCalendarStickyHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DF01DE7E35100091160 /* FSCalendarStickyHeader.m */; };
-		35867F441DE7E35100091160 /* UIView+FSExtension.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DF21DE7E35100091160 /* UIView+FSExtension.m */; };
-		35867F451DE7E35100091160 /* NullSafe.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DF41DE7E35100091160 /* NullSafe.m */; };
-		35867F461DE7E35100091160 /* RegExCategories.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DF71DE7E35100091160 /* RegExCategories.m */; };
-		35867F471DE7E35100091160 /* ChoosePicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DFA1DE7E35100091160 /* ChoosePicViewController.m */; };
 		35867F481DE7E35100091160 /* DisplayImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DFC1DE7E35100091160 /* DisplayImageCell.m */; };
-		35867F491DE7E35100091160 /* ImageArraySingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867DFE1DE7E35100091160 /* ImageArraySingleton.m */; };
 		35867F4A1DE7E35100091160 /* UploadImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E001DE7E35100091160 /* UploadImageCell.m */; };
-		35867F4B1DE7E35100091160 /* JKAlertDialog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E031DE7E35100091160 /* JKAlertDialog.m */; };
 		35867F4C1DE7E35100091160 /* XLButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E061DE7E35100091160 /* XLButton.m */; };
-		35867F4D1DE7E35100091160 /* XLCalendarComponent.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E091DE7E35100091160 /* XLCalendarComponent.m */; };
 		35867F4E1DE7E35100091160 /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E0C1DE7E35100091160 /* User.m */; };
 		35867F4F1DE7E35100091160 /* XLDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E0E1DE7E35100091160 /* XLDatabase.m */; };
 		35867F501DE7E35100091160 /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E121DE7E35100091160 /* XLFlowLayout.m */; };
@@ -283,16 +258,10 @@
 		35867F521DE7E35100091160 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E181DE7E35100091160 /* XLNavViewController.m */; };
 		35867F531DE7E35100091160 /* XLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E1C1DE7E35100091160 /* XLNetworkManager.m */; };
 		35867F541DE7E35100091160 /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */; };
-		35867F551DE7E35100091160 /* NoDataView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E211DE7E35100091160 /* NoDataView.m */; };
-		35867F561DE7E35100091160 /* XLPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E241DE7E35100091160 /* XLPickerView.m */; };
 		35867F571DE7E35100091160 /* XLRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E271DE7E35100091160 /* XLRefreshAutoGifFooter.m */; };
 		35867F581DE7E35100091160 /* XLRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E291DE7E35100091160 /* XLRefreshGifHeader.m */; };
-		35867F591DE7E35100091160 /* XLSegmentedControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E2C1DE7E35100091160 /* XLSegmentedControl.m */; };
-		35867F5A1DE7E35100091160 /* XLSegmentedSlideView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E2F1DE7E35100091160 /* XLSegmentedSlideView.m */; };
 		35867F5B1DE7E35100091160 /* XLsn0wTouchID.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E331DE7E35100091160 /* XLsn0wTouchID.m */; };
 		35867F5C1DE7E35100091160 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E361DE7E35100091160 /* XLTextField.m */; };
-		35867F5D1DE7E35100091160 /* XLTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E391DE7E35100091160 /* XLTextView.m */; };
-		35867F5E1DE7E35100091160 /* XLWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E3C1DE7E35100091160 /* XLWebView.m */; };
 		35867F5F1DE7E35100091160 /* XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E401DE7E35100091160 /* XL.m */; };
 		35867F601DE7E35100091160 /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E461DE7E35100091160 /* XLsn0wLog.m */; };
 		BF6751EEED94BABF210D2CFD /* libPods-XLsn0w.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */; };
@@ -779,97 +748,35 @@
 		35867DC71DE7E35100091160 /* UIWindow+JKHierarchy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIWindow+JKHierarchy.h"; sourceTree = "<group>"; };
 		35867DC81DE7E35100091160 /* UIWindow+JKHierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+JKHierarchy.m"; sourceTree = "<group>"; };
 		35867DC91DE7E35100091160 /* XLsn0wCategoryKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wCategoryKit.h; sourceTree = "<group>"; };
-		35867DCC1DE7E35100091160 /* RMActionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMActionController.h; sourceTree = "<group>"; };
-		35867DCD1DE7E35100091160 /* RMActionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMActionController.m; sourceTree = "<group>"; };
-		35867DCE1DE7E35100091160 /* RMPickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMPickerViewController.h; sourceTree = "<group>"; };
-		35867DCF1DE7E35100091160 /* RMPickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMPickerViewController.m; sourceTree = "<group>"; };
-		35867DD11DE7E35100091160 /* ComboBoxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ComboBoxView.h; sourceTree = "<group>"; };
-		35867DD21DE7E35100091160 /* ComboBoxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ComboBoxView.m; sourceTree = "<group>"; };
-		35867DD41DE7E35100091160 /* CALayer+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CALayer+FSExtension.h"; sourceTree = "<group>"; };
-		35867DD51DE7E35100091160 /* CALayer+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CALayer+FSExtension.m"; sourceTree = "<group>"; };
-		35867DD61DE7E35100091160 /* FSCalendar+DateTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+DateTools.m"; sourceTree = "<group>"; };
-		35867DD71DE7E35100091160 /* FSCalendar+Deprecated.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+Deprecated.m"; sourceTree = "<group>"; };
-		35867DD81DE7E35100091160 /* FSCalendar+IBExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FSCalendar+IBExtension.h"; sourceTree = "<group>"; };
-		35867DD91DE7E35100091160 /* FSCalendar+IBExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "FSCalendar+IBExtension.m"; sourceTree = "<group>"; };
-		35867DDA1DE7E35100091160 /* FSCalendar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendar.h; sourceTree = "<group>"; };
-		35867DDB1DE7E35100091160 /* FSCalendar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendar.m; sourceTree = "<group>"; };
-		35867DDC1DE7E35100091160 /* FSCalendarAnimator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAnimator.h; sourceTree = "<group>"; };
-		35867DDD1DE7E35100091160 /* FSCalendarAnimator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAnimator.m; sourceTree = "<group>"; };
-		35867DDE1DE7E35100091160 /* FSCalendarAppearance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarAppearance.h; sourceTree = "<group>"; };
-		35867DDF1DE7E35100091160 /* FSCalendarAppearance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarAppearance.m; sourceTree = "<group>"; };
-		35867DE01DE7E35100091160 /* FSCalendarCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCell.h; sourceTree = "<group>"; };
-		35867DE11DE7E35100091160 /* FSCalendarCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCell.m; sourceTree = "<group>"; };
-		35867DE21DE7E35100091160 /* FSCalendarCollectionView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarCollectionView.h; sourceTree = "<group>"; };
-		35867DE31DE7E35100091160 /* FSCalendarCollectionView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarCollectionView.m; sourceTree = "<group>"; };
-		35867DE41DE7E35100091160 /* FSCalendarConstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarConstance.h; sourceTree = "<group>"; };
-		35867DE51DE7E35100091160 /* FSCalendarConstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarConstance.m; sourceTree = "<group>"; };
-		35867DE61DE7E35100091160 /* FSCalendarDynamicHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarDynamicHeader.h; sourceTree = "<group>"; };
-		35867DE71DE7E35100091160 /* FSCalendarEventIndicator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarEventIndicator.h; sourceTree = "<group>"; };
-		35867DE81DE7E35100091160 /* FSCalendarEventIndicator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarEventIndicator.m; sourceTree = "<group>"; };
-		35867DE91DE7E35100091160 /* FSCalendarFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarFlowLayout.h; sourceTree = "<group>"; };
-		35867DEA1DE7E35100091160 /* FSCalendarFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarFlowLayout.m; sourceTree = "<group>"; };
-		35867DEB1DE7E35100091160 /* FSCalendarHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarHeader.h; sourceTree = "<group>"; };
-		35867DEC1DE7E35100091160 /* FSCalendarHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarHeader.m; sourceTree = "<group>"; };
-		35867DED1DE7E35100091160 /* FSCalendarScopeHandle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarScopeHandle.h; sourceTree = "<group>"; };
-		35867DEE1DE7E35100091160 /* FSCalendarScopeHandle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarScopeHandle.m; sourceTree = "<group>"; };
-		35867DEF1DE7E35100091160 /* FSCalendarStickyHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSCalendarStickyHeader.h; sourceTree = "<group>"; };
-		35867DF01DE7E35100091160 /* FSCalendarStickyHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSCalendarStickyHeader.m; sourceTree = "<group>"; };
-		35867DF11DE7E35100091160 /* UIView+FSExtension.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+FSExtension.h"; sourceTree = "<group>"; };
-		35867DF21DE7E35100091160 /* UIView+FSExtension.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+FSExtension.m"; sourceTree = "<group>"; };
-		35867DF41DE7E35100091160 /* NullSafe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NullSafe.m; sourceTree = "<group>"; };
-		35867DF61DE7E35100091160 /* RegExCategories.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RegExCategories.h; sourceTree = "<group>"; };
-		35867DF71DE7E35100091160 /* RegExCategories.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RegExCategories.m; sourceTree = "<group>"; };
-		35867DF91DE7E35100091160 /* ChoosePicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChoosePicViewController.h; sourceTree = "<group>"; };
-		35867DFA1DE7E35100091160 /* ChoosePicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChoosePicViewController.m; sourceTree = "<group>"; };
 		35867DFB1DE7E35100091160 /* DisplayImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DisplayImageCell.h; sourceTree = "<group>"; };
 		35867DFC1DE7E35100091160 /* DisplayImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DisplayImageCell.m; sourceTree = "<group>"; };
-		35867DFD1DE7E35100091160 /* ImageArraySingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageArraySingleton.h; sourceTree = "<group>"; };
-		35867DFE1DE7E35100091160 /* ImageArraySingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageArraySingleton.m; sourceTree = "<group>"; };
 		35867DFF1DE7E35100091160 /* UploadImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageCell.h; sourceTree = "<group>"; };
 		35867E001DE7E35100091160 /* UploadImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageCell.m; sourceTree = "<group>"; };
-		35867E021DE7E35100091160 /* JKAlertDialog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JKAlertDialog.h; sourceTree = "<group>"; };
-		35867E031DE7E35100091160 /* JKAlertDialog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JKAlertDialog.m; sourceTree = "<group>"; };
 		35867E051DE7E35100091160 /* XLButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLButton.h; sourceTree = "<group>"; };
 		35867E061DE7E35100091160 /* XLButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLButton.m; sourceTree = "<group>"; };
-		35867E081DE7E35100091160 /* XLCalendarComponent.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLCalendarComponent.h; sourceTree = "<group>"; };
-		35867E091DE7E35100091160 /* XLCalendarComponent.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLCalendarComponent.m; sourceTree = "<group>"; };
 		35867E0B1DE7E35100091160 /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
 		35867E0C1DE7E35100091160 /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 		35867E0D1DE7E35100091160 /* XLDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDatabase.h; sourceTree = "<group>"; };
 		35867E0E1DE7E35100091160 /* XLDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLDatabase.m; sourceTree = "<group>"; };
-		35867E0F1DE7E35100091160 /* XLDB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLDB.h; sourceTree = "<group>"; };
 		35867E111DE7E35100091160 /* XLFlowLayout.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLFlowLayout.h; sourceTree = "<group>"; };
 		35867E121DE7E35100091160 /* XLFlowLayout.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLFlowLayout.m; sourceTree = "<group>"; };
 		35867E141DE7E35100091160 /* XLGuidePageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLGuidePageView.h; sourceTree = "<group>"; };
 		35867E151DE7E35100091160 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35867E171DE7E35100091160 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
 		35867E181DE7E35100091160 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
-		35867E1A1DE7E35100091160 /* XLNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetwork.h; sourceTree = "<group>"; };
 		35867E1B1DE7E35100091160 /* XLNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkManager.h; sourceTree = "<group>"; };
 		35867E1C1DE7E35100091160 /* XLNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkManager.m; sourceTree = "<group>"; };
 		35867E1D1DE7E35100091160 /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
-		35867E201DE7E35100091160 /* NoDataView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NoDataView.h; sourceTree = "<group>"; };
-		35867E211DE7E35100091160 /* NoDataView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NoDataView.m; sourceTree = "<group>"; };
-		35867E231DE7E35100091160 /* XLPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLPickerView.h; sourceTree = "<group>"; };
-		35867E241DE7E35100091160 /* XLPickerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLPickerView.m; sourceTree = "<group>"; };
 		35867E261DE7E35100091160 /* XLRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshAutoGifFooter.h; sourceTree = "<group>"; };
 		35867E271DE7E35100091160 /* XLRefreshAutoGifFooter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshAutoGifFooter.m; sourceTree = "<group>"; };
 		35867E281DE7E35100091160 /* XLRefreshGifHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshGifHeader.h; sourceTree = "<group>"; };
 		35867E291DE7E35100091160 /* XLRefreshGifHeader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLRefreshGifHeader.m; sourceTree = "<group>"; };
-		35867E2B1DE7E35100091160 /* XLSegmentedControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedControl.h; sourceTree = "<group>"; };
-		35867E2C1DE7E35100091160 /* XLSegmentedControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedControl.m; sourceTree = "<group>"; };
-		35867E2E1DE7E35100091160 /* XLSegmentedSlideView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLSegmentedSlideView.h; sourceTree = "<group>"; };
-		35867E2F1DE7E35100091160 /* XLSegmentedSlideView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLSegmentedSlideView.m; sourceTree = "<group>"; };
 		35867E301DE7E35100091160 /* XLsn0wComponentKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wComponentKit.h; sourceTree = "<group>"; };
 		35867E321DE7E35100091160 /* XLsn0wTouchID.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wTouchID.h; sourceTree = "<group>"; };
 		35867E331DE7E35100091160 /* XLsn0wTouchID.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTouchID.m; sourceTree = "<group>"; };
 		35867E351DE7E35100091160 /* XLTextField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextField.h; sourceTree = "<group>"; };
 		35867E361DE7E35100091160 /* XLTextField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextField.m; sourceTree = "<group>"; };
-		35867E381DE7E35100091160 /* XLTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLTextView.h; sourceTree = "<group>"; };
-		35867E391DE7E35100091160 /* XLTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLTextView.m; sourceTree = "<group>"; };
-		35867E3B1DE7E35100091160 /* XLWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLWebView.h; sourceTree = "<group>"; };
-		35867E3C1DE7E35100091160 /* XLWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLWebView.m; sourceTree = "<group>"; };
 		35867E3F1DE7E35100091160 /* XL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XL.h; sourceTree = "<group>"; };
 		35867E401DE7E35100091160 /* XL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XL.m; sourceTree = "<group>"; };
 		35867E421DE7E35100091160 /* XLMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLMacro.h; sourceTree = "<group>"; };
@@ -960,6 +867,7 @@
 		35867BB41DE7E35000091160 /* XLsn0wCategoryKit */ = {
 			isa = PBXGroup;
 			children = (
+				35867DC91DE7E35100091160 /* XLsn0wCategoryKit.h */,
 				35867BB51DE7E35000091160 /* CAAnimation */,
 				35867BB81DE7E35000091160 /* CALayer */,
 				35867BBB1DE7E35000091160 /* CAMediaTimingFunction */,
@@ -1026,7 +934,6 @@
 				35867DA21DE7E35100091160 /* UIViewController */,
 				35867DB11DE7E35100091160 /* UIWebView */,
 				35867DC41DE7E35100091160 /* UIWindow */,
-				35867DC91DE7E35100091160 /* XLsn0wCategoryKit.h */,
 			);
 			path = XLsn0wCategoryKit;
 			sourceTree = "<group>";
@@ -1962,131 +1869,30 @@
 		35867DCA1DE7E35100091160 /* XLsn0wComponentKit */ = {
 			isa = PBXGroup;
 			children = (
-				35867DCB1DE7E35100091160 /* ActionController */,
-				35867DD01DE7E35100091160 /* ComboBoxView */,
-				35867DD31DE7E35100091160 /* FSCalendar */,
-				35867DF31DE7E35100091160 /* NullSafe */,
-				35867DF51DE7E35100091160 /* RegExCategories */,
+				35867E301DE7E35100091160 /* XLsn0wComponentKit.h */,
+				35867E161DE7E35100091160 /* XLNavViewController */,
+				35867E131DE7E35100091160 /* XLGuidePageView */,
 				35867DF81DE7E35100091160 /* UploadImage */,
-				35867E011DE7E35100091160 /* XLAlertView */,
 				35867E041DE7E35100091160 /* XLButton */,
-				35867E071DE7E35100091160 /* XLCalendarComponent */,
 				35867E0A1DE7E35100091160 /* XLDataBase */,
 				35867E101DE7E35100091160 /* XLFlowLayout */,
-				35867E131DE7E35100091160 /* XLGuidePageView */,
-				35867E161DE7E35100091160 /* XLNavViewController */,
 				35867E191DE7E35100091160 /* XLNetwork */,
-				35867E1F1DE7E35100091160 /* XLNoDataView */,
-				35867E221DE7E35100091160 /* XLPickerView */,
 				35867E251DE7E35100091160 /* XLRefresh */,
-				35867E2A1DE7E35100091160 /* XLSegmentedControl */,
-				35867E2D1DE7E35100091160 /* XLSegmentedSlideView */,
-				35867E301DE7E35100091160 /* XLsn0wComponentKit.h */,
 				35867E311DE7E35100091160 /* XLsn0wTouchID */,
 				35867E341DE7E35100091160 /* XLTextField */,
-				35867E371DE7E35100091160 /* XLTextView */,
-				35867E3A1DE7E35100091160 /* XLWebView */,
 			);
 			path = XLsn0wComponentKit;
-			sourceTree = "<group>";
-		};
-		35867DCB1DE7E35100091160 /* ActionController */ = {
-			isa = PBXGroup;
-			children = (
-				35867DCC1DE7E35100091160 /* RMActionController.h */,
-				35867DCD1DE7E35100091160 /* RMActionController.m */,
-				35867DCE1DE7E35100091160 /* RMPickerViewController.h */,
-				35867DCF1DE7E35100091160 /* RMPickerViewController.m */,
-			);
-			path = ActionController;
-			sourceTree = "<group>";
-		};
-		35867DD01DE7E35100091160 /* ComboBoxView */ = {
-			isa = PBXGroup;
-			children = (
-				35867DD11DE7E35100091160 /* ComboBoxView.h */,
-				35867DD21DE7E35100091160 /* ComboBoxView.m */,
-			);
-			path = ComboBoxView;
-			sourceTree = "<group>";
-		};
-		35867DD31DE7E35100091160 /* FSCalendar */ = {
-			isa = PBXGroup;
-			children = (
-				35867DD41DE7E35100091160 /* CALayer+FSExtension.h */,
-				35867DD51DE7E35100091160 /* CALayer+FSExtension.m */,
-				35867DD61DE7E35100091160 /* FSCalendar+DateTools.m */,
-				35867DD71DE7E35100091160 /* FSCalendar+Deprecated.m */,
-				35867DD81DE7E35100091160 /* FSCalendar+IBExtension.h */,
-				35867DD91DE7E35100091160 /* FSCalendar+IBExtension.m */,
-				35867DDA1DE7E35100091160 /* FSCalendar.h */,
-				35867DDB1DE7E35100091160 /* FSCalendar.m */,
-				35867DDC1DE7E35100091160 /* FSCalendarAnimator.h */,
-				35867DDD1DE7E35100091160 /* FSCalendarAnimator.m */,
-				35867DDE1DE7E35100091160 /* FSCalendarAppearance.h */,
-				35867DDF1DE7E35100091160 /* FSCalendarAppearance.m */,
-				35867DE01DE7E35100091160 /* FSCalendarCell.h */,
-				35867DE11DE7E35100091160 /* FSCalendarCell.m */,
-				35867DE21DE7E35100091160 /* FSCalendarCollectionView.h */,
-				35867DE31DE7E35100091160 /* FSCalendarCollectionView.m */,
-				35867DE41DE7E35100091160 /* FSCalendarConstance.h */,
-				35867DE51DE7E35100091160 /* FSCalendarConstance.m */,
-				35867DE61DE7E35100091160 /* FSCalendarDynamicHeader.h */,
-				35867DE71DE7E35100091160 /* FSCalendarEventIndicator.h */,
-				35867DE81DE7E35100091160 /* FSCalendarEventIndicator.m */,
-				35867DE91DE7E35100091160 /* FSCalendarFlowLayout.h */,
-				35867DEA1DE7E35100091160 /* FSCalendarFlowLayout.m */,
-				35867DEB1DE7E35100091160 /* FSCalendarHeader.h */,
-				35867DEC1DE7E35100091160 /* FSCalendarHeader.m */,
-				35867DED1DE7E35100091160 /* FSCalendarScopeHandle.h */,
-				35867DEE1DE7E35100091160 /* FSCalendarScopeHandle.m */,
-				35867DEF1DE7E35100091160 /* FSCalendarStickyHeader.h */,
-				35867DF01DE7E35100091160 /* FSCalendarStickyHeader.m */,
-				35867DF11DE7E35100091160 /* UIView+FSExtension.h */,
-				35867DF21DE7E35100091160 /* UIView+FSExtension.m */,
-			);
-			path = FSCalendar;
-			sourceTree = "<group>";
-		};
-		35867DF31DE7E35100091160 /* NullSafe */ = {
-			isa = PBXGroup;
-			children = (
-				35867DF41DE7E35100091160 /* NullSafe.m */,
-			);
-			path = NullSafe;
-			sourceTree = "<group>";
-		};
-		35867DF51DE7E35100091160 /* RegExCategories */ = {
-			isa = PBXGroup;
-			children = (
-				35867DF61DE7E35100091160 /* RegExCategories.h */,
-				35867DF71DE7E35100091160 /* RegExCategories.m */,
-			);
-			path = RegExCategories;
 			sourceTree = "<group>";
 		};
 		35867DF81DE7E35100091160 /* UploadImage */ = {
 			isa = PBXGroup;
 			children = (
-				35867DF91DE7E35100091160 /* ChoosePicViewController.h */,
-				35867DFA1DE7E35100091160 /* ChoosePicViewController.m */,
-				35867DFB1DE7E35100091160 /* DisplayImageCell.h */,
-				35867DFC1DE7E35100091160 /* DisplayImageCell.m */,
-				35867DFD1DE7E35100091160 /* ImageArraySingleton.h */,
-				35867DFE1DE7E35100091160 /* ImageArraySingleton.m */,
 				35867DFF1DE7E35100091160 /* UploadImageCell.h */,
 				35867E001DE7E35100091160 /* UploadImageCell.m */,
+				35867DFB1DE7E35100091160 /* DisplayImageCell.h */,
+				35867DFC1DE7E35100091160 /* DisplayImageCell.m */,
 			);
 			path = UploadImage;
-			sourceTree = "<group>";
-		};
-		35867E011DE7E35100091160 /* XLAlertView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E021DE7E35100091160 /* JKAlertDialog.h */,
-				35867E031DE7E35100091160 /* JKAlertDialog.m */,
-			);
-			path = XLAlertView;
 			sourceTree = "<group>";
 		};
 		35867E041DE7E35100091160 /* XLButton */ = {
@@ -2098,15 +1904,6 @@
 			path = XLButton;
 			sourceTree = "<group>";
 		};
-		35867E071DE7E35100091160 /* XLCalendarComponent */ = {
-			isa = PBXGroup;
-			children = (
-				35867E081DE7E35100091160 /* XLCalendarComponent.h */,
-				35867E091DE7E35100091160 /* XLCalendarComponent.m */,
-			);
-			path = XLCalendarComponent;
-			sourceTree = "<group>";
-		};
 		35867E0A1DE7E35100091160 /* XLDataBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -2114,7 +1911,6 @@
 				35867E0C1DE7E35100091160 /* User.m */,
 				35867E0D1DE7E35100091160 /* XLDatabase.h */,
 				35867E0E1DE7E35100091160 /* XLDatabase.m */,
-				35867E0F1DE7E35100091160 /* XLDB.h */,
 			);
 			path = XLDataBase;
 			sourceTree = "<group>";
@@ -2149,31 +1945,12 @@
 		35867E191DE7E35100091160 /* XLNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				35867E1A1DE7E35100091160 /* XLNetwork.h */,
 				35867E1B1DE7E35100091160 /* XLNetworkManager.h */,
 				35867E1C1DE7E35100091160 /* XLNetworkManager.m */,
 				35867E1D1DE7E35100091160 /* XLNetworkMonitor.h */,
 				35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */,
 			);
 			path = XLNetwork;
-			sourceTree = "<group>";
-		};
-		35867E1F1DE7E35100091160 /* XLNoDataView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E201DE7E35100091160 /* NoDataView.h */,
-				35867E211DE7E35100091160 /* NoDataView.m */,
-			);
-			path = XLNoDataView;
-			sourceTree = "<group>";
-		};
-		35867E221DE7E35100091160 /* XLPickerView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E231DE7E35100091160 /* XLPickerView.h */,
-				35867E241DE7E35100091160 /* XLPickerView.m */,
-			);
-			path = XLPickerView;
 			sourceTree = "<group>";
 		};
 		35867E251DE7E35100091160 /* XLRefresh */ = {
@@ -2185,24 +1962,6 @@
 				35867E291DE7E35100091160 /* XLRefreshGifHeader.m */,
 			);
 			path = XLRefresh;
-			sourceTree = "<group>";
-		};
-		35867E2A1DE7E35100091160 /* XLSegmentedControl */ = {
-			isa = PBXGroup;
-			children = (
-				35867E2B1DE7E35100091160 /* XLSegmentedControl.h */,
-				35867E2C1DE7E35100091160 /* XLSegmentedControl.m */,
-			);
-			path = XLSegmentedControl;
-			sourceTree = "<group>";
-		};
-		35867E2D1DE7E35100091160 /* XLSegmentedSlideView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E2E1DE7E35100091160 /* XLSegmentedSlideView.h */,
-				35867E2F1DE7E35100091160 /* XLSegmentedSlideView.m */,
-			);
-			path = XLSegmentedSlideView;
 			sourceTree = "<group>";
 		};
 		35867E311DE7E35100091160 /* XLsn0wTouchID */ = {
@@ -2221,24 +1980,6 @@
 				35867E361DE7E35100091160 /* XLTextField.m */,
 			);
 			path = XLTextField;
-			sourceTree = "<group>";
-		};
-		35867E371DE7E35100091160 /* XLTextView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E381DE7E35100091160 /* XLTextView.h */,
-				35867E391DE7E35100091160 /* XLTextView.m */,
-			);
-			path = XLTextView;
-			sourceTree = "<group>";
-		};
-		35867E3A1DE7E35100091160 /* XLWebView */ = {
-			isa = PBXGroup;
-			children = (
-				35867E3B1DE7E35100091160 /* XLWebView.h */,
-				35867E3C1DE7E35100091160 /* XLWebView.m */,
-			);
-			path = XLWebView;
 			sourceTree = "<group>";
 		};
 		35867E3D1DE7E35100091160 /* XLsn0wLibrary */ = {
@@ -2420,7 +2161,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				35867F591DE7E35100091160 /* XLSegmentedControl.m in Sources */,
 				35867EB81DE7E35100091160 /* UIBezierPath+JKSymbol.m in Sources */,
 				35867E6E1DE7E35100091160 /* NSDictionary+JKSafeAccess.m in Sources */,
 				35867E801DE7E35100091160 /* NSNumber+JKRomanNumerals.m in Sources */,
@@ -2442,12 +2182,8 @@
 				35867E841DE7E35100091160 /* NSObject+JKAppInfo.m in Sources */,
 				35867EB01DE7E35100091160 /* UIApplication+JKKeyboardFrame.m in Sources */,
 				35867F1F1DE7E35100091160 /* UIView+XLsn0w.m in Sources */,
-				35867F401DE7E35100091160 /* FSCalendarFlowLayout.m in Sources */,
 				35867EF61DE7E35100091160 /* UINavigationController+JKStackManager.m in Sources */,
-				35867F441DE7E35100091160 /* UIView+FSExtension.m in Sources */,
-				35867F3E1DE7E35100091160 /* FSCalendarConstance.m in Sources */,
 				35867F581DE7E35100091160 /* XLRefreshGifHeader.m in Sources */,
-				35867F551DE7E35100091160 /* NoDataView.m in Sources */,
 				35867EA31DE7E35100091160 /* NSString+JKXMLDictionary.m in Sources */,
 				35867EEF1DE7E35100091160 /* UILabel+JKSuggestSize.m in Sources */,
 				35867ED71DE7E35100091160 /* UIImage+JKBlur.m in Sources */,
@@ -2456,13 +2192,11 @@
 				35867F5F1DE7E35100091160 /* XL.m in Sources */,
 				35867F4E1DE7E35100091160 /* User.m in Sources */,
 				35867ED11DE7E35100091160 /* UIFont+JKDynamicFontControl.m in Sources */,
-				35867F4B1DE7E35100091160 /* JKAlertDialog.m in Sources */,
 				35867EB21DE7E35100091160 /* UIApplication+JKPermissions.m in Sources */,
 				35867F1E1DE7E35100091160 /* UIView+JKVisuals.m in Sources */,
 				35867EF01DE7E35100091160 /* UILabel+MultipleLines.m in Sources */,
 				35867F141DE7E35100091160 /* UIView+JKConstraints.m in Sources */,
 				35867E8B1DE7E35100091160 /* NSObject+JKKVOBlocks.m in Sources */,
-				35867F361DE7E35100091160 /* FSCalendar+DateTools.m in Sources */,
 				35867EA11DE7E35100091160 /* NSString+JKURLEncode.m in Sources */,
 				35867F221DE7E35100091160 /* UIViewController+JKBlockSegue.m in Sources */,
 				35867EF21DE7E35100091160 /* UINavigationBar+BFKit.m in Sources */,
@@ -2472,17 +2206,13 @@
 				35867F0C1DE7E35100091160 /* UITextView+BFKit.m in Sources */,
 				35867E7A1DE7E35100091160 /* NSMutableArray+XLsn0w.m in Sources */,
 				35867EE31DE7E35100091160 /* UIImage+JKVector.m in Sources */,
-				35867F341DE7E35100091160 /* ComboBoxView.m in Sources */,
 				35867EB41DE7E35100091160 /* UIBarButtonItem+JKAction.m in Sources */,
 				35867E771DE7E35100091160 /* NSIndexPath+JKOffset.m in Sources */,
 				35867E5D1DE7E35100091160 /* NSData+JKHash.m in Sources */,
 				35867F191DE7E35100091160 /* UIView+JKNib.m in Sources */,
-				35867F3A1DE7E35100091160 /* FSCalendarAnimator.m in Sources */,
 				35867F2F1DE7E35100091160 /* UIWebView+JKTS_JavaScriptContext.m in Sources */,
 				35867EA91DE7E35100091160 /* NSURL+JKQueryDictionary.m in Sources */,
 				35867EFD1DE7E35100091160 /* UIResponder+JKFirstResponder.m in Sources */,
-				35867F5A1DE7E35100091160 /* XLSegmentedSlideView.m in Sources */,
-				35867F351DE7E35100091160 /* CALayer+FSExtension.m in Sources */,
 				35867EE91DE7E35100091160 /* UIImageView+JKLetters.m in Sources */,
 				35867F201DE7E35100091160 /* UIViewController+JKBackButtonItemTitle.m in Sources */,
 				35867F101DE7E35100091160 /* UIToolbar+BFKit.m in Sources */,
@@ -2493,7 +2223,6 @@
 				35867ED81DE7E35100091160 /* UIImage+JKCapture.m in Sources */,
 				35867F1C1DE7E35100091160 /* UIView+JKShake.m in Sources */,
 				35867EE41DE7E35100091160 /* UIImage+XLsn0w.m in Sources */,
-				35867F3C1DE7E35100091160 /* FSCalendarCell.m in Sources */,
 				35867F161DE7E35100091160 /* UIView+JKDraggable.m in Sources */,
 				35867ECB1DE7E35100091160 /* UIColor+XLsn0w.m in Sources */,
 				35867EAF1DE7E35100091160 /* UIApplication+JKApplicationSize.m in Sources */,
@@ -2501,7 +2230,6 @@
 				35867EFF1DE7E35100091160 /* UIScreen+JKFrame.m in Sources */,
 				35867ED41DE7E35100091160 /* UIImage+JKAlpha.m in Sources */,
 				35867E831DE7E35100091160 /* NSObject+JKAddProperty.m in Sources */,
-				35867F3D1DE7E35100091160 /* FSCalendarCollectionView.m in Sources */,
 				35867E9E1DE7E35100091160 /* NSString+JKScore.m in Sources */,
 				35867EE01DE7E35100091160 /* UIImage+JKResize.m in Sources */,
 				35867BA01DE7E2F800091160 /* ViewController.m in Sources */,
@@ -2513,7 +2241,6 @@
 				35867E4C1DE7E35100091160 /* CAShapeLayer+JKUIBezierPath.m in Sources */,
 				35867EBB1DE7E35100091160 /* UIButton+JKBackgroundColor.m in Sources */,
 				35867F021DE7E35100091160 /* UIScrollView+JKPages.m in Sources */,
-				35867F461DE7E35100091160 /* RegExCategories.m in Sources */,
 				35867E811DE7E35100091160 /* NSNumber+JKRound.m in Sources */,
 				35867EF31DE7E35100091160 /* UINavigationBar+JKAwesome.m in Sources */,
 				35867E881DE7E35100091160 /* NSObject+JKBlockTimer.m in Sources */,
@@ -2525,8 +2252,6 @@
 				35867F231DE7E35100091160 /* UIViewController+JKRecursiveDescription.m in Sources */,
 				35867EBF1DE7E35100091160 /* UIButton+JKIndicator.m in Sources */,
 				35867E891DE7E35100091160 /* NSObject+JKEasyCopy.m in Sources */,
-				35867F561DE7E35100091160 /* XLPickerView.m in Sources */,
-				35867F3B1DE7E35100091160 /* FSCalendarAppearance.m in Sources */,
 				35867EF51DE7E35100091160 /* UINavigationController+JKKeyboardFix.m in Sources */,
 				35867EBC1DE7E35100091160 /* UIButton+JKBlock.m in Sources */,
 				35867E661DE7E35100091160 /* NSDate+XL.m in Sources */,
@@ -2556,7 +2281,6 @@
 				35867F071DE7E35100091160 /* UITableView+Placeholder.m in Sources */,
 				35867EC91DE7E35100091160 /* UIColor+JKRandom.m in Sources */,
 				35867EE61DE7E35100091160 /* UIImageView+JKAddition.m in Sources */,
-				35867F391DE7E35100091160 /* FSCalendar.m in Sources */,
 				35867E521DE7E35100091160 /* NSArray+BFKit.m in Sources */,
 				35867ED91DE7E35100091160 /* UIImage+JKColor.m in Sources */,
 				35867EFA1DE7E35100091160 /* UINavigationItem+JKMargin.m in Sources */,
@@ -2576,13 +2300,11 @@
 				35867EA01DE7E35100091160 /* NSString+JKTrims.m in Sources */,
 				35867EFE1DE7E35100091160 /* UIScreen+BFKit.m in Sources */,
 				35867E8A1DE7E35100091160 /* NSObject+JKGCD.m in Sources */,
-				35867F471DE7E35100091160 /* ChoosePicViewController.m in Sources */,
 				35867E931DE7E35100091160 /* NSString+JKBase64.m in Sources */,
 				35867E741DE7E35100091160 /* NSFileManager+BFKit.m in Sources */,
 				35867E701DE7E35100091160 /* NSDictionary+JKXML.m in Sources */,
 				35867E981DE7E35100091160 /* NSString+JKHash.m in Sources */,
 				35867F311DE7E35100091160 /* UIWindow+JKHierarchy.m in Sources */,
-				35867F411DE7E35100091160 /* FSCalendarHeader.m in Sources */,
 				35867F601DE7E35100091160 /* XLsn0wLog.m in Sources */,
 				35867EA71DE7E35100091160 /* NSTimer+JKBlocks.m in Sources */,
 				35867EFB1DE7E35100091160 /* UIPopoverController+iPhone.m in Sources */,
@@ -2597,26 +2319,22 @@
 				35867EBD1DE7E35100091160 /* UIButton+JKCountDown.m in Sources */,
 				35867F1B1DE7E35100091160 /* UIView+JKScreenshot.m in Sources */,
 				35867E641DE7E35100091160 /* NSDate+JKReporting.m in Sources */,
-				35867F421DE7E35100091160 /* FSCalendarScopeHandle.m in Sources */,
 				35867EDB1DE7E35100091160 /* UIImage+JKFXImage.m in Sources */,
 				35867F051DE7E35100091160 /* UITabBarController+XLsn0w.m in Sources */,
 				35867E511DE7E35100091160 /* MKMapView+JKZoomLevel.m in Sources */,
 				35867F211DE7E35100091160 /* UIViewController+JKBackButtonTouched.m in Sources */,
 				35867F0F1DE7E35100091160 /* UITextView+JKSelect.m in Sources */,
 				35867F281DE7E35100091160 /* UIWebView+JKBlocks.m in Sources */,
-				35867F431DE7E35100091160 /* FSCalendarStickyHeader.m in Sources */,
 				35867EAC1DE7E35100091160 /* NSUserDefaults+JKiCloudSync.m in Sources */,
 				35867F111DE7E35100091160 /* UIView+BFKit.m in Sources */,
 				35867E821DE7E35100091160 /* NSObject+BFKit.m in Sources */,
 				35867E7C1DE7E35100091160 /* NSMutableURLRequest+JKUpload.m in Sources */,
 				35867E5A1DE7E35100091160 /* NSData+JKDataCache.m in Sources */,
 				35867E571DE7E35100091160 /* NSData+BFKit.m in Sources */,
-				35867F321DE7E35100091160 /* RMActionController.m in Sources */,
 				35867F121DE7E35100091160 /* UIView+JKAnimation.m in Sources */,
 				35867E5F1DE7E35100091160 /* NSData+JKzlib.m in Sources */,
 				35867E551DE7E35100091160 /* NSArray+XL.m in Sources */,
 				35867E6C1DE7E35100091160 /* NSDictionary+JKJSONString.m in Sources */,
-				35867F491DE7E35100091160 /* ImageArraySingleton.m in Sources */,
 				35867F241DE7E35100091160 /* UIViewController+JKStoreKit.m in Sources */,
 				35867F481DE7E35100091160 /* DisplayImageCell.m in Sources */,
 				35867E6F1DE7E35100091160 /* NSDictionary+JKURL.m in Sources */,
@@ -2627,12 +2345,10 @@
 				35867F531DE7E35100091160 /* XLNetworkManager.m in Sources */,
 				35867E541DE7E35100091160 /* NSArray+JKSafeAccess.m in Sources */,
 				35867EB71DE7E35100091160 /* UIBezierPath+JKSVGString.m in Sources */,
-				35867F4D1DE7E35100091160 /* XLCalendarComponent.m in Sources */,
 				35867E6D1DE7E35100091160 /* NSDictionary+JKMerge.m in Sources */,
 				35867ECD1DE7E35100091160 /* UIControl+JKBlock.m in Sources */,
 				35867E531DE7E35100091160 /* NSArray+JKBlock.m in Sources */,
 				35867F0B1DE7E35100091160 /* UITextField+JKShake.m in Sources */,
-				35867F451DE7E35100091160 /* NullSafe.m in Sources */,
 				35867ED61DE7E35100091160 /* UIImage+JKBetterFace.m in Sources */,
 				35867EF81DE7E35100091160 /* UINavigationItem+JKLoading.m in Sources */,
 				35867EB61DE7E35100091160 /* UIBezierPath+JKLength.m in Sources */,
@@ -2645,24 +2361,19 @@
 				35867E941DE7E35100091160 /* NSString+JKContains.m in Sources */,
 				35867E6A1DE7E35100091160 /* NSDictionary+BFKit.m in Sources */,
 				35867E5C1DE7E35100091160 /* NSData+JKGzip.m in Sources */,
-				35867F5E1DE7E35100091160 /* XLWebView.m in Sources */,
 				35867E681DE7E35100091160 /* NSDecimalNumber+JKCalculatingByString.m in Sources */,
 				35867E631DE7E35100091160 /* NSDate+JKInternetDateTime.m in Sources */,
 				35867F511DE7E35100091160 /* XLGuidePageView.m in Sources */,
 				35867F061DE7E35100091160 /* UITableView+BFKit.m in Sources */,
-				35867F331DE7E35100091160 /* RMPickerViewController.m in Sources */,
 				35867E7E1DE7E35100091160 /* NSNumber+BFKit.m in Sources */,
 				35867B9D1DE7E2F800091160 /* AppDelegate.m in Sources */,
 				35867EC31DE7E35100091160 /* UIButton+XLsn0w.m in Sources */,
 				35867E4E1DE7E35100091160 /* CLLocation+JKCH1903.m in Sources */,
 				35867E8E1DE7E35100091160 /* NSObject+XLsn0w.m in Sources */,
 				35867E971DE7E35100091160 /* NSString+JKEncrypt.m in Sources */,
-				35867F371DE7E35100091160 /* FSCalendar+Deprecated.m in Sources */,
 				35867F4F1DE7E35100091160 /* XLDatabase.m in Sources */,
 				35867E7F1DE7E35100091160 /* NSNumber+JKCGFloat.m in Sources */,
 				35867E5E1DE7E35100091160 /* NSData+JKPCM.m in Sources */,
-				35867F381DE7E35100091160 /* FSCalendar+IBExtension.m in Sources */,
-				35867F3F1DE7E35100091160 /* FSCalendarEventIndicator.m in Sources */,
 				35867F081DE7E35100091160 /* UITextField+BFKit.m in Sources */,
 				35867F4A1DE7E35100091160 /* UploadImageCell.m in Sources */,
 				35867F2A1DE7E35100091160 /* UIWebView+JKJavaScript.m in Sources */,
@@ -2698,7 +2409,6 @@
 				35867ED51DE7E35100091160 /* UIImage+JKAnimatedGIF.m in Sources */,
 				35867B9A1DE7E2F800091160 /* main.m in Sources */,
 				35867EDC1DE7E35100091160 /* UIImage+JKGIF.m in Sources */,
-				35867F5D1DE7E35100091160 /* XLTextView.m in Sources */,
 				35867ED31DE7E35100091160 /* UIImage+BFKit.m in Sources */,
 				35867ED21DE7E35100091160 /* UIFont+JKTTF.m in Sources */,
 				35867F291DE7E35100091160 /* UIWebView+JKCanvas.m in Sources */,

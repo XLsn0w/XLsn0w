@@ -221,6 +221,7 @@
 #import "UIScreen+BFKit.h"
 #import "UIScrollView+BFKit.h"
 #import "UITableView+BFKit.h"
+#import "UITableView+Placeholder.h"
 #import "UITextField+BFKit.h"
 #import "UITextView+BFKit.h"
 #import "UIToolbar+BFKit.h"

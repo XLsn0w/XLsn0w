@@ -1,7 +1,7 @@
 
 #import "XLGuidePageView.h"
-#import "Masonry.h"
 #import "UIView+XLsn0w.h"
+#import "Masonry.h"
 
 #define kFitWidth ([UIScreen mainScreen].bounds.size.width / 375.0)
 #define kFitHeight ([UIScreen mainScreen].bounds.size.height / 667.0)

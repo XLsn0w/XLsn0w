@@ -18,10 +18,10 @@
 }
 
 - (UIImageView *)picImageV {
-    if (!_picImageV) {
-        self.picImageV = [[UIImageView alloc] initWithFrame:self.bounds];
+    if (!_displayImageView) {
+        _displayImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     }
-    return _picImageV;
+    return _displayImageView;
 }
 
 - (UIImageView *)choosePic {
@@ -119,7 +119,7 @@
 
 - (void)dealloc{
     self.minusPic = nil;
-    self.picImageV = nil;
+    self.displayImageView = nil;
 }
 
 //- (NSString *)getCachePath {
