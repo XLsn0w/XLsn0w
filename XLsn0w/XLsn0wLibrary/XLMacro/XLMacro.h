@@ -10,12 +10,12 @@
  *********************************************************************************************/
 
 /*! Third-Party Framework */
-#import <AFNetworking.h>
-#import <FMDB.h>
-#import <MBProgressHUD.h>
-#import <UIImageView+WebCache.h>
-#import <Masonry.h>
-#import <MJRefresh.h>
+#import "AFNetworking.h"
+#import "FMDB.h"
+#import "MBProgressHUD.h"
+#import "UIImageView+WebCache.h"
+#import "Masonry.h"
+#import "MJRefresh.h"
 
 /* Apple Framework */
 #import <UIKit/UIKit.h>
@@ -69,11 +69,11 @@
 
 /*!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!**!*/
 
-#if DEBUG
-#define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | ©XLsn0wLog© ------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
-#else
-#define NSLog(...) nil
-#endif
+//#if DEBUG
+//#define XLog(FORMAT, ...) fprintf(stderr, "\n <-------File:%s | Line:%d | Method:%s | ©XLsn0wLog© ------->:%s \n \n", __FILE__, __LINE__, __PRETTY_FUNCTION__, [[NSString stringWithFormat:FORMAT, ##__VA_ARGS__] UTF8String]);
+//#else
+//#define NSLog(...) nil
+//#endif
 
 /**************************************************************************************************/
 
@@ -156,7 +156,7 @@ description:__VA_ARGS__];                             \
 //----------------------系统----------------------------
 
 //获取系统版本
-#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
+//#define IOS_VERSION [[[UIDevice currentDevice] systemVersion] floatValue]
 #define CurrentSystemVersion [[UIDevice currentDevice] systemVersion]
 
 //获取当前语言
@@ -164,7 +164,7 @@ description:__VA_ARGS__];                             \
 
 //判断是否 Retina屏、设备是否%fhone 5、是否是iPad
 #define isRetina ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 960), [[UIScreen mainScreen] currentMode].size) : NO)
-#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
+//#define iPhone5 ([UIScreen instancesRespondToSelector:@selector(currentMode)] ? CGSizeEqualToSize(CGSizeMake(640, 1136), [[UIScreen mainScreen] currentMode].size) : NO)
 #define isPad (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad)
 
 
@@ -234,8 +234,8 @@ description:__VA_ARGS__];                             \
 #define COLOR(R, G, B, A) [UIColor colorWithRed:R/255.0 green:G/255.0 blue:B/255.0 alpha:A]
 
 // 获取RGB颜色
-#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
-#define RGB(r,g,b) RGBA(r,g,b,1.0f)
+//#define RGBA(r,g,b,a) [UIColor colorWithRed:r/255.0f green:g/255.0f blue:b/255.0f alpha:a]
+//#define RGB(r,g,b) RGBA(r,g,b,1.0f)
 
 //RGB red, green, blue 颜色
 #define XLsn0wRGBColor(red, green, blue)         [UIColor colorWithRed:(red)/255.0 green:(green)/255.0 blue:(blue)/255.0 alpha:1]

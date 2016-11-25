@@ -1,6 +1,9 @@
 
 #import "XLDatabase.h"
 
+#import "FMDatabase.h"
+#import "User.h"
+
 @implementation XLDatabase
 
 //Create Singleton

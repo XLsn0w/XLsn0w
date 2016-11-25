@@ -1,6 +1,9 @@
 
 #import "XLNetworkMonitor.h"
+
 #import "XLsn0wLog.h"
+#import "AFNetworking.h"
+#import "UIView+XLsn0w.h"
 
 @implementation XLNetworkMonitor : NSObject 
 
