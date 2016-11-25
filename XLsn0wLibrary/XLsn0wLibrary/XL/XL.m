@@ -3,6 +3,7 @@
 #import "XL.h"
 
 #import "XLsn0wLog.h"
+#import "MBProgressHUD.h"
 
 #import <CommonCrypto/CommonCrypto.h>
 

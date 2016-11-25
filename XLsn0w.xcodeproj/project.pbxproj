@@ -2244,9 +2244,9 @@
 		35867E3D1DE7E35100091160 /* XLsn0wLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				35867E431DE7E35100091160 /* XLsn0wLibrary.h */,
 				35867E3E1DE7E35100091160 /* XL */,
 				35867E411DE7E35100091160 /* XLMacro */,
-				35867E431DE7E35100091160 /* XLsn0wLibrary.h */,
 				35867E441DE7E35100091160 /* XLsn0wLog */,
 			);
 			path = XLsn0wLibrary;
@@ -2863,6 +2863,7 @@
 				35867BAE1DE7E2F800091160 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
