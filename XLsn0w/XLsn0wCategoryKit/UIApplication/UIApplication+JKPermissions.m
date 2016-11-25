@@ -1,10 +1,4 @@
-//
-//  UIApplication-Permissions.m
-//  UIApplication-Permissions Sample
-//
-//  Created by Jack Rostron on 12/01/2014.
-//  Copyright (c) 2014 Rostron. All rights reserved.
-//
+
 
 #import "UIApplication+JKPermissions.h"
 #import <objc/runtime.h>
@@ -94,7 +88,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
 
 -(JKPermissionAccess)hasAccessToLocation {
     switch ([CLLocationManager authorizationStatus]) {
-        case kCLAuthorizationStatusAuthorized:
+        case kCLAuthorizationStatusAuthorizedAlways:
             return JKPermissionAccessGranted;
             break;
             
@@ -274,7 +268,7 @@ static char JKPermissionsLocationBlockFailurePropertyKey;
 
 #pragma mark - Location manager delegate
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    if (status == kCLAuthorizationStatusAuthorized) {
+    if (status == kCLAuthorizationStatusAuthorizedAlways) {
         self.locationSuccessCallbackProperty();
     } else if (status != kCLAuthorizationStatusNotDetermined) {
         self.locationFailureCallbackProperty();

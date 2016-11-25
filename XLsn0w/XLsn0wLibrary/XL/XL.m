@@ -2587,14 +2587,14 @@ static char       *const YGPCacheMemoryIOQueue          = "YGPCacheMemoryIOQueue
     
     NSUInteger notificationType; //UIUserNotificationType(>= iOS8) and UIRemoteNotificatioNType(< iOS8) use same value
     UIApplication *application = [UIApplication sharedApplication];
-    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) {
-        notificationType = [[application currentUserNotificationSettings] types];
-    } else {
-        notificationType = [application enabledRemoteNotificationTypes];
-    }
-    if (notificationType == UIRemoteNotificationTypeNone) {
-        return;
-    }
+//    if (NSFoundationVersionNumber > NSFoundationVersionNumber_iOS_7_1) {
+//        notificationType = [[application currentUserNotificationSettings] types];
+//    } else {
+//        notificationType = [application enabledRemoteNotificationTypes];
+//    }
+//    if (notificationType == UIRemoteNotificationTypeNone) {
+//        return;
+//    }
     
     // ios8后，需要添加这个注册，才能得到授权
     if ([[UIApplication sharedApplication] respondsToSelector:@selector(registerUserNotificationSettings:)]) {
@@ -2621,10 +2621,10 @@ static char       *const YGPCacheMemoryIOQueue          = "YGPCacheMemoryIOQueue
     }
     
     //Badge
-    if ((notificationType & UIRemoteNotificationTypeBadge) != UIRemoteNotificationTypeBadge) {
-    } else {
-        localNotification.applicationIconBadgeNumber = badgeCount;
-    }
+//    if ((notificationType & UIRemoteNotificationTypeBadge) != UIRemoteNotificationTypeBadge) {
+//    } else {
+//        localNotification.applicationIconBadgeNumber = badgeCount;
+//    }
     
     if (!fireDate) {
         [[UIApplication sharedApplication] presentLocalNotificationNow:localNotification];
@@ -2712,8 +2712,7 @@ int LunarCalendarInfo[] = {
     return self;
 }
 
--(void)loadWithDate:(NSDate *)adate
-{
+- (void)loadWithDate:(NSDate *)adate {
     if (adate == nil)
         [self loadWithDate:[NSDate date]];
     else
@@ -2746,8 +2745,7 @@ int LunarCalendarInfo[] = {
     }
 }
 
--(void)InitializeValue
-{
+-(void)InitializeValue {
     NSString *start = @"1900-01-31";
     NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
     [dateFormatter setDateFormat:@"yyyy-MM-dd"];
@@ -2758,8 +2756,8 @@ int LunarCalendarInfo[] = {
     NSDate *startDate = [f dateFromString:start];
     NSDate *endDate = [f dateFromString:end];
     
-    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
-    NSDateComponents *components = [gregorianCalendar components:NSDayCalendarUnit fromDate:startDate toDate:endDate options:0];
+    NSCalendar *gregorianCalendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
+    NSDateComponents *components = [gregorianCalendar components:NSCalendarUnitDay fromDate:startDate toDate:endDate options:0];
     
     int dayCyclical=(int)(([components day] + 30)/(86400/(3600*24)))+10;
     
@@ -3409,7 +3407,7 @@ int LunarCalendarInfo[] = {
 -(int)Weekday
 {
     NSCalendar* cal = [NSCalendar currentCalendar];
-    NSDateComponents* weekday = [cal components:NSWeekdayCalendarUnit fromDate:thisdate];
+    NSDateComponents* weekday = [cal components:NSCalendarUnitWeekday fromDate:thisdate];
     return (int)[weekday weekday];
 }
 
