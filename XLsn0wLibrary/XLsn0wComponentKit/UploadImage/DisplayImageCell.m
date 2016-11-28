@@ -10,21 +10,21 @@
         self.backgroundColor = [UIColor whiteColor];
         self.layer.borderColor = [[UIColor blackColor] CGColor];
         self.layer.borderWidth = 1;
-        [self.contentView addSubview:self.picImageV];
+        [self.contentView addSubview:self.displayImageView];
         [self.contentView addSubview:self.minusPic];
         
     }
     return self;
 }
 
-- (UIImageView *)picImageV {
+- (UIImageView *)displayImageView {
     if (!_displayImageView) {
         _displayImageView = [[UIImageView alloc] initWithFrame:self.bounds];
     }
     return _displayImageView;
 }
 
-- (UIImageView *)choosePic {
+- (UIImageView *)minusPic {
     if (!_minusPic) {
         _minusPic = [[UIImageView alloc] initWithFrame:CGRectMake(self.frame.size.width-25, self.frame.size.height-25, 20, 20)];
     }
@@ -61,16 +61,16 @@
             [assets addObject:obj];
         }
         [manager requestImageForAsset:obj targetSize:targetSize contentMode:PHImageContentModeDefault options:operation resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-            [blockSelf.picImageV setImage:result];
+            [blockSelf.displayImageView setImage:result];
         }];
     }];
 }
 ///展示选取照片的方法
-- (void)displayCellWithChoosedPics:(id)imagePath {
+- (void)addMinusImage:(id)imagePath {
         __block DisplayImageCell *blockSelf = self;
     if ([imagePath isKindOfClass:[UIImage class]]) {
-        [self.picImageV setImage:[UIImage imageNamed:@"plus"]];
-        [self.choosePic setImage:[UIImage imageNamed:@""]];
+        [self.displayImageView setImage:[UIImage imageNamed:@"plus"]];
+        [self.minusPic setImage:[UIImage imageNamed:@""]];
     }else {
         CGFloat scale = [UIScreen mainScreen].scale;
         CGSize targetSize = CGSizeMake(CGRectGetWidth([UIScreen mainScreen].bounds) * scale, CGRectGetHeight([UIScreen mainScreen].bounds) * scale);
@@ -83,10 +83,10 @@
         PHFetchResult *saveAsset = [PHAsset fetchAssetsWithLocalIdentifiers:@[imagePath] options:nil];
         [saveAsset enumerateObjectsUsingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
             [[PHImageManager defaultManager] requestImageForAsset:obj targetSize:targetSize contentMode:PHImageContentModeDefault options:operation resultHandler:^(UIImage * _Nullable result, NSDictionary * _Nullable info) {
-                [blockSelf.picImageV setImage:result];
+                [blockSelf.displayImageView setImage:result];
             }];
         }];
-        [self.choosePic setImage:[UIImage imageNamed:@"minus"]];
+        [self.minusPic setImage:[UIImage imageNamed:@"minus"]];
     }
    
 }
@@ -94,19 +94,19 @@
 /*****************************************************/
 
 - (void)setCellImage:(UIImage *)indexPathImage {
-    [self.picImageV setImage:indexPathImage];
+    [self.displayImageView setImage:indexPathImage];
     /*****************************************************/
-    [self.choosePic setImage:[UIImage imageNamed:@"minus"]];//显示减号图片
+    [self.minusPic setImage:[UIImage imageNamed:@"minus"]];//显示减号图片
     UITapGestureRecognizer *minusTapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(minusTapGestureAction:)];//创建手势 添加事件
-    [self.choosePic addGestureRecognizer:minusTapGesture];//把手势添加到减号图片上面
-    self.choosePic.userInteractionEnabled = YES;//开启减号图片用户交互
+    [self.minusPic addGestureRecognizer:minusTapGesture];//把手势添加到减号图片上面
+    self.minusPic.userInteractionEnabled = YES;//开启减号图片用户交互
 }
 
-- (void)setNoMinusCellImage:(UIImage *)indexPathImage {
-    [self.picImageV setImage:indexPathImage];
+- (void)removeMinusImage:(UIImage *)indexPathImage {
+    [self.displayImageView setImage:indexPathImage];
     /*****************************************************/
-    [self.choosePic setImage:[UIImage imageNamed:@""]];//一定要执行setImage方法 设置为空
-    self.choosePic.userInteractionEnabled = NO;
+    [self.minusPic setImage:[UIImage imageNamed:@""]];//一定要执行setImage方法 设置为空
+    self.minusPic.userInteractionEnabled = NO;
 }
 
 - (void)minusTapGestureAction:(UITapGestureRecognizer *)minusTapGesture {
