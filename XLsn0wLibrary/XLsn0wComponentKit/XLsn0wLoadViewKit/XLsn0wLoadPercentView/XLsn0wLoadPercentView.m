@@ -113,8 +113,6 @@
 
 /** @fn	setWaitTime
  *  @brief  等待百分比计数
- *  @param  无
- *  @return 无
  */
 - (void)setWaitTime
 {
