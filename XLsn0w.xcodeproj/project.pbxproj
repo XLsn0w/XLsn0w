@@ -264,6 +264,12 @@
 		35867F5C1DE7E35100091160 /* XLTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E361DE7E35100091160 /* XLTextField.m */; };
 		35867F5F1DE7E35100091160 /* XL.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E401DE7E35100091160 /* XL.m */; };
 		35867F601DE7E35100091160 /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E461DE7E35100091160 /* XLsn0wLog.m */; };
+		35D9F57F1DF153FA008869D8 /* NSDate-Utilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F57E1DF153FA008869D8 /* NSDate-Utilities.m */; };
+		35D9F5BB1DF1582F008869D8 /* XLsn0wLoadPercentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5AE1DF1582F008869D8 /* XLsn0wLoadPercentView.m */; };
+		35D9F5BC1DF1582F008869D8 /* XLsn0wLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B11DF1582F008869D8 /* XLsn0wLoadView.m */; };
+		35D9F5BD1DF1582F008869D8 /* XLsn0wLoadViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */; };
+		35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */; };
+		35D9F5BF1DF1582F008869D8 /* XLsn0wQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */; };
 		BF6751EEED94BABF210D2CFD /* libPods-XLsn0w.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */; };
 /* End PBXBuildFile section */
 
@@ -783,6 +789,18 @@
 		35867E431DE7E35100091160 /* XLsn0wLibrary.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLibrary.h; sourceTree = "<group>"; };
 		35867E451DE7E35100091160 /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
 		35867E461DE7E35100091160 /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
+		35D9F57D1DF153FA008869D8 /* NSDate-Utilities.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate-Utilities.h"; sourceTree = "<group>"; };
+		35D9F57E1DF153FA008869D8 /* NSDate-Utilities.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate-Utilities.m"; sourceTree = "<group>"; };
+		35D9F5AD1DF1582F008869D8 /* XLsn0wLoadPercentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLoadPercentView.h; sourceTree = "<group>"; };
+		35D9F5AE1DF1582F008869D8 /* XLsn0wLoadPercentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadPercentView.m; sourceTree = "<group>"; };
+		35D9F5B01DF1582F008869D8 /* XLsn0wLoadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLoadView.h; sourceTree = "<group>"; };
+		35D9F5B11DF1582F008869D8 /* XLsn0wLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadView.m; sourceTree = "<group>"; };
+		35D9F5B31DF1582F008869D8 /* XLsn0wLoadViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLoadViewItem.h; sourceTree = "<group>"; };
+		35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadViewItem.m; sourceTree = "<group>"; };
+		35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XLsn0wLoadViewItem+configPath.h"; sourceTree = "<group>"; };
+		35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XLsn0wLoadViewItem+configPath.m"; sourceTree = "<group>"; };
+		35D9F5B91DF1582F008869D8 /* XLsn0wQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wQRCodeView.h; sourceTree = "<group>"; };
+		35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wQRCodeView.m; sourceTree = "<group>"; };
 		9803D78D837924020B1C8698 /* Pods-XLsn0w.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC9AEB03D9249903DF0A31C /* Pods-XLsn0w.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.release.xcconfig"; sourceTree = "<group>"; };
 		D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0w.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -1057,6 +1075,8 @@
 		35867BED1DE7E35000091160 /* NSDate */ = {
 			isa = PBXGroup;
 			children = (
+				35D9F57D1DF153FA008869D8 /* NSDate-Utilities.h */,
+				35D9F57E1DF153FA008869D8 /* NSDate-Utilities.m */,
 				35867BEE1DE7E35000091160 /* NSDate+BFKit.h */,
 				35867BEF1DE7E35000091160 /* NSDate+BFKit.m */,
 				35867BF01DE7E35000091160 /* NSDate+JKCupertinoYankee.h */,
@@ -1870,6 +1890,7 @@
 			isa = PBXGroup;
 			children = (
 				35867E301DE7E35100091160 /* XLsn0wComponentKit.h */,
+				35D9F5AB1DF1582F008869D8 /* XLsn0wLoadViewKit */,
 				35867E161DE7E35100091160 /* XLNavViewController */,
 				35867E131DE7E35100091160 /* XLGuidePageView */,
 				35867DF81DE7E35100091160 /* UploadImage */,
@@ -2017,6 +2038,63 @@
 				35867E461DE7E35100091160 /* XLsn0wLog.m */,
 			);
 			path = XLsn0wLog;
+			sourceTree = "<group>";
+		};
+		35D9F5AB1DF1582F008869D8 /* XLsn0wLoadViewKit */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5AF1DF1582F008869D8 /* XLsn0wLoadView */,
+				35D9F5AC1DF1582F008869D8 /* XLsn0wLoadPercentView */,
+				35D9F5B21DF1582F008869D8 /* XLsn0wLoadViewItem */,
+				35D9F5B51DF1582F008869D8 /* XLsn0wLoadViewItem+configPath */,
+				35D9F5B81DF1582F008869D8 /* XLsn0wQRCodeView */,
+			);
+			path = XLsn0wLoadViewKit;
+			sourceTree = "<group>";
+		};
+		35D9F5AC1DF1582F008869D8 /* XLsn0wLoadPercentView */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5AD1DF1582F008869D8 /* XLsn0wLoadPercentView.h */,
+				35D9F5AE1DF1582F008869D8 /* XLsn0wLoadPercentView.m */,
+			);
+			path = XLsn0wLoadPercentView;
+			sourceTree = "<group>";
+		};
+		35D9F5AF1DF1582F008869D8 /* XLsn0wLoadView */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5B01DF1582F008869D8 /* XLsn0wLoadView.h */,
+				35D9F5B11DF1582F008869D8 /* XLsn0wLoadView.m */,
+			);
+			path = XLsn0wLoadView;
+			sourceTree = "<group>";
+		};
+		35D9F5B21DF1582F008869D8 /* XLsn0wLoadViewItem */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5B31DF1582F008869D8 /* XLsn0wLoadViewItem.h */,
+				35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */,
+			);
+			path = XLsn0wLoadViewItem;
+			sourceTree = "<group>";
+		};
+		35D9F5B51DF1582F008869D8 /* XLsn0wLoadViewItem+configPath */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.h */,
+				35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */,
+			);
+			path = "XLsn0wLoadViewItem+configPath";
+			sourceTree = "<group>";
+		};
+		35D9F5B81DF1582F008869D8 /* XLsn0wQRCodeView */ = {
+			isa = PBXGroup;
+			children = (
+				35D9F5B91DF1582F008869D8 /* XLsn0wQRCodeView.h */,
+				35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */,
+			);
+			path = XLsn0wQRCodeView;
 			sourceTree = "<group>";
 		};
 		CD4B2C3B7C238C95C25005D3 /* Pods */ = {
@@ -2204,10 +2282,13 @@
 				35867E591DE7E35100091160 /* NSData+JKBase64.m in Sources */,
 				35867EAB1DE7E35100091160 /* NSURLRequest+JKParamsFromDictionary.m in Sources */,
 				35867F0C1DE7E35100091160 /* UITextView+BFKit.m in Sources */,
+				35D9F57F1DF153FA008869D8 /* NSDate-Utilities.m in Sources */,
 				35867E7A1DE7E35100091160 /* NSMutableArray+XLsn0w.m in Sources */,
 				35867EE31DE7E35100091160 /* UIImage+JKVector.m in Sources */,
+				35D9F5BF1DF1582F008869D8 /* XLsn0wQRCodeView.m in Sources */,
 				35867EB41DE7E35100091160 /* UIBarButtonItem+JKAction.m in Sources */,
 				35867E771DE7E35100091160 /* NSIndexPath+JKOffset.m in Sources */,
+				35D9F5BB1DF1582F008869D8 /* XLsn0wLoadPercentView.m in Sources */,
 				35867E5D1DE7E35100091160 /* NSData+JKHash.m in Sources */,
 				35867F191DE7E35100091160 /* UIView+JKNib.m in Sources */,
 				35867F2F1DE7E35100091160 /* UIWebView+JKTS_JavaScriptContext.m in Sources */,
@@ -2229,6 +2310,7 @@
 				35867E601DE7E35100091160 /* NSDate+BFKit.m in Sources */,
 				35867EFF1DE7E35100091160 /* UIScreen+JKFrame.m in Sources */,
 				35867ED41DE7E35100091160 /* UIImage+JKAlpha.m in Sources */,
+				35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m in Sources */,
 				35867E831DE7E35100091160 /* NSObject+JKAddProperty.m in Sources */,
 				35867E9E1DE7E35100091160 /* NSString+JKScore.m in Sources */,
 				35867EE01DE7E35100091160 /* UIImage+JKResize.m in Sources */,
@@ -2283,6 +2365,7 @@
 				35867EE61DE7E35100091160 /* UIImageView+JKAddition.m in Sources */,
 				35867E521DE7E35100091160 /* NSArray+BFKit.m in Sources */,
 				35867ED91DE7E35100091160 /* UIImage+JKColor.m in Sources */,
+				35D9F5BC1DF1582F008869D8 /* XLsn0wLoadView.m in Sources */,
 				35867EFA1DE7E35100091160 /* UINavigationItem+JKMargin.m in Sources */,
 				35867EA61DE7E35100091160 /* NSTimer+JKAddition.m in Sources */,
 				35867EAD1DE7E35100091160 /* NSUserDefaults+JKSafeAccess.m in Sources */,
@@ -2291,6 +2374,7 @@
 				35867E9C1DE7E35100091160 /* NSString+JKPinyin.m in Sources */,
 				35867F2D1DE7E35100091160 /* UIWebView+JKStyle.m in Sources */,
 				35867EC71DE7E35100091160 /* UIColor+JKHEX.m in Sources */,
+				35D9F5BD1DF1582F008869D8 /* XLsn0wLoadViewItem.m in Sources */,
 				35867E651DE7E35100091160 /* NSDate+JKUtilities.m in Sources */,
 				35867E871DE7E35100091160 /* NSObject+JKBlocks.m in Sources */,
 				35867EEA1DE7E35100091160 /* UIImageView+JKReflect.m in Sources */,
