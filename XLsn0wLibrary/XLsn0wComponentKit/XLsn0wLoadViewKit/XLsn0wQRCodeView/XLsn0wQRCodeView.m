@@ -1,17 +1,40 @@
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 
 #import "XLsn0wQRCodeView.h"
 
 @implementation XLsn0wQRCodeView
 
+- (instancetype)init {
+    if (self = [super init]) {
+        [self reDrawUI];
+    }
+    return self;
+}
+
+- (instancetype)initWithFrame:(CGRect)frame {
+    if (self = [super initWithFrame:frame]) {
+         [self reDrawUI];
+    }
+    return self;
+}
+
 - (void)awakeFromNib {
     [super awakeFromNib];
-    [self setupUI];
+    [self reDrawUI];
 }
 
 - (void)layoutSubviews {
     [super layoutSubviews];
-    [self setupUI];
+    [self reDrawUI];
 }
 
 - (void)drawRect:(CGRect)rect {
@@ -37,8 +60,7 @@
 
 #pragma mark - Custom Methods
 
-- (void)setupUI
-{
+- (void)reDrawUI {
     
 }
 

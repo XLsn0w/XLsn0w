@@ -268,7 +268,7 @@
 		35D9F5BB1DF1582F008869D8 /* XLsn0wLoadPercentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5AE1DF1582F008869D8 /* XLsn0wLoadPercentView.m */; };
 		35D9F5BC1DF1582F008869D8 /* XLsn0wLoadView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B11DF1582F008869D8 /* XLsn0wLoadView.m */; };
 		35D9F5BD1DF1582F008869D8 /* XLsn0wLoadViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */; };
-		35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */; };
+		35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m */; };
 		35D9F5BF1DF1582F008869D8 /* XLsn0wQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */; };
 		BF6751EEED94BABF210D2CFD /* libPods-XLsn0w.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */; };
 /* End PBXBuildFile section */
@@ -797,8 +797,8 @@
 		35D9F5B11DF1582F008869D8 /* XLsn0wLoadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadView.m; sourceTree = "<group>"; };
 		35D9F5B31DF1582F008869D8 /* XLsn0wLoadViewItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLoadViewItem.h; sourceTree = "<group>"; };
 		35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadViewItem.m; sourceTree = "<group>"; };
-		35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XLsn0wLoadViewItem+configPath.h"; sourceTree = "<group>"; };
-		35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XLsn0wLoadViewItem+configPath.m"; sourceTree = "<group>"; };
+		35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "XLsn0wLoadViewItem+ConfigurePath.h"; sourceTree = "<group>"; };
+		35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XLsn0wLoadViewItem+ConfigurePath.m"; sourceTree = "<group>"; };
 		35D9F5B91DF1582F008869D8 /* XLsn0wQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wQRCodeView.h; sourceTree = "<group>"; };
 		35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wQRCodeView.m; sourceTree = "<group>"; };
 		9803D78D837924020B1C8698 /* Pods-XLsn0w.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.debug.xcconfig"; sourceTree = "<group>"; };
@@ -2082,8 +2082,8 @@
 		35D9F5B51DF1582F008869D8 /* XLsn0wLoadViewItem+configPath */ = {
 			isa = PBXGroup;
 			children = (
-				35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.h */,
-				35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m */,
+				35D9F5B61DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.h */,
+				35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m */,
 			);
 			path = "XLsn0wLoadViewItem+configPath";
 			sourceTree = "<group>";
@@ -2143,7 +2143,7 @@
 		35867B8D1DE7E2F700091160 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0810;
+				LastUpgradeCheck = 0820;
 				ORGANIZATIONNAME = XLsn0w;
 				TargetAttributes = {
 					35867B941DE7E2F700091160 = {
@@ -2310,7 +2310,7 @@
 				35867E601DE7E35100091160 /* NSDate+BFKit.m in Sources */,
 				35867EFF1DE7E35100091160 /* UIScreen+JKFrame.m in Sources */,
 				35867ED41DE7E35100091160 /* UIImage+JKAlpha.m in Sources */,
-				35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+configPath.m in Sources */,
+				35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m in Sources */,
 				35867E831DE7E35100091160 /* NSObject+JKAddProperty.m in Sources */,
 				35867E9E1DE7E35100091160 /* NSString+JKScore.m in Sources */,
 				35867EE01DE7E35100091160 /* UIImage+JKResize.m in Sources */,
@@ -2540,6 +2540,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -2587,6 +2588,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_SUSPICIOUS_MOVES = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;

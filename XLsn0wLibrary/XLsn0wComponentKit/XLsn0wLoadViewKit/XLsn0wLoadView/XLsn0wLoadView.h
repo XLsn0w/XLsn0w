@@ -12,9 +12,9 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 
-typedef NS_ENUM(NSInteger, HIKLoadViewStyle) {
-    HIKLoadViewStyleSqureClockWise = 0,  //正方形顺时针旋转类型,起始位置在中心
-    HIKLoadViewStyleSqureCornersClockWise//正方形顺时针旋转类型,起始位置在4个边角
+typedef NS_ENUM(NSInteger, XLsn0wLoadViewStyle) {
+    XLsn0wLoadViewStyleSqureClockWise = 0,  //正方形顺时针旋转类型,起始位置在中心
+    XLsn0wLoadViewStyleSqureCornersClockWise//正方形顺时针旋转类型,起始位置在4个边角
 };
 
 @interface XLsn0wLoadView : UIView
@@ -26,7 +26,7 @@ typedef NS_ENUM(NSInteger, HIKLoadViewStyle) {
  *
  *  @return self
  */
-- (instancetype)initWithHIKLoadViewStyle:(HIKLoadViewStyle)style;
+- (instancetype)initWithXLsn0wLoadViewStyle:(XLsn0wLoadViewStyle)style;
 
 /**
  *  全能初始化
@@ -36,7 +36,7 @@ typedef NS_ENUM(NSInteger, HIKLoadViewStyle) {
  *
  *  @return self
  */
-- (instancetype)initWithHIKLoadViewStyle:(HIKLoadViewStyle)style frame:(CGRect)frame;
+- (instancetype)initWithXLsn0wLoadViewStyle:(XLsn0wLoadViewStyle)style frame:(CGRect)frame;
 
 /**
  *  中间过程，从中间起始位置，到扩展延伸到正方形四边的过渡过程

@@ -1,9 +1,19 @@
-
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 
 #import "XLsn0wLoadView.h"
 
 #import "XLsn0wLoadViewItem.h"
-#import "XLsn0wLoadViewItem+configPath.h"
+#import "XLsn0wLoadViewItem+ConfigurePath.h"
+
 static float SQUARE_FIT_LEN = 14.0;
 
 @interface XLsn0wLoadView ()
@@ -19,20 +29,19 @@ static float SQUARE_FIT_LEN = 14.0;
 @implementation XLsn0wLoadView
 
 #pragma mark - init 初始化
-- (instancetype)initWithHIKLoadViewStyle:(HIKLoadViewStyle)style {
+- (instancetype)initWithXLsn0wLoadViewStyle:(XLsn0wLoadViewStyle)style {
     self = [super init];
     if(!self)return nil;
     
     switch (style) {
-        case HIKLoadViewStyleSqureClockWise:
-        {
+        case XLsn0wLoadViewStyleSqureClockWise: {
             [self setFrame:CGRectMake(0.0, 0.0, SQUARE_FIT_LEN, SQUARE_FIT_LEN)];
             [self p_setUp];
             [self p_setUpCircleLayersCenter];
         }
             break;
-        case HIKLoadViewStyleSqureCornersClockWise:
-        {
+            
+        case XLsn0wLoadViewStyleSqureCornersClockWise: {
             [self setFrame:CGRectMake(0.0, 0.0, SQUARE_FIT_LEN, SQUARE_FIT_LEN)];
             [self p_setUp];
             [self p_setUpCorcleLayersSquareCorners];
@@ -46,20 +55,18 @@ static float SQUARE_FIT_LEN = 14.0;
     return self;
 }
 
-- (instancetype)initWithHIKLoadViewStyle:(HIKLoadViewStyle)style frame:(CGRect)frame
-{
+- (instancetype)initWithXLsn0wLoadViewStyle:(XLsn0wLoadViewStyle)style frame:(CGRect)frame {
     self = [super initWithFrame:frame];
     if(!self)return nil;
     
     switch (style) {
-        case HIKLoadViewStyleSqureClockWise:
-        {
+        case XLsn0wLoadViewStyleSqureClockWise: {
             [self p_setUp];
             [self p_setUpCircleLayersCenter];
         }
             break;
-        case HIKLoadViewStyleSqureCornersClockWise:
-        {
+            
+        case XLsn0wLoadViewStyleSqureCornersClockWise: {
             [self p_setUp];
             [self p_setUpCorcleLayersSquareCorners];
         }
@@ -73,8 +80,7 @@ static float SQUARE_FIT_LEN = 14.0;
 }
 
 #pragma mark -setUp 私有方法相关设置
-- (void)p_setUp
-{
+- (void)p_setUp {
     [self setBackgroundColor:[UIColor clearColor]];
     [self p_setUpCircleLayers];
     
@@ -83,8 +89,7 @@ static float SQUARE_FIT_LEN = 14.0;
 /**
  *  初始化需要的layer
  */
-- (void)p_setUpCircleLayers
-{
+- (void)p_setUpCircleLayers {
     if(!self.animationLayer)
     {
         self.animationLayer = self.layer;
@@ -117,13 +122,12 @@ static float SQUARE_FIT_LEN = 14.0;
         self.blueCircle    = [XLsn0wLoadViewItem initWithImage:blueImage];
         [self.animationLayer addSublayer:self.blueCircle.colorCirculeLayer];
     }
-    
 }
+
 /**
  *  初始化百分比显示lable
  */
-- (void)p_initPercentLable
-{
+- (void)p_initPercentLable {
     if(self.percentLable)return;
     
     self.percentLable = [[UILabel alloc]init];
@@ -134,8 +138,7 @@ static float SQUARE_FIT_LEN = 14.0;
 /**
  *  移除layers傻姑娘的所有动画
  */
-- (void)p_removeAllAniamations
-{
+- (void)p_removeAllAniamations {
     [self.blueCircle.colorCirculeLayer removeAllAnimations];
     [self.greenCircle.colorCirculeLayer removeAllAnimations];
     [self.redCircle.colorCirculeLayer removeAllAnimations];
@@ -144,16 +147,14 @@ static float SQUARE_FIT_LEN = 14.0;
 /**
  *  设置正方形顺时针旋转动画
  */
-- (void)p_setUpAnimations
-{
-    [self.blueCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:HIKLoadViewStartFromLeftTop];
-    [self.greenCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:HIKLoadViewStartFromRightTop];
-    [self.redCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:HIKLoadViewStartFromLeftBottom];
-    [self.yellowCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:HIKLoadViewStartFromRightBottom];
+- (void)p_setUpAnimations {
+    [self.blueCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:XLsn0wLoadViewStartFromLeftTop];
+    [self.greenCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:XLsn0wLoadViewStartFromRightTop];
+    [self.redCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:XLsn0wLoadViewStartFromLeftBottom];
+    [self.yellowCircle configKeyFrameAnimationForColorLayerWithStartLoadingStyle:XLsn0wLoadViewStartFromRightBottom];
 }
 
-- (void)p_setUpCircleLayersCenter
-{
+- (void)p_setUpCircleLayersCenter {
     CGPoint centerPoint = CGPointMake(SQUARE_FIT_LEN/2.0, SQUARE_FIT_LEN/2.0);
     [self.yellowCircle setPosition:centerPoint];
     [self.redCircle setPosition:centerPoint];
@@ -161,8 +162,7 @@ static float SQUARE_FIT_LEN = 14.0;
     [self.blueCircle setPosition:centerPoint];
 }
 
-- (void)p_stayCircleLayersPresentationLayerPosition
-{
+- (void)p_stayCircleLayersPresentationLayerPosition {
     [self.yellowCircle stayOnPresentationLayerPosition];
     [self.redCircle stayOnPresentationLayerPosition];
     [self.greenCircle stayOnPresentationLayerPosition];
@@ -177,8 +177,7 @@ static float SQUARE_FIT_LEN = 14.0;
 /**
  *  设置起始位置为正方形四角
  */
-- (void)p_setUpCorcleLayersSquareCorners
-{
+- (void)p_setUpCorcleLayersSquareCorners {
     CGPoint leftTop     = CGPointMake(0.0, 0.0);
     CGPoint rightTop    = CGPointMake(SQUARE_FIT_LEN, 0.0);
     CGPoint rightBottom = CGPointMake(SQUARE_FIT_LEN, SQUARE_FIT_LEN);
@@ -191,8 +190,7 @@ static float SQUARE_FIT_LEN = 14.0;
 
 
 #pragma mark -animations
-- (void)updateReadytoClockwiseAnimationWithPercent:(float)percent
-{
+- (void)updateReadytoClockwiseAnimationWithPercent:(float)percent {
     if(percent < 0.0 || percent > 1.0)
     {
         return;
@@ -219,8 +217,7 @@ static float SQUARE_FIT_LEN = 14.0;
     
 }
 
-- (void)startSquareClcokwiseAnimation
-{
+- (void)startSquareClcokwiseAnimation {
     [self p_removeAllAniamations];
     [self p_setUpCircleLayersCenter];
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -229,8 +226,7 @@ static float SQUARE_FIT_LEN = 14.0;
 
 }
 
-- (void)stopSquareClockwiseAnimation
-{
+- (void)stopSquareClockwiseAnimation {
     [self p_stayCircleLayersPresentationLayerPosition];
     [self p_removeAllAniamations];
 }

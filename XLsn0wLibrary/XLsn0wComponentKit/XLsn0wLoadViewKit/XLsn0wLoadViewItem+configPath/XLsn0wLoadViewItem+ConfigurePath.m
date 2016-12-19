@@ -1,12 +1,22 @@
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
 
-#import "XLsn0wLoadViewItem+configPath.h"
+#import "XLsn0wLoadViewItem+ConfigurePath.h"
 
 static float SQUARE_LEN = 14.0;
 static float ANIMATION_DURING_TIME = 2.5;
-@implementation XLsn0wLoadViewItem (configPath)
 
-- (void)configKeyFrameAnimationForColorLayerWithStartLoadingStyle:(HIKLoadViewStartLoadingSyle)style
-{
+@implementation XLsn0wLoadViewItem (ConfigurePath)
+
+- (void)configKeyFrameAnimationForColorLayerWithStartLoadingStyle:(XLsn0wLoadViewStartLoadingSyle)style {
     
     CGPoint leftTop     = CGPointMake(0.0, 0.0);
     CGPoint rightTop    = CGPointMake(SQUARE_LEN, 0.0);
@@ -16,8 +26,7 @@ static float ANIMATION_DURING_TIME = 2.5;
     
     switch (style) {
             
-        case HIKLoadViewStartFromLeftBottom:
-        {
+        case XLsn0wLoadViewStartFromLeftBottom: {
             [path moveToPoint:leftBottom];
             [path addLineToPoint:leftTop];
             [path addLineToPoint:rightTop];
@@ -25,8 +34,8 @@ static float ANIMATION_DURING_TIME = 2.5;
             [path addLineToPoint:leftBottom];
         }
             break;
-        case HIKLoadViewStartFromLeftTop:
-        {
+            
+        case XLsn0wLoadViewStartFromLeftTop: {
             [path moveToPoint:leftTop];
             [path addLineToPoint:rightTop];
             [path addLineToPoint:rightBottom];
@@ -34,8 +43,8 @@ static float ANIMATION_DURING_TIME = 2.5;
             [path addLineToPoint:leftTop];
         }
             break;
-        case HIKLoadViewStartFromRightBottom:
-        {
+            
+        case XLsn0wLoadViewStartFromRightBottom: {
             [path moveToPoint:rightBottom];
             [path addLineToPoint:leftBottom];
             [path addLineToPoint:leftTop];
@@ -43,8 +52,8 @@ static float ANIMATION_DURING_TIME = 2.5;
             [path addLineToPoint:rightBottom];
         }
             break;
-        case HIKLoadViewStartFromRightTop:
-        {
+            
+        case XLsn0wLoadViewStartFromRightTop: {
             [path moveToPoint:rightTop];
             [path addLineToPoint:rightBottom];
             [path addLineToPoint:leftBottom];
@@ -52,6 +61,7 @@ static float ANIMATION_DURING_TIME = 2.5;
             [path addLineToPoint:rightTop];
         }
             break;
+            
         default:
             break;
     }
@@ -69,9 +79,17 @@ static float ANIMATION_DURING_TIME = 2.5;
     [self.colorCirculeLayer addAnimation:animation forKey:@"position"];
 }
 
-- (void)stayOnPresentationLayerPosition
-{
+- (void)stayOnPresentationLayerPosition {
     CALayer *presentationLayer = [self.colorCirculeLayer presentationLayer];
     [[self.colorCirculeLayer modelLayer] setPosition:presentationLayer.position];
 }
+
 @end
+
+
+
+
+
+
+
+

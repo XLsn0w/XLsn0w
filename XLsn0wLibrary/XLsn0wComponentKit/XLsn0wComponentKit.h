@@ -11,11 +11,17 @@
 
 #import "XLFlowLayout.h"
 
+/*********************************************************************************************/
+
 #import "XLRefreshGifHeader.h"
 #import "XLRefreshAutoGifFooter.h"
 
+/*********************************************************************************************/
+
 #import "UploadImageCell.h"
 #import "DisplayImageCell.h"
+
+/*********************************************************************************************/
 
 #import "XLNavViewController.h"
 #import "XLGuidePageView.h"
@@ -23,15 +29,19 @@
 #import "XLTextField.h"
 #import "XLButton.h"
 
+/*********************************************************************************************/
+
 #import "XLNetworkManager.h"
 #import "XLNetworkMonitor.h"
 #import "XLDataBase.h"
 #import "User.h"
 
+/*********************************************************************************************/
+
 #import "XLsn0wLoadView.h"
 #import "XLsn0wLoadPercentView.h"
 #import "XLsn0wLoadViewItem.h"
-#import "XLsn0wLoadViewItem+configPath.h"
+#import "XLsn0wLoadViewItem+ConfigurePath.h"
 #import "XLsn0wQRCodeView.h"
 
 /*********************************************************************************************

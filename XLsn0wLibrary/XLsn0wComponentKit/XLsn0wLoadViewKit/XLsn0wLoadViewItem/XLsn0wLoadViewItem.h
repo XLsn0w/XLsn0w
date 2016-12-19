@@ -35,6 +35,7 @@
  *  @param position 坐标
  */
 - (void)setPosition:(CGPoint)position;
+
 @end
 
 

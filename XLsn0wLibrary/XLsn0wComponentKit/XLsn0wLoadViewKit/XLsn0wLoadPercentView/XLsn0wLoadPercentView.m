@@ -1,4 +1,15 @@
 
+/*********************************************************************************************
+ *   __      __   _         _________     _ _     _    _________   __         _         __   *
+ *	 \ \    / /  | |        | _______|   | | \   | |  |  ______ |  \ \       / \       / /   *
+ *	  \ \  / /   | |        | |          | |\ \  | |  | |     | |   \ \     / \ \     / /    *
+ *     \ \/ /    | |        | |______    | | \ \ | |  | |     | |    \ \   / / \ \   / /     *
+ *     /\/\/\    | |        |_______ |   | |  \ \| |  | |     | |     \ \ / /   \ \ / /      *
+ *    / /  \ \   | |______   ______| |   | |   \ \ |  | |_____| |      \ \ /     \ \ /       *
+ *   /_/    \_\  |________| |________|   |_|    \__|  |_________|       \_/       \_/        *
+ *                                                                                           *
+ *********************************************************************************************/
+
 
 #import "XLsn0wLoadPercentView.h"
 
@@ -11,8 +22,7 @@
 @property (nonatomic,strong   ) UILabel     *percentLable;
 @end
 
-@implementation XLsn0wLoadPercentView
-{
+@implementation XLsn0wLoadPercentView {
     unsigned int         _nLoadProcent;     // 加载百分比
     NSTimer             *_tLoadTimer;       // 加载定时器
     int                  _nLoadSeconds;     // 加载等待时间
@@ -45,7 +55,8 @@
     [self setClipsToBounds:NO];
     
     //loadView
-    self.loadingView  = [[XLsn0wLoadView alloc]initWithHIKLoadViewStyle:HIKLoadViewStyleSqureCornersClockWise];
+    self.loadingView  = [[XLsn0wLoadView alloc]initWithXLsn0wLoadViewStyle:XLsn0wLoadViewStyleSqureCornersClockWise];
+    
     float center_y = MIN(CGRectGetMidY(self.loadingView.frame), CGRectGetMidY(self.frame));
     [self.loadingView setCenter:CGPointMake(self.frame.size.width/2.0,center_y)];
     
