@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "5.3.8"
+  s.version      = "5.4.0"
 
   s.summary      = "The iOS Components Library Created by XLsn0w"
 
@@ -23,10 +23,10 @@ Pod::Spec.new do |s|
   s.weak_frameworks = "Photos"
 
   s.dependency "AFNetworking"
-  s.dependency "FMDB"
-  s.dependency "MBProgressHUD"
   s.dependency "SDWebImage"
   s.dependency "Masonry"
+  s.dependency "FMDB"
   s.dependency "MJRefresh"
+  s.dependency "MBProgressHUD"
 
 end
