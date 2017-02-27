@@ -270,6 +270,7 @@
 		35D9F5BD1DF1582F008869D8 /* XLsn0wLoadViewItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B41DF1582F008869D8 /* XLsn0wLoadViewItem.m */; };
 		35D9F5BE1DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m */; };
 		35D9F5BF1DF1582F008869D8 /* XLsn0wQRCodeView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */; };
+		35E1C2CD1E641FD400BBCD7A /* Cydiapple.png in Resources */ = {isa = PBXBuildFile; fileRef = 35E1C2CC1E641FD400BBCD7A /* Cydiapple.png */; };
 		BF6751EEED94BABF210D2CFD /* libPods-XLsn0w.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */; };
 /* End PBXBuildFile section */
 
@@ -801,6 +802,7 @@
 		35D9F5B71DF1582F008869D8 /* XLsn0wLoadViewItem+ConfigurePath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "XLsn0wLoadViewItem+ConfigurePath.m"; sourceTree = "<group>"; };
 		35D9F5B91DF1582F008869D8 /* XLsn0wQRCodeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wQRCodeView.h; sourceTree = "<group>"; };
 		35D9F5BA1DF1582F008869D8 /* XLsn0wQRCodeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wQRCodeView.m; sourceTree = "<group>"; };
+		35E1C2CC1E641FD400BBCD7A /* Cydiapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cydiapple.png; sourceTree = "<group>"; };
 		9803D78D837924020B1C8698 /* Pods-XLsn0w.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.debug.xcconfig"; sourceTree = "<group>"; };
 		AAC9AEB03D9249903DF0A31C /* Pods-XLsn0w.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XLsn0w.release.xcconfig"; path = "Pods/Target Support Files/Pods-XLsn0w/Pods-XLsn0w.release.xcconfig"; sourceTree = "<group>"; };
 		D4D298E299CBE82B92E536D0 /* libPods-XLsn0w.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-XLsn0w.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -864,6 +866,7 @@
 		35867BAF1DE7E35000091160 /* XLsn0wLibrary */ = {
 			isa = PBXGroup;
 			children = (
+				35E1C2CC1E641FD400BBCD7A /* Cydiapple.png */,
 				35867BB31DE7E35000091160 /* XLsn0w.podspec */,
 				35867BB21DE7E35000091160 /* XLsn0w.h */,
 				35867E3D1DE7E35100091160 /* XLsn0wLibrary */,
@@ -2179,6 +2182,7 @@
 				35867BA81DE7E2F800091160 /* LaunchScreen.storyboard in Resources */,
 				35867BA51DE7E2F800091160 /* Assets.xcassets in Resources */,
 				35867E481DE7E35100091160 /* XLsn0w.podspec in Resources */,
+				35E1C2CD1E641FD400BBCD7A /* Cydiapple.png in Resources */,
 				35867BA31DE7E2F800091160 /* Main.storyboard in Resources */,
 				35867E471DE7E35100091160 /* Resources.bundle in Resources */,
 			);
