@@ -31,7 +31,7 @@
 
 /*********************************************************************************************/
 
-#import "XLNetworkManager.h"
+#import "XLsn0wNetworkManager.h"
 #import "XLNetworkMonitor.h"
 #import "XLDataBase.h"
 #import "User.h"

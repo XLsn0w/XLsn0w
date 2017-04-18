@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "5.4.0"
+  s.version      = "5.5.0"
 
   s.summary      = "The iOS Components Library Created by XLsn0w"
 

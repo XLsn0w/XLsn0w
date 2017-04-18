@@ -1,13 +1,35 @@
 
-#import "XLNetworkManager.h"
+#import "XLsn0wNetworkManager.h"
 
 #import "AFNetworking.h"
 
-@interface XLNetworkManager ()
+@implementation XLsn0wNetworkManager
 
-@end
-
-@implementation XLNetworkManager
++ (void)downloadFileWithURL:(NSString *)requestURLString
+              requestMethod:(NSString *)requestMethod
+                 parameters:(NSDictionary *)parameters
+                  savedPath:(NSString *)savedPath
+            downloadSuccess:(void (^)(NSURLResponse *response, NSURL *filePath))success
+            downloadFailure:(void (^)(NSError *error))failure
+           downloadProgress:(void (^)(NSProgress *downloadProgress))progress {
+    
+    AFHTTPRequestSerializer *serializer = [AFHTTPRequestSerializer serializer];
+    
+    //requestMethod = @"GET" 或者 @"POST"
+    NSMutableURLRequest *request =[serializer requestWithMethod:requestMethod URLString:requestURLString parameters:parameters error:nil];
+    NSURLSessionDownloadTask *task = [[AFHTTPSessionManager manager] downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        progress(downloadProgress);
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        return [NSURL fileURLWithPath:savedPath];
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        if(error){
+            failure(error);
+        }else{
+            success(response,filePath);
+        }
+    }];
+    [task resume];
+}
 
 + (void)GET:(NSString *)url
       token:(NSString *)token
@@ -15,7 +37,7 @@
     success:(ParseSuccessBlock)success
     failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -27,7 +49,7 @@
     
     [manager GET:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
 //        JSONString = [JSONString stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceAndNewlineCharacterSet]];//去除掉首尾的空白字符和换行字符
 //        JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\n" withString:@""];//去除多余的换行
@@ -50,7 +72,7 @@
     success:(ParseSuccessBlock)success
     failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -64,7 +86,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
@@ -84,7 +106,7 @@
      success:(ParseSuccessBlock)success
      failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -96,7 +118,7 @@
     
     [manager POST:url parameters:params progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
@@ -116,7 +138,7 @@
      success:(ParseSuccessBlock)success
      failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:baseUrl sessionConfiguration:NO];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -130,7 +152,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
@@ -154,7 +176,7 @@
               success:(ParseSuccessBlock)success
               failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:nil sessionConfiguration:NO];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -174,7 +196,7 @@
         
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         
@@ -199,7 +221,7 @@
               success:(ParseSuccessBlock)success
               failure:(ParseFailureBlock)failure {
     
-    AFHTTPSessionManager *manager = [XLNetworkManager managerWithBaseURL:baseurl sessionConfiguration:YES];
+    AFHTTPSessionManager *manager = [XLsn0wNetworkManager managerWithBaseURL:baseurl sessionConfiguration:YES];
     
     //add timeoutInterval = 5
     [manager.requestSerializer willChangeValueForKey:@"timeoutInterval"];
@@ -215,7 +237,7 @@
         progress(uploadProgress);
     } success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSDictionary *JSONDictionary = [XLNetworkManager responseConfiguration:responseObject];
+        NSDictionary *JSONDictionary = [XLsn0wNetworkManager responseConfiguration:responseObject];
         NSString *JSONString = [[NSString alloc] initWithData:[NSJSONSerialization dataWithJSONObject:JSONDictionary options:NSJSONWritingPrettyPrinted error:nil] encoding:NSUTF8StringEncoding];
         JSONString = [JSONString stringByReplacingOccurrencesOfString:@"\\" withString:@""];
         

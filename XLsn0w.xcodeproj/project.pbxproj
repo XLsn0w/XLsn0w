@@ -256,7 +256,7 @@
 		35867F501DE7E35100091160 /* XLFlowLayout.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E121DE7E35100091160 /* XLFlowLayout.m */; };
 		35867F511DE7E35100091160 /* XLGuidePageView.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E151DE7E35100091160 /* XLGuidePageView.m */; };
 		35867F521DE7E35100091160 /* XLNavViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E181DE7E35100091160 /* XLNavViewController.m */; };
-		35867F531DE7E35100091160 /* XLNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E1C1DE7E35100091160 /* XLNetworkManager.m */; };
+		35867F531DE7E35100091160 /* XLsn0wNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E1C1DE7E35100091160 /* XLsn0wNetworkManager.m */; };
 		35867F541DE7E35100091160 /* XLNetworkMonitor.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */; };
 		35867F571DE7E35100091160 /* XLRefreshAutoGifFooter.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E271DE7E35100091160 /* XLRefreshAutoGifFooter.m */; };
 		35867F581DE7E35100091160 /* XLRefreshGifHeader.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867E291DE7E35100091160 /* XLRefreshGifHeader.m */; };
@@ -771,8 +771,8 @@
 		35867E151DE7E35100091160 /* XLGuidePageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLGuidePageView.m; sourceTree = "<group>"; };
 		35867E171DE7E35100091160 /* XLNavViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNavViewController.h; sourceTree = "<group>"; };
 		35867E181DE7E35100091160 /* XLNavViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNavViewController.m; sourceTree = "<group>"; };
-		35867E1B1DE7E35100091160 /* XLNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkManager.h; sourceTree = "<group>"; };
-		35867E1C1DE7E35100091160 /* XLNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkManager.m; sourceTree = "<group>"; };
+		35867E1B1DE7E35100091160 /* XLsn0wNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wNetworkManager.h; sourceTree = "<group>"; };
+		35867E1C1DE7E35100091160 /* XLsn0wNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wNetworkManager.m; sourceTree = "<group>"; };
 		35867E1D1DE7E35100091160 /* XLNetworkMonitor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLNetworkMonitor.h; sourceTree = "<group>"; };
 		35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLNetworkMonitor.m; sourceTree = "<group>"; };
 		35867E261DE7E35100091160 /* XLRefreshAutoGifFooter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLRefreshAutoGifFooter.h; sourceTree = "<group>"; };
@@ -1893,6 +1893,7 @@
 			isa = PBXGroup;
 			children = (
 				35867E301DE7E35100091160 /* XLsn0wComponentKit.h */,
+				35867E191DE7E35100091160 /* XLNetwork */,
 				35D9F5AB1DF1582F008869D8 /* XLsn0wLoadViewKit */,
 				35867E161DE7E35100091160 /* XLNavViewController */,
 				35867E131DE7E35100091160 /* XLGuidePageView */,
@@ -1900,7 +1901,6 @@
 				35867E041DE7E35100091160 /* XLButton */,
 				35867E0A1DE7E35100091160 /* XLDataBase */,
 				35867E101DE7E35100091160 /* XLFlowLayout */,
-				35867E191DE7E35100091160 /* XLNetwork */,
 				35867E251DE7E35100091160 /* XLRefresh */,
 				35867E311DE7E35100091160 /* XLsn0wTouchID */,
 				35867E341DE7E35100091160 /* XLTextField */,
@@ -1969,8 +1969,8 @@
 		35867E191DE7E35100091160 /* XLNetwork */ = {
 			isa = PBXGroup;
 			children = (
-				35867E1B1DE7E35100091160 /* XLNetworkManager.h */,
-				35867E1C1DE7E35100091160 /* XLNetworkManager.m */,
+				35867E1B1DE7E35100091160 /* XLsn0wNetworkManager.h */,
+				35867E1C1DE7E35100091160 /* XLsn0wNetworkManager.m */,
 				35867E1D1DE7E35100091160 /* XLNetworkMonitor.h */,
 				35867E1E1DE7E35100091160 /* XLNetworkMonitor.m */,
 			);
@@ -2430,7 +2430,7 @@
 				35867E4D1DE7E35100091160 /* CATransaction+JKAnimateWithDuration.m in Sources */,
 				35867F1A1DE7E35100091160 /* UIView+JKRecursion.m in Sources */,
 				35867E7B1DE7E35100091160 /* NSMutableDictionary+BFKit.m in Sources */,
-				35867F531DE7E35100091160 /* XLNetworkManager.m in Sources */,
+				35867F531DE7E35100091160 /* XLsn0wNetworkManager.m in Sources */,
 				35867E541DE7E35100091160 /* NSArray+JKSafeAccess.m in Sources */,
 				35867EB71DE7E35100091160 /* UIBezierPath+JKSVGString.m in Sources */,
 				35867E6D1DE7E35100091160 /* NSDictionary+JKMerge.m in Sources */,
