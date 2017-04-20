@@ -8,7 +8,7 @@
 + (void)downloadFileWithURL:(NSString *)requestURLString
               requestMethod:(NSString *)requestMethod
                  parameters:(NSDictionary *)parameters
-                  savedPath:(NSString *)savedPath
+                  savePath:(NSString *)savePath
             downloadSuccess:(void (^)(NSURLResponse *response, NSURL *filePath))success
             downloadFailure:(void (^)(NSError *error))failure
            downloadProgress:(void (^)(NSProgress *downloadProgress))progress {
@@ -20,7 +20,7 @@
     NSURLSessionDownloadTask *task = [[AFHTTPSessionManager manager] downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
         progress(downloadProgress);
     } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
-        return [NSURL fileURLWithPath:savedPath];
+        return [NSURL fileURLWithPath:savePath];
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
         if(error){
             failure(error);

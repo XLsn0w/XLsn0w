@@ -53,11 +53,11 @@
 
 //-------------------打印日志-------------------------
 //DEBUG  模式下打印日志,当前行
-#ifdef DEBUG
-#   define DLog(FORMAT, ...) NSLog((@"%s [CurrentLine %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
-#else
-#   define DLog(...)
-#endif
+//#ifdef DEBUG
+//#   define DLog(FORMAT, ...) NSLog((@"%s [CurrentLine %d] " fmt), __PRETTY_FUNCTION__, __LINE__, ##__VA_ARGS__);
+//#else
+//#   define DLog(...)
+//#endif
 
 /***************************重写NSLog, Debug模式下打印日志和当前行数************************************/
 

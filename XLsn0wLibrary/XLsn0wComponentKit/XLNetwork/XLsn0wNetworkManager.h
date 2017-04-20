@@ -32,7 +32,7 @@ typedef void (^ProgressBlock)(NSProgress *progress);
  *  @param requestURLString 请求地址
  *  @param requestMethod    请求方法 GET或者POST
  *  @param parameters       GET或者POST所需要传的参数
- *  @param savedPath        下载后文件保存在磁盘的路径
+ *  @param savePath        下载后文件保存在磁盘的路径
  *  @param success          下载成功回调
  *  @param failure          下载失败回调
  *  @param progress         实时下载进度回调
@@ -40,7 +40,7 @@ typedef void (^ProgressBlock)(NSProgress *progress);
 + (void)downloadFileWithURL:(NSString *)requestURLString
               requestMethod:(NSString *)requestMethod
                  parameters:(NSDictionary *)parameters
-                  savedPath:(NSString *)savedPath
+                  savePath:(NSString *)savePath
             downloadSuccess:(void (^)(NSURLResponse *response, NSURL *filePath))success
             downloadFailure:(void (^)(NSError *error))failure
            downloadProgress:(void (^)(NSProgress *downloadProgress))progress;

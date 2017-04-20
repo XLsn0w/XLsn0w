@@ -250,8 +250,6 @@ blue:((float)(rgbValue & 0xFF))/255.0 alpha:1.0]
 }
 
 - (void)buildFooterView {
-    
-    
     self.pageControl = [[UIPageControl alloc] initWithFrame:CGRectMake(0, 630*kFitHeight, self.frame.size.width, 20*kFitHeight)];
     [self.pageControl setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
     [self.pageControl addTarget:self action:@selector(showPanelAtPageControl) forControlEvents:UIControlEventValueChanged];
