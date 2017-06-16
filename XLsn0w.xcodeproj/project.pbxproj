@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		353A48351EF3D3650069BC68 /* XLsn0wKit.png in Resources */ = {isa = PBXBuildFile; fileRef = 353A48341EF3D3650069BC68 /* XLsn0wKit.png */; };
 		35867B9A1DE7E2F800091160 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867B991DE7E2F800091160 /* main.m */; };
 		35867B9D1DE7E2F800091160 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867B9C1DE7E2F800091160 /* AppDelegate.m */; };
 		35867BA01DE7E2F800091160 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 35867B9F1DE7E2F800091160 /* ViewController.m */; };
@@ -275,6 +276,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		353A48341EF3D3650069BC68 /* XLsn0wKit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = XLsn0wKit.png; sourceTree = "<group>"; };
 		35867B951DE7E2F700091160 /* XLsn0w.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XLsn0w.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		35867B991DE7E2F800091160 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		35867B9B1DE7E2F800091160 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -880,6 +882,7 @@
 		35867BB01DE7E35000091160 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				353A48341EF3D3650069BC68 /* XLsn0wKit.png */,
 				35867BB11DE7E35000091160 /* Resources.bundle */,
 			);
 			path = Resources;
@@ -2184,6 +2187,7 @@
 				35867E481DE7E35100091160 /* XLsn0w.podspec in Resources */,
 				35E1C2CD1E641FD400BBCD7A /* Cydiapple.png in Resources */,
 				35867BA31DE7E2F800091160 /* Main.storyboard in Resources */,
+				353A48351EF3D3650069BC68 /* XLsn0wKit.png in Resources */,
 				35867E471DE7E35100091160 /* Resources.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
