@@ -2,12 +2,11 @@
 //  ViewController.m
 //  XLsn0w
 //
-//  Created by XLsn0w on 2016/11/25.
-//  Copyright © 2016年 XLsn0w. All rights reserved.
+//  Created by Mac on 2019/4/13.
+//  Copyright © 2019 XLsn0w. All rights reserved.
 //
 
 #import "ViewController.h"
-#import "XLDatabase.h"
 
 @interface ViewController ()
 
@@ -17,13 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    // Do any additional setup after loading the view.
 }
 
 
