@@ -336,8 +336,8 @@
 		C6BEE88A22619B0800E68BF7 /* XLsn0wCycle */ = {
 			isa = PBXGroup;
 			children = (
-				C6BEE88B22619B0800E68BF7 /* XLsn0wCycle.m */,
 				C6BEE88C22619B0800E68BF7 /* XLsn0wCycle.h */,
+				C6BEE88B22619B0800E68BF7 /* XLsn0wCycle.m */,
 			);
 			path = XLsn0wCycle;
 			sourceTree = "<group>";

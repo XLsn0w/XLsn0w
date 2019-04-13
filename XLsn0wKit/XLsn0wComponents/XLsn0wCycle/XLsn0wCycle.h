@@ -193,19 +193,9 @@ typedef enum {
 
 #define SDColorCreater(r, g, b, a) [UIColor colorWithRed:(r / 255.0) green:(g / 255.0) blue:(b / 255.0) alpha:a]
 
-@interface UIView (SDExtension)
-
-@property (nonatomic, assign) CGFloat sd_height;
-@property (nonatomic, assign) CGFloat sd_width;
-
-@property (nonatomic, assign) CGFloat sd_y;
-@property (nonatomic, assign) CGFloat sd_x;
-
-@end
-
 /**************************************************************************************************/
 
-@interface TAAbstractDotView : UIView
+@interface XLsn0wCycleBaseDotView : UIView
 
 /**
  *  A method call let view know which state appearance it should take. Active meaning it's current page. Inactive not the current page.
@@ -218,7 +208,7 @@ typedef enum {
 
 /**************************************************************************************************/
 
-@interface TAAnimatedDotView : TAAbstractDotView
+@interface XLsn0wCycleAnimDotView : XLsn0wCycleBaseDotView
 
 @property (nonatomic, strong) UIColor *dotColor;
 
@@ -226,15 +216,15 @@ typedef enum {
 
 /**************************************************************************************************/
 
-@interface TADotView : TAAbstractDotView
+@interface XLsn0wCycleDotView : XLsn0wCycleBaseDotView
 
 @end
 
 /**************************************************************************************************/
 
-@protocol TAPageControlDelegate;
+@protocol XLsn0wCyclePageControlDelegate;
 
-@interface TAPageControl : UIControl
+@interface XLsn0wCyclePageControl : UIControl
 
 
 /**
@@ -281,7 +271,7 @@ typedef enum {
 /**
  * Delegate for TAPageControl
  */
-@property(nonatomic,assign) id<TAPageControlDelegate> delegate;
+@property(nonatomic,assign) id<XLsn0wCyclePageControlDelegate> delegate;
 
 
 /**
@@ -321,9 +311,9 @@ typedef enum {
 @end
 
 
-@protocol TAPageControlDelegate <NSObject>
+@protocol XLsn0wCyclePageControlDelegate <NSObject>
 
 @optional
-- (void)TAPageControl:(TAPageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
+- (void)TAPageControl:(XLsn0wCyclePageControl *)pageControl didSelectPageAtIndex:(NSInteger)index;
 
 @end

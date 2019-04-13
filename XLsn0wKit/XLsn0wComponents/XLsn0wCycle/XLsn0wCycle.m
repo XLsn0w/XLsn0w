@@ -12,6 +12,7 @@
 #import "SDImageCache.h"
 #import "SDWebImageManager.h"
 #import "UIImageView+WebCache.h"
+#import "UIView+XLsn0w.h"
 #import "Masonry.h"
 
 #define kCycleScrollViewInitialPageControlDotSize CGSizeMake(10, 10)
@@ -167,8 +168,8 @@ NSString * const ID = @"cycleCell";
 {
     _pageControlDotSize = pageControlDotSize;
     [self setupPageControl];
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageContol = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageContol = (XLsn0wCyclePageControl *)_pageControl;
         pageContol.dotSize = pageControlDotSize;
     }
 }
@@ -192,8 +193,8 @@ NSString * const ID = @"cycleCell";
 - (void)setCurrentPageDotColor:(UIColor *)currentPageDotColor
 {
     _currentPageDotColor = currentPageDotColor;
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
         pageControl.dotColor = currentPageDotColor;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
@@ -238,8 +239,8 @@ NSString * const ID = @"cycleCell";
 {
     if (!image || !self.pageControl) return;
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
         if (isCurrentPageDot) {
             pageControl.currentDotImage = image;
         } else {
@@ -375,7 +376,7 @@ NSString * const ID = @"cycleCell";
         case PageContolStyleAnimated: {
             _pageNumber.hidden = YES;
             _isShowPage = NO;
-            TAPageControl *pageControl = [[TAPageControl alloc] init];
+            XLsn0wCyclePageControl *pageControl = [[XLsn0wCyclePageControl alloc] init];
             pageControl.numberOfPages = self.imagePathsGroup.count;
             pageControl.dotColor = self.currentPageDotColor;
             pageControl.userInteractionEnabled = NO;
@@ -456,7 +457,7 @@ NSString * const ID = @"cycleCell";
 }
 
 - (int)currentIndex {
-    if (_mainView.sd_width == 0 || _mainView.sd_height == 0) {
+    if (_mainView.width == 0 || _mainView.height == 0) {
         return 0;
     }
     
@@ -505,8 +506,8 @@ NSString * const ID = @"cycleCell";
     }
     
     CGSize size = CGSizeZero;
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
         if (!(self.pageDotImage && self.currentPageDotImage && CGSizeEqualToSize(kCycleScrollViewInitialPageControlDotSize, self.pageControlDotSize))) {
             pageControl.dotSize = self.pageControlDotSize;
         }
@@ -514,14 +515,14 @@ NSString * const ID = @"cycleCell";
     } else {
         size = CGSizeMake(self.imagePathsGroup.count * self.pageControlDotSize.width * 1.5, self.pageControlDotSize.height);
     }
-    CGFloat x = (self.sd_width - size.width) * 0.5;
+    CGFloat x = (self.width - size.width) * 0.5;
     if (self.pageContolPosition == PageContolPositionRight) {
-        x = self.mainView.sd_width - size.width - 10;
+        x = self.mainView.width - size.width - 10;
     }
-    CGFloat y = self.mainView.sd_height - size.height - 10;
+    CGFloat y = self.mainView.height - size.height - 10;
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
         [pageControl sizeToFit];
     }
     
@@ -628,8 +629,8 @@ NSString * const ID = @"cycleCell";
     int itemIndex = [self currentIndex];
     int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
     
-    if ([self.pageControl isKindOfClass:[TAPageControl class]]) {
-        TAPageControl *pageControl = (TAPageControl *)_pageControl;
+    if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
+        XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
         pageControl.currentPage = indexOnPageControl;
     } else {
         UIPageControl *pageControl = (UIPageControl *)_pageControl;
@@ -749,10 +750,10 @@ NSString * const ID = @"cycleCell";
         _titleLabel.frame = self.bounds;
     } else {
         _imageView.frame = self.bounds;
-        CGFloat titleLabelW = self.sd_width;
+        CGFloat titleLabelW = self.width;
         CGFloat titleLabelH = _titleLabelHeight;
         CGFloat titleLabelX = 0;
-        CGFloat titleLabelY = self.sd_height - titleLabelH;
+        CGFloat titleLabelY = self.height - titleLabelH;
         _titleLabel.frame = CGRectMake(titleLabelX, titleLabelY, titleLabelW, titleLabelH);
     }
 }
@@ -760,64 +761,9 @@ NSString * const ID = @"cycleCell";
 @end
 
 /**************************************************************************************************/
-
-@implementation UIView (SDExtension)
-
-- (CGFloat)sd_height {
-    return self.frame.size.height;
-}
-
-- (void)setSd_height:(CGFloat)sd_height
-{
-    CGRect temp = self.frame;
-    temp.size.height = sd_height;
-    self.frame = temp;
-}
-
-- (CGFloat)sd_width
-{
-    return self.frame.size.width;
-}
-
-- (void)setSd_width:(CGFloat)sd_width
-{
-    CGRect temp = self.frame;
-    temp.size.width = sd_width;
-    self.frame = temp;
-}
-
-
-- (CGFloat)sd_y
-{
-    return self.frame.origin.y;
-}
-
-- (void)setSd_y:(CGFloat)sd_y
-{
-    CGRect temp = self.frame;
-    temp.origin.y = sd_y;
-    self.frame = temp;
-}
-
-- (CGFloat)sd_x
-{
-    return self.frame.origin.x;
-}
-
-- (void)setSd_x:(CGFloat)sd_x
-{
-    CGRect temp = self.frame;
-    temp.origin.x = sd_x;
-    self.frame = temp;
-}
-
-
-
-@end
-
 /**************************************************************************************************/
 
-@implementation TAAbstractDotView
+@implementation XLsn0wCycleBaseDotView
 
 - (id)init {
     @throw [NSException exceptionWithName:NSInternalInconsistencyException
@@ -837,7 +783,7 @@ NSString * const ID = @"cycleCell";
 
 static CGFloat const kAnimateDuration = 1;
 
-@implementation TAAnimatedDotView
+@implementation XLsn0wCycleAnimDotView
 
 - (instancetype)init
 {
@@ -916,7 +862,7 @@ static CGFloat const kAnimateDuration = 1;
 
 /**************************************************************************************************/
 
-@implementation TADotView
+@implementation XLsn0wCycleDotView
 
 - (instancetype)init
 {
@@ -1002,7 +948,7 @@ static NSInteger const kDefaultSpacingBetweenDots = 8;
 static CGSize const kDefaultDotSize = {8, 8};
 
 
-@interface TAPageControl()
+@interface XLsn0wCyclePageControl()
 
 
 /**
@@ -1013,7 +959,7 @@ static CGSize const kDefaultDotSize = {8, 8};
 
 @end
 
-@implementation TAPageControl
+@implementation XLsn0wCyclePageControl
 
 
 #pragma mark - Lifecycle
@@ -1056,7 +1002,7 @@ static CGSize const kDefaultDotSize = {8, 8};
  */
 - (void)initialization
 {
-    self.dotViewClass           = [TAAnimatedDotView class];
+    self.dotViewClass           = [XLsn0wCycleAnimDotView class];
     self.spacingBetweenDots     = kDefaultSpacingBetweenDots;
     self.numberOfPages          = kDefaultNumberOfPages;
     self.currentPage            = kDefaultCurrentPage;
@@ -1175,8 +1121,8 @@ static CGSize const kDefaultDotSize = {8, 8};
     
     if (self.dotViewClass) {
         dotView = [[self.dotViewClass alloc] initWithFrame:CGRectMake(0, 0, self.dotSize.width, self.dotSize.height)];
-        if ([dotView isKindOfClass:[TAAnimatedDotView class]] && self.dotColor) {
-            ((TAAnimatedDotView *)dotView).dotColor = self.dotColor;
+        if ([dotView isKindOfClass:[XLsn0wCycleAnimDotView class]] && self.dotColor) {
+            ((XLsn0wCycleAnimDotView *)dotView).dotColor = self.dotColor;
         }
     } else {
         dotView = [[UIImageView alloc] initWithImage:self.dotImage];
@@ -1202,11 +1148,11 @@ static CGSize const kDefaultDotSize = {8, 8};
 - (void)changeActivity:(BOOL)active atIndex:(NSInteger)index
 {
     if (self.dotViewClass) {
-        TAAbstractDotView *abstractDotView = (TAAbstractDotView *)[self.dots objectAtIndex:index];
+        XLsn0wCycleBaseDotView *abstractDotView = (XLsn0wCycleBaseDotView *)[self.dots objectAtIndex:index];
         if ([abstractDotView respondsToSelector:@selector(changeActivityState:)]) {
             [abstractDotView changeActivityState:active];
         } else {
-            NSLog(@"Custom view : %@ must implement an 'changeActivityState' method or you can subclass %@ to help you.", self.dotViewClass, [TAAbstractDotView class]);
+            NSLog(@"Custom view : %@ must implement an 'changeActivityState' method or you can subclass %@ to help you.", self.dotViewClass, [XLsn0wCycleBaseDotView class]);
         }
     } else if (self.dotImage && self.currentDotImage) {
         UIImageView *dotView = (UIImageView *)[self.dots objectAtIndex:index];
