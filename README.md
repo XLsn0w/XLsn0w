@@ -1,3 +1,4 @@
 # 关注我的简书:XLsn0w 
-![image](https://raw.githubusercontent.com/XLsn0w/XLsn0w/XLsn0w/XLsn0wLibrary/Cydiapple.png)
+![Cydiapple](https://github.com/XLsn0w/XLsn0w/blob/XLsn0w/XLsn0w/Cydiapple.png?raw=true)
 # 微信公众号:Cydiapple
+![Cydiapple](https://github.com/XLsn0w/XLsn0w/blob/XLsn0w/XLsn0w/Cydiapple.png?raw=true)
