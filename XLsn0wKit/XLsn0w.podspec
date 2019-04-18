@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "6.0.1"
+  s.version      = "6.0.2"
   s.summary      = "Copyright © 2016年 XLsn0w"
   s.author          = { "XLsn0w" => "xlsn0w@outlook.com" }
 
@@ -19,11 +19,9 @@ Pod::Spec.new do |s|
   s.license         = 'MIT'
   s.platform        = :ios, "9.0"
 
-  s.dependency "CocoaAsyncSocket"
   s.dependency "MBProgressHUD"
   s.dependency "AFNetworking"
   s.dependency "SDWebImage"
   s.dependency "Masonry"
-  s.dependency "FMDB"
 
 end

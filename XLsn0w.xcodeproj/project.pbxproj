@@ -19,16 +19,10 @@
 		C6BEE8DC22619B0800E68BF7 /* XLsn0wLog.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE87622619B0800E68BF7 /* XLsn0wLog.m */; };
 		C6BEE8DD22619B0800E68BF7 /* Cydiapple.png in Resources */ = {isa = PBXBuildFile; fileRef = C6BEE87C22619B0800E68BF7 /* Cydiapple.png */; };
 		C6BEE8DE22619B0800E68BF7 /* XLsn0wShow.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE87F22619B0800E68BF7 /* XLsn0wShow.m */; };
-		C6BEE8DF22619B0800E68BF7 /* XLsn0wUdpSocket.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE88222619B0800E68BF7 /* XLsn0wUdpSocket.m */; };
-		C6BEE8E022619B0800E68BF7 /* XLsn0wDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE88522619B0800E68BF7 /* XLsn0wDatabase.m */; };
-		C6BEE8E122619B0800E68BF7 /* XLsn0wDBUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE88822619B0800E68BF7 /* XLsn0wDBUser.m */; };
 		C6BEE8E222619B0800E68BF7 /* XLsn0wCycle.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE88B22619B0800E68BF7 /* XLsn0wCycle.m */; };
 		C6BEE8E322619B0800E68BF7 /* XLsn0wHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89122619B0800E68BF7 /* XLsn0wHUD.m */; };
 		C6BEE8E422619B0800E68BF7 /* XLsn0wLoadHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89222619B0800E68BF7 /* XLsn0wLoadHUD.m */; };
 		C6BEE8E522619B0800E68BF7 /* XLsn0wTextHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89322619B0800E68BF7 /* XLsn0wTextHUD.m */; };
-		C6BEE8E622619B0800E68BF7 /* XLsn0wLoop.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89522619B0800E68BF7 /* XLsn0wLoop.m */; };
-		C6BEE8E722619B0800E68BF7 /* XLsn0wSocketManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89922619B0800E68BF7 /* XLsn0wSocketManager.m */; };
-		C6BEE8E822619B0800E68BF7 /* XLsn0wNetworkManager.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89C22619B0800E68BF7 /* XLsn0wNetworkManager.m */; };
 		C6BEE8E922619B0800E68BF7 /* XLsn0wKit.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE89F22619B0800E68BF7 /* XLsn0wKit.m */; };
 		C6BEE8EA22619B0800E68BF7 /* UIImage+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE8A322619B0800E68BF7 /* UIImage+XLsn0w.m */; };
 		C6BEE8EB22619B0800E68BF7 /* NSDictionary+XLsn0w.m in Sources */ = {isa = PBXBuildFile; fileRef = C6BEE8A622619B0800E68BF7 /* NSDictionary+XLsn0w.m */; };
@@ -95,12 +89,6 @@
 		C6BEE87C22619B0800E68BF7 /* Cydiapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cydiapple.png; sourceTree = "<group>"; };
 		C6BEE87F22619B0800E68BF7 /* XLsn0wShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wShow.m; sourceTree = "<group>"; };
 		C6BEE88022619B0800E68BF7 /* XLsn0wShow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wShow.h; sourceTree = "<group>"; };
-		C6BEE88222619B0800E68BF7 /* XLsn0wUdpSocket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wUdpSocket.m; sourceTree = "<group>"; };
-		C6BEE88322619B0800E68BF7 /* XLsn0wUdpSocket.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wUdpSocket.h; sourceTree = "<group>"; };
-		C6BEE88522619B0800E68BF7 /* XLsn0wDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wDatabase.m; sourceTree = "<group>"; };
-		C6BEE88722619B0800E68BF7 /* XLsn0wDBUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wDBUser.h; sourceTree = "<group>"; };
-		C6BEE88822619B0800E68BF7 /* XLsn0wDBUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wDBUser.m; sourceTree = "<group>"; };
-		C6BEE88922619B0800E68BF7 /* XLsn0wDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wDatabase.h; sourceTree = "<group>"; };
 		C6BEE88B22619B0800E68BF7 /* XLsn0wCycle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wCycle.m; sourceTree = "<group>"; };
 		C6BEE88C22619B0800E68BF7 /* XLsn0wCycle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wCycle.h; sourceTree = "<group>"; };
 		C6BEE88E22619B0800E68BF7 /* XLsn0wHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wHUD.h; sourceTree = "<group>"; };
@@ -109,13 +97,7 @@
 		C6BEE89122619B0800E68BF7 /* XLsn0wHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wHUD.m; sourceTree = "<group>"; };
 		C6BEE89222619B0800E68BF7 /* XLsn0wLoadHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoadHUD.m; sourceTree = "<group>"; };
 		C6BEE89322619B0800E68BF7 /* XLsn0wTextHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wTextHUD.m; sourceTree = "<group>"; };
-		C6BEE89522619B0800E68BF7 /* XLsn0wLoop.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLoop.m; sourceTree = "<group>"; };
-		C6BEE89622619B0800E68BF7 /* XLsn0wLoop.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLoop.h; sourceTree = "<group>"; };
-		C6BEE89822619B0800E68BF7 /* XLsn0wSocketManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wSocketManager.h; sourceTree = "<group>"; };
-		C6BEE89922619B0800E68BF7 /* XLsn0wSocketManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wSocketManager.m; sourceTree = "<group>"; };
 		C6BEE89A22619B0800E68BF7 /* XLsn0wComponents.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wComponents.h; sourceTree = "<group>"; };
-		C6BEE89C22619B0800E68BF7 /* XLsn0wNetworkManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wNetworkManager.m; sourceTree = "<group>"; };
-		C6BEE89D22619B0800E68BF7 /* XLsn0wNetworkManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wNetworkManager.h; sourceTree = "<group>"; };
 		C6BEE89F22619B0800E68BF7 /* XLsn0wKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wKit.m; sourceTree = "<group>"; };
 		C6BEE8A022619B0800E68BF7 /* XLsn0wKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wKit.h; sourceTree = "<group>"; };
 		C6BEE8A322619B0800E68BF7 /* UIImage+XLsn0w.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+XLsn0w.m"; sourceTree = "<group>"; };
@@ -284,14 +266,9 @@
 			isa = PBXGroup;
 			children = (
 				C6BEE89A22619B0800E68BF7 /* XLsn0wComponents.h */,
-				C6BEE87E22619B0800E68BF7 /* XLsn0wShow */,
-				C6BEE88122619B0800E68BF7 /* XLsn0wUdpSocket */,
-				C6BEE88422619B0800E68BF7 /* XLsn0wDatabase */,
-				C6BEE88A22619B0800E68BF7 /* XLsn0wCycle */,
 				C6BEE88D22619B0800E68BF7 /* XLsn0wHUD */,
-				C6BEE89422619B0800E68BF7 /* XLsn0wLoop */,
-				C6BEE89722619B0800E68BF7 /* XLsn0wSocketManager */,
-				C6BEE89B22619B0800E68BF7 /* XLsn0wNetworkManager */,
+				C6BEE87E22619B0800E68BF7 /* XLsn0wShow */,
+				C6BEE88A22619B0800E68BF7 /* XLsn0wCycle */,
 			);
 			path = XLsn0wComponents;
 			sourceTree = "<group>";
@@ -303,34 +280,6 @@
 				C6BEE88022619B0800E68BF7 /* XLsn0wShow.h */,
 			);
 			path = XLsn0wShow;
-			sourceTree = "<group>";
-		};
-		C6BEE88122619B0800E68BF7 /* XLsn0wUdpSocket */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE88222619B0800E68BF7 /* XLsn0wUdpSocket.m */,
-				C6BEE88322619B0800E68BF7 /* XLsn0wUdpSocket.h */,
-			);
-			path = XLsn0wUdpSocket;
-			sourceTree = "<group>";
-		};
-		C6BEE88422619B0800E68BF7 /* XLsn0wDatabase */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE88522619B0800E68BF7 /* XLsn0wDatabase.m */,
-				C6BEE88622619B0800E68BF7 /* XLsn0wDBUser */,
-				C6BEE88922619B0800E68BF7 /* XLsn0wDatabase.h */,
-			);
-			path = XLsn0wDatabase;
-			sourceTree = "<group>";
-		};
-		C6BEE88622619B0800E68BF7 /* XLsn0wDBUser */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE88722619B0800E68BF7 /* XLsn0wDBUser.h */,
-				C6BEE88822619B0800E68BF7 /* XLsn0wDBUser.m */,
-			);
-			path = XLsn0wDBUser;
 			sourceTree = "<group>";
 		};
 		C6BEE88A22619B0800E68BF7 /* XLsn0wCycle */ = {
@@ -353,33 +302,6 @@
 				C6BEE89322619B0800E68BF7 /* XLsn0wTextHUD.m */,
 			);
 			path = XLsn0wHUD;
-			sourceTree = "<group>";
-		};
-		C6BEE89422619B0800E68BF7 /* XLsn0wLoop */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE89522619B0800E68BF7 /* XLsn0wLoop.m */,
-				C6BEE89622619B0800E68BF7 /* XLsn0wLoop.h */,
-			);
-			path = XLsn0wLoop;
-			sourceTree = "<group>";
-		};
-		C6BEE89722619B0800E68BF7 /* XLsn0wSocketManager */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE89822619B0800E68BF7 /* XLsn0wSocketManager.h */,
-				C6BEE89922619B0800E68BF7 /* XLsn0wSocketManager.m */,
-			);
-			path = XLsn0wSocketManager;
-			sourceTree = "<group>";
-		};
-		C6BEE89B22619B0800E68BF7 /* XLsn0wNetworkManager */ = {
-			isa = PBXGroup;
-			children = (
-				C6BEE89C22619B0800E68BF7 /* XLsn0wNetworkManager.m */,
-				C6BEE89D22619B0800E68BF7 /* XLsn0wNetworkManager.h */,
-			);
-			path = XLsn0wNetworkManager;
 			sourceTree = "<group>";
 		};
 		C6BEE89E22619B0800E68BF7 /* XLsn0wKit */ = {
@@ -739,20 +661,16 @@
 				C6BEE8E522619B0800E68BF7 /* XLsn0wTextHUD.m in Sources */,
 				C6BEE8F822619B0800E68BF7 /* CALayer+XLsn0w.m in Sources */,
 				C6BEE8F322619B0800E68BF7 /* NSString+XLsn0w.m in Sources */,
-				C6BEE8E622619B0800E68BF7 /* XLsn0wLoop.m in Sources */,
-				C6BEE8E822619B0800E68BF7 /* XLsn0wNetworkManager.m in Sources */,
 				C6BEE8E222619B0800E68BF7 /* XLsn0wCycle.m in Sources */,
 				C6BEE8EF22619B0800E68BF7 /* UIView+XLsn0w.m in Sources */,
 				C6BEE8F422619B0800E68BF7 /* UIViewController+XLsn0w.m in Sources */,
 				C6BEE8DC22619B0800E68BF7 /* XLsn0wLog.m in Sources */,
 				C680C1C7226198C90005C9EB /* ViewController.m in Sources */,
 				C6BEE8EA22619B0800E68BF7 /* UIImage+XLsn0w.m in Sources */,
-				C6BEE8E122619B0800E68BF7 /* XLsn0wDBUser.m in Sources */,
 				C6BEE8DE22619B0800E68BF7 /* XLsn0wShow.m in Sources */,
 				C6BEE8FA22619B0800E68BF7 /* NSDate+XLsn0w.m in Sources */,
 				C6BEE8F222619B0800E68BF7 /* UINavigationBar+XLsn0w.m in Sources */,
 				C6BEE8F122619B0800E68BF7 /* UIImageView+XLsn0w.m in Sources */,
-				C6BEE8E022619B0800E68BF7 /* XLsn0wDatabase.m in Sources */,
 				C6BEE8EB22619B0800E68BF7 /* NSDictionary+XLsn0w.m in Sources */,
 				C680C1D2226198CB0005C9EB /* main.m in Sources */,
 				C6BEE8EC22619B0800E68BF7 /* UILabel+XLsn0w.m in Sources */,
@@ -761,8 +679,6 @@
 				C6BEE8F022619B0800E68BF7 /* UIFont+XLsn0w.m in Sources */,
 				C6BEE8F722619B0800E68BF7 /* NSMutableArray+XLsn0w.m in Sources */,
 				C6BEE8E922619B0800E68BF7 /* XLsn0wKit.m in Sources */,
-				C6BEE8DF22619B0800E68BF7 /* XLsn0wUdpSocket.m in Sources */,
-				C6BEE8E722619B0800E68BF7 /* XLsn0wSocketManager.m in Sources */,
 				C6BEE8EE22619B0800E68BF7 /* UIColor+XLsn0w.m in Sources */,
 				C6BEE8F922619B0800E68BF7 /* NSObject+XLsn0w.m in Sources */,
 				C680C1C4226198C90005C9EB /* AppDelegate.m in Sources */,
