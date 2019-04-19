@@ -84,7 +84,6 @@
 		C6BEE87622619B0800E68BF7 /* XLsn0wLog.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wLog.m; sourceTree = "<group>"; };
 		C6BEE87722619B0800E68BF7 /* XLsn0wLog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wLog.h; sourceTree = "<group>"; };
 		C6BEE87822619B0800E68BF7 /* XLsn0w.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0w.h; sourceTree = "<group>"; };
-		C6BEE87A22619B0800E68BF7 /* XLsn0wConfigMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wConfigMacro.h; sourceTree = "<group>"; };
 		C6BEE87B22619B0800E68BF7 /* XLsn0wMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XLsn0wMacro.h; sourceTree = "<group>"; };
 		C6BEE87C22619B0800E68BF7 /* Cydiapple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Cydiapple.png; sourceTree = "<group>"; };
 		C6BEE87F22619B0800E68BF7 /* XLsn0wShow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XLsn0wShow.m; sourceTree = "<group>"; };
@@ -256,7 +255,6 @@
 		C6BEE87922619B0800E68BF7 /* XLsn0wMacro */ = {
 			isa = PBXGroup;
 			children = (
-				C6BEE87A22619B0800E68BF7 /* XLsn0wConfigMacro.h */,
 				C6BEE87B22619B0800E68BF7 /* XLsn0wMacro.h */,
 			);
 			path = XLsn0wMacro;

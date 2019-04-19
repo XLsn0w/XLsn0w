@@ -1,8 +1,8 @@
 
 Pod::Spec.new do |s|
 
-  s.version      = "6.0.2"
-  s.summary      = "Copyright © 2016年 XLsn0w"
+  s.version      = "6.1.0"
+  s.summary      = "Copyright © XLsn0w"
   s.author          = { "XLsn0w" => "xlsn0w@outlook.com" }
 
   s.name         = "XLsn0w"
