@@ -369,7 +369,7 @@ NSString * const ID = @"cycleCell";
     
     if ((self.imagePathsGroup.count == 1) && self.hidesForSinglePage) return;
     
-    int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:[self currentIndex]];
+    NSUInteger indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:[self currentIndex]];
     
     switch (self.pageControlStyle) {
             
@@ -471,9 +471,8 @@ NSString * const ID = @"cycleCell";
     return MAX(0, index);
 }
 
-- (int)pageControlIndexWithCurrentCellIndex:(NSInteger)index
-{
-    return (int)index % self.imagePathsGroup.count;
+- (NSUInteger)pageControlIndexWithCurrentCellIndex:(NSUInteger)index {
+    return index % self.imagePathsGroup.count;
 }
 
 - (void)clearCache {
@@ -610,24 +609,25 @@ NSString * const ID = @"cycleCell";
     return cell;
 }
 
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
-{
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
+    NSInteger selectedIndex = [self pageControlIndexWithCurrentCellIndex:indexPath.item];
     if ([self.delegate respondsToSelector:@selector(cycle:didSelectItemAtIndex:)]) {
-        [self.delegate cycle:self didSelectItemAtIndex:[self pageControlIndexWithCurrentCellIndex:indexPath.item]];
+        [self.delegate cycle:self didSelectItemAtIndex:selectedIndex];
     }
     if (self.clickItemOperationBlock) {
-        self.clickItemOperationBlock([self pageControlIndexWithCurrentCellIndex:indexPath.item]);
+        self.clickItemOperationBlock(selectedIndex);
+    }
+    if (self.didSelectItemAction) {
+        self.didSelectItemAction(selectedIndex);
     }
 }
 
-
 #pragma mark - UIScrollViewDelegate
 
-- (void)scrollViewDidScroll:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidScroll:(UIScrollView *)scrollView {
     if (!self.imagePathsGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int itemIndex = [self currentIndex];
-    int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
+    NSUInteger indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
     
     if ([self.pageControl isKindOfClass:[XLsn0wCyclePageControl class]]) {
         XLsn0wCyclePageControl *pageControl = (XLsn0wCyclePageControl *)_pageControl;
@@ -657,11 +657,10 @@ NSString * const ID = @"cycleCell";
     [self scrollViewDidEndScrollingAnimation:self.mainView];
 }
 
-- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView
-{
+- (void)scrollViewDidEndScrollingAnimation:(UIScrollView *)scrollView {
     if (!self.imagePathsGroup.count) return; // 解决清除timer时偶尔会出现的问题
     int itemIndex = [self currentIndex];
-    int indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
+    NSUInteger indexOnPageControl = [self pageControlIndexWithCurrentCellIndex:itemIndex];
     
     if (_isShowPage == YES) {
         [self showPageNumber:indexOnPageControl];///添加右侧页码显示

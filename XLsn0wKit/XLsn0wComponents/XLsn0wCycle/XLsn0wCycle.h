@@ -18,11 +18,13 @@ typedef enum {
 typedef enum {
     PageContolStyleClassic,        // 系统自带经典样式
     PageContolStyleAnimated,       // 动画效果pagecontrol
-    PageContolStylePageNumber,           // 右侧数字页码
+    PageContolStylePageNumber,     // 右侧数字页码
     PageContolStyleNone            // 不显示pagecontrol
 } PageContolStyle;
 
 @class XLsn0wCycle;
+
+typedef void(^XLsn0wCycleSelectItemAction)(NSInteger index);///推荐使用 点击选中图片跳转方法
 
 @protocol XLsn0wCycleDelegate <NSObject>
 
@@ -37,6 +39,8 @@ typedef enum {
 @end
 
 @interface XLsn0wCycle : UIView
+
+@property (nonatomic, copy) XLsn0wCycleSelectItemAction didSelectItemAction;
 
 /** 初始轮播图（推荐使用） */
 + (instancetype)cycleWithFrame:(CGRect)frame delegate:(id<XLsn0wCycleDelegate>)delegate placeholderImage:(UIImage *)placeholderImage;
