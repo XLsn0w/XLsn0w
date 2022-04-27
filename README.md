@@ -3,16 +3,13 @@
 ### XLsn0w's Cydia Repo: https://XLsn0w.github.io/tweaks/
 <img src="https://mmbiz.qpic.cn/mmbiz_png/e1CScbLqXaDLNkHOHfTk0u2AMqoibONBGibqic0tAATsf1Hzusibe3YvvaDMiamagt9OfGHsEicuu9YsfxibIsy0EmEjA/640?wx_fmt=png&wxfrom=5&wx_lazy=1&wx_co=1" alt="XLsn0w" width="450" height="280" align="bottom" />
 
-
 ## 关于iOS 性能优化梳理：
 ### 基本工具、业务优化、内存优化、卡顿优化、布局优化
 ### App电量优化、 安装包瘦身、启动优化、网络优化等
 
 #### iOS 官方文档
-> 专题内容比较多，后面细分内容会有部分重复。
 * [Performance 专题](https://developer.apple.com/library/content/navigation/#section=Topics&topic=Performance) 
 * [Core Animation Programming Guide](https://developer.apple.com/library/content/documentation/Cocoa/Conceptual/CoreAnimation_guide) 
-
 
 #### iOS 性能优化相关书籍
 * [Pro iOS Apps Performance Optimization](http://download.csdn.net/detail/tskyming/9831453)
@@ -149,7 +146,7 @@ TODO：
 * [LSUnusedResources](https://github.com/tinymind/LSUnusedResources)
 * [LinkMap](https://github.com/huanxsd/LinkMap)
 
-#### APM
+#### 应用性能管理（APM）
 * [iOS-System-Services](https://github.com/iOS-APM/iOS-System-Services)
 * [System Monitor](https://github.com/iOS-APM/SystemMonitor)
 * [PerformanceTestingHelper](https://github.com/ArmsZhou/PerformanceTestingHelper)
@@ -159,4 +156,4 @@ TODO：
 * [AppleTrace](https://github.com/everettjf/AppleTrace)
 * [matrix](https://github.com/Tencent/matrix)
 * [MTHawkeye](https://github.com/meitu/MTHawkeye)
-
+* 
